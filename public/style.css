@@ -1,0 +1,17 @@
+h1 {
+  color: red;
+}
+body{
+  margin:1%;
+  /*background-color: #373B46;*/
+  /*background-color: #C0C0C0;*/
+}
+a{
+  color:black
+}
+a:hover{
+  color: #FF4500;
+}
+img{
+  max-width: 120px
+}
