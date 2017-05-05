@@ -4,8 +4,6 @@ const { connect } = require('react-redux')
 const request = require('superagent');
 
 
-
-
 class loginForm extends React.Component{
   //this is how we define functions in an class/object
   render(){

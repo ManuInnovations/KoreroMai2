@@ -16,6 +16,7 @@ const initialState = require('../state')
 // top level components
 const App = require('./components/app')
 const LoginForm = require('./components/loginForm')
+const Nav = require('./components/nav')
 
 const store = createStore(reducer, initialState)
 
