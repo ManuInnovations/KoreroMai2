@@ -3,14 +3,17 @@ const _ = require('lodash')
 
 
 module.exports = function (state, action) {
+  
   const newState = clone(state)
 
   switch (action.type) {
-    case 'USER_PROFILE':
 
-      newState.currentUser = action.payload.id
-      newState.userInfo = action.payload
-      newState.isLoggedIn = true
+    case 'CHANGE_ROUTE':
+      newState.route = action.payload
+      return newState
+
+    case 'UPDATE_LETTERS':
+      newState.letters = action.payload
       return newState
 
     default:
