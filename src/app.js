@@ -5,9 +5,8 @@ const React = require('react')
 const { connect } = require('react-redux')
 const { Link } = require('react-router')
 
-const Nav = require('./nav')
-const Footer = require('./footer')
-const Home = require('./home')
+const Nav = require('./components/nav')
+const Footer = require('./components/footer')
 
 const App = (props) => {
   debug({props})
@@ -17,7 +16,6 @@ const App = (props) => {
         <Nav />
         <div className="content">
           {props.children}
-          <Home />
         </div>
         <Footer />
     </div>

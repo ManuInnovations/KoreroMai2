@@ -1,4 +1,4 @@
-const debug = require('debug')('components:nav')
+const debug = require('debug')('components:footer')
 const React = require('react')
 const { connect } = require('react-redux')
 const request = require('superagent');
