@@ -7,8 +7,7 @@ const { Link } = require('react-router')
 
 const Nav = require('./nav')
 const Footer = require('./footer')
-
-
+const Home = require('./home')
 
 const App = (props) => {
   debug({props})
@@ -17,8 +16,8 @@ const App = (props) => {
     <div>
         <Nav />
         <div className="content">
-          <p>This is the home page app component</p>
           {props.children}
+          <Home />
         </div>
         <Footer />
     </div>

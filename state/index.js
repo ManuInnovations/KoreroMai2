@@ -4,5 +4,4 @@
 module.exports = {
   currentUser:null,
   userInfo:{},
-  isLoggedIn:false
 }

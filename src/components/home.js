@@ -4,7 +4,7 @@ const { connect } = require('react-redux')
 const request = require('superagent');
 
 
-class loginForm extends React.Component{
+class home extends React.Component{
   //this is how we define functions in an class/object
   render(){
     debug(this.props)
@@ -12,12 +12,10 @@ class loginForm extends React.Component{
 
     return(
       <div>
-        <form>
-          <p>Email:</p><input type='text' ref='email' placeholder='email' />
-          <p>Password:</p><input type='password' ref='password' placeholder='password'/>
-          <p></p>
-          <button onClick={this.handleClick.bind(this)} className='button'>log In</button>
-        </form>
+        <h1>Nau mai, haere mai</h1>
+        <h2>Welcome to Korero Mai</h2>
+        <h2>Learn te reo Maori</h2>
+        <button onClick={this.handleClick.bind(this)} className='button'>Play!</button>
       </div>
     )
   }
@@ -31,4 +29,4 @@ class loginForm extends React.Component{
 
 }
 
-module.exports = connect((state) => state)(loginForm)
+module.exports = connect((state) => state)(home)

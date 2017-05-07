@@ -4,7 +4,7 @@ const route = express.Router();
 
 module.exports = function() {
 
-  route.post("/login", dummyData);
+  route.post("/home", dummyData);
 
   function dummyData(req,res,next){
     res.json({"data":'hello'})

@@ -15,8 +15,6 @@ const initialState = require('../state')
 
 // top level components
 const App = require('./components/app')
-const LoginForm = require('./components/loginForm')
-const Nav = require('./components/nav')
 
 const store = createStore(reducer, initialState)
 
@@ -26,7 +24,6 @@ const Root = ({store}) => {
     <Provider store={store} >
       <Router history={hashHistory} >
         <Route path="/" component={App} store={store}>
-          <Route path='/login' component={LoginForm} />
         </Route>
       </Router>
     </Provider>
