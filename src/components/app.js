@@ -6,6 +6,8 @@ const { connect } = require('react-redux')
 const { Link } = require('react-router')
 
 const Nav = require('./nav')
+const Footer = require('./footer')
+
 
 
 const App = (props) => {
@@ -18,6 +20,7 @@ const App = (props) => {
           <p>This is the home page app component</p>
           {props.children}
         </div>
+        <Footer />
     </div>
   )
 }
