@@ -16,7 +16,8 @@ class letters extends React.Component{
         {
           letters.map((letter) => {
             return (
-              <Link to={`/letters/${letter.id}`}>
+
+              <Link to={`/letters/${letter.capital}`}>
                 <button
                   onClick={() => {
                       store.dispatch({
