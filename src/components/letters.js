@@ -8,11 +8,31 @@ class letters extends React.Component{
   //this is how we define functions in an class/object
   render(){
     debug(this.props)
-    const { dispatch } = this.props
+    const { dispatch, letters } = this.props
+
+    console.log('letters this.props ', this.props)
 
     return(
       <div>
-      <p>Map through the array of letters from state and create a button for each letter</p>
+      {
+        letters.map((letter) => {
+          return (
+            <button
+            onClick={
+              () => {
+                store.dispatch({
+                  type: 'CHANGE_ROUTE',
+                  payload: letter
+                })
+              }
+            }>
+
+            {letter}
+
+            </button>
+          )
+        })
+      }
       </div>
     )
   }

@@ -1,7 +1,26 @@
-// define initialState here
-// can be useful to require the same state into our tests
+import { routerMiddleware, push } from 'react-router-redux'
 
 module.exports = {
-  currentUser:null,
-  userInfo:{},
+
+  letters: {
+   A:{},
+   E:{},
+   H:{},
+   K:{},
+   M:{},
+   N:{},
+   Ng:{},
+   O:{},
+   P:{},
+   R:{},
+   T:{},
+   U:{},
+   W:{},
+   Wh:{},
+   I:{}
+  }
 }
+// I:{
+   //soundFile: '/sounds/i.mp3',
+   //imageFile: '/images/activity-images/ika.png',
+ //}
