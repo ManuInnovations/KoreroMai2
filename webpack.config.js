@@ -1,46 +1,36 @@
-var webpack = require('webpack');
-var path = require('path');
+const path = require('path')
+
+const PATHS = {
+  entry: path.join(__dirname, '/src/index.js'),
+  output: path.join(__dirname, '/public')
+}
 
 module.exports = {
-    devtool: 'inline-source-map',
-    entry: [
-        'webpack-dev-server/client?http://127.0.0.1:4444/',
-        'webpack/hot/only-dev-server',
-        './src'
-    ],
-    output: {
-        path: path.join(__dirname, 'public'),
-        filename: 'bundle.js'
-    },
-    resolve: {
-        modules: ['node_modules', 'src'],
-        extensions: ['.js']
-    },
-    module: {
-        rules: [
-        {
-            test: /\.jsx?$/,
-            exclude: /node_modules/,
-            use: ['react-hot-loader', 'babel-loader']
-        }
-        ]
-    },
-/*    plugins: [
-        new webpack.HotModuleReplacementPlugin(),
-        new webpack.NoErrorsPlugin()
-    ]*/
-};
+  entry: PATHS.entry,
 
+  output: {
+    path: PATHS.output,
+    filename: 'bundle.js',
+  },
 
-//boilerplate code for webpack setup
-//path helps manipulate path names easily
+  devServer: {
+    contentBase: PATHS.output,
+    inline: true
+  },
 
-//devtool provides line numbers for showing errors
-//entry is where webpack looks for the files
-//src is where it will look for the initial file to run. No file name so by default it looks for index.js
-//output - webpack would output files here, but this is just for production.
-//bundle.js is standard
-//resolve is where webpack looks for the files to bundle
-//module loaders - just need js files for this.
-//react-hot is for hot reloading
-//plugins, HotModuleReplacementPlugin for hot reloading
+  module: {
+    loaders: [
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        loader: 'babel-loader'
+      },
+      { test: /\.css$/, loader: 'style-loader!css-loader' }
+    ]
+  },
+
+  plugins: [
+  ],
+
+  devtool: 'eval-source-map'
+}

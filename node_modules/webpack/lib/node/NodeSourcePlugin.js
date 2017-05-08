@@ -2,16 +2,33 @@
 	MIT License http://www.opensource.org/licenses/mit-license.php
 	Author Tobias Koppers @sokra
 */
-var AliasPlugin = require("enhanced-resolve/lib/AliasPlugin");
-var ParserHelpers = require("../ParserHelpers");
+var ModuleAliasPlugin = require("enhanced-resolve/lib/ModuleAliasPlugin");
+var ModuleParserHelpers = require("../ModuleParserHelpers");
 var nodeLibsBrowser = require("node-libs-browser");
+var path = require("path");
 
 function NodeSourcePlugin(options) {
 	this.options = options;
 }
 module.exports = NodeSourcePlugin;
 NodeSourcePlugin.prototype.apply = function(compiler) {
-	var options = this.options;
+	var parser = compiler.parser;
+
+	function buildExpression(context, pathToModule) {
+		var moduleJsPath = path.relative(context, pathToModule);
+		if(!/^[A-Z]:/i.test(moduleJsPath)) {
+			moduleJsPath = "./" + moduleJsPath.replace(/\\/g, "/");
+		}
+		return "require(" + JSON.stringify(moduleJsPath) + ")";
+	}
+
+	function addExpression(parser, name, module, type, suffix) {
+		suffix = suffix || "";
+		parser.plugin("expression " + name, function() {
+			if(this.state.module && this.state.module.resource === getPathToModule(module, type)) return;
+			return ModuleParserHelpers.addParsedVariable(this, name, buildExpression(this.state.module.context, getPathToModule(module, type)) + suffix);
+		});
+	}
 
 	function getPathToModule(module, type) {
 		if(type === true || (type === undefined && nodeLibsBrowser[module])) {
@@ -24,61 +41,45 @@ NodeSourcePlugin.prototype.apply = function(compiler) {
 		} else return module;
 	}
 
-	function addExpression(parser, name, module, type, suffix) {
-		suffix = suffix || "";
-		parser.plugin("expression " + name, function() {
-			if(this.state.module && this.state.module.resource === getPathToModule(module, type)) return;
-			var mockModule = ParserHelpers.requireFileAsExpression(this.state.module.context, getPathToModule(module, type));
-			return ParserHelpers.addParsedVariableToModule(this, name, mockModule + suffix);
+	if(this.options.global) {
+		compiler.parser.plugin("expression global", function() {
+			this.state.module.addVariable("global", "(function() { return this; }())");
+			return true;
 		});
 	}
-
-	compiler.plugin("compilation", function(compilation, params) {
-		params.normalModuleFactory.plugin("parser", function(parser, parserOptions) {
-
-			if(parserOptions.node === false)
-				return;
-
-			var localOptions = options;
-			if(parserOptions.node)
-				localOptions = Object.assign({}, localOptions, parserOptions.node);
-
-			if(localOptions.global) {
-				parser.plugin("expression global", function() {
-					var retrieveGlobalModule = ParserHelpers.requireFileAsExpression(this.state.module.context, require.resolve("../../buildin/global.js"));
-					return ParserHelpers.addParsedVariableToModule(this, "global", retrieveGlobalModule);
-				});
-			}
-			if(localOptions.process) {
-				var processType = localOptions.process;
-				addExpression(parser, "process", "process", processType);
-			}
-			if(localOptions.console) {
-				var consoleType = localOptions.console;
-				addExpression(parser, "console", "console", consoleType);
-			}
-			var bufferType = localOptions.Buffer;
-			if(bufferType) {
-				addExpression(parser, "Buffer", "buffer", bufferType, ".Buffer");
-			}
-			if(localOptions.setImmediate) {
-				var setImmediateType = localOptions.setImmediate;
-				addExpression(parser, "setImmediate", "timers", setImmediateType, ".setImmediate");
-				addExpression(parser, "clearImmediate", "timers", setImmediateType, ".clearImmediate");
-			}
-		});
-	});
+	if(this.options.process) {
+		var processType = this.options.process;
+		addExpression(parser, "process", "process", processType);
+	}
+	if(this.options.console) {
+		var consoleType = this.options.console;
+		addExpression(parser, "console", "console", consoleType);
+	}
+	var bufferType = this.options.Buffer;
+	if(typeof bufferType === "undefined") {
+		bufferType = this.options.buffer;
+		if(typeof bufferType === "undefined")
+			bufferType = true;
+	}
+	if(bufferType) {
+		addExpression(parser, "Buffer", "buffer", bufferType, ".Buffer");
+	}
+	if(this.options.setImmediate) {
+		var setImmediateType = this.options.setImmediate;
+		addExpression(parser, "setImmediate", "timers", setImmediateType, ".setImmediate");
+		addExpression(parser, "clearImmediate", "timers", setImmediateType, ".clearImmediate");
+	}
+	var options = this.options;
 	compiler.plugin("after-resolvers", function(compiler) {
+		var alias = {};
 		Object.keys(nodeLibsBrowser).forEach(function(lib) {
-			if(options[lib] !== false) {
-				compiler.resolvers.normal.apply(
-					new AliasPlugin("described-resolve", {
-						name: lib,
-						onlyModule: true,
-						alias: getPathToModule(lib, options[lib])
-					}, "resolve")
-				);
-			}
+			if(options[lib] !== false)
+				alias[lib + "$"] = getPathToModule(lib, options[lib]);
 		});
+		if(Object.keys(alias).length > 0) {
+			compiler.resolvers.normal.apply(
+				new ModuleAliasPlugin(alias)
+			);
+		}
 	});
 };

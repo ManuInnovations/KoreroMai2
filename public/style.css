@@ -1,0 +1,85 @@
+/** GENERAL STYLES */
+
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  min-height: 100vh;
+}
+
+.content {
+  flex: 1;
+  min-height: 86vh;
+  background-color: #7CFC00;
+  text-align: center;
+}
+
+img {
+  padding: 0;
+  margin: 0;
+}
+
+/** NAVIGATION STYLES */
+
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #ff6600;
+    font-size: 1.5rem;
+}
+
+ul.topnav li {
+    float: left;
+}
+
+ul.topnav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul.topnav li a:hover {
+    background-color: #0000ff;
+}
+
+ul.topnav li.nav-right {
+  float: right;
+}
+
+.brand {
+  font-style: italic;
+}
+
+@media screen and (max-width: 600px){
+  ul.topnav li.nav-right,
+  ul.topnav li {
+    float: none;
+    font-size: 1rem;
+  }
+  .brand {display:none;}
+}
+
+/** FOOTER STYLES */
+
+.footer {
+  padding: 20px;
+  background-color: purple;
+  color: white;
+  text-align: center;
+}
+
+@media screen and (max-width: 600px){
+  .content {
+    min-height: 66vh;
+  }
+}
