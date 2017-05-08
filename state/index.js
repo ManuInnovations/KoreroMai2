@@ -1,24 +1,23 @@
-import { routerMiddleware, push } from 'react-router-redux'
-
 module.exports = {
 
-  letters: {
-   A:{},
-   E:{},
-   H:{},
-   K:{},
-   M:{},
-   N:{},
-   Ng:{},
-   O:{},
-   P:{},
-   R:{},
-   T:{},
-   U:{},
-   W:{},
-   Wh:{},
-   I:{}
-  }
+  letters: [
+   'A',
+   'E',
+   'H',
+   'K',
+   'M',
+   'N',
+   'Ng',
+   'O',
+   'P',
+   'R',
+   'T',
+   'U',
+   'W',
+   'Wh',
+   'I'
+ ]
+
 }
 // I:{
    //soundFile: '/sounds/i.mp3',
