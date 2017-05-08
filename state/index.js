@@ -17,5 +17,5 @@ module.exports = {
      lowercase: 'h'
    }
  ],
- route:{}
+ singleLetter:{}
 }
