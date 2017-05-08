@@ -10,33 +10,13 @@ class letters extends React.Component{
   //this is how we define functions in an class/object
   render(){
     debug(this.props)
-    const { dispatch, letters } = this.props
+    const { dispatch, letter } = this.props
 
-    console.log('letters this.props ', this.props)
+console.log('letters this.props', this.props)
 
     return(
       <div>
-      {
-        letters.map((letter) => {
-          return (
-            <Link to='/letters/:id'>
-            <button
-            onClick={
-              () => {
-                store.dispatch({
-                  type: 'CHANGE_ROUTE',
-                  payload: letter
-                })
-              }
-            }>
-
-            {letter}
-
-            </button>
-            </Link>
-          )
-        })
-      }
+    <p>Want to render the Capital and Lowercase of the letter that was clicked on and it should also show in the url</p>
       </div>
     )
   }
