@@ -16,7 +16,7 @@ const initialState = require('../state')
 // top level components
 const App = require('./app')
 const Home = require('./components/home')
-const Alphabet = require('./components/alphabet')
+const Letters = require('./components/letters')
 
 const store = createStore(reducer, initialState)
 
@@ -27,7 +27,7 @@ const Root = ({store}) => {
       <Router history={hashHistory} >
         <Route path="/" component={App} store={store}>
           <IndexRoute component={Home} />
-          <Route path="/alphabet" component={Alphabet} />
+          <Route path="/letters" component={Letters} />
         </Route>
       </Router>
     </Provider>

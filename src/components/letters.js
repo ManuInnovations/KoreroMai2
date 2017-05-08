@@ -1,10 +1,10 @@
-const debug = require('debug')('components:alphabet')
+const debug = require('debug')('components:letters')
 const React = require('react')
 const { connect } = require('react-redux')
 const request = require('superagent');
 
 
-class alphabet extends React.Component{
+class letters extends React.Component{
   //this is how we define functions in an class/object
   render(){
     debug(this.props)
@@ -26,4 +26,4 @@ class alphabet extends React.Component{
 
 }
 
-module.exports = connect((state) => state)(alphabet)
+module.exports = connect((state) => state)(letters)

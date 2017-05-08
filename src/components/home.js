@@ -1,6 +1,7 @@
 const debug = require('debug')('components:home')
 const React = require('react')
 const { connect } = require('react-redux')
+const { Link } = require('react-router')
 const request = require('superagent');
 
 
@@ -14,7 +15,12 @@ class home extends React.Component{
       <div>
         <h1>Nau mai, haere mai</h1>
         <h2>Learn te reo Māori</h2>
-        <button onClick={this.handleClick.bind(this)} className='button'>Play!</button>
+
+        <Link to="/letters">
+          <button name="play" id="letters" className="button">
+            Play!
+          </button>
+        </Link>
       </div>
     )
   }

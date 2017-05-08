@@ -1,12 +1,16 @@
 const debug = require('debug')('components:app')
 const _ = require('lodash')
-const React = require('react')
 
+//modules
+const React = require('react')
 const { connect } = require('react-redux')
 const { Link } = require('react-router')
 
+//components
 const Nav = require('./components/nav')
 const Footer = require('./components/footer')
+
+
 
 const App = (props) => {
   debug({props})
@@ -23,3 +27,4 @@ const App = (props) => {
 }
 
 module.exports = connect((state) => state)(App)
+// App will now have the state and store.dispatch merged into its props
