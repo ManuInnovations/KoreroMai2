@@ -6,17 +6,21 @@ const { Link } = require('react-router')
 
 
 
-class letters extends React.Component{
+class letter extends React.Component{
   //this is how we define functions in an class/object
   render(){
     debug(this.props)
-    const { dispatch, letter } = this.props
+    const { dispatch, letters } = this.props
+    const capital = this.props.capital
+    const lowercase = this.props.lowercase
 
-console.log('letters this.props', this.props)
+    console.log('Single letter this.props', this.props)
 
     return(
       <div>
-    <p>Want to render the Capital and Lowercase of the letter that was clicked on and it should also show in the url</p>
+        <p>Want to render the Capital and Lowercase of the letter that was clicked on and it should also show in the url</p>
+        <h1>{capital}</h1>
+        <h1>{lowercase}</h1>
       </div>
     )
   }
@@ -30,4 +34,4 @@ console.log('letters this.props', this.props)
 
 }
 
-module.exports = connect((state) => state)(letters)
+module.exports = connect((state) => state)(letter)

@@ -8,6 +8,7 @@ const React = require('react')
 const ReactDOM = require('react-dom')
 const { Provider } = require('react-redux')
 const { createStore } = require('redux')
+const createHistory = require('history').createHashHistory
 const { Router, Route, IndexRoute, hashHistory } = require('react-router')
 
 const reducer = require('./reducer')
@@ -22,7 +23,7 @@ const Letter = require('./components/letter')
 const store = createStore(reducer, initialState)
 
 const Root = ({store}) => {
-  console.log("store " ,store);
+  console.log('store ' ,store);
   return (
     <Provider store={store} >
       <Router history={hashHistory} >
