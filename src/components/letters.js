@@ -13,31 +13,28 @@ class letters extends React.Component{
 
     return(
       <div>
-      {
-        letters.map((letter) => {
-          return (
-            <Link to='/letters/:id'>
-            <button
-            onClick={
-              () => {
-                store.dispatch({
-                  type: 'CHANGE_ROUTE',
-                  payload: letter
-                })
-              }
-            }>
-
-            {letter}
-
-            </button>
-            </Link>
-          )
-        })
-      }
+        {
+          letters.map((letter) => {
+            return (
+              <Link to={`/letters/${letter.id}`}>
+                <button
+                  onClick={() => {
+                      store.dispatch({
+                        type: 'CHANGE_ROUTE',
+                        payload: letter
+                      })
+                    }
+                  }> {letter.lowercase}
+                </button>
+              </Link>
+            )
+          })
+        }
       </div>
     )
   }
 
+  // {letter}
   handleClick(e){
     //by default button onClicks will want to refresh the page and eventListener
     e.preventDefault()
