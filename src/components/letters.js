@@ -24,7 +24,7 @@ class letters extends React.Component{
                         payload: letter
                       })
                     }
-                  }> {letter.lowercase}
+                  }> {letter.capital}
                 </button>
               </Link>
             )
