@@ -12,7 +12,7 @@ class footer extends React.Component{
 
     return(
       <div>
-        <footer className="footer">&copy; Manu Innovations Ltd. 2017</footer>
+        <footer className="footer">&copy; Manu Innovations Ltd. 2017  | Privacy |</footer>
       </div>
     )
   }

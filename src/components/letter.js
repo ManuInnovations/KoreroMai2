@@ -11,17 +11,13 @@ class letter extends React.Component{
   render(){
     debug(this.props)
     const { dispatch, letters } = this.props
-    const capital = this.props.capital
-    const lowercase = this.props.lowercase
-
-    console.log('Single letter this.props', this.props)
+    console.log('Letter - this.props', this.props);
 
     return(
       <div>
-        <p>Want to render the Capital and Lowercase of the letter that was clicked on and it should also show in the url</p>
-        <h1>{capital}</h1>
-        <h1>{lowercase}</h1>
-      </div>
+        <p>Want to render the Capital and Lowercase of the letter that was clicked on</p>
+        <p>Can click on the capital or lowercase and hear a sound of the letter pronounced - capital is adult voice, lowercase is child's voice</p>
+    </div>
     )
   }
 

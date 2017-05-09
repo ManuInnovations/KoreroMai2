@@ -10,8 +10,6 @@ const { Link } = require('react-router')
 const Nav = require('./components/nav')
 const Footer = require('./components/footer')
 
-
-
 const App = (props) => {
   debug({props})
 
