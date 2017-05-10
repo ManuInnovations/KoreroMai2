@@ -13,21 +13,37 @@ class nav extends React.Component{
     return(
       <div>
         <ul className="topnav">
-          <li><a href="#"><i className="fa fa-home" aria-hidden="true"></i></a></li>
-          <li className="brand"><a href="#">Korero Mai</a></li>
-          <li className="nav-right"><a href="#">Contact</a></li>
-          <li className="nav-right"><a href="#">About</a></li>
-          <li className="nav-right"><a href="#"><img src="images/abc.png" /></a></li>
-        </ul>
-      </div>
-    )
-  }
+          <li>
+            <a href="#">
+              <i className="fa fa-home" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li className="brand">
+            <a href="#">Kōrero Mai</a>
+          </li>
+          <li className="nav-right">
+            <a href="/contact">
+              <i className="fa fa-comments-o" aria-hidden="true"></i> Contact
+            </a>
+          </li>
+          <li className="nav-right">
+            <a href="/about">
+              <i className="fa fa-question" aria-hidden="true"></i> About
+            </a>
+          </li>
+          <li className="nav-right">
+            <a href="/letters"><img src="images/abc.png" /></a>
+          </li>
+    </ul>
+  </div>
+)
+}
 
-  handleClick(e){
-    //by default button onClicks will want to refresh the page and eventListener
-    e.preventDefault()
-    this.props.router.push(`/`)
-  }
+handleClick(e){
+  //by default button onClicks will want to refresh the page and eventListener
+  e.preventDefault()
+  this.props.router.push(`/`)
+}
 
 
 }

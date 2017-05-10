@@ -2,6 +2,7 @@ const debug = require('debug')('components:footer')
 const React = require('react')
 const { connect } = require('react-redux')
 const request = require('superagent');
+const { Link } = require('react-router')
 
 
 class footer extends React.Component{
@@ -12,7 +13,7 @@ class footer extends React.Component{
 
     return(
       <div>
-        <footer className="footer">&copy; Manu Innovations Ltd. 2017  | Privacy |</footer>
+        <footer className="footer">&copy; Manu Innovations Ltd. 2017  | <Link to='/privacy' id="privacy">Privacy</Link> |</footer>
       </div>
     )
   }

@@ -1,11 +1,11 @@
 <<<<<<< HEAD
-# koreroMai2
+# kōreroMai2
 This is the future of learning
 
 #Learning
 https://www.youtube.com/watch?v=IR6smI_YJDE
 =======
-# Korero Mai - Learn te reo Maori Phonics
+# kōrero Mai - Learn te reo Maori Phonics
 
 This app is aimed at Primary aged children, as a tool to help them learn te reo Maori phonics and high-usage words.
 

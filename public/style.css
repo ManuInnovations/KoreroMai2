@@ -73,9 +73,18 @@ ul.topnav li.nav-right {
 
 .footer {
   padding: 20px;
-  background-color: purple;
-  color: white;
+  background-color: #bd1ebd;
+  color: #ffffff;
   text-align: center;
+}
+
+#privacy {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.privacy-policy {
+  text-align: left;
 }
 
 @media screen and (max-width: 600px){

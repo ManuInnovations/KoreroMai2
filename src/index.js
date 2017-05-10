@@ -19,6 +19,8 @@ const App = require('./app')
 const Home = require('./components/home')
 const Letters = require('./components/letters')
 const Letter = require('./components/letter')
+const Privacy = require('./components/privacy')
+
 
 const store = createStore(reducer, initialState)
 
@@ -31,6 +33,7 @@ const Root = ({store}) => {
           <IndexRoute component={Home} />
           <Route path="/letters" component={Letters} />
           <Route path="/letters/:id" component={Letter} />
+          <Route path="/privacy" component={Privacy} />
         </Route>
       </Router>
     </Provider>
