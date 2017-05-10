@@ -93,3 +93,14 @@ ul.topnav li.nav-right {
     min-height: 66vh;
   }
 }
+
+/** ABOUT */
+
+.about {
+  text-align: left;
+  padding: 3em;
+}
+
+.contact {
+text-align: center;
+}
