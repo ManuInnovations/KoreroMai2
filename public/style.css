@@ -49,8 +49,7 @@ ul.topnav li a {
 }
 
 ul.topnav li a:hover {
-    background-color: #0000ff;
-}
+  color: #0000ff;}
 
 ul.topnav li.nav-right {
   float: right;
@@ -58,6 +57,9 @@ ul.topnav li.nav-right {
 
 .brand {
   font-style: italic;
+  color: #0000ff;
+  padding-top: 18px;
+  text-align: center;
 }
 
 @media screen and (max-width: 600px){
@@ -66,7 +68,6 @@ ul.topnav li.nav-right {
     float: none;
     font-size: 1rem;
   }
-  .brand {display:none;}
 }
 
 /** FOOTER STYLES */
