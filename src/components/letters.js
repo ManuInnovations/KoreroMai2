@@ -17,7 +17,7 @@ class letters extends React.Component{
           letters.map((letter) => {
             return (
 
-              <Link to={`/letters/${letter.capital}`}>
+              <Link key={letter.id} to={`/letters/${letter.capital}`}>
                 <button
                   onClick={() => {
                       store.dispatch({
@@ -45,3 +45,6 @@ class letters extends React.Component{
 }
 
 module.exports = connect((state) => state)(letters)
+
+
+//TODO store is not defined error message
