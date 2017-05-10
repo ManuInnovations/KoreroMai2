@@ -20,20 +20,21 @@ const Home = require('./components/home')
 const Letters = require('./components/letters')
 const Letter = require('./components/letter')
 const Privacy = require('./components/privacy')
+const About = require('./components/about')
 
 
 const store = createStore(reducer, initialState)
 
 const Root = ({store}) => {
-  console.log('store ' ,store);
   return (
     <Provider store={store} >
       <Router history={hashHistory} >
         <Route path="/" component={App} store={store}>
           <IndexRoute component={Home} />
-          <Route path="/letters" component={Letters} />
-          <Route path="/letters/:id" component={Letter} />
-          <Route path="/privacy" component={Privacy} />
+          <Route path="letters" component={Letters} />
+          <Route path="letters/:id" component={Letter} />
+          <Route path="privacy" component={Privacy} />
+          <Route path="about" component={About} />
         </Route>
       </Router>
     </Provider>
