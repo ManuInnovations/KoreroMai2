@@ -23,8 +23,8 @@ class letters extends React.Component{
             return (
 
               <Link key={letter.id} to={`/letters/${letter.capital}`}>
-                <div className="btn-group btn-group-lg btn-group-center" role="group" aria-label="...">
-                  <button type="button" className="btn btn-default"
+                <div className="btn-group btn-group-lg btn-group-center wiggle-me" role="group" aria-label="...">
+                  <button type="button" className="btn"
                     onClick={() => {
                         store.dispatch({
                           type: 'CHANGE_ROUTE',

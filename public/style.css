@@ -28,7 +28,23 @@ img {
 .btn {
   margin-right: 10px;
   margin-top: 5px;
+  color: white;
+  background-color: blue;
 }
+
+
+@-ms-keyframes     wiggle{0%{-ms-transform:rotate(5deg);}50%{-ms-transform:rotate(-5deg);}100%{-ms-transform:rotate(5deg);}}
+@-moz-keyframes wiggle{0%{-moz-transform:rotate(5deg);}50%{-moz-transform:rotate(-5deg);}100%{-moz-transform:rotate(5deg);}}
+@-webkit-keyframes wiggle{0%{-webkit-transform:rotate(5deg);}50%{-webkit-transform:rotate(-5deg);}100%{-webkit-transform:rotate(5deg);}}
+@keyframes wiggle{0%{transform:rotate(5deg);}50%{transform:rotate(-5deg);}100%{transform:rotate(5deg);}}
+
+.wiggle-me:hover {
+  -ms-animation:wiggle .3s 2;
+  -moz-animation:wiggle .3s 2;
+  -webkit-animation:wiggle .3s 2;
+  animation:wiggle .3s 2;
+}
+
 
 /** NAVIGATION STYLES */
 
