@@ -11,7 +11,7 @@ const { createStore } = require('redux')
 const createHistory = require('history').createHashHistory
 const { Router, Route, IndexRoute, hashHistory } = require('react-router')
 
-const reducer = require('./reducer')
+const reducer = require('./reducers')
 const initialState = require('../state')
 
 // top level components

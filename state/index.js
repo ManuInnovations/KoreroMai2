@@ -77,5 +77,5 @@ module.exports = {
      lowercase: 'wh'
    },
  ],
- singleLetter:{}
+ letter:{}
 }

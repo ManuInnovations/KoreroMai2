@@ -13,7 +13,7 @@ class footer extends React.Component{
 
     return(
       <div>
-        <footer className="footer">&copy; Manu Innovations Ltd. 2017  | <Link to='/privacy' id="privacy">Privacy</Link> |</footer>
+        <footer className="footer">&copy; Manu Innovations Ltd. 2017  | <Link to='/privacy' id="privacy">Privacy Policy</Link> |</footer>
       </div>
     )
   }
