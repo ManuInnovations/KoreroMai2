@@ -16,7 +16,7 @@ class nav extends React.Component{
         <ul className="topnav">
           <li>
             <Link to='#'>
-              <i className="fa fa-home" aria-hidden="true"></i>
+              <span className="glyphicon glyphicon-home" aria-hidden="true"></span>
             </Link>
           </li>
           <li className="brand">
@@ -48,3 +48,8 @@ handleClick(e){
 }
 
 module.exports = connect((state) => state)(nav)
+
+//
+// <button type="button" class="btn btn-default btn-lg">
+//   <span class="glyphicon glyphicon-star" aria-hidden="true"></span> Star
+// </button>

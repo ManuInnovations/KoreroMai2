@@ -14,7 +14,7 @@ const App = (props) => {
   debug({props})
 
   return (
-    <div>
+    <div className="container">
         <Nav />
         <div className="content">
           {props.children}

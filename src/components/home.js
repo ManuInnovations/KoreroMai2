@@ -17,7 +17,7 @@ class home extends React.Component{
         <h2>Learn te reo Māori</h2>
 
         <Link to="/letters">
-          <button name="play" id="letters" className="button">
+          <button name="play" id="letters" className="btn btn-default">
             Play!
           </button>
         </Link>

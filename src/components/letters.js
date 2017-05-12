@@ -11,26 +11,34 @@ class letters extends React.Component{
     const { dispatch, letters } = this.props
     console.log('letters this.props ', this.props)
 
+
+
+
+
     return(
-      <div>
+      <div className="row">
+        <div className="col-sm-12">
         {
           letters.map((letter) => {
             return (
 
               <Link key={letter.id} to={`/letters/${letter.capital}`}>
-                <button
-                  onClick={() => {
-                      store.dispatch({
-                        type: 'CHANGE_ROUTE',
-                        payload: letter
-                      })
-                    }
-                  }> {letter.capital}
-                </button>
+                <div className="btn-group btn-group-lg btn-group-center" role="group" aria-label="...">
+                  <button type="button" className="btn btn-default"
+                    onClick={() => {
+                        store.dispatch({
+                          type: 'CHANGE_ROUTE',
+                          payload: letter
+                        })
+                      }
+                    }> {letter.capital}
+                  </button>
+                </div>
               </Link>
             )
           })
         }
+        </div>
       </div>
     )
   }
