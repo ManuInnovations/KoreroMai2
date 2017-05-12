@@ -11,10 +11,6 @@ class letters extends React.Component{
     const { dispatch, letters } = this.props
     console.log('letters this.props ', this.props)
 
-
-
-
-
     return(
       <div className="row">
         <div className="col-sm-12">

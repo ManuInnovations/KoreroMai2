@@ -22,12 +22,12 @@ class about extends React.Component{
         </div>
         <div className='purpose'>
           <h2>How this came about</h2>
-          <h3>Janie has two tamariki who attend bilingual classes at Koraunui Primary School in Lower Hutt. One day their teacher shared her wish for an app to help her students learn te reo Māori phonics - and this sparked the idea for Kōrero Mai.</h3>
-          <h3>Koraunui Primary School has been a huge help in the development of this app, as well as providing voices and video footage. Ngā mihi nui ki a koutou!</h3>
+          <h4>Janie has two tamariki who attend bilingual classes at Koraunui Primary School in Lower Hutt. One day their teacher shared her wish for an app to help her students learn te reo Māori phonics - and this sparked the idea for Kōrero Mai.</h4>
+          <h4>Koraunui Primary School has been a huge help in the development of this app, as well as providing voices and video footage. Ngā mihi nui ki a koutou!</h4>
         </div>
         <div className='contact'>
-          <h3>Please get in touch via Email: hello@manu.net.nz</h3>
-          <h3>To find out more about Manu: www.manu.net.nz</h3>
+          <h4>Please get in touch via Email: hello@manu.net.nz</h4>
+          <h4>To find out more about Manu: www.manu.net.nz</h4>
         </div>
       </div>
     )

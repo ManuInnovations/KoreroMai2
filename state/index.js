@@ -4,27 +4,32 @@ module.exports = {
    {
      id: 1,
      capital: 'A',
-     lowercase: 'a'
+     lowercase: 'a',
+     soundFile: '/sounds/a.mp3'
    },
    {
      id: 2,
      capital: 'E',
-     lowercase: 'e'
+     lowercase: 'e',
+     soundFile: '/sounds/e.mp3'
    },
    {
      id: 3,
      capital: 'H',
-     lowercase: 'h'
+     lowercase: 'h',
+     soundFile: '/sounds/h.mp3'
    },
    {
      id: 4,
      capital: 'I',
-     lowercase: 'i'
+     lowercase: 'i',
+     soundFile: '/sounds/i.mp3'
    },
    {
      id: 5,
      capital: 'K',
-     lowercase: 'k'
+     lowercase: 'k',
+     soundFile: '/sounds/k.mp3'
    },
    {
      id: 6,
@@ -34,48 +39,57 @@ module.exports = {
    {
      id: 7,
      capital: 'N',
-     lowercase: 'n'
+     lowercase: 'n',
+     soundFile: '/sounds/n.mp3',
    },
    {
      id: 8,
      capital: 'Ng',
-     lowercase: 'ng'
+     lowercase: 'ng',
+     soundFile: '/sounds/ng.mp3'
    },
    {
      id: 9,
      capital: 'O',
-     lowercase: 'o'
+     lowercase: 'o',
+     soundFile: '/sounds/o.mp3'
    },
    {
      id: 10,
      capital: 'P',
-     lowercase: 'p'
+     lowercase: 'p',
+     soundFile: '/sounds/p.mp3',
    },
    {
      id: 11,
      capital: 'R',
-     lowercase: 'r'
+     lowercase: 'r',
+     soundFile: '/sounds/r.mp3'
    },
    {
      id: 12,
      capital: 'T',
-     lowercase: 't'
+     lowercase: 't',
+     soundFile: '/sounds/t.mp3'
    },
    {
      id: 13,
      capital: 'U',
-     lowercase: 'u'
+     lowercase: 'u',
+     soundFile: '/sounds/u.mp3'
    },
    {
      id: 14,
      capital: 'W',
-     lowercase: 'w'
+     lowercase: 'w',
+     soundFile: '/sounds/w.mp3'
    },
    {
      id: 15,
      capital: 'Wh',
-     lowercase: 'wh'
-   },
+     lowercase: 'wh',
+     soundFile: '/sounds/wh.mp3'
+   }
  ],
  letter:{}
 }
