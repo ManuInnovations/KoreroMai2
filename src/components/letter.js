@@ -1,4 +1,4 @@
-const debug = require('debug')('components:letters')
+const debug = require('debug')('components:letter')
 const React = require('react')
 const { connect } = require('react-redux')
 const request = require('superagent');
@@ -11,11 +11,12 @@ class letter extends React.Component{
   render(){
     debug(this.props)
     const { dispatch, letter } = this.props
-    console.log('Letter - this.props', this.props);
-    console.log('letter.capital', letter.letter.letter);
+    const singleLetter = letter.letter.letter
+    console.log('singleLetter', singleLetter);
     return(
       <div>
-        <h1>{letter.letter.letter.capital}</h1>
+        <h1>{singleLetter.capital}</h1>
+        <h1>{singleLetter.lowercase}</h1>
       </div>
     )
   }
