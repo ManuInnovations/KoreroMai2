@@ -7,7 +7,7 @@ module.exports = {
       capital: 'A',
       lowercase: 'a',
       capitalSound: '/sounds/a.mp3',
-      lowerSound: '',
+      lowerSound: '/sounds/lowerSounds/a.mp3',
       word: 'Āniwaniwa',
       wordImage: 'images/words/aniwaniwa.png',
       wordSound: '/sounds/aniwaniwa.mp3',
@@ -17,7 +17,7 @@ module.exports = {
       capital: 'E',
       lowercase: 'e',
       capitalSound: '/sounds/e.mp3',
-      lowerSound: '',
+      lowerSound: '/sounds/lowerSounds/e.mp3',
       word: 'Ēkara',
       wordImage: 'images/words/ekara.png',
       wordSound: '/sounds/ekara.mp3'
@@ -27,7 +27,7 @@ module.exports = {
       capital: 'H',
       lowercase: 'h',
       capitalSound: '/sounds/h.mp3',
-      lowerSound: '',
+      lowerSound: '/sounds/lowerSounds/h.mp3',
       word: 'Hōiho',
       wordImage: 'images/words/hoiho.png',
       wordSound: '/sounds/hoiho.mp3'
@@ -37,7 +37,7 @@ module.exports = {
       capital: 'I',
       lowercase: 'i',
       capitalSound: '/sounds/i.mp3',
-      lowerSound: '',
+      lowerSound: '/sounds/lowerSounds/i.mp3',
       word: 'Ika',
       wordImage: 'images/words/ika.png',
       wordSound: '/sounds/ika.mp3'
@@ -47,7 +47,7 @@ module.exports = {
       capital: 'K',
       lowercase: 'k',
       capitalSound: '/sounds/k.mp3',
-      lowerSound: '',
+      lowerSound: '/sounds/lowerSounds/k.mp3',
       word: 'Kōura',
       wordImage: 'images/words/koura.png',
       wordSound: '/sounds/koura.mp3'
@@ -57,7 +57,7 @@ module.exports = {
       capital: 'M',
       lowercase: 'm',
       capitalSound: '/sounds/m.mp3',
-      lowerSound: '',
+      lowerSound: '/sounds/lowerSounds/m.mp3',
       word: 'Maunga',
       wordImage: 'images/words/maunga.png',
       wordSound: '/sounds/maunga.mp3'
@@ -67,7 +67,7 @@ module.exports = {
       capital: 'N',
       lowercase: 'n',
       capitalSound: '/sounds/n.mp3',
-      lowerSound: '',
+      lowerSound: '/sounds/lowerSounds/n.mp3',
       word: 'Nanikoti',
       wordImage: 'images/words/nanikoti.png',
       wordSound: '/sounds/nanikoti.mp3'
@@ -77,7 +77,7 @@ module.exports = {
       capital: 'Ng',
       lowercase: 'ng',
       capitalSound: '/sounds/ng.mp3',
-      lowerSound: '',
+      lowerSound: '/sounds/lowerSounds/ng.mp3',
       word: 'Ngata',
       wordImage: 'images/words/ngata.png',
       wordSound: '/sounds/ngata.mp3'
@@ -87,7 +87,7 @@ module.exports = {
       capital: 'O',
       lowercase: 'o',
       capitalSound: '/sounds/o.mp3',
-      lowerSound: '',
+      lowerSound: '/sounds/lowerSounds/o.mp3',
       word: 'Oru',
       wordImage: 'images/words/oru.png',
       wordSound: '/sounds/oru.mp3'
@@ -97,7 +97,7 @@ module.exports = {
       capital: 'P',
       lowercase: 'p',
       capitalSound: '/sounds/p.mp3',
-      lowerSound: '',
+      lowerSound: '/sounds/lowerSounds/p.mp3',
       word: 'Pūngāwerewere',
       wordImage: 'images/words/pungawerewere.png',
       wordSound: '/sounds/pungawerewere.mp3'
@@ -107,7 +107,7 @@ module.exports = {
       capital: 'R',
       lowercase: 'r',
       capitalSound: '/sounds/r.mp3',
-      lowerSound: '',
+      lowerSound: '/sounds/lowerSounds/r.mp3',
       word: 'Ruru',
       wordImage: 'images/words/ruru.png',
       wordSound: '/sounds/ruru.mp3'
@@ -117,7 +117,7 @@ module.exports = {
       capital: 'T',
       lowercase: 't',
       capitalSound: '/sounds/t.mp3',
-      lowerSound: '',
+      lowerSound: '/sounds/lowerSounds/t.mp3',
       word: 'Tāne-mahuta',
       wordImage: 'images/words/tanemahuta.png',
       wordSound: '/sounds/tanemahuta.mp3'
@@ -127,7 +127,7 @@ module.exports = {
       capital: 'U',
       lowercase: 'u',
       capitalSound: '/sounds/u.mp3',
-      lowerSound: '',
+      lowerSound: '/sounds/lowerSounds/u.mp3',
       word: 'Ua',
       wordImage: 'images/words/ua.png',
       wordSound: '/sounds/ua.mp3'
@@ -137,7 +137,7 @@ module.exports = {
       capital: 'W',
       lowercase: 'w',
       capitalSound: '/sounds/w.mp3',
-      lowerSound: '',
+      lowerSound: '/sounds/lowerSounds/w.mp3',
       word: 'Wētā',
       wordImage: 'images/words/weta.png',
       wordSound: '/sounds/weta.mp3'
@@ -147,7 +147,7 @@ module.exports = {
       capital: 'Wh',
       lowercase: 'wh',
       capitalSound: '/sounds/wh.mp3',
-      lowerSound: '',
+      lowerSound: '/sounds/lowerSounds/wh.mp3',
       word: 'Whānau',
       wordImage: 'images/words/whanau.png',
       wordSound: '/sounds/whananu.mp3'
