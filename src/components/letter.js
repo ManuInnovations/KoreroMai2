@@ -15,9 +15,9 @@ class letter extends React.Component{
     console.log('singleLetter', singleLetter);
     return(
       <div>
-        <h1>{singleLetter.capital}</h1>
-        <h1>{singleLetter.lowercase}</h1>
-<h1>{singleLetter.word}</h1>
+        <button type="button" className="btn btn-lg display">{singleLetter.capital}</button>
+        <button type="button" className="btn btn-lg display">{singleLetter.lowercase}</button><br/>
+<button type="button" className="btn btn-lg display">{singleLetter.word}</button>
         <img src={singleLetter.wordImage} />
       </div>
     )
