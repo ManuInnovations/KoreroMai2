@@ -21,12 +21,11 @@ class letters extends React.Component{
               <Link key={letter.id} to={`/letters/${letter.capital}`}>
                 <div className="btn-group btn-group-lg btn-group-center wiggle-me" role="group" aria-label="...">
                   <button type="button" className="btn"
-                    onClick={() => {
-                        store.dispatch({
-                          type: 'CHANGE_ROUTE',
-                          payload: letter
+                    onClick={() =>
+                        dispatch({
+                          type: 'RENDER_LETTER',
+                          payload: {name:'hello'}
                         })
-                      }
                     }> {letter.capital}
                   </button>
                 </div>
