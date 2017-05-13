@@ -39,7 +39,6 @@ class letters extends React.Component{
     )
   }
 
-  // {letter}
   handleClick(e){
     //by default button onClicks will want to refresh the page and eventListener
     e.preventDefault()
