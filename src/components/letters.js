@@ -26,7 +26,8 @@ class letters extends React.Component{
                           type: 'RENDER_LETTER',
                           payload: {letter}
                         })
-                    }> {letter.capital}
+                    }>
+                    {letter.capital}
                   </button>
                 </div>
               </Link>
