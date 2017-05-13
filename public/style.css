@@ -32,6 +32,10 @@ img {
   background-color: blue;
 }
 
+.btn:hover {
+background-color: red;
+}
+
 
 @-ms-keyframes     wiggle{0%{-ms-transform:rotate(5deg);}50%{-ms-transform:rotate(-5deg);}100%{-ms-transform:rotate(5deg);}}
 @-moz-keyframes wiggle{0%{-moz-transform:rotate(5deg);}50%{-moz-transform:rotate(-5deg);}100%{-moz-transform:rotate(5deg);}}
