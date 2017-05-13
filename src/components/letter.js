@@ -10,14 +10,13 @@ class letter extends React.Component{
   //this is how we define functions in an class/object
   render(){
     debug(this.props)
-    const { dispatch, letters } = this.props
+    const { dispatch, letter } = this.props
     console.log('Letter - this.props', this.props);
-
+    console.log('letter.capital', letter.letter.letter);
     return(
       <div>
-        <p>Want to render the Capital and Lowercase of the letter that was clicked on</p>
-        <p>Can click on the capital or lowercase and hear a sound of the letter pronounced - capital is adult voice, lowercase is childs voice</p>
-    </div>
+        <h1>{letter.letter.letter.capital}</h1>
+      </div>
     )
   }
 

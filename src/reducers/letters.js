@@ -1,6 +1,6 @@
 const clone = require('clone')
 
 
-module.exports = function (state, action) {
+module.exports = function (state=[], action) {
   return state
 }

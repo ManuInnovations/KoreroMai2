@@ -24,7 +24,7 @@ class letters extends React.Component{
                     onClick={() =>
                         dispatch({
                           type: 'RENDER_LETTER',
-                          payload: {name:'hello'}
+                          payload: {letter}
                         })
                     }> {letter.capital}
                   </button>
