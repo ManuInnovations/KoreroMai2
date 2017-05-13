@@ -16,7 +16,7 @@ class letter extends React.Component{
     return(
       <div>
         <p>Want to render the Capital and Lowercase of the letter that was clicked on</p>
-        <p>Can click on the capital or lowercase and hear a sound of the letter pronounced - capital is adult voice, lowercase is child's voice</p>
+        <p>Can click on the capital or lowercase and hear a sound of the letter pronounced - capital is adult voice, lowercase is childs voice</p>
     </div>
     )
   }
