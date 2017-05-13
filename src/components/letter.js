@@ -17,6 +17,7 @@ class letter extends React.Component{
       <div>
         <h1>{singleLetter.capital}</h1>
         <h1>{singleLetter.lowercase}</h1>
+        <img src={singleLetter.wordImage} />
       </div>
     )
   }

@@ -8,8 +8,9 @@ module.exports = {
       lowercase: 'a',
       capitalSound: '/sounds/a.mp3',
       lowerSound: '',
-      word: 'aniwaniwa.png',
-      wordSound: 'aniwaniwa.mp3'
+word: 'Āniwaniwa',
+      wordImage: 'images/words/aniwaniwa.png',
+      wordSound: '/sounds/aniwaniwa.mp3'
     },
     {
       id: 2,
@@ -17,8 +18,9 @@ module.exports = {
       lowercase: 'e',
       capitalSound: '/sounds/e.mp3',
       lowerSound: '',
-      word: 'ekara.png',
-      wordSound: 'ekara.mp3'
+word: 'Ēkara',
+      wordImage: 'images/words/ekara.png',
+      wordSound: '/sounds/ekara.mp3'
     },
     {
       id: 3,
@@ -26,8 +28,9 @@ module.exports = {
       lowercase: 'h',
       capitalSound: '/sounds/h.mp3',
       lowerSound: '',
-      word: 'hoiho.png',
-      wordSound: 'hoiho.mp3'
+word: 'Hōiho',
+      wordImage: 'images/words/hoiho.png',
+      wordSound: '/sounds/hoiho.mp3'
     },
     {
       id: 4,
@@ -35,8 +38,9 @@ module.exports = {
       lowercase: 'i',
       capitalSound: '/sounds/i.mp3',
       lowerSound: '',
-      word: 'ika.png',
-      wordSound: 'ika.mp3'
+word: 'Ika',
+      wordImage: 'images/words/ika.png',
+      wordSound: '/sounds/ika.mp3'
     },
     {
       id: 5,
@@ -44,17 +48,19 @@ module.exports = {
       lowercase: 'k',
       capitalSound: '/sounds/k.mp3',
       lowerSound: '',
-      word: 'koura.png',
-      wordSound: 'koura.mp3'
+word: 'Kōura',
+      wordImage: 'images/words/koura.png',
+      wordSound: '/sounds/koura.mp3'
     },
     {
       id: 6,
       capital: 'M',
       lowercase: 'm',
-capitalSound: '/sounds/m.mp3',
+      capitalSound: '/sounds/m.mp3',
       lowerSound: '',
-      word: 'maunga.png',
-      wordSound: 'maunga.mp3'
+word: 'Maunga',
+      wordImage: 'images/words/maunga.png',
+      wordSound: '/sounds/maunga.mp3'
     },
     {
       id: 7,
@@ -62,8 +68,9 @@ capitalSound: '/sounds/m.mp3',
       lowercase: 'n',
       capitalSound: '/sounds/n.mp3',
       lowerSound: '',
-      word: 'nanikoti.png',
-      wordSound: 'nanikoti.mp3'
+word: 'Nanikoti',
+      wordImage: 'images/words/nanikoti.png',
+      wordSound: '/sounds/nanikoti.mp3'
     },
     {
       id: 8,
@@ -71,8 +78,9 @@ capitalSound: '/sounds/m.mp3',
       lowercase: 'ng',
       capitalSound: '/sounds/ng.mp3',
       lowerSound: '',
-      word: 'ngata.png',
-      wordSound: 'ngata.mp3'
+word: 'Ngata',
+      wordImage: 'images/words/ngata.png',
+      wordSound: '/sounds/ngata.mp3'
     },
     {
       id: 9,
@@ -80,8 +88,9 @@ capitalSound: '/sounds/m.mp3',
       lowercase: 'o',
       capitalSound: '/sounds/o.mp3',
       lowerSound: '',
-      word: 'oru.png',
-      wordSound: 'oru.mp3'
+word: 'Oru',
+      wordImage: 'images/words/oru.png',
+      wordSound: '/sounds/oru.mp3'
     },
     {
       id: 10,
@@ -89,8 +98,9 @@ capitalSound: '/sounds/m.mp3',
       lowercase: 'p',
       capitalSound: '/sounds/p.mp3',
       lowerSound: '',
-      word: 'pungawerewere.png',
-      wordSound: 'pungawerewere.mp3'
+word: 'Pūngāwerewere',
+      wordImage: 'images/words/pungawerewere.png',
+      wordSound: '/sounds/pungawerewere.mp3'
     },
     {
       id: 11,
@@ -98,17 +108,19 @@ capitalSound: '/sounds/m.mp3',
       lowercase: 'r',
       capitalSound: '/sounds/r.mp3',
       lowerSound: '',
-      word: 'ruru.png',
-      wordSound: 'ruru.mp3'
+word: 'Ruru',
+      wordImage: 'images/words/ruru.png',
+      wordSound: '/sounds/ruru.mp3'
     },
     {
       id: 12,
       capital: 'T',
       lowercase: 't',
       capitalSound: '/sounds/t.mp3',
-  lowerSound: '',
-  word: 'tanemahuta.png',
-  wordSound: 'tanemahuta.mp3'
+      lowerSound: '',
+word: 'Tāne-mahuta',
+      wordImage: 'images/words/tanemahuta.png',
+      wordSound: '/sounds/tanemahuta.mp3'
     },
     {
       id: 13,
@@ -116,8 +128,9 @@ capitalSound: '/sounds/m.mp3',
       lowercase: 'u',
       capitalSound: '/sounds/u.mp3',
       lowerSound: '',
-      word: 'ua.png',
-      wordSound: 'ua.mp3'
+      word: 'Ua',
+      wordImage: 'images/words/ua.png',
+      wordSound: '/sounds/ua.mp3'
     },
     {
       id: 14,
@@ -125,8 +138,9 @@ capitalSound: '/sounds/m.mp3',
       lowercase: 'w',
       capitalSound: '/sounds/w.mp3',
       lowerSound: '',
-      word: 'weta.png',
-      wordSound: 'weta.mp3'
+word: 'Wētā',
+      wordImage: 'images/words/weta.png',
+      wordSound: '/sounds/weta.mp3'
     },
     {
       id: 15,
@@ -134,8 +148,9 @@ capitalSound: '/sounds/m.mp3',
       lowercase: 'wh',
       capitalSound: '/sounds/wh.mp3',
       lowerSound: '',
-      word: 'whananu.png',
-      wordSound: 'whananu.mp3'
+word: 'Whānau',
+      wordImage: 'images/words/whananu.png',
+      wordSound: '/sounds/whananu.mp3'
     }
   ],
   letter:{}
