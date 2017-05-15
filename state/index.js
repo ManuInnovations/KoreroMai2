@@ -150,7 +150,7 @@ module.exports = {
       lowerSound: '/sounds/lowerSounds/wh.mp3',
       word: 'Whānau',
       wordImage: 'images/words/whanau.png',
-      wordSound: '/sounds/whananu.mp3'
+      wordSound: '/sounds/whanau.mp3'
     }
   ],
   letter:{}

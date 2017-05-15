@@ -6,11 +6,13 @@ const { Link } = require('react-router')
 
 class letter extends React.Component{
 
-constructor() {
+  constructor() {
     super()
 
     this.playCapital = this.playCapital.bind(this)
     this.playLower = this.playLower.bind(this)
+    this.playWord = this.playWord.bind(this)
+
   }
 
   playCapital(cap) {
@@ -23,23 +25,33 @@ constructor() {
     this.refs[low].play()
   }
 
+  playWord(word) {
+    this.refs[word].load()
+    this.refs[word].play()
+  }
+
 
   render(){
     debug(this.props)
     const cap = 'cap'
     const low = 'low'
+    const word = 'word'
     const { dispatch, letter } = this.props
     const singleLetter = letter.letter.letter
 
     return(
       <div>
-          <audio key={singleLetter.capitalSound} ref={`${cap}`} >
-            <source src={singleLetter.capitalSound} preload='auto' />
-          </audio>
+        <audio key={singleLetter.capitalSound} ref={`${cap}`} >
+          <source src={singleLetter.capitalSound} preload='auto' />
+        </audio>
 
-          <audio key={singleLetter.lowerSound} ref={`${low}`} >
-            <source src={singleLetter.lowerSound} preload='auto' />
-          </audio>
+        <audio key={singleLetter.lowerSound} ref={`${low}`} >
+          <source src={singleLetter.lowerSound} preload='auto' />
+        </audio>
+
+        <audio key={singleLetter.wordSound} ref={`${word}`} >
+          <source src={singleLetter.wordSound} preload='auto' />
+        </audio>
 
         <button type="button" className="btn btn-lg display"
           onClick={() =>
@@ -57,7 +69,10 @@ constructor() {
 
         <br/>
 
-        <button type="button" className="btn btn-lg display">
+        <button type="button" className="btn btn-lg display"
+          onClick={() =>
+            this.playWord(word)
+          }>
           {singleLetter.word}
         </button>
 
@@ -74,4 +89,3 @@ constructor() {
 }
 
 module.exports = connect((state) => state)(letter)
-
