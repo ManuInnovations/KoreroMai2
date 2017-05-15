@@ -60,6 +60,19 @@ background-color: yellow;
   animation:wiggle .3s 2;
 }
 
+#word::first-letter {
+color: red;
+}
+
+#word {
+border: solid 2px grey;
+max-width: 200px;
+margin: auto;
+}
+
+#word:hover {
+cursor: pointer;
+}
 
 /** NAVIGATION STYLES */
 
