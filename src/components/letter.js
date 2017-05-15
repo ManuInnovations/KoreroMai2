@@ -69,12 +69,12 @@ class letter extends React.Component{
 
         <br/>
 
-        <button type="button" className="btn btn-lg display"
+        <h1 id="word"
           onClick={() =>
             this.playWord(word)
           }>
           {singleLetter.word}
-        </button>
+        </h1>
 
         <img src={singleLetter.wordImage} />
 

@@ -41,6 +41,7 @@ background-color: white;
 color: black;
 margin-top: 3em;
 margin-bottom: 2em;
+margin-right: 1em;
 }
 
 .btn.display:hover {
@@ -60,6 +61,25 @@ background-color: yellow;
   animation:wiggle .3s 2;
 }
 
+#word::first-letter {
+color: red;
+text-shadow: 0 0 0.2em #F87, 0 0 0.2em #F87
+}
+
+#word {
+border: solid 2px grey;
+border-radius: 6px;
+max-width: 300px;
+margin: auto;
+background: white;
+padding: 1rem;
+margin-bottom: 1em;
+}
+
+#word:hover {
+cursor: pointer;
+background-color: yellow;
+}
 
 /** NAVIGATION STYLES */
 
