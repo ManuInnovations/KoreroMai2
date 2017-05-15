@@ -82,23 +82,10 @@ class letter extends React.Component{
     )
   }
 
-
   handleClick(e){
     e.preventDefault()
     this.props.router.push(`/`)
   }
-
-
-
 }
 
 module.exports = connect((state) => state)(letter)
-
-//
-// <audio ref={`${cap}`} >
-//   <source src={singleLetter.capitalSound} preload='auto'/>
-// </audio>
-//
-// <audio ref={`${low}`} >
-//   <source src={singleLetter.lowerSound} preload='auto'/>
-// </audio>
