@@ -53,14 +53,14 @@ class letter extends React.Component{
           <source src={singleLetter.wordSound} preload='auto' />
         </audio>
 
-        <button type="button" className="btn btn-lg display"
+        <button type="button" className="btn btn-xl display"
           onClick={() =>
             this.playCapital(cap)
           }>
           {singleLetter.capital}
         </button>
 
-        <button type="button" className="btn btn-lg display"
+        <button type="button" className="btn btn-xl display"
           onClick={() =>
             this.playLower(low)
           }>
@@ -77,6 +77,11 @@ class letter extends React.Component{
         </h1>
 
         <img src={singleLetter.wordImage} />
+
+        <br />
+        <img id="back" src="../../images/back.gif" />
+
+        <img id="next" src="../../images/next.gif" />
 
       </div>
     )

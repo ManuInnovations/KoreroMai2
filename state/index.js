@@ -11,6 +11,7 @@ module.exports = {
       word: 'Āniwaniwa',
       wordImage: 'images/words/aniwaniwa.png',
       wordSound: '/sounds/aniwaniwa.mp3',
+      multimedia: '/multimedia/aniwaniwa.3gp'
     },
     {
       id: 2,

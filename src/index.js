@@ -21,6 +21,8 @@ const Letters = require('./components/letters')
 const Letter = require('./components/letter')
 const Privacy = require('./components/privacy')
 const About = require('./components/about')
+const Multimedia = require('./components/multimedia')
+
 
 
 const store = createStore(reducer, initialState)
@@ -33,6 +35,7 @@ const Root = ({store}) => {
           <IndexRoute component={Home} />
           <Route path="letters" component={Letters} />
           <Route path="letters/:id" component={Letter} />
+          <Route path="letters/:id/watch" component={Multimedia} />
           <Route path="privacy" component={Privacy} />
           <Route path="about" component={About} />
         </Route>

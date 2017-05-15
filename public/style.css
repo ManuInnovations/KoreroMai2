@@ -13,6 +13,12 @@ body {
   min-height: 100vh;
 }
 
+.container {
+width: 100%;
+margin: 0;
+padding: 0;
+}
+
 .content {
   flex: 1;
   min-height: 86vh;
@@ -30,21 +36,28 @@ img {
   margin-top: 5px;
   color: white;
   background-color: blue;
+  padding: 15px 25px;
+  font-size: 35px;
 }
+
 
 .btn:hover {
 background-color: red;
 }
 
-.btn.display {
+.btn-xl {
+    padding: 15px 25px;
+    font-size: 35px;
+    border-radius: 10px;
+border: solid 2px grey;
 background-color: white;
 color: black;
-margin-top: 3em;
-margin-bottom: 2em;
+margin-top: 1.5em;
+margin-bottom: 1.5em;
 margin-right: 1em;
 }
 
-.btn.display:hover {
+.btn-xl:hover {
 background-color: yellow;
 }
 
@@ -73,12 +86,24 @@ max-width: 300px;
 margin: auto;
 background: white;
 padding: 1rem;
-margin-bottom: 1em;
+margin-bottom: .5em;
 }
 
 #word:hover {
 cursor: pointer;
 background-color: yellow;
+}
+
+#next {
+position: absolute;
+right: 15px;
+bottom: 25px;
+}
+
+#back {
+position: absolute;
+left: 15px;
+bottom: 25px;
 }
 
 /** NAVIGATION STYLES */
