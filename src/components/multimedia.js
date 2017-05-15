@@ -9,14 +9,15 @@ class multimedia extends React.Component{
   //this is how we define functions in an class/object
   render(){
     debug(this.props)
-    const { dispatch } = this.props
+    const { dispatch, letter } = this.props
+  const singleLetter = letter.letter.letter
 
     return(
       <div className="container">
-        <div className="videoUiWrapper thumbnail">
-          <video width="370" height="214" id="demo1">
-          <source src="/multimedia/aniwaniwa.3gp" type="video/3gp" />
-          Your browser does not support the video tag.
+        <div className="row col-sm-12">
+          <video controls>
+          <source src={singleLetter.multimedia} type="video/mp4" />
+          Your browser does not support HTML5 video.
           </video>
         </div>
       </div>

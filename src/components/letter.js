@@ -41,6 +41,8 @@ class letter extends React.Component{
 
     return(
       <div>
+        <div className="row col-sm-12">
+
         <audio key={singleLetter.capitalSound} ref={`${cap}`} >
           <source src={singleLetter.capitalSound} preload='auto' />
         </audio>
@@ -79,10 +81,11 @@ class letter extends React.Component{
         <img src={singleLetter.wordImage} />
 
         <br />
-        <img id="back" src="../../images/back.gif" />
+        <Link to="/letters" key={letter.id}><img id="back" src="../../images/back.gif" /></Link>
 
-        <img id="next" src="../../images/next.gif" />
+        <Link to={`/letter/${singleLetter.capital}/watch`} key={letter.id}><img id="next" src="../../images/next.gif" /></Link>
 
+        </div>
       </div>
     )
   }
