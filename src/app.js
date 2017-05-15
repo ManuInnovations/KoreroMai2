@@ -11,6 +11,7 @@ const Nav = require('./components/nav')
 const Footer = require('./components/footer')
 
 const App = (props) => {
+  console.log('this is app.js props', props);
   debug({props})
 
   return (
