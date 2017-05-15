@@ -37,9 +37,9 @@ constructor() {
             <source src={singleLetter.capitalSound} preload='auto' />
           </audio>
 
-  <audio key={singleLetter.lowerSound} ref={`${low}`} >
-    <source src={singleLetter.lowerSound} preload='auto' />
-  </audio>
+          <audio key={singleLetter.lowerSound} ref={`${low}`} >
+            <source src={singleLetter.lowerSound} preload='auto' />
+          </audio>
 
         <button type="button" className="btn btn-lg display"
           onClick={() =>
@@ -67,23 +67,11 @@ constructor() {
     )
   }
 
-
   handleClick(e){
     e.preventDefault()
     this.props.router.push(`/`)
   }
-
-
-
 }
 
 module.exports = connect((state) => state)(letter)
 
-  //
-  // <audio ref={`${cap}`} >
-  //   <source src={singleLetter.capitalSound} preload='auto'/>
-  // </audio>
-  //
-  // <audio ref={`${low}`} >
-  //   <source src={singleLetter.lowerSound} preload='auto'/>
-  // </audio>
