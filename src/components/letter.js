@@ -4,36 +4,62 @@ const { connect } = require('react-redux')
 const request = require('superagent');
 const { Link } = require('react-router')
 
-
-
 class letter extends React.Component{
-  //this is how we define functions in an class/object
+
+constructor() {
+    super()
+
+    this.playCapital = this.playCapital.bind(this)
+    this.playLower = this.playLower.bind(this)
+  }
+
+  playCapital(cap) {
+    this.refs[cap].load()
+    this.refs[cap].play()
+  }
+
+  playLower(low) {
+    this.refs[low].load()
+    this.refs[low].play()
+  }
+
+
   render(){
     debug(this.props)
-    const { dispatch, letter, index } = this.props
+    const cap = 'cap'
+    const low = 'low'
+    const { dispatch, letter } = this.props
     const singleLetter = letter.letter.letter
-    console.log('singleLetter', singleLetter);
+
     return(
       <div>
+          <audio key={singleLetter.capitalSound} ref={`${cap}`} >
+            <source src={singleLetter.capitalSound} preload='auto' />
+          </audio>
 
-        <audio ref={`${index}`} >
-         <source src={singleLetter.capitalSound} preload='auto'/>
-         </audio>
+  <audio key={singleLetter.lowerSound} ref={`${low}`} >
+    <source src={singleLetter.lowerSound} preload='auto' />
+  </audio>
 
         <button type="button" className="btn btn-lg display"
-        onClick={() =>
-          this.playSound(index)
-        }>
+          onClick={() =>
+            this.playCapital(cap)
+          }>
           {singleLetter.capital}
         </button>
 
-        <button type="button" className="btn btn-lg display">
+        <button type="button" className="btn btn-lg display"
+          onClick={() =>
+            this.playLower(low)
+          }>
           {singleLetter.lowercase}
         </button>
 
         <br/>
 
-        <button type="button" className="btn btn-lg display">{singleLetter.word}</button>
+        <button type="button" className="btn btn-lg display">
+          {singleLetter.word}
+        </button>
 
         <img src={singleLetter.wordImage} />
 
@@ -43,28 +69,21 @@ class letter extends React.Component{
 
 
   handleClick(e){
-    //by default button onClicks will want to refresh the page and eventListener
     e.preventDefault()
     this.props.router.push(`/`)
   }
 
-  playSound(index) {
-    this.refs[index].load()
-    this.refs[index].play()
-  }
 
 
 }
 
 module.exports = connect((state) => state)(letter)
 
-
-
-//  <audio ref={`${index}`} >
-//    <source src={`${letters[letter].lowerSound}`} preload='auto'/>
-//  </audio>
-
-
-//<button onClick={() => this.playSound(index)} className='button-radius'>
-//  {letter}
-//</button>
+  //
+  // <audio ref={`${cap}`} >
+  //   <source src={singleLetter.capitalSound} preload='auto'/>
+  // </audio>
+  //
+  // <audio ref={`${low}`} >
+  //   <source src={singleLetter.lowerSound} preload='auto'/>
+  // </audio>
