@@ -74,6 +74,8 @@ img {
   animation:wiggle .3s 2;
 }
 
+/** WORDS AND LETTERS */
+
 #word::first-letter {
   color: red;
   text-shadow: 0 0 0.2em #F87, 0 0 0.2em #F87
@@ -104,6 +106,14 @@ img {
   position: absolute;
   left: 15px;
   bottom: 25px;
+}
+
+.letter-container {
+  background-color: white;
+  width: 90%;
+  margin-left: 4em;
+  margin-top: 3em;
+height: 520px;
 }
 
 /** NAVIGATION STYLES */
@@ -160,7 +170,7 @@ ul.topnav li a:hover {
     text-align: center;
   }
 
-  #privacy {
+  #info {
     color: #ffffff;
     text-decoration: none;
   }
