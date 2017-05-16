@@ -13,7 +13,9 @@ class footer extends React.Component{
 
     return(
       <div>
-        <footer className="footer">&copy; Manu Innovations Ltd. 2017  | <Link to='/privacy' id="privacy">Privacy Policy</Link> |</footer>
+        <footer className="footer">
+          &copy; Manu Innovations Ltd. 2017  | <Link to='/privacy' id="info">Privacy Policy</Link> | <Link to='/about' id="info">About Us</Link>
+        </footer>
       </div>
     )
   }

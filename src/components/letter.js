@@ -40,43 +40,50 @@ class letter extends React.Component{
     const singleLetter = letter.letter
 
     return(
-      <div>
-        <audio key={singleLetter.capitalSound} ref={`${cap}`} >
-          <source src={singleLetter.capitalSound} preload='auto' />
-        </audio>
+      <div className="container">
+        <div className="row col-sm-12 letter-container">
 
-        <audio key={singleLetter.lowerSound} ref={`${low}`} >
-          <source src={singleLetter.lowerSound} preload='auto' />
-        </audio>
+          <audio key={singleLetter.capitalSound} ref={`${cap}`} >
+            <source src={singleLetter.capitalSound} preload='auto' />
+          </audio>
 
-        <audio key={singleLetter.wordSound} ref={`${word}`} >
-          <source src={singleLetter.wordSound} preload='auto' />
-        </audio>
+          <audio key={singleLetter.lowerSound} ref={`${low}`} >
+            <source src={singleLetter.lowerSound} preload='auto' />
+          </audio>
 
-        <button type="button" className="btn btn-lg display"
-          onClick={() =>
-            this.playCapital(cap)
-          }>
-          {singleLetter.capital}
-        </button>
+          <audio key={singleLetter.wordSound} ref={`${word}`} >
+            <source src={singleLetter.wordSound} preload='auto' />
+          </audio>
 
-        <button type="button" className="btn btn-lg display"
-          onClick={() =>
-            this.playLower(low)
-          }>
-          {singleLetter.lowercase}
-        </button>
+          <button type="button" className="btn btn-xl display"
+            onClick={() =>
+              this.playCapital(cap)
+            }>
+            {singleLetter.capital}
+          </button>
 
-        <br/>
+          <button type="button" className="btn btn-xl display"
+            onClick={() =>
+              this.playLower(low)
+            }>
+            {singleLetter.lowercase}
+          </button>
 
-        <h1 id="word"
-          onClick={() =>
-            this.playWord(word)
-          }>
-          {singleLetter.word}
-        </h1>
+          <br/>
 
-        <img src={singleLetter.wordImage} />
+          <h1 id="word"
+            onClick={() =>
+              this.playWord(word)
+            }>
+            {singleLetter.word}
+          </h1>
+
+          <img src={singleLetter.wordImage} />
+
+          <Link to="/letters" key={letter.id}><img id="back" src="../../images/back.gif" /></Link>
+
+          <Link to={`/letter/${singleLetter.capital}/watch`} key={letter.id}><img id="next" src="../../images/next.gif" /></Link>
+        </div>
 
       </div>
     )

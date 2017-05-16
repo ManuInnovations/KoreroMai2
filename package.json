@@ -1,11 +1,12 @@
 {
   "name": "korero-mai",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
     "dev": "nodemon ./bin/www",
-    "test": "ava tests/**/*.js --serial --verbose"
+    "test": "ava test/**/*.js --serial --verbose",
+    "build": "webpack --config webpack.production.config.js --progress -p"
   },
   "babel": {
     "presets": [
@@ -17,6 +18,12 @@
     ]
   },
   "dependencies": {
+    "ava": "^0.17.0",
+    "babel-core": "^6.21.0",
+    "babel-loader": "^6.2.10",
+    "babel-plugin-transform-object-rest-spread": "^6.20.2",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-react": "^6.16.0",
     "body-parser": "~1.13.2",
     "bootstrap": "^3.3.7",
     "clone": "^2.1.0",
@@ -26,6 +33,7 @@
     "express": "^4.13.4",
     "express-session": "^1.15.0",
     "history": "^4.6.1",
+    "inject-lr-script": "^2.1.0",
     "livereload": "^0.6.0",
     "lodash": "^4.17.4",
     "morgan": "~1.6.1",
@@ -39,27 +47,23 @@
     "react-tap-event-plugin": "^2.0.1",
     "redux": "^3.6.0",
     "superagent": "^3.3.1",
-    "superagent-as-promised": "^4.0.0"
+    "superagent-as-promised": "^4.0.0",
+    "webpack": "^1.13.1",
+    "webpack-dev-middleware": "^1.9.0",
+    "webpack-dev-server": "^1.14.1",
+    "node-dev": "^3.1.3",
+    "node-sass": "^4.5.2",
+    "nodemon": "^1.11.0",
+    "sass-loader": "^6.0.5",
+    "style-loader": "^0.13.1"
   },
   "devDependencies": {
-    "ava": "^0.17.0",
-    "babel-core": "^6.21.0",
-    "babel-loader": "^6.2.10",
-    "babel-plugin-transform-object-rest-spread": "^6.20.2",
-    "babel-preset-es2015": "^6.18.0",
-    "babel-preset-react": "^6.16.0",
-    "css-loader": "^0.26.1",
-    "deep-freeze": "0.0.1",
-    "inject-lr-script": "^2.1.0",
     "node-dev": "^3.1.3",
     "node-sass": "^4.5.2",
     "nodemon": "^1.11.0",
     "sass-loader": "^6.0.5",
     "style-loader": "^0.13.1",
     "supertest": "^1.2.0",
-    "supertest-as-promised": "^4.0.2",
-    "webpack": "^1.13.1",
-    "webpack-dev-middleware": "^1.9.0",
-    "webpack-dev-server": "^1.14.1"
+    "supertest-as-promised": "^4.0.2",    "css-loader": "^0.26.1"
   }
 }

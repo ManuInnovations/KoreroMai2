@@ -22,12 +22,6 @@ class nav extends React.Component{
           <li className="brand">
             Kōrero Mai
           </li>
-
-          <li className="nav-right">
-            <Link to='/about'>
-              About Us
-            </Link>
-          </li>
           <li className="nav-right">
             <Link to="/letters">
               <img src="images/abc.png"/>
