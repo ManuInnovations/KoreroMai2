@@ -10,15 +10,23 @@ class multimedia extends React.Component{
   render(){
     debug(this.props)
     const { dispatch, letter } = this.props
-  const singleLetter = letter.letter.letter
+    const singleLetter = letter.letter.letter
 
     return(
       <div className="container">
         <div className="row col-sm-12">
+
           <video controls>
           <source src={singleLetter.multimedia} type="video/mp4" />
           Your browser does not support HTML5 video.
           </video>
+
+          <br />
+
+          <Link to="/letter" key={letter.id}><img id="back" src="../../images/back.gif" /></Link>
+
+          <Link to={`/letter/${singleLetter.capital}/write`} key={letter.id}><img id="next" src="../../images/next.gif" /></Link>
+
         </div>
       </div>
     )

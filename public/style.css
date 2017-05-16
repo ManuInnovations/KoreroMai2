@@ -189,7 +189,8 @@ ul.topnav li a:hover {
   /** VIDEO PLAYER */
 
   video {
-    width: 90%;
+    width: 60%;
     height: auto;
     margin: auto;
+padding-top: 2em;
   }
