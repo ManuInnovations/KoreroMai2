@@ -37,7 +37,7 @@ class letter extends React.Component{
     const low = 'low'
     const word = 'word'
     const { dispatch, letter } = this.props
-    const singleLetter = letter.letter.letter
+    const singleLetter = letter.letter
 
     return(
       <div>
