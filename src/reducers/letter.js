@@ -1,16 +1,15 @@
   const clone = require('clone')
+  const initialState = require('../../state')
+
+  module.exports = function (state=initialState.letter, action) {
 
 
-  module.exports = function (state={}, action) {
-
-    const newState = clone(state)
     switch (action.type) {
 
       case 'RENDER_LETTER':
-        newState.letter = action.payload
-        return newState
+        return action.payload !== {} ? state : object.assign({},state, action.payload)
 
       default:
-        return newState
+        return state
     }
   }
