@@ -1,17 +1,16 @@
-const debug = require('debug')('components:app')
-const _ = require('lodash')
+const debug = require("debug")("components:app")
 
 //modules
-const React = require('react')
-const { connect } = require('react-redux')
-const { Link } = require('react-router')
+const React = require("react")
+const { connect } = require("react-redux")
+const { Link } = require("react-router")
 
 //components
-const Nav = require('./components/nav')
-const Footer = require('./components/footer')
+const Nav = require("./components/nav")
+const Footer = require("./components/footer")
 
 const App = (props) => {
-  console.log('this is app.js props', props);
+  console.log("this is app.js props", props);
   debug({props})
 
   return (
