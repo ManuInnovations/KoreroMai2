@@ -16,6 +16,5 @@ test('renders a blank letter', t => {
   const expectedState = {}
 
   const newState = reducer(initialState.letter, action)
-  console.log('this is newState', newState);
   t.deepEqual(newState.letter, expectedState, "should render a blank object")
 })
