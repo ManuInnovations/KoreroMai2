@@ -1,17 +1,14 @@
-  const clone = require('clone')
+//Note: Object.assign is another way of cloning the state.
+//Check out: https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Object/assign
+const initialState = require('../../state')
 
+module.exports = function (state=initialState.letter, action) {
+  switch (action.type) {
 
-  module.exports = function (state={}, action) {
+    case 'RENDER_LETTER':
+      return Object.assign({},state, action.payload)
 
-    const newState = clone(state)
-    switch (action.type) {
-
-      case 'RENDER_LETTER':
-      console.log('this is letter action payload', action.payload);
-        newState.letter = action.payload
-        return newState
-
-      default:
-        return newState
-    }
+    default:
+      return state
   }
+}
