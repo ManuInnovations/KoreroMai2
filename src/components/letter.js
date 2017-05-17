@@ -1,18 +1,16 @@
-const debug = require('debug')('components:letter')
-const React = require('react')
-const { connect } = require('react-redux')
-const request = require('superagent');
-const { Link } = require('react-router')
+const debug = require("debug")("components:letter")
+const React = require("react")
+const { connect } = require("react-redux")
+const request = require("superagent")
+const { Link } = require("react-router")
 
 class letter extends React.Component{
 
   constructor() {
     super()
-
     this.playCapital = this.playCapital.bind(this)
     this.playLower = this.playLower.bind(this)
     this.playWord = this.playWord.bind(this)
-
   }
 
   playCapital(cap) {
@@ -30,12 +28,11 @@ class letter extends React.Component{
     this.refs[word].play()
   }
 
-
   render(){
     debug(this.props)
-    const cap = 'cap'
-    const low = 'low'
-    const word = 'word'
+    const cap = "cap"
+    const low = "low"
+    const word = "word"
     const { dispatch, letter } = this.props
     const singleLetter = letter.letter
 
@@ -44,15 +41,15 @@ class letter extends React.Component{
         <div className="row col-sm-12 letter-container">
 
           <audio key={singleLetter.capitalSound} ref={`${cap}`} >
-            <source src={singleLetter.capitalSound} preload='auto' />
+            <source src={singleLetter.capitalSound} preload="auto" />
           </audio>
 
           <audio key={singleLetter.lowerSound} ref={`${low}`} >
-            <source src={singleLetter.lowerSound} preload='auto' />
+            <source src={singleLetter.lowerSound} preload="auto" />
           </audio>
 
           <audio key={singleLetter.wordSound} ref={`${word}`} >
-            <source src={singleLetter.wordSound} preload='auto' />
+            <source src={singleLetter.wordSound} preload="auto" />
           </audio>
 
           <button type="button" className="btn btn-xl display"

@@ -1,11 +1,11 @@
-const { combineReducers } = require('redux')
+const { combineReducers } = require("redux")
 
 //reducers
-const letter = require('./letter')
-const letters = require('./letters')
+const letter = require("./letter")
+const letters = require("./letters")
 
 
 module.exports = combineReducers({
-  letters,
-  letter
+	letters,
+	letter
 })

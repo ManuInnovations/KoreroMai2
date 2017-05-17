@@ -1,8 +1,8 @@
-const debug = require('debug')('components:nav')
-const React = require('react')
-const { connect } = require('react-redux')
-const request = require('superagent')
-const { Link } = require('react-router')
+const debug = require("debug")("components:nav")
+const React = require("react")
+const { connect } = require("react-redux")
+const request = require("superagent")
+const { Link } = require("react-router")
 
 
 class nav extends React.Component{
@@ -15,7 +15,7 @@ class nav extends React.Component{
       <div>
         <ul className="topnav">
           <li>
-            <Link to='#'>
+            <Link to="#">
               <span className="glyphicon glyphicon-home" aria-hidden="true"></span>
             </Link>
           </li>

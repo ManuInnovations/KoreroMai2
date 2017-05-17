@@ -1,8 +1,8 @@
-const debug = require('debug')('components:home')
-const React = require('react')
-const { connect } = require('react-redux')
-const { Link } = require('react-router')
-const request = require('superagent');
+const debug = require("debug")("components:home")
+const React = require("react")
+const { connect } = require("react-redux")
+const { Link } = require("react-router")
+const request = require("superagent")
 
 
 class home extends React.Component{

@@ -1,18 +1,17 @@
-const debug = require('debug')('components:home')
-const React = require('react')
-const { connect } = require('react-redux')
-const { Link } = require('react-router')
-const request = require('superagent');
+const debug = require("debug")("components:home")
+const React = require("react")
+const { connect } = require("react-redux")
+const { Link } = require("react-router")
+const request = require("superagent")
 
 
 class privacy extends React.Component{
-  //this is how we define functions in an class/object
   render(){
     debug(this.props)
     const { dispatch } = this.props
 
     return(
-      <div className='privacy-policy'>
+      <div className="privacy-policy">
       <h1>Kōrero Mai privacy policy</h1>
 
       <p>Your privacy on the Internet is important to us. This privacy policy discloses what information we gather, how we use it, and how to correct or change it.</p>
