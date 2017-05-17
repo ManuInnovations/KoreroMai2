@@ -3,10 +3,10 @@
 const initialState = require("../../state")
 
 module.exports = (state = initialState.letter, action) => {
-	switch (action.type) {
+  switch (action.type) {
 
-		case "RENDER_LETTER": return Object.assign({}, state, action.payload)
+    case "RENDER_LETTER": return Object.assign({}, state, action.payload)
 
-		default: return state
-	}
+    default: return state
+  }
 }

@@ -1,3 +1,3 @@
-module.exports = function (state=[], action) {
+module.exports = (state = [], action) => {
   return state
 }
