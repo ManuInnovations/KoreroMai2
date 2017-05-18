@@ -1,25 +1,24 @@
-const express = require('express');
-const route = express.Router();
+const express = require("express")
+
+const route = express.Router()
 
 
-module.exports = function() {
-
-  route.get('/', getHome);
-
-  route.post('/home', dummyData);
-
-  route.get('/alphabet');
-
-  route.get('/:id/letter');
-
-  function getHome (req, res) {
-    res.redirect('/home')
+module.exports = () => {
+  function getHome(req, res) {
+    res.redirect("/home")
   }
 
-  function dummyData(req,res,next){
-    res.json({"data":'hello'})
+  function dummyData(req, res) {
+    res.json({ data: "hello" })
   }
 
+  route.get("/", getHome)
 
-  return route;
-};
+  route.post("/home", dummyData)
+
+  route.get("/alphabet")
+
+  route.get("/:id/letter")
+
+  return route
+}

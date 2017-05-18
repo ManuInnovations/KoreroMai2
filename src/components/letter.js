@@ -1,18 +1,16 @@
-const debug = require('debug')('components:letter')
-const React = require('react')
-const { connect } = require('react-redux')
-const request = require('superagent');
-const { Link } = require('react-router')
+const debug = require("debug")("components:letter")
+const React = require("react")
+const { connect } = require("react-redux")
+const request = require("superagent")
+const { Link } = require("react-router")
 
-class letter extends React.Component{
+class letter extends React.Component {
 
   constructor() {
     super()
-
     this.playCapital = this.playCapital.bind(this)
     this.playLower = this.playLower.bind(this)
     this.playWord = this.playWord.bind(this)
-
   }
 
   playCapital(cap) {
@@ -30,69 +28,126 @@ class letter extends React.Component{
     this.refs[word].play()
   }
 
+  handleClick(e) {
+    e.preventDefault()
+    this.props.router.push("/")
+  }
 
-  render(){
+  render() {
     debug(this.props)
-    const cap = 'cap'
-    const low = 'low'
-    const word = 'word'
+    const cap = "cap"
+    const low = "low"
+    const word = "word"
     const { dispatch, letter } = this.props
     const singleLetter = letter.letter
 
-    return(
+    return (
       <div className="container">
         <div className="row col-sm-12 letter-container">
 
-          <audio key={singleLetter.capitalSound} ref={`${cap}`} >
-            <source src={singleLetter.capitalSound} preload='auto' />
+          <audio key={singleLetter.capitalSound} ref={`${cap}`}>
+            <source
+              src={singleLetter.capitalSound}
+              preload="auto"
+            />
+            <track
+              kind="captions"
+              src=""
+              srcLang="en"
+            />
           </audio>
 
-          <audio key={singleLetter.lowerSound} ref={`${low}`} >
-            <source src={singleLetter.lowerSound} preload='auto' />
+          <audio
+            key={singleLetter.lowerSound}
+            ref={`${low}`}
+          >
+            <source
+              src={singleLetter.lowerSound}
+              preload="auto"
+            />
+            <track
+              kind="captions"
+              src=""
+              srcLang="en"
+            />
           </audio>
 
-          <audio key={singleLetter.wordSound} ref={`${word}`} >
-            <source src={singleLetter.wordSound} preload='auto' />
+          <audio
+            key={singleLetter.wordSound}
+            ref={`${word}`}
+          >
+            <source
+              src={singleLetter.wordSound}
+              preload="auto"
+            />
+            <track
+              kind="captions"
+              src=""
+              srcLang="en"
+            />
           </audio>
 
-          <button type="button" className="btn btn-xl display"
+          <button
+            type="button"
+            className="btn btn-xl display"
             onClick={() =>
               this.playCapital(cap)
-            }>
+            }
+          >
             {singleLetter.capital}
           </button>
 
-          <button type="button" className="btn btn-xl display"
+          <button
+            type="button"
+            className="btn btn-xl display"
             onClick={() =>
               this.playLower(low)
-            }>
+            }
+          >
             {singleLetter.lowercase}
           </button>
 
-          <br/>
+          <br />
 
-          <h1 id="word"
+          <h1
+            id="word"
             onClick={() =>
               this.playWord(word)
-            }>
+            }
+          >
             {singleLetter.word}
           </h1>
 
-          <img src={singleLetter.wordImage} />
+          <img
+            src={singleLetter.wordImage}
+            alt=""
+          />
 
-          <Link to="/letters" key={letter.id}><img id="back" src="../../images/back.gif" /></Link>
+          <Link
+            to="/letters"
+            key={letter.id}
+          >
+            <img
+              id="back"
+              src="../../images/back.gif"
+              alt="back button"
+            />
+          </Link>
 
-          <Link to={`/letter/${singleLetter.capital}/watch`} key={letter.id}><img id="next" src="../../images/next.gif" /></Link>
+          <Link
+            to=""
+            key={letter.id}
+          >
+            <img
+              id="next"
+              src="../../images/next.gif"
+              alt="next button"
+            />
+          </Link>
         </div>
-
       </div>
     )
   }
-
-  handleClick(e){
-    e.preventDefault()
-    this.props.router.push(`/`)
-  }
 }
 
-module.exports = connect((state) => state)(letter)
+module.exports = connect(state => state)(letter)

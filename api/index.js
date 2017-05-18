@@ -1,5 +1,5 @@
-const appRoute = require('./resource')
+const appRoute = require("./resource")
 
 module.exports = {
-  appRoute
+  appRoute,
 }
