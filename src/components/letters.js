@@ -26,9 +26,7 @@ class letters extends React.Component {
                 to={`/letters/${letter.capital}`}
               >
                 <div
-                  className="btn-group
-                  btn-group-lg
-                  btn-group-center wiggle-me"
+                  className="btn-group btn-group-lg btn-group-center wiggle-me"
                   role="group"
                   aria-label="..."
                 >
