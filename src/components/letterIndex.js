@@ -1,10 +1,10 @@
-const debug = require("debug")("components:letters")
+const debug = require("debug")("components:letterIndex")
 const React = require("react")
 const { connect } = require("react-redux")
 const request = require("superagent")
 const { Link } = require("react-router")
 
-class letters extends React.Component {
+class letterIndex extends React.Component {
 
   handleClick(e) {
     e.preventDefault()
@@ -15,8 +15,8 @@ class letters extends React.Component {
     const { dispatch, letters } = this.props
 
     return (
-      <div className="row">
-        <div className="col-sm-12">
+      <div className="container">
+        <div className="row col-sm-12">
           {
           letters.map((letter) => {
             return (
@@ -54,4 +54,5 @@ class letters extends React.Component {
   }
 }
 
-module.exports = connect(state => state)(letters)
+module.exports = connect(state => state)(letterIndex)
+// {this.props.children}

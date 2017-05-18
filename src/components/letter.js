@@ -124,7 +124,7 @@ class letter extends React.Component {
           />
 
           <Link
-            to="/letters"
+            to="/letterIndex"
             key={letter.id}
           >
             <img
