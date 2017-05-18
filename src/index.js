@@ -31,12 +31,13 @@ const Root = ({ store }) => {
       <Router history={hashHistory} >
         <Route path="/" component={App} store={store}>
           <IndexRoute component={Home} />
-          <Route path="letters" component={Letters} />
-          <Route path="letterIndex" component={LetterIndex}/>
-          <Route path="letterIndex/:id" component={Letter} />
-          <Route path="letterIndex/:id/watch" component={Multimedia} />
-          <Route path="privacy" component={Privacy} />
-          <Route path="about" component={About} />
+          <Route path="/letters" component={Letters} />
+          <Route path="/letterIndex" component={LetterIndex}>
+            <Route path="/letterIndex/:id" component={Letter} />
+            <Route path="/letterIndex/:id/watch" component={Multimedia}/>
+          </Route>
+          <Route path="/privacy" component={Privacy} />
+          <Route path="/about" component={About} />
         </Route>
       </Router>
     </Provider>
