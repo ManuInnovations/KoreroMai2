@@ -99,19 +99,19 @@ img {
 #next {
   position: absolute;
   right: 15px;
-  bottom: 25px;
+  top: 50%;
 }
 
 #back {
   position: absolute;
   left: 15px;
-  bottom: 25px;
+  top: 50%;
 }
 
 .letter-container {
   background-color: white;
-  width: 90%;
-  margin-left: 4em;
+  width: 70%;
+  margin-left: 15%;
   margin-top: 3em;
   height: 520px;
 }

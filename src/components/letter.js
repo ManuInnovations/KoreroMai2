@@ -41,6 +41,7 @@ class letter extends React.Component {
     const { dispatch, letter } = this.props
     const singleLetter = letter.letter
 
+
     return (
       <div className="container">
         <div className="row col-sm-12 letter-container">
@@ -123,27 +124,7 @@ class letter extends React.Component {
             alt=""
           />
 
-          <Link
-            to="/letters"
-            key={letter.id}
-          >
-            <img
-              id="back"
-              src="../../images/back.gif"
-              alt="back button"
-            />
-          </Link>
-
-          <Link
-            to=""
-            key={letter.id}
-          >
-            <img
-              id="next"
-              src="../../images/next.gif"
-              alt="next button"
-            />
-          </Link>
+        
         </div>
       </div>
     )

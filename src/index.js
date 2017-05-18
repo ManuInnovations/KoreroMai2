@@ -17,6 +17,7 @@ const initialState = require("../state")
 const App = require("./app")
 const Home = require("./components/home")
 const Letters = require("./components/letters")
+const LetterIndex = require("./components/letterIndex")
 const Letter = require("./components/letter")
 const Privacy = require("./components/privacy")
 const About = require("./components/about")
@@ -30,11 +31,13 @@ const Root = ({ store }) => {
       <Router history={hashHistory} >
         <Route path="/" component={App} store={store}>
           <IndexRoute component={Home} />
-          <Route path="letters" component={Letters} />
-          <Route path="letters/:id" component={Letter} />
-          <Route path="letters/:id/watch" component={Multimedia} />
-          <Route path="privacy" component={Privacy} />
-          <Route path="about" component={About} />
+          <Route path="/letters" component={Letters} />
+          <Route path="/letterIndex" component={LetterIndex}>
+            <Route path="/letterIndex/:id" component={Letter} />
+            <Route path="/letterIndex/:id/watch" component={Multimedia}/>
+          </Route>
+          <Route path="/privacy" component={Privacy} />
+          <Route path="/about" component={About} />
         </Route>
       </Router>
     </Provider>
