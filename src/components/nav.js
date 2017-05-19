@@ -14,25 +14,24 @@ class nav extends React.Component {
     debug(this.props)
 
     return (
-      <div>
-        <ul className="topnav">
-          <li>
-            <Link to="#">
-              <span
-                className="glyphicon glyphicon-home"
-                aria-hidden="true"
-              />
-            </Link>
-          </li>
-          <li className="brand">
-            Kōrero Mai
-          </li>
-          <li className="nav-right">
-            <Link to="/letters">
-              <img src="images/abc.png" alt="abc blocks" />
-            </Link>
-          </li>
-        </ul>
+      <div className="row">
+        <div className="col-sm-12">
+          <ul className="topnav">
+            <li>
+              <Link to="#">
+                <span className="glyphicon glyphicon-home" aria-hidden="true" />
+              </Link>
+            </li>
+            <li className="brand">
+              Kōrero Mai
+            </li>
+            <li className="nav-right">
+              <Link to="/contentspage">
+                <img src="images/abc.png" alt="abc blocks" />
+              </Link>
+            </li>
+          </ul>
+        </div>
       </div>
     )
   }

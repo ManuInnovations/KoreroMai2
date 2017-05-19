@@ -1,4 +1,4 @@
-const debug = require("debug")("components:app")
+const debug = require("debug")("components:App")
 const React = require("react")
 const { connect } = require("react-redux")
 const Nav = require("./components/nav")

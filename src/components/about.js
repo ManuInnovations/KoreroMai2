@@ -1,4 +1,4 @@
-const debug = require("debug")("components:home")
+const debug = require("debug")("components:about")
 const React = require("react")
 const { connect } = require("react-redux")
 
@@ -13,28 +13,19 @@ class about extends React.Component {
     debug(this.props)
 
     return (
-      <div className="about">
-        <div className="team">
+      <div className="row about">
+        <div className="col-sm-12 team">
           <h1>Kia Ora!</h1>
           <h2>Kōrero Mai was made with aroha
           by the team at Manu.</h2>
           <h3>Janie Tito (Ngā Puhi me
           Ngāti Whātua)</h3>
-          <img
-            src="images/janie.png"
-            alt="Janie Tito"
-          />
+          <img src="images/janie.png" alt="Janie Tito" />
           <h3>Anna-Marie Vos (Āwherika
           ki te Tonga)</h3>
-          <img
-            src="images/anna.png"
-            alt="Anna-Marie Vos"
-          />
+          <img src="images/anna.png" alt="Anna-Marie Vos" />
           <h3>Meghan Hughes (Ngāti Pākehā)</h3>
-          <img
-            src="images/meghan.png"
-            alt="Meghan Hughes"
-          />
+          <img src="images/meghan.png" alt="Meghan Hughes" />
         </div>
         <div className="purpose">
           <h2>How this came about</h2>
