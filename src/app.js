@@ -1,10 +1,10 @@
-const debug = require("debug")("components:App")
+const debug = require("debug")("components:app")
 const React = require("react")
 const { connect } = require("react-redux")
 const Nav = require("./components/nav")
 const Footer = require("./components/footer")
 
-const App = (props) => {
+const app = (props) => {
   debug({ props })
 
   return (
@@ -18,4 +18,4 @@ const App = (props) => {
   )
 }
 
-module.exports = connect(state => state)(App)
+module.exports = connect(state => state)(app)
