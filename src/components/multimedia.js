@@ -28,11 +28,11 @@ class multimedia extends React.Component {
 
           <br />
 
-          <Link to="/letter" key={letter.id}>
+          <Link to="#" key={letter.id}>
             <img id="back" src="../../images/back.gif" alt="back button" />
           </Link>
 
-          <Link to={`/letter/${singleLetter.capital}/write`} key={letter.id}>
+          <Link to="#" key={letter.id}>
             <img id="next" src="../../images/next.gif" alt="next button" />
           </Link>
 
