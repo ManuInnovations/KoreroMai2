@@ -16,19 +16,22 @@ class home extends React.Component {
     const { dispatch } = this.props
 
     return (
-      <div>
-        <h1>Nau mai, haere mai</h1>
-        <h2>Learn te reo Māori</h2>
+      <div className="row">
+        <div className="col-sm-12">
+          <h1>Nau mai, haere mai</h1>
+          <h2>Learn te reo Māori</h2>
 
-        <Link to="/letters">
-          <button
-            name="play"
-            id="letters"
-            className="btn btn-default"
-          >
-            Play!
-          </button>
-        </Link>
+          <Link to="/contentspage">
+
+            <button
+              name="play"
+              id="letters"
+              className="btn btn-default">
+              Play!
+            </button>
+
+          </Link>
+        </div>
       </div>
     )
   }

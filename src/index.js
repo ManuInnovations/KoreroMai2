@@ -16,9 +16,9 @@ const initialState = require("../state")
 //top level components
 const App = require("./app")
 const Home = require("./components/home")
-const Letters = require("./components/letters")
-const LetterIndex = require("./components/letterIndex")
-const Letter = require("./components/letter")
+const Contentspage = require("./components/contentspage")
+const Letterindex = require("./components/letterIndex")
+const Displayletter = require("./components/displayletter")
 const Privacy = require("./components/privacy")
 const About = require("./components/about")
 const Multimedia = require("./components/multimedia")
@@ -31,10 +31,10 @@ const Root = ({ store }) => {
       <Router history={hashHistory} >
         <Route path="/" component={App} store={store}>
           <IndexRoute component={Home} />
-          <Route path="/letters" component={Letters} />
-          <Route path="/letterIndex" component={LetterIndex}>
-            <Route path="/letterIndex/:id" component={Letter} />
-            <Route path="/letterIndex/:id/watch" component={Multimedia}/>
+          <Route path="/contentspage" component={Contentspage} />
+          <Route path="/letterindex" component={Letterindex}>
+            <Route path="/letterindex/:id" component={Displayletter} />
+            <Route path="/letterindex/:id/watch" component={Multimedia}/>
           </Route>
           <Route path="/privacy" component={Privacy} />
           <Route path="/about" component={About} />

@@ -14,25 +14,22 @@ class footer extends React.Component {
     debug(this.props)
 
     return (
-      <div>
-        <footer
-          className="footer"
-        >
-          &copy; Manu Innovations Ltd. 2017  |
-          <Link
-            to="/privacy"
-            id="info"
-          >
-            Privacy Policy
-          </Link>
-          |
-          <Link
-            to="/about"
-            id="info"
-          >
-            About Us
-          </Link>
-        </footer>
+      <div className="row footer">
+        <div className="col-sm-12">
+          <footer>
+
+            &copy; Manu Innovations Ltd. 2017
+
+            <Link to="/privacy" id="info">
+              &nbsp; Privacy Policy
+            </Link>
+
+            <Link to="/about" id="info">
+              &nbsp; About Us
+            </Link>
+
+          </footer>
+        </div>
       </div>
     )
   }

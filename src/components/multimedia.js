@@ -17,8 +17,9 @@ class multimedia extends React.Component {
     const singleLetter = letter.letter.letter
 
     return (
-      <div className="container">
-        <div className="row col-sm-12">
+      <div className="row">
+        <div className="col-sm-12">
+
           <video controls>
             <source src={singleLetter.multimedia} type="video/mp4" />
             <track kind="captions" src="" srcLang="en" />
@@ -27,15 +28,13 @@ class multimedia extends React.Component {
 
           <br />
 
-          <Link to="/letter" key={letter.id}>
-            <img
-              id="back"
-              src="../../images/back.gif"
-              alt="back button"
-            />
+          <Link to="#" key={letter.id}>
+            <img id="back" src="../../images/back.gif" alt="back button" />
           </Link>
 
-          <Link to={`/letter/${singleLetter.capital}/write`} key={letter.id}><img id="next" src="../../images/next.gif" alt="next button" /></Link>
+          <Link to="#" key={letter.id}>
+            <img id="next" src="../../images/next.gif" alt="next button" />
+          </Link>
 
         </div>
       </div>

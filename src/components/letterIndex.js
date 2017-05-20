@@ -1,10 +1,10 @@
-const debug = require("debug")("components:letterIndex")
+const debug = require("debug")("components:letterindex")
 const React = require("react")
 const { connect } = require("react-redux")
 const request = require("superagent")
 const { Link } = require("react-router")
 
-class letterIndex extends React.Component {
+class letterindex extends React.Component {
 
   handleClick(e) {
     e.preventDefault()
@@ -16,31 +16,21 @@ class letterIndex extends React.Component {
     console.log("children,", this.props.children);
 
     return (
-      <div className="container">
-        <div className="row col-sm-12">
-        <Link
-          to="/letterIndex"
-        >
-          <img
-            id="back"
-            src="../../images/back.gif"
-            alt="back button"
-          />
+      <div className="row">
+        <div className="col-sm-12">
+        <Link to="">
+          <img id="back" src="../../images/back.gif" alt="back button" />
         </Link>
-
           {
           letters.map((letter) => {
             return (
-
               <Link
                 key={letter.id}
-                to={`/letterIndex/${letter.capital}`}
-              >
+                to={`/letterindex/${letter.capital}`}>
                 <div
                   className="btn-group btn-group-lg btn-group-center wiggle-me"
                   role="group"
-                  aria-label="..."
-                >
+                  aria-label="...">
 
                   <button
                     type="button"
@@ -50,9 +40,8 @@ class letterIndex extends React.Component {
                           type: "RENDER_LETTER",
                           payload: { letter },
                         })
-                    }
-                  >
-                    {letter.capital}
+                    }>
+                  {letter.capital}
                   </button>
                 </div>
               </Link>
@@ -60,16 +49,11 @@ class letterIndex extends React.Component {
           })
         }
 
-                <Link
-                  to=""
-                >
-                  <img
-                    id="next"
-                    src="../../images/next.gif"
-                    alt="next button"
-                  />
+                <Link to="">
+                  <img id="next" src="../../images/next.gif" alt="next button" />
                 </Link>
-        {this.props.children}
+
+          {this.props.children}
 
         </div>
       </div>
@@ -77,4 +61,4 @@ class letterIndex extends React.Component {
   }
 }
 
-module.exports = connect(state => state)(letterIndex)
+module.exports = connect(state => state)(letterindex)
