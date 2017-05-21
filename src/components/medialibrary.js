@@ -21,7 +21,7 @@ class medialibrary extends React.Component {
           letters.map((letter) => {
             return (
               <div className="col-sm-3 preview">
-                <Link key={letter.id} to={`/letterindex/${letter.capital}/watch`}>
+                <Link key={letter.id} to={`/media/${letter.capital}`}>
                   <figure>
                     <img
                       src={`${letter.wordImage}`}

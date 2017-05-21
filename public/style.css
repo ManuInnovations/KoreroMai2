@@ -20,7 +20,6 @@ body {
 }
 
 .content {
-  flex: 1;
   min-height: 86vh;
   background-color: #7CFC00;
   text-align: center;
