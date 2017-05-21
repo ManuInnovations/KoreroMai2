@@ -21,9 +21,9 @@ class contentspage extends React.Component {
             letters.map((letter) => {
               return (
 
-                <Link key={letter.id} to={`/letterIndex/${letter.capital}`}>
+                <Link key={letter.id} to={`/letterindex/${letter.capital}`}>
                   <div
-                    className="btn-group btn-group-lg btn-group-center wiggle-me"
+                    className="btn-group btn-group-xl btn-group-center wiggle-me"
                     role="group"
                     aria-label="...">
 
@@ -45,9 +45,10 @@ class contentspage extends React.Component {
             })
           }
         </div>
-        <div className="col-sm-12">
-          Button linking to multimedia library
-        </div>
+        <button
+          Link to="/">
+          Go to Media Library
+        </button>
       </div>
     )
   }
