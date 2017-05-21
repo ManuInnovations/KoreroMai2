@@ -25,6 +25,7 @@ class medialibrary extends React.Component {
                   <figure>
                     <img
                       src={`${letter.wordImage}`}
+                      className="img-fluid"
                       onClick={() =>
                           dispatch({
                             type: "RENDER_LETTER",
