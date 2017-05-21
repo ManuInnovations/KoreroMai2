@@ -21,7 +21,7 @@ class letterindex extends React.Component {
         <Link to="">
           <img id="back" src="../../images/back.gif" alt="back button" />
         </Link>
-          {
+        {
           letters.map((letter) => {
             return (
               <Link

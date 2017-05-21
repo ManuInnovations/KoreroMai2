@@ -21,7 +21,7 @@ class home extends React.Component {
           <h1>Nau mai, haere mai</h1>
           <h2>Learn te reo Māori</h2>
 
-          <Link to="/contentspage">
+          <Link to="/contents">
 
             <button
               name="play"

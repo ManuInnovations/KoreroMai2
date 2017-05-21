@@ -21,7 +21,9 @@ const Letterindex = require("./components/letterIndex")
 const Displayletter = require("./components/displayletter")
 const Privacy = require("./components/privacy")
 const About = require("./components/about")
-const Multimedia = require("./components/multimedia")
+const Mediashow = require("./components/mediashow")
+const Medialibrary = require("./components/medialibrary")
+
 
 const store = createStore(reducer, initialState)
 
@@ -31,11 +33,12 @@ const Root = ({ store }) => {
       <Router history={hashHistory} >
         <Route path="/" component={App} store={store}>
           <IndexRoute component={Home} />
-          <Route path="/contentspage" component={Contentspage} />
+          <Route path="/contents" component={Contentspage} />
           <Route path="/letterindex" component={Letterindex}>
             <Route path="/letterindex/:id" component={Displayletter} />
-            <Route path="/letterindex/:id/watch" component={Multimedia}/>
+            <Route path="/letterindex/:id/watch" component={Mediashow}/>
           </Route>
+          <Route path="/media" component={Medialibrary} />
           <Route path="/privacy" component={Privacy} />
           <Route path="/about" component={About} />
         </Route>

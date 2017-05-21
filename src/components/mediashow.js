@@ -1,10 +1,10 @@
-const debug = require("debug")("components:multimedia")
+const debug = require("debug")("components:mediashow")
 const React = require("react")
 const { connect } = require("react-redux")
 const { Link } = require("react-router")
 const request = require("superagent")
 
-class multimedia extends React.Component {
+class mediashow extends React.Component {
 
   handleClick(e) {
     e.preventDefault()
@@ -42,4 +42,4 @@ class multimedia extends React.Component {
   }
 }
 
-module.exports = connect(state => state)(multimedia)
+module.exports = connect(state => state)(mediashow)

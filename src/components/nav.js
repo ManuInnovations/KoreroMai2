@@ -26,7 +26,7 @@ class nav extends React.Component {
               Kōrero Mai
             </li>
             <li className="nav-right">
-              <Link to="/contentspage">
+              <Link to="/contents">
                 <img src="images/abc.png" alt="abc blocks" />
               </Link>
             </li>
