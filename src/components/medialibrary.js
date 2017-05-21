@@ -20,6 +20,15 @@ class medialibrary extends React.Component {
         <div className="col-sm-12">
           <p>Table of previews of different media files from each letter in state</p>
         </div>
+        <div className="col-sm-12">
+          <Link to="/contents">
+            <button
+              type="button"
+              className="btn btn-lg">
+              Back
+            </button>
+          </Link>
+        </div>
       </div>
     )
   }

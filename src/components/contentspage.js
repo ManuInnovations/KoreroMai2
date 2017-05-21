@@ -45,10 +45,14 @@ class contentspage extends React.Component {
             })
           }
         </div>
-        <button
-          Link to="/">
-          Go to Media Library
-        </button>
+        <Link to="/media">
+          <button
+            type="button"
+            className="btn btn-xl">
+            Go to Media Library
+          </button>
+        </Link>
+
       </div>
     )
   }
