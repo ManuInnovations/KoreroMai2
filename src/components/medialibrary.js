@@ -13,7 +13,6 @@ class medialibrary extends React.Component {
   render() {
     debug(this.props)
     const { dispatch, letters } = this.props
-    console.log("children,", this.props.children);
 
     return (
       <div className="row">
@@ -41,7 +40,6 @@ class medialibrary extends React.Component {
             )
           })
         }
-          {this.props.children}
       </div>
     )
   }

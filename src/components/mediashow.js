@@ -18,10 +18,10 @@ class mediashow extends React.Component {
 
     return (
       <div className="row">
-        <div className="col-sm-12">
+        <div className="col-sm-12 video">
 
-          <video controls>
-            <source src={letter.multimedia} type="video/mp4" />
+          <video width="80%" controls controlsList="nodownload">
+            <source src={singleLetter.multimedia} type="video/webm" />
             <track kind="captions" src="" srcLang="en" />
             Your browser does not support HTML5 video.
           </video>

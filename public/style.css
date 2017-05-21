@@ -75,6 +75,8 @@ img {
   animation:wiggle .3s 2;
 }
 
+
+
 /** WORDS AND LETTERS */
 
 #word::first-letter {
@@ -162,6 +164,10 @@ ul.topnav li a:hover {
     }
   }
 
+  .is-active {
+    color: yellow;
+  }
+
   /** FOOTER STYLES */
 
   .footer {
@@ -202,4 +208,8 @@ ul.topnav li a:hover {
 .preview {
   width: 20%;
   margin: 3rem;
+}
+
+.video {
+  margin-top: 3rem;
 }

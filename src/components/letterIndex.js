@@ -26,7 +26,8 @@ class letterindex extends React.Component {
             return (
               <Link
                 key={letter.id}
-                to={`/letterindex/${letter.capital}`}>
+                to={`/letterindex/${letter.capital}`}
+                activeClassName="active">
                 <div
                   className="btn-group btn-group-lg btn-group-center wiggle-me"
                   role="group"

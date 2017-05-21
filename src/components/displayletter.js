@@ -109,6 +109,21 @@ class displayletter extends React.Component {
         <img src={singleLetter.wordImage} alt="" />
 
         </div>
+        <div className="col-sm-12">
+        <Link key={singleLetter.id} to={`/media/${singleLetter.capital}`}>
+          <button
+            type="button"
+            className="btn"
+            onClick={() =>
+                dispatch({
+                  type: "RENDER_LETTER",
+                  payload: { letter },
+                })
+            }>
+            Watch: {singleLetter.mediaName}
+          </button>
+        </Link>
+        </div>
       </div>
     )
   }
