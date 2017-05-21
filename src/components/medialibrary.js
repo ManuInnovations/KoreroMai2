@@ -8,6 +8,7 @@ class medialibrary extends React.Component {
 
   handleClick(e) {
     e.preventDefault()
+    this.props.router.push("/")
   }
 
   render() {
@@ -16,6 +17,7 @@ class medialibrary extends React.Component {
 
     return (
       <div className="row">
+        <h1>Media Library</h1>
         {
           letters.map((letter) => {
             return (

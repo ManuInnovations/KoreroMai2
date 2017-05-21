@@ -10,4 +10,3 @@ module.exports = (state = initialState.letter, action) => {
     default: return state
   }
 }
-    // case "RENDER_MULTIMEDIA": return Object.assign({}, state, action.payload)
