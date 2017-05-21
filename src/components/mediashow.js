@@ -21,20 +21,10 @@ class mediashow extends React.Component {
         <div className="col-sm-12">
 
           <video controls>
-            <source src={singleLetter.multimedia} type="video/mp4" />
+            <source src={letter.multimedia} type="video/mp4" />
             <track kind="captions" src="" srcLang="en" />
             Your browser does not support HTML5 video.
           </video>
-
-          <br />
-
-          <Link to="#" key={letter.id}>
-            <img id="back" src="../../images/back.gif" alt="back button" />
-          </Link>
-
-          <Link to="#" key={letter.id}>
-            <img id="next" src="../../images/next.gif" alt="next button" />
-          </Link>
 
         </div>
       </div>

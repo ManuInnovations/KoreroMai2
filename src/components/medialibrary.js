@@ -17,18 +17,30 @@ class medialibrary extends React.Component {
 
     return (
       <div className="row">
-        <div className="col-sm-12">
-          <p>Table of previews of different media files from each letter in state</p>
-        </div>
-        <div className="col-sm-12">
-          <Link to="/contents">
-            <button
-              type="button"
-              className="btn btn-lg">
-              Back
-            </button>
-          </Link>
-        </div>
+        {
+          letters.map((letter) => {
+            return (
+              <div className="col-sm-3 preview">
+                <Link key={letter.id} to={`/letterindex/${letter.capital}/watch`}>
+                  <figure>
+                    <img
+                      src={`${letter.wordImage}`}
+                      onClick={() =>
+                          dispatch({
+                            type: "RENDER_LETTER",
+                            payload: { letter },
+                          })
+                      } />
+                    <figcaption>
+                      {letter.mediaName}
+                    </figcaption>
+                  </figure>
+                </Link>
+              </div>
+            )
+          })
+        }
+          {this.props.children}
       </div>
     )
   }
