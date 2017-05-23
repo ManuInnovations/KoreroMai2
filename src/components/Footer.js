@@ -1,9 +1,9 @@
-const debug = require("debug")("components:footer")
+const debug = require("debug")("components:Footer")
 const React = require("react")
 const { connect } = require("react-redux")
 const { Link } = require("react-router")
 
-class footer extends React.Component {
+class Footer extends React.Component {
 
   handleClick(e) {
     e.preventDefault()
@@ -35,4 +35,4 @@ class footer extends React.Component {
   }
 }
 
-module.exports = connect(state => state)(footer)
+module.exports = connect(state => state)(Footer)
