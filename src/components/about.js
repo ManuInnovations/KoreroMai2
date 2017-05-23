@@ -1,8 +1,8 @@
-const debug = require("debug")("components:about")
+const debug = require("debug")("components:About")
 const React = require("react")
 const { connect } = require("react-redux")
 
-class about extends React.Component {
+class About extends React.Component {
 
   handleClick(e) {
     e.preventDefault()
@@ -53,4 +53,4 @@ class about extends React.Component {
   }
 }
 
-module.exports = connect(state => state)(about)
+module.exports = connect(state => state)(About)

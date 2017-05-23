@@ -1,10 +1,10 @@
-const debug = require("debug")("components:medialibrary")
+const debug = require("debug")("components:Medialibrary")
 const React = require("react")
 const { connect } = require("react-redux")
 const request = require("superagent")
 const { Link } = require("react-router")
 
-class medialibrary extends React.Component {
+class Medialibrary extends React.Component {
 
   handleClick(e) {
     e.preventDefault()
@@ -25,7 +25,7 @@ class medialibrary extends React.Component {
             <button
               type="button"
               className="btn btn-lg">
-              Back
+                Back
             </button>
           </Link>
         </div>
@@ -34,4 +34,4 @@ class medialibrary extends React.Component {
   }
 }
 
-module.exports = connect(state => state)(medialibrary)
+module.exports = connect(state => state)(Medialibrary)
