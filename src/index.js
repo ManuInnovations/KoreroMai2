@@ -34,11 +34,11 @@ const Root = ({ store }) => {
         <Route path="/" component={App} store={store}>
           <IndexRoute component={Home} />
           <Route path="/contents" component={Contentspage} />
+          <Route path="/media" component={Medialibrary} />
+          <Route path="/media/:id" component={Mediashow} />
           <Route path="/letterindex" component={Letterindex}>
             <Route path="/letterindex/:id" component={Displayletter} />
           </Route>
-          <Route path="/media" component={Medialibrary} />
-          <Route path="/media/:id" component={Mediashow} />
           <Route path="/privacy" component={Privacy} />
           <Route path="/about" component={About} />
         </Route>
