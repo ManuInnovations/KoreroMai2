@@ -14,6 +14,7 @@ class mediashow extends React.Component {
   render() {
     debug(this.props)
     const { dispatch, letter } = this.props
+    // this is the problem need to fix letter.letter.letter
     const singleLetter = letter.letter.letter
 
     return (

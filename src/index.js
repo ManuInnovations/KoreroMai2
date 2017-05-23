@@ -37,8 +37,9 @@ const Root = ({ store }) => {
           <Route path="/letterindex" component={Letterindex}>
             <Route path="/letterindex/:id" component={Displayletter} />
           </Route>
-          <Route path="/media" component={Medialibrary} />
-          <Route path="/media/:id" component={Mediashow} />
+          <Route path="/media" component={Medialibrary} >
+            <Route path="/media/:id" component={Mediashow} />
+          </Route>  
           <Route path="/privacy" component={Privacy} />
           <Route path="/about" component={About} />
         </Route>
