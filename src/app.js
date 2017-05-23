@@ -1,8 +1,8 @@
 const debug = require("debug")("components:app")
 const React = require("react")
 const { connect } = require("react-redux")
-const Nav = require("./components/nav")
-const Footer = require("./components/footer")
+const Nav = require("./components/Nav")
+const Footer = require("./components/Footer")
 
 const app = (props) => {
   debug({ props })

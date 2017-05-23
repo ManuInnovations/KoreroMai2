@@ -4,7 +4,7 @@ const { connect } = require("react-redux")
 const request = require("superagent")
 const { Link } = require("react-router")
 
-class Letterindex extends React.Component {
+class LetterIndex extends React.Component {
 
   handleClick(e) {
     e.preventDefault()
@@ -61,4 +61,4 @@ class Letterindex extends React.Component {
   }
 }
 
-module.exports = connect(state => state)(Letterindex)
+module.exports = connect(state => state)(LetterIndex)
