@@ -33,7 +33,7 @@ class contentspage extends React.Component {
                       onClick={() =>
                           dispatch({
                             type: "RENDER_LETTER",
-                            payload: { letter },
+                            payload: letter,
                           })
                       }>
                       {letter.capital}

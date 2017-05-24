@@ -39,7 +39,7 @@ class displayletter extends React.Component {
     const low = "low"
     const word = "word"
     const { dispatch, letter } = this.props
-    const singleLetter = letter.letter
+    const singleLetter = letter
 
 
     return (
@@ -117,7 +117,7 @@ class displayletter extends React.Component {
             onClick={() =>
                 dispatch({
                   type: "RENDER_LETTER",
-                  payload: { letter },
+                  payload: letter,
                 })
             }>
             Watch: {singleLetter.mediaName}

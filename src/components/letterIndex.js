@@ -23,6 +23,7 @@ class letterindex extends React.Component {
         </Link>
         {
           letters.map((letter) => {
+
             return (
               <Link
                 key={letter.id}
@@ -39,7 +40,7 @@ class letterindex extends React.Component {
                     onClick={() =>
                         dispatch({
                           type: "RENDER_LETTER",
-                          payload: { letter },
+                          payload: letter,
                         })
                     }>
                   {letter.capital}

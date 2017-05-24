@@ -5,7 +5,9 @@ const initialState = require("../../state")
 module.exports = (state = initialState.letter, action) => {
   switch (action.type) {
 
-    case "RENDER_LETTER": return Object.assign({}, state, action.payload)
+    case "RENDER_LETTER":
+      console.log('Reducer,',action.payload);
+      return Object.assign({},state, action.payload.letter)
 
     default: return state
   }
