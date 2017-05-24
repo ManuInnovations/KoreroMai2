@@ -7,7 +7,7 @@ module.exports = (state = initialState.letter, action) => {
 
     case "RENDER_LETTER":
       console.log('Reducer,',action.payload);
-      return Object.assign({},state, action.payload.letter)
+      return Object.assign({},state, action.payload)
 
     default: return state
   }
