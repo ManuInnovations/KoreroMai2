@@ -14,11 +14,6 @@ class Mediashow extends React.Component {
   render() {
     debug(this.props)
     const { dispatch, letter } = this.props
-<<<<<<< HEAD:src/components/mediashow.js
-    // this is the problem need to fix letter.letter.letter
-    const singleLetter = letter.letter.letter
-=======
->>>>>>> cbf1ff9365e6f53f4b097570986a1a7a5bd1841e:src/components/Mediashow.js
 
     return (
       <div className="row">
