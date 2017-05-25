@@ -27,7 +27,7 @@ class Mediashow extends React.Component {
 
         </div>
         <div className="col-sm-12">
-            <img id="mediashow-back" src="../../images/back.gif" alt="back button" onClick={browserHistory.goBack} />
+            <img id="mediashow-back" src="../../images/back-media.png" alt="back button" onClick={browserHistory.goBack} />
         </div>
       </div>
     )
