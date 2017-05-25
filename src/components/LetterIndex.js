@@ -4,6 +4,8 @@ const { connect } = require("react-redux")
 const request = require("superagent")
 const { Link } = require("react-router")
 
+const NavLink = require("./NavLink.js")
+
 class LetterIndex extends React.Component {
 
   handleClick(e) {
@@ -23,7 +25,7 @@ class LetterIndex extends React.Component {
           letters.map((letter) => {
 
             return (
-              <Link
+              <NavLink
                 key={letter.id}
                 to={`/letterindex/${letter.capital}`}
                 activeClassName="active">
@@ -44,7 +46,7 @@ class LetterIndex extends React.Component {
                   {letter.capital}
                   </button>
                 </div>
-              </Link>
+              </NavLink>
             )
           })
         }
