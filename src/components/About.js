@@ -1,4 +1,3 @@
-const debug = require("debug")("components:About")
 const React = require("react")
 const { connect } = require("react-redux")
 
@@ -10,7 +9,6 @@ class About extends React.Component {
   }
 
   render() {
-    debug(this.props)
 
     return (
       <div className="row about">

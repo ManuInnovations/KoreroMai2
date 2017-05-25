@@ -1,4 +1,3 @@
-const debug = require("debug")("components:Home")
 const React = require("react")
 const { connect } = require("react-redux")
 const { Link } = require("react-router")
@@ -12,7 +11,6 @@ class Home extends React.Component {
   }
 
   render() {
-    debug(this.props)
     const { dispatch } = this.props
 
     return (

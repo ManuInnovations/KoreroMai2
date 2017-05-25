@@ -14,7 +14,6 @@ class Mediashow extends React.Component {
   render() {
     debug(this.props)
     const { dispatch, letter } = this.props
-    console.log('this.props in mediashow', this.props);
 
     return (
       <div className="row">
