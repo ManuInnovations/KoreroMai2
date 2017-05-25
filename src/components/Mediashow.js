@@ -14,27 +14,16 @@ class Mediashow extends React.Component {
   render() {
     debug(this.props)
     const { dispatch, letter } = this.props
-    const singleLetter = letter.letter.letter
 
     return (
       <div className="row">
-        <div className="col-sm-12">
+        <div className="col-sm-12 video">
 
-          <video controls>
-            <source src={singleLetter.multimedia} type="video/mp4" />
+          <video width="80%" controls>
+            <source src={letter.multimedia} type="video/webm" />
             <track kind="captions" src="" srcLang="en" />
             Your browser does not support HTML5 video.
           </video>
-
-          <br />
-
-          <Link to="#" key={letter.id}>
-            <img id="back" src="../../images/back.gif" alt="back button" />
-          </Link>
-
-          <Link to="#" key={letter.id}>
-            <img id="next" src="../../images/next.gif" alt="next button" />
-          </Link>
 
         </div>
       </div>

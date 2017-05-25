@@ -12,6 +12,7 @@ module.exports = {
       wordImage: "images/words/aniwaniwa.png",
       wordSound: "/sounds/aniwaniwa.mp3",
       multimedia: "/multimedia/aniwaniwa.webm",
+      mediaName: "Aniwaniwa Song",
     },
     {
       id: 2,
@@ -22,6 +23,8 @@ module.exports = {
       word: "Ēkara",
       wordImage: "images/words/ekara.png",
       wordSound: "/sounds/ekara.mp3",
+      multimedia: "/multimedia/aniwaniwa.webm",
+      mediaName: "Ekara Animation",
     },
     {
       id: 3,
@@ -32,6 +35,8 @@ module.exports = {
       word: "Hōiho",
       wordImage: "images/words/hoiho.png",
       wordSound: "/sounds/hoiho.mp3",
+      multimedia: "/multimedia/aniwaniwa.webm",
+      mediaName: "Hoiho Song",
     },
     {
       id: 4,
@@ -42,6 +47,8 @@ module.exports = {
       word: "Ika",
       wordImage: "images/words/ika.png",
       wordSound: "/sounds/ika.mp3",
+      multimedia: "/multimedia/aniwaniwa.webm",
+      mediaName: "Ika Animation",
     },
     {
       id: 5,
@@ -52,6 +59,8 @@ module.exports = {
       word: "Kōura",
       wordImage: "images/words/koura.png",
       wordSound: "/sounds/koura.mp3",
+      multimedia: "/multimedia/aniwaniwa.webm",
+      mediaName: "Koura song",
     },
     {
       id: 6,
@@ -62,6 +71,8 @@ module.exports = {
       word: "Maunga",
       wordImage: "images/words/maunga.png",
       wordSound: "/sounds/maunga.mp3",
+      multimedia: "/multimedia/aniwaniwa.webm",
+      mediaName: "Maunga Animation",
     },
     {
       id: 7,
@@ -72,6 +83,8 @@ module.exports = {
       word: "Nanikoti",
       wordImage: "images/words/nanikoti.png",
       wordSound: "/sounds/nanikoti.mp3",
+      multimedia: "/multimedia/aniwaniwa.webm",
+      mediaName: "Nanikoti Rhyme",
     },
     {
       id: 8,
@@ -82,6 +95,8 @@ module.exports = {
       word: "Ngata",
       wordImage: "images/words/ngata.png",
       wordSound: "/sounds/ngata.mp3",
+      multimedia: "/multimedia/aniwaniwa.webm",
+      mediaName: "Ngata animation",
     },
     {
       id: 9,
@@ -92,6 +107,8 @@ module.exports = {
       word: "Oru",
       wordImage: "images/words/oru.png",
       wordSound: "/sounds/oru.mp3",
+      multimedia: "/multimedia/aniwaniwa.webm",
+      mediaName: "Oru animation",
     },
     {
       id: 10,
@@ -102,6 +119,8 @@ module.exports = {
       word: "Pūngāwerewere",
       wordImage: "images/words/pungawerewere.png",
       wordSound: "/sounds/pungawerewere.mp3",
+      multimedia: "/multimedia/aniwaniwa.webm",
+      mediaName: "Incy wincy spider",
     },
     {
       id: 11,
@@ -112,6 +131,8 @@ module.exports = {
       word: "Ruru",
       wordImage: "images/words/ruru.png",
       wordSound: "/sounds/ruru.mp3",
+      multimedia: "/multimedia/aniwaniwa.webm",
+      mediaName: "The Ruru Song",
     },
     {
       id: 12,
@@ -122,6 +143,8 @@ module.exports = {
       word: "Tāne-mahuta",
       wordImage: "images/words/tanemahuta.png",
       wordSound: "/sounds/tanemahuta.mp3",
+      multimedia: "/multimedia/aniwaniwa.webm",
+      mediaName: "Tane mahuta legend",
     },
     {
       id: 13,
@@ -132,6 +155,8 @@ module.exports = {
       word: "Ua",
       wordImage: "images/words/ua.png",
       wordSound: "/sounds/ua.mp3",
+      multimedia: "/multimedia/aniwaniwa.webm",
+      mediaName: "Rain rain go away",
     },
     {
       id: 14,
@@ -142,6 +167,8 @@ module.exports = {
       word: "Wētā",
       wordImage: "images/words/weta.png",
       wordSound: "/sounds/weta.mp3",
+      multimedia: "/multimedia/aniwaniwa.webm",
+      mediaName: "The Weta Animation",
     },
     {
       id: 15,
@@ -152,6 +179,8 @@ module.exports = {
       word: "Whānau",
       wordImage: "images/words/whanau.png",
       wordSound: "/sounds/whanau.mp3",
+      multimedia: "/multimedia/aniwaniwa.webm",
+      mediaName: "The whanau rhyme",
     },
   ],
   letter: {},

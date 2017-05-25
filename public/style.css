@@ -20,10 +20,11 @@ body {
 }
 
 .content {
-  flex: 1;
   min-height: 86vh;
   background-color: #7CFC00;
   text-align: center;
+  width: 90%;
+  margin: auto;
 }
 
 img {
@@ -73,6 +74,8 @@ img {
   -webkit-animation:wiggle .3s 2;
   animation:wiggle .3s 2;
 }
+
+
 
 /** WORDS AND LETTERS */
 
@@ -161,6 +164,10 @@ ul.topnav li a:hover {
     }
   }
 
+  .is-active {
+    color: yellow;
+  }
+
   /** FOOTER STYLES */
 
   .footer {
@@ -187,20 +194,22 @@ ul.topnav li a:hover {
 
   /** ABOUT */
 
-  .about {
-    text-align: left;
-    padding: 3em;
-  }
+.about {
+  text-align: left;
+  padding: 3em;
+}
 
-  .contact {
-    text-align: center;
-  }
+.contact {
+  text-align: center;
+}
 
-  /** VIDEO PLAYER */
+/** MEDIA LIBRARY */
 
-  video {
-    width: 60%;
-    height: auto;
-    margin: auto;
-padding-top: 2em;
-  }
+.preview {
+  width: 20%;
+  margin: 3rem;
+}
+
+.video {
+  margin-top: 3rem;
+}

@@ -39,7 +39,7 @@ class Displayletter extends React.Component {
     const low = "low"
     const word = "word"
     const { dispatch, letter } = this.props
-    const singleLetter = letter.letter
+    const singleLetter = letter
 
 
     return (
@@ -108,6 +108,21 @@ class Displayletter extends React.Component {
 
         <img src={singleLetter.wordImage} alt="" />
 
+        </div>
+        <div className="col-sm-12">
+        <Link key={singleLetter.id} to={`/media/${singleLetter.capital}`}>
+          <button
+            type="button"
+            className="btn"
+            onClick={() =>
+                dispatch({
+                  type: "RENDER_LETTER",
+                  payload: letter,
+                })
+            }>
+            Watch: {singleLetter.mediaName}
+          </button>
+        </Link>
         </div>
       </div>
     )

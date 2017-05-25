@@ -1,4 +1,3 @@
-const debug = require("debug")("components:Nav")
 const React = require("react")
 const { connect } = require("react-redux")
 const { Link } = require("react-router")
@@ -11,7 +10,6 @@ class Nav extends React.Component {
   }
 
   render() {
-    debug(this.props)
 
     return (
       <div className="row">

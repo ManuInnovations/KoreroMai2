@@ -13,8 +13,7 @@ class LetterIndex extends React.Component {
   render() {
     debug(this.props)
     const { dispatch, letters } = this.props
-    console.log("children,", this.props.children);
-
+  
     return (
       <div className="row">
         <div className="col-sm-12">
@@ -23,10 +22,12 @@ class LetterIndex extends React.Component {
         </Link>
         {
           letters.map((letter) => {
+
             return (
               <Link
                 key={letter.id}
-                to={`/letterindex/${letter.capital}`}>
+                to={`/letterindex/${letter.capital}`}
+                activeClassName="active">
                 <div
                   className="btn-group btn-group-lg btn-group-center wiggle-me"
                   role="group"
@@ -38,7 +39,7 @@ class LetterIndex extends React.Component {
                     onClick={() =>
                         dispatch({
                           type: "RENDER_LETTER",
-                          payload: { letter },
+                          payload: letter,
                         })
                     }>
                   {letter.capital}
