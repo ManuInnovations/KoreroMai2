@@ -1,10 +1,10 @@
-const debug = require("debug")("components:contentspage")
+const debug = require("debug")("components:Contentspage")
 const React = require("react")
 const { connect } = require("react-redux")
 const request = require("superagent")
 const { Link } = require("react-router")
 
-class contentspage extends React.Component {
+class Contentspage extends React.Component {
 
   handleClick(e) {
     e.preventDefault()
@@ -33,7 +33,7 @@ class contentspage extends React.Component {
                       onClick={() =>
                           dispatch({
                             type: "RENDER_LETTER",
-                            payload: { letter },
+                            payload: letter,
                           })
                       }>
                       {letter.capital}
@@ -58,4 +58,4 @@ class contentspage extends React.Component {
   }
 }
 
-module.exports = connect(state => state)(contentspage)
+module.exports = connect(state => state)(Contentspage)

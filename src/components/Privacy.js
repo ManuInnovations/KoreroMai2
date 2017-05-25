@@ -1,8 +1,8 @@
-const debug = require("debug")("components:privacy")
+const debug = require("debug")("components:Privacy")
 const React = require("react")
 const { connect } = require("react-redux")
 
-class privacy extends React.Component {
+class Privacy extends React.Component {
 
   handleClick(e) {
     e.preventDefault()
@@ -144,4 +144,4 @@ class privacy extends React.Component {
   }
 }
 
-module.exports = connect(state => state)(privacy)
+module.exports = connect(state => state)(Privacy)

@@ -1,10 +1,9 @@
-const debug = require("debug")("components:home")
 const React = require("react")
 const { connect } = require("react-redux")
 const { Link } = require("react-router")
 const request = require("superagent")
 
-class home extends React.Component {
+class Home extends React.Component {
 
   handleClick(e) {
     e.preventDefault()
@@ -12,7 +11,6 @@ class home extends React.Component {
   }
 
   render() {
-    debug(this.props)
     const { dispatch } = this.props
 
     return (
@@ -37,4 +35,4 @@ class home extends React.Component {
   }
 }
 
-module.exports = connect(state => state)(home)
+module.exports = connect(state => state)(Home)

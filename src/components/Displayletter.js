@@ -1,10 +1,10 @@
-const debug = require("debug")("components:displayletter")
+const debug = require("debug")("components:Displayletter")
 const React = require("react")
 const { connect } = require("react-redux")
 const request = require("superagent")
 const { Link } = require("react-router")
 
-class displayletter extends React.Component {
+class Displayletter extends React.Component {
 
   constructor() {
     super()
@@ -39,7 +39,7 @@ class displayletter extends React.Component {
     const low = "low"
     const word = "word"
     const { dispatch, letter } = this.props
-    const singleLetter = letter.letter
+    const singleLetter = letter
 
 
     return (
@@ -117,7 +117,7 @@ class displayletter extends React.Component {
             onClick={() =>
                 dispatch({
                   type: "RENDER_LETTER",
-                  payload: { letter },
+                  payload: letter,
                 })
             }>
             Watch: {singleLetter.mediaName}
@@ -129,4 +129,4 @@ class displayletter extends React.Component {
   }
 }
 
-module.exports = connect(state => state)(displayletter)
+module.exports = connect(state => state)(Displayletter)

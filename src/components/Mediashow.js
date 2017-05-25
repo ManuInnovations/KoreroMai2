@@ -1,10 +1,10 @@
-const debug = require("debug")("components:mediashow")
+const debug = require("debug")("components:Mediashow")
 const React = require("react")
 const { connect } = require("react-redux")
 const { Link } = require("react-router")
 const request = require("superagent")
 
-class mediashow extends React.Component {
+class Mediashow extends React.Component {
 
   handleClick(e) {
     e.preventDefault()
@@ -14,15 +14,18 @@ class mediashow extends React.Component {
   render() {
     debug(this.props)
     const { dispatch, letter } = this.props
+<<<<<<< HEAD:src/components/mediashow.js
     // this is the problem need to fix letter.letter.letter
     const singleLetter = letter.letter.letter
+=======
+>>>>>>> cbf1ff9365e6f53f4b097570986a1a7a5bd1841e:src/components/Mediashow.js
 
     return (
       <div className="row">
         <div className="col-sm-12 video">
 
-          <video width="80%" controls controlsList="nodownload">
-            <source src={singleLetter.multimedia} type="video/webm" />
+          <video width="80%" controls>
+            <source src={letter.multimedia} type="video/webm" />
             <track kind="captions" src="" srcLang="en" />
             Your browser does not support HTML5 video.
           </video>
@@ -33,4 +36,4 @@ class mediashow extends React.Component {
   }
 }
 
-module.exports = connect(state => state)(mediashow)
+module.exports = connect(state => state)(Mediashow)

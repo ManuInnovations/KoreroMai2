@@ -1,9 +1,8 @@
-const debug = require("debug")("components:nav")
 const React = require("react")
 const { connect } = require("react-redux")
 const { Link } = require("react-router")
 
-class nav extends React.Component {
+class Nav extends React.Component {
 
   handleClick(e) {
     e.preventDefault()
@@ -11,7 +10,6 @@ class nav extends React.Component {
   }
 
   render() {
-    debug(this.props)
 
     return (
       <div className="row">
@@ -37,4 +35,4 @@ class nav extends React.Component {
   }
 }
 
-module.exports = connect(state => state)(nav)
+module.exports = connect(state => state)(Nav)

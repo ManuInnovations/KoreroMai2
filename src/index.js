@@ -15,14 +15,14 @@ const initialState = require("../state")
 
 //top level components
 const App = require("./app")
-const Home = require("./components/home")
-const Contentspage = require("./components/contentspage")
-const Letterindex = require("./components/letterIndex")
-const Displayletter = require("./components/displayletter")
-const Privacy = require("./components/privacy")
-const About = require("./components/about")
-const Mediashow = require("./components/mediashow")
-const Medialibrary = require("./components/medialibrary")
+const Home = require("./components/Home")
+const Contentspage = require("./components/Contentspage")
+const LetterIndex = require("./components/LetterIndex")
+const Displayletter = require("./components/Displayletter")
+const Privacy = require("./components/Privacy")
+const About = require("./components/About")
+const Mediashow = require("./components/Mediashow")
+const Medialibrary = require("./components/Medialibrary")
 
 
 const store = createStore(reducer, initialState)
@@ -34,8 +34,9 @@ const Root = ({ store }) => {
         <Route path="/" component={App} store={store}>
           <IndexRoute component={Home} />
           <Route path="/contents" component={Contentspage} />
-          <Route path="/letterindex" component={Letterindex}>
+          <Route path="/letterindex" component={LetterIndex}>
             <Route path="/letterindex/:id" component={Displayletter} />
+            <Route path="/letterindex/:id/watch" component={Mediashow}/>
           </Route>
           <Route path="/media" component={Medialibrary} >
             <Route path="/media/:id" component={Mediashow} />

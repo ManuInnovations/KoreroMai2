@@ -1,10 +1,10 @@
-const debug = require("debug")("components:letterindex")
+const debug = require("debug")("components:Letterindex")
 const React = require("react")
 const { connect } = require("react-redux")
 const request = require("superagent")
 const { Link } = require("react-router")
 
-class letterindex extends React.Component {
+class LetterIndex extends React.Component {
 
   handleClick(e) {
     e.preventDefault()
@@ -13,8 +13,7 @@ class letterindex extends React.Component {
   render() {
     debug(this.props)
     const { dispatch, letters } = this.props
-    console.log("children,", this.props.children);
-
+  
     return (
       <div className="row">
         <div className="col-sm-12">
@@ -23,6 +22,7 @@ class letterindex extends React.Component {
         </Link>
         {
           letters.map((letter) => {
+
             return (
               <Link
                 key={letter.id}
@@ -39,7 +39,7 @@ class letterindex extends React.Component {
                     onClick={() =>
                         dispatch({
                           type: "RENDER_LETTER",
-                          payload: { letter },
+                          payload: letter,
                         })
                     }>
                   {letter.capital}
@@ -62,4 +62,4 @@ class letterindex extends React.Component {
   }
 }
 
-module.exports = connect(state => state)(letterindex)
+module.exports = connect(state => state)(LetterIndex)
