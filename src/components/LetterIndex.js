@@ -13,7 +13,6 @@ class LetterIndex extends React.Component {
   render() {
     debug(this.props)
     const { dispatch, letters } = this.props
-  
     return (
       <div className="row">
         <div className="col-sm-12">
