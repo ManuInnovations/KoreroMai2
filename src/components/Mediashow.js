@@ -1,7 +1,7 @@
 const debug = require("debug")("components:Mediashow")
 const React = require("react")
 const { connect } = require("react-redux")
-const { Link } = require("react-router")
+const { Link, browserHistory } = require("react-router")
 const request = require("superagent")
 
 class Mediashow extends React.Component {
@@ -25,6 +25,9 @@ class Mediashow extends React.Component {
             Your browser does not support HTML5 video.
           </video>
 
+        </div>
+        <div className="col-sm-12">
+            <img id="mediashow-back" src="../../images/back-media.png" alt="back button" onClick={browserHistory.goBack} />
         </div>
       </div>
     )
