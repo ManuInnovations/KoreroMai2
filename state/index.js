@@ -85,7 +85,6 @@ module.exports = {
       lowercase: "ng",
       capitalSound: "/sounds/capitalSounds/NG.mp3",
       lowerSound: "/sounds/lowerSounds/ng.mp3",
-      word: "Ngata",
       wordImage: "images/words/ngata.png",
       wordSound: "/sounds/ngata.mp3",
       multimedia: "/multimedia/aniwaniwa.webm",
