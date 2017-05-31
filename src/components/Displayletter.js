@@ -87,12 +87,9 @@ class Displayletter extends React.Component {
           {singleLetter.lowercase}
         </button>
 
-        <br />
-
+        </div>
         <Displayimages />
 
-        <br />
-        </div>
         <div className="col-sm-12">
         <Link key={singleLetter.id} to={`/media/${singleLetter.capital}`}>
           <button
