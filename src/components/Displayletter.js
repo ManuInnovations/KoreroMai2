@@ -98,15 +98,10 @@ class Displayletter extends React.Component {
 
         <br />
 
-        <button
-          type="button"
-          className="btn btn-xl display"
+        <img className="word" src={singleLetter.wordImage} alt=""
           onClick={() =>
-            this.playWord(word)}>
-          {singleLetter.word}
-        </button>
-
-        <img src={singleLetter.wordImage} alt="" />
+          this.playWord(word)}
+        />
 
         </div>
         <div className="col-sm-12">
