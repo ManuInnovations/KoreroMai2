@@ -4,39 +4,25 @@ const { connect } = require("react-redux")
 const request = require("superagent")
 const { Link } = require("react-router")
 
-class Displayimages extends React.Component {
-
-  handleClick(e) {
-    e.preventDefault()
-  }
-
-  render() {
-    debug(this.props)
-    const { dispatch, letters } = this.props
-    console.log("letters.wordImage", letters.wordImage);
-
+function Displayimages(props) {
+  letters.map((letter, index) => {
+  console.log("displayimages props", props);
     return (
       <div className="row">
-        <div className="col-sm-12">
-        {
-          letters.map((letter) => {
-
-            return (
-
-              <img className="word" src={singleLetter.wordImage} alt=""
-                onClick={() =>
-                this.playWord(word)}
-              />
-
-            )
-          })
-        }
-
-
+        <div className="col-sm-3">
+          <audio ref={`${letter}`} >
+            <source src={`${letters[letter].soundFile}`} preload="auto"/>
+          </audio>
+        </div>
+      </div>
+      <div className="row">
+        <div className="columns">
+          <img src={`${letters[letter]}} onClick={() => this.playSound(letter)}>
+          </button>
         </div>
       </div>
     )
   }
-}
+
 
 module.exports = connect(state => state)(Displayimages)

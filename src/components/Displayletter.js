@@ -3,6 +3,8 @@ const React = require("react")
 const { connect } = require("react-redux")
 const request = require("superagent")
 const { Link } = require("react-router")
+const Displayimages = require("./Displayimages")
+
 
 class Displayletter extends React.Component {
 
@@ -42,8 +44,6 @@ class Displayletter extends React.Component {
     const word = "word"
     const { dispatch, letter } = this.props
     const singleLetter = letter
-    console.log("letter", letter.wordImage);
-
 
     return (
       <div className="row letter-container">
@@ -71,18 +71,6 @@ class Displayletter extends React.Component {
             srcLang="en" />
         </audio>
 
-        <audio
-        key={singleLetter.wordSound}
-        ref={`${word}`}>
-          <source
-            src={singleLetter.wordSound}
-            preload="auto" />
-          <track
-            kind="captions"
-            src=""
-            srcLang="en" />
-        </audio>
-
         <button
           type="button"
           className="btn btn-xl display"
@@ -101,7 +89,7 @@ class Displayletter extends React.Component {
 
         <br />
 
-        {this.props.children}
+        <Displayimages />
 
         <br />
         </div>

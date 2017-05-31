@@ -23,7 +23,6 @@ const Privacy = require("./components/Privacy")
 const About = require("./components/About")
 const Mediashow = require("./components/Mediashow")
 const Medialibrary = require("./components/Medialibrary")
-const Displayimages = require("./components/Displayimages")
 
 const store = createStore(reducer, initialState)
 
