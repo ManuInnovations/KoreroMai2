@@ -6,7 +6,7 @@ const { Link } = require("react-router")
 
 const NavLink = require("./NavLink.js")
 
-class LetterIndex extends React.Component {
+class Letterindex extends React.Component {
 
   handleClick(e) {
     e.preventDefault()
@@ -63,4 +63,4 @@ class LetterIndex extends React.Component {
   }
 }
 
-module.exports = connect(state => state)(LetterIndex)
+module.exports = connect(state => state)(Letterindex)
