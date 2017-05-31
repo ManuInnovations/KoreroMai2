@@ -98,7 +98,7 @@ class Displayletter extends React.Component {
 
         <br />
 
-        <img src={singleLetter.wordImage} alt=""
+        <img className="word" src={singleLetter.wordImage} alt=""
           onClick={() =>
           this.playWord(word)}
         />

@@ -83,25 +83,10 @@ img {
 
 /** WORDS AND LETTERS */
 
-#word::first-letter {
-  color: red;
-  text-shadow: 0 0 0.2em #F87, 0 0 0.2em #F87
-}
-
-#word {
-  border: solid 2px grey;
-  border-radius: 6px;
-  max-width: 300px;
-  margin: auto;
-  background: white;
-  padding: 1rem;
-  margin-bottom: .5em;
-}
-
-#word:hover {
+.word:hover {
   cursor: pointer;
-  background-color: yellow;
-}
+  font-size: 4em;
+background-color: yellow;}
 
 #next {
   position: absolute;
