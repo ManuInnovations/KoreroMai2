@@ -33,6 +33,8 @@ class Displayletter extends React.Component {
     this.props.router.push("/")
   }
 
+
+
   render() {
     debug(this.props)
     const cap = "cap"
@@ -40,6 +42,7 @@ class Displayletter extends React.Component {
     const word = "word"
     const { dispatch, letter } = this.props
     const singleLetter = letter
+    console.log("letter", letter.wordImage);
 
 
     return (
@@ -98,16 +101,9 @@ class Displayletter extends React.Component {
 
         <br />
 
-        <button
-          type="button"
-          className="btn btn-xl display"
-          onClick={() =>
-            this.playWord(word)}>
-          {singleLetter.word}
-        </button>
+        {this.props.children}
 
-        <img src={singleLetter.wordImage} alt="" />
-
+        <br />
         </div>
         <div className="col-sm-12">
         <Link key={singleLetter.id} to={`/media/${singleLetter.capital}`}>

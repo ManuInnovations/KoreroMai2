@@ -23,7 +23,7 @@ const Privacy = require("./components/Privacy")
 const About = require("./components/About")
 const Mediashow = require("./components/Mediashow")
 const Medialibrary = require("./components/Medialibrary")
-
+const Displayimages = require("./components/Displayimages")
 
 const store = createStore(reducer, initialState)
 
@@ -39,7 +39,7 @@ const Root = ({ store }) => {
             <Route path="/letterindex/:id/watch" component={Mediashow}/>
           </Route>
           <Route path="/media" component={Medialibrary} />
-          <Route path="/media/:id" component={Mediashow} /> 
+          <Route path="/media/:id" component={Mediashow} />
           <Route path="/privacy" component={Privacy} />
           <Route path="/about" component={About} />
         </Route>
