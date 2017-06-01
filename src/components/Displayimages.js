@@ -6,10 +6,27 @@ const { Link } = require("react-router")
 
 class Displayimages extends React.Component {
 
+    constructor() {
+      super()
+      this.playSound = this.playSound.bind(this)
+    }
+
+  handleClick(e) {
+    e.preventDefault()
+    this.props.router.push("/")
+  }
+
+  playSound(word) {
+    console.log('word', word);
+    this.refs[word].load()
+    this.refs[word].play()
+  }
+
   render(){
     debug(this.props)
     const {letter} = this.props
     const {wordImage} = letter
+    const word = "word"
 
     return (
       <div className="row">
@@ -17,7 +34,23 @@ class Displayimages extends React.Component {
           wordImage.map((image) =>{
           return (
             <div>
-            <img src={`../${image.image}`}/>
+
+            <img src={`../${image.image}`}
+              onClick={() =>
+                this.playSound(word)}
+            />
+
+            <audio
+            key={image.sound}
+            ref={`${word}`}>
+              <source
+                src={'../public'+image.sound}
+                preload="auto" />
+              <track
+                kind="captions"
+                src=""
+                srcLang="en" />
+            </audio>
             </div>
           )
         })
@@ -28,19 +61,6 @@ class Displayimages extends React.Component {
 }
 
 module.exports = connect(state => state)(Displayimages)
-
-
-//   <div className="col-sm-3">
-//     <audio ref={`${letter}`} >
-//       <source src={`${letters[letter].soundFile}`} preload="auto"/>
-//     </audio>
-//   </div>
-// </div>
-// <div className="row">
-//   <div className="columns">
-//     <img src={${letters[letter]}} onClick={() => this.playSound(letter)}>
-//   </div>
-
 
 // letters: [
 //   {

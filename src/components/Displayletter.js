@@ -21,6 +21,7 @@ class Displayletter extends React.Component {
   }
 
   playLower(low) {
+    console.log('lowercase', low);
     this.refs[low].load()
     this.refs[low].play()
   }
