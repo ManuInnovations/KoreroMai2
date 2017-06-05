@@ -6,10 +6,10 @@ const { Link } = require("react-router")
 
 class Displayimages extends React.Component {
 
-    constructor() {
-      super()
-      this.playSound = this.playSound.bind(this)
-    }
+  constructor() {
+    super()
+    this.playSound = this.playSound.bind(this)
+  }
 
   handleClick(e) {
     e.preventDefault()
@@ -27,7 +27,7 @@ class Displayimages extends React.Component {
     const {letter} = this.props
     const {wordImage} = letter
     const word = "word"
-
+console.log('wordImage in displayimages', wordImage);
     return (
       <div className="row">
         {
@@ -44,7 +44,7 @@ class Displayimages extends React.Component {
             key={image.sound}
             ref={`${word}`}>
               <source
-                src={'../public'+image.sound}
+                src={`../${image.sound}`}
                 preload="auto" />
               <track
                 kind="captions"

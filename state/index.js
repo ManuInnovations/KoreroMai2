@@ -9,8 +9,8 @@ module.exports = {
       capitalSound: "/sounds/capitalSounds/A.mp3",
       lowerSound: "/sounds/lowerSounds/a.mp3",
       wordImage: [
-        {id:1, image:"images/words/aniwaniwa.png", sound: "/sounds/ua.mp3"},
-        {id:2, image:"images/words/anuhe.png", sound: "/sounds/anuhe.mp3"},
+        {id:1, image:"images/words/aniwaniwa.png", sound: "sounds/ua.mp3"},
+        {id:2, image:"images/words/anuhe.png", sound: "sounds/anuhe.mp3"},
       ],
       multimedia: "/multimedia/aniwaniwa.webm",
       mediaName: "Aniwaniwa Song",
@@ -22,8 +22,8 @@ module.exports = {
       capitalSound: "/sounds/capitalSounds/E.mp3",
       lowerSound: "/sounds/lowerSounds/e.mp3",
       wordImage: [
-        {id:1, image:"images/words/ekara.png", sound: "/sounds/ekara.mp3"},
-        {id:2, image:"images/words/ekara.png", sound: "/sounds/ekara.mp3"},
+        {id:1, image:"images/words/ekara.png", sound: "sounds/ekara.mp3"},
+        {id:2, image:"images/words/ekara.png", sound: "sounds/ekara.mp3"},
       ],
       multimedia: "/multimedia/aniwaniwa.webm",
       mediaName: "Ekara Animation",
@@ -35,8 +35,8 @@ module.exports = {
       capitalSound: "/sounds/capitalSounds/H.mp3",
       lowerSound: "/sounds/lowerSounds/h.mp3",
       wordImage: [
-        {id:1, image:"images/words/hoiho.png", sound: "/sounds/hoiho.mp3"},
-        {id:2, image:"images/words/heki.png", sound: "/sounds/heki.mp3"},
+        {id:1, image:"images/words/hoiho.png", sound: "sounds/hoiho.mp3"},
+        {id:2, image:"images/words/heki.png", sound: "sounds/heki.mp3"},
       ],
       multimedia: "/multimedia/aniwaniwa.webm",
       mediaName: "Hoiho Song",
@@ -48,8 +48,8 @@ module.exports = {
       capitalSound: "/sounds/capitalSounds/I.mp3",
       lowerSound: "/sounds/lowerSounds/i.mp3",
       wordImage: [
-        {id:1, image:"images/words/ika.png", sound:  "/sounds/ika.mp3"},
-        {id:2, image:"images/words/ika.png", sound:  "/sounds/ika.mp3"},
+        {id:1, image:"images/words/ika.png", sound:  "sounds/ika.mp3"},
+        {id:2, image:"images/words/ika.png", sound:  "sounds/ika.mp3"},
       ],
       multimedia: "/multimedia/aniwaniwa.webm",
       mediaName: "Ika Animation",
