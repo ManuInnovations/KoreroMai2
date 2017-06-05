@@ -50,61 +50,63 @@ class Displayletter extends React.Component {
       <div className="row letter-container">
         <div className="col-sm-12">
 
-        <audio key={singleLetter.capitalSound} ref={`${cap}`}>
-          <source
-            src={singleLetter.capitalSound}
-            preload="auto" />
-          <track
-            kind="captions"
-            src=""
-            srcLang="en" />
-        </audio>
+          <audio key={singleLetter.capitalSound} ref={`${cap}`}>
+            <source
+              src={singleLetter.capitalSound}
+              preload="auto" />
+            <track
+              kind="captions"
+              src=""
+              srcLang="en" />
+          </audio>
 
-        <audio
-        key={singleLetter.lowerSound}
-        ref={`${low}`}>
-          <source
-            src={singleLetter.lowerSound}
-            preload="auto" />
-          <track
-            kind="captions"
-            src=""
-            srcLang="en" />
-        </audio>
+          <audio
+          key={singleLetter.lowerSound}
+          ref={`${low}`}>
+            <source
+              src={singleLetter.lowerSound}
+              preload="auto" />
+            <track
+              kind="captions"
+              src=""
+              srcLang="en" />
+          </audio>
 
-        <button
-          type="button"
-          className="btn btn-xl display"
-          onClick={() =>
-            this.playCapital(cap)}>
-          {singleLetter.capital}
-        </button>
+          <button
+            type="button"
+            className="btn btn-xl display"
+            onClick={() =>
+              this.playCapital(cap)}>
+            {singleLetter.capital}
+          </button>
 
-        <button
-          type="button"
-          className="btn btn-xl display"
-          onClick={() =>
-            this.playLower(low)}>
-          {singleLetter.lowercase}
-        </button>
+          <button
+            type="button"
+            className="btn btn-xl display"
+            onClick={() =>
+              this.playLower(low)}>
+            {singleLetter.lowercase}
+          </button>
 
         </div>
+
         <Displayimages />
 
         <div className="col-sm-12">
-        <Link key={singleLetter.id} to={`/media/${singleLetter.capital}`}>
-          <button
-            type="button"
-            className="btn"
-            onClick={() =>
-                dispatch({
-                  type: "RENDER_LETTER",
-                  payload: letter,
-                })
-            }>
-            Watch: {singleLetter.mediaName}
-          </button>
-        </Link>
+          <Link key={singleLetter.id} to={`/media/${singleLetter.capital}`}>
+            <button
+              type="button"
+              className="btn"
+              onClick={() =>
+                  dispatch({
+                    type: "RENDER_LETTER",
+                    payload: letter,
+                  })
+              }>
+              Watch: {singleLetter.mediaName}
+            </button>
+          </Link>
+
         </div>
       </div>
     )
