@@ -10,24 +10,20 @@ class Displayletter extends React.Component {
     super()
     this.playCapital = this.playCapital.bind(this)
     this.playLower = this.playLower.bind(this)
-    this.playWord = this.playWord.bind(this)
-    this.generateWord = this.generateWord.bind(this)
+    this.playSound = this.playSound.bind(this)
   }
 
-  playCapital(cap) {
-    this.refs[cap].load()
-    this.refs[cap].play()
+  playCapital() {
+    this.playCap.load()
+    this.playCap.play()
   }
 
-  playLower(low) {
-    this.refs[low].load()
-    this.refs[low].play()
+  playLower() {
+    this.playLow.load()
+    this.playLow.play()
   }
 
-  playWord(index) {
-    this.refs[index].load()
-    this.refs[index].play()
-  }
+
 
   handleClick(e) {
     e.preventDefault()
@@ -38,8 +34,6 @@ class Displayletter extends React.Component {
 
   render() {
     debug(this.props)
-    const cap = "cap"
-    const low = "low"
     const { dispatch, letters, letter } = this.props
     const wordsArr = letter.wordImage
 
@@ -47,7 +41,9 @@ class Displayletter extends React.Component {
       <div className="row letter-container">
         <div className="col-sm-12">
 
-          <audio key={letter.capitalSound} ref={`${cap}`}>
+          <audio
+          key={letter.capitalSound}
+          ref={(cap) => { this.playCap = cap; }}>
             <source
               src={letter.capitalSound}
               preload="auto" />
@@ -59,7 +55,7 @@ class Displayletter extends React.Component {
 
           <audio
           key={letter.lowerSound}
-          ref={`${low}`}>
+          ref={(low) => { this.playLow = low; }}>
             <source
               src={letter.lowerSound}
               preload="auto" />
@@ -72,16 +68,14 @@ class Displayletter extends React.Component {
           <button
             type="button"
             className="btn btn-xl display"
-            onClick={() =>
-              this.playCapital(cap)}>
+            onClick={this.playCapital}>
             {letter.capital}
           </button>
 
           <button
             type="button"
             className="btn btn-xl display"
-            onClick={() =>
-              this.playLower(low)}>
+            onClick={this.playLower}>
             {letter.lowercase}
           </button>
 
@@ -111,16 +105,20 @@ class Displayletter extends React.Component {
     )
   }
 
+  playSound(index) {
+    this.refs[index].load()
+    this.refs[index].play()
+  }
+
   generateWord(wordsArr) {
 
       return wordsArr.map((word, index) => {
-
         return (
           <div>
-            <audio ref={word.id} >
-              <source src={word.sound} preload='auto'/>
+            <audio ref={`${index}`} >
+              <source src={`${word[index].sound}`} preload='auto'/>
             </audio>
-            <img src={word.image} ref={word.id} onClick={() => this.playWord(index)} />
+            <img src={word.image} onClick={this.playSound(index)} />
           </div>
         )
       })
@@ -129,29 +127,4 @@ class Displayletter extends React.Component {
 
 module.exports = connect(state => state)(Displayletter)
 
-        // <audio
-        //   key={}
-        //   ref={index}>
-        //   <source
-        //     src={}
-        //     preload="auto" />
-        //   <track
-        //     kind="captions"
-        //     src=""
-        //     srcLang="en" />
-        // </audio>
-
-
-        //    <audio ref={index} >
-            //   <source src={word.sound} preload='auto' />
-            // </audio>
-        //  onClick={() => this.playWord(index)}
-          // }
-
-      // <audio ref={`${index}`} >
-      //   <source src={`${letters.wordImage[word].sound}`} preload='auto'/>
-      // </audio>
-      // <img onClick={() => this.playSound(index)} src={`${letters.wordImage[word].image}`} />
-
-//
-//
+//problem seems to be on line 119 - how to pass the correct word through as the sound file
