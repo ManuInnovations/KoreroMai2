@@ -3,8 +3,6 @@ const React = require("react")
 const { connect } = require("react-redux")
 const request = require("superagent")
 const { Link } = require("react-router")
-const Displayimages = require("./Displayimages")
-
 
 class Displayletter extends React.Component {
 
@@ -13,6 +11,7 @@ class Displayletter extends React.Component {
     this.playCapital = this.playCapital.bind(this)
     this.playLower = this.playLower.bind(this)
     this.playWord = this.playWord.bind(this)
+    this.generateWord = this.generateWord.bind(this)
   }
 
   playCapital(cap) {
@@ -21,14 +20,13 @@ class Displayletter extends React.Component {
   }
 
   playLower(low) {
-    console.log('lowercase', low);
     this.refs[low].load()
     this.refs[low].play()
   }
 
-  playWord(word) {
-    this.refs[word].load()
-    this.refs[word].play()
+  playWord(index) {
+    this.refs[index].load()
+    this.refs[index].play()
   }
 
   handleClick(e) {
@@ -42,17 +40,16 @@ class Displayletter extends React.Component {
     debug(this.props)
     const cap = "cap"
     const low = "low"
-    const word = "word"
-    const { dispatch, letter } = this.props
-    const singleLetter = letter
+    const { dispatch, letters, letter } = this.props
+    const wordsArr = letter.wordImage
 
     return (
       <div className="row letter-container">
         <div className="col-sm-12">
 
-          <audio key={singleLetter.capitalSound} ref={`${cap}`}>
+          <audio key={letter.capitalSound} ref={`${cap}`}>
             <source
-              src={singleLetter.capitalSound}
+              src={letter.capitalSound}
               preload="auto" />
             <track
               kind="captions"
@@ -61,10 +58,10 @@ class Displayletter extends React.Component {
           </audio>
 
           <audio
-          key={singleLetter.lowerSound}
+          key={letter.lowerSound}
           ref={`${low}`}>
             <source
-              src={singleLetter.lowerSound}
+              src={letter.lowerSound}
               preload="auto" />
             <track
               kind="captions"
@@ -77,7 +74,7 @@ class Displayletter extends React.Component {
             className="btn btn-xl display"
             onClick={() =>
               this.playCapital(cap)}>
-            {singleLetter.capital}
+            {letter.capital}
           </button>
 
           <button
@@ -85,15 +82,17 @@ class Displayletter extends React.Component {
             className="btn btn-xl display"
             onClick={() =>
               this.playLower(low)}>
-            {singleLetter.lowercase}
+            {letter.lowercase}
           </button>
 
         </div>
 
-        <Displayimages />
+      <div className="col-sm-12">
+        {this.generateWord(wordsArr, letters)}
+      </div>
 
         <div className="col-sm-12">
-          <Link key={singleLetter.id} to={`/media/${singleLetter.capital}`}>
+          <Link key={letter.id} to={`/media/${letter.capital}`}>
             <button
               type="button"
               className="btn"
@@ -103,7 +102,7 @@ class Displayletter extends React.Component {
                     payload: letter,
                   })
               }>
-              Watch: {singleLetter.mediaName}
+              Watch: {letter.mediaName}
             </button>
           </Link>
 
@@ -111,6 +110,48 @@ class Displayletter extends React.Component {
       </div>
     )
   }
+
+  generateWord(wordsArr) {
+
+      return wordsArr.map((word, index) => {
+
+        return (
+          <div>
+            <audio ref={word.id} >
+              <source src={word.sound} preload='auto'/>
+            </audio>
+            <img src={word.image} ref={word.id} onClick={() => this.playWord(index)} />
+          </div>
+        )
+      })
+  }
 }
 
 module.exports = connect(state => state)(Displayletter)
+
+        // <audio
+        //   key={}
+        //   ref={index}>
+        //   <source
+        //     src={}
+        //     preload="auto" />
+        //   <track
+        //     kind="captions"
+        //     src=""
+        //     srcLang="en" />
+        // </audio>
+
+
+        //    <audio ref={index} >
+            //   <source src={word.sound} preload='auto' />
+            // </audio>
+        //  onClick={() => this.playWord(index)}
+          // }
+
+      // <audio ref={`${index}`} >
+      //   <source src={`${letters.wordImage[word].sound}`} preload='auto'/>
+      // </audio>
+      // <img onClick={() => this.playSound(index)} src={`${letters.wordImage[word].image}`} />
+
+//
+//
