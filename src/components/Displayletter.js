@@ -124,8 +124,6 @@ class Displayletter extends React.Component {
 
 module.exports = connect(state => state)(Displayletter)
 
-module.exports = {
-  //
   // letters: [
   //   {
   //     id: 1,
@@ -140,4 +138,3 @@ module.exports = {
   //     multimedia: "/multimedia/aniwaniwa.webm",
   //     mediaName: "Aniwaniwa Song",
   //   },
-  
