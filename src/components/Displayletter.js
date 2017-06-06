@@ -107,19 +107,18 @@ class Displayletter extends React.Component {
   }
 
   generateWord(wordsArr) {
-
-      return wordsArr.map((word) => {
-        return (
-          <div>
+    return wordsArr.map((word) => {
+      return (
+        <div>
           <audio
             key={word}
             ref={(x) => { this.playWords[word] = x; }}>
-                <source src={word.sound} preload='auto'/>
+              <source src={word.sound} preload='auto'/>
           </audio>
-            <img src={word.image} onClick={this.playSound.bind(this, word)} />
-          </div>
-        )
-      })
+          <img src={word.image} onClick={this.playSound.bind(this, word)} />
+        </div>
+      )
+    })
   }
 }
 
