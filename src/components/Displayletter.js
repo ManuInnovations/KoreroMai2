@@ -14,16 +14,16 @@ class Displayletter extends React.Component {
   }
 
   playCapital() {
-    this.playCap.load()
     this.playCap.play()
   }
 
   playLower() {
-    this.playLow.load()
     this.playLow.play()
   }
 
-
+  playSound() {
+    this.playWord.play()
+  }
 
   handleClick(e) {
     e.preventDefault()
@@ -82,7 +82,7 @@ class Displayletter extends React.Component {
         </div>
 
       <div className="col-sm-12">
-        {this.generateWord(wordsArr, letters)}
+        {this.generateWord(wordsArr)}
       </div>
 
         <div className="col-sm-12">
@@ -105,20 +105,17 @@ class Displayletter extends React.Component {
     )
   }
 
-  playSound(index) {
-    this.refs[index].load()
-    this.refs[index].play()
-  }
-
   generateWord(wordsArr) {
 
       return wordsArr.map((word, index) => {
         return (
           <div>
-            <audio ref={`${index}`} >
-              <source src={`${word[index].sound}`} preload='auto'/>
-            </audio>
-            <img src={word.image} onClick={this.playSound(index)} />
+          <audio
+          key={word.sound}
+          ref={(x) => { this.playWord = x; }}>
+              <source src={word.sound} preload='auto'/>
+          </audio>
+            <img src={word.image} onClick={this.playSound} />
           </div>
         )
       })
@@ -127,4 +124,20 @@ class Displayletter extends React.Component {
 
 module.exports = connect(state => state)(Displayletter)
 
-//problem seems to be on line 119 - how to pass the correct word through as the sound file
+module.exports = {
+  //
+  // letters: [
+  //   {
+  //     id: 1,
+  //     capital: "A",
+  //     lowercase: "a",
+  //     capitalSound: "/sounds/capitalSounds/A.mp3",
+  //     lowerSound: "/sounds/lowerSounds/a.mp3",
+  //     wordImage: [
+  //       {id:1, image:"images/words/aniwaniwa.png", sound: "sounds/ua.mp3"},
+  //       {id:2, image:"images/words/anuhe.png", sound: "sounds/anuhe.mp3"},
+  //     ],
+  //     multimedia: "/multimedia/aniwaniwa.webm",
+  //     mediaName: "Aniwaniwa Song",
+  //   },
+  
