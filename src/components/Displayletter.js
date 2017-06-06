@@ -11,6 +11,7 @@ class Displayletter extends React.Component {
     this.playCapital = this.playCapital.bind(this)
     this.playLower = this.playLower.bind(this)
     this.playSound = this.playSound.bind(this)
+    this.playWords = {}
   }
 
   playCapital() {
@@ -21,8 +22,8 @@ class Displayletter extends React.Component {
     this.playLow.play()
   }
 
-  playSound() {
-    this.playWord.play()
+  playSound(i) {
+    this.playWords[i].play()
   }
 
   handleClick(e) {
@@ -107,15 +108,15 @@ class Displayletter extends React.Component {
 
   generateWord(wordsArr) {
 
-      return wordsArr.map((word, index) => {
+      return wordsArr.map((word) => {
         return (
           <div>
           <audio
-          key={word.sound}
-          ref={(x) => { this.playWord = x; }}>
-              <source src={word.sound} preload='auto'/>
+            key={word}
+            ref={(x) => { this.playWords[word] = x; }}>
+                <source src={word.sound} preload='auto'/>
           </audio>
-            <img src={word.image} onClick={this.playSound} />
+            <img src={word.image} onClick={this.playSound.bind(this, word)} />
           </div>
         )
       })
