@@ -33,8 +33,6 @@ class Displayletter extends React.Component {
     this.props.router.push("/")
   }
 
-
-
   render() {
     debug(this.props)
     const { dispatch, letters, letter } = this.props
@@ -44,64 +42,6 @@ class Displayletter extends React.Component {
       <div className="row letter-container">
         <div className="col-sm-12">
 
-<<<<<<< HEAD
-        <audio key={singleLetter.capitalSound} ref={`${cap}`}>
-          <source
-            src={singleLetter.capitalSound}
-            preload="auto" />
-          <track
-            kind="captions"
-            src=""
-            srcLang="en" />
-        </audio>
-
-        <audio
-        key={singleLetter.lowerSound}
-        ref={`${low}`}>
-          <source
-            src={singleLetter.lowerSound}
-            preload="auto" />
-          <track
-            kind="captions"
-            src=""
-            srcLang="en" />
-        </audio>
-
-        <audio
-        key={singleLetter.wordSound}
-        ref={`${word}`}>
-          <source
-            src={singleLetter.wordSound}
-            preload="auto" />
-          <track
-            kind="captions"
-            src=""
-            srcLang="en" />
-        </audio>
-
-        <button
-          type="button"
-          className="btn btn-xl display"
-          onClick={() =>
-            this.playCapital(cap)}>
-          {singleLetter.capital}
-        </button>
-
-        <button
-          type="button"
-          className="btn btn-xl display"
-          onClick={() =>
-            this.playLower(low)}>
-          {singleLetter.lowercase}
-        </button>
-
-        <br />
-
-        <img className="word" src={singleLetter.wordImage} alt=""
-          onClick={() =>
-          this.playWord(word)}
-        />
-=======
           <audio
           key={letter.capitalSound}
           ref={(cap) => { this.playCap = cap; }}>
@@ -125,7 +65,6 @@ class Displayletter extends React.Component {
               src=""
               srcLang="en" />
           </audio>
->>>>>>> wordImageSounds
 
           <button
             type="button"
@@ -140,12 +79,11 @@ class Displayletter extends React.Component {
             onClick={this.playLower}>
             {letter.lowercase}
           </button>
-
         </div>
 
-      <div className="col-sm-12">
-        {this.generateWord(wordsArr)}
-      </div>
+        <div className="col-sm-12">
+          {this.generateWord(wordsArr)}
+        </div>
 
         <div className="col-sm-12">
           <Link key={letter.id} to={`/media/${letter.capital}`}>
@@ -161,8 +99,8 @@ class Displayletter extends React.Component {
               Watch: {letter.mediaName}
             </button>
           </Link>
-
         </div>
+
       </div>
     )
   }
