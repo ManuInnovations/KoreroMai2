@@ -10,7 +10,6 @@ class Displayletter extends React.Component {
     super()
     this.playCapital = this.playCapital.bind(this)
     this.playLower = this.playLower.bind(this)
-    this.playSound = this.playSound.bind(this)
     this.playWords = {}
   }
 
@@ -111,11 +110,11 @@ class Displayletter extends React.Component {
       return (
         <div>
           <audio
-            key={word}
-            ref={(x) => { this.playWords[word] = x; }}>
+            key={word.id}
+            ref={(x) => { this.playWords[word.id] = x; }}>
               <source src={word.sound} preload='auto'/>
           </audio>
-          <img src={word.image} onClick={this.playSound.bind(this, word)} />
+          <img src={word.image} onClick={this.playSound.bind(this, word.id)} />
         </div>
       )
     })
