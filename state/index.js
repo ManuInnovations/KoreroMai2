@@ -9,7 +9,7 @@ module.exports = {
       capitalSound: "/sounds/capitalSounds/A.mp3",
       lowerSound: "/sounds/lowerSounds/a.mp3",
       wordImage: [
-        {id:1, image:"images/words/aniwaniwa.png", sound: "sounds/ua.mp3"},
+        {id:1, image:"images/words/aniwaniwa.png", sound: "sounds/aniwaniwa.mp3"},
         {id:2, image:"images/words/anuhe.png", sound: "sounds/anuhe.mp3"},
       ],
       multimedia: "/multimedia/aniwaniwa.webm",
