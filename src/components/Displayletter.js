@@ -10,22 +10,22 @@ class Displayletter extends React.Component {
     super()
     this.playCapital = this.playCapital.bind(this)
     this.playLower = this.playLower.bind(this)
-    this.playWord = this.playWord.bind(this)
+    this.playWords = {}
   }
 
-  playCapital(cap) {
-    this.refs[cap].load()
-    this.refs[cap].play()
+  playCapital() {
+    this.playCap.load()
+    this.playCap.play()
   }
 
-  playLower(low) {
-    this.refs[low].load()
-    this.refs[low].play()
+  playLower() {
+    this.playLow.load()
+    this.playLow.play()
   }
 
-  playWord(word) {
-    this.refs[word].load()
-    this.refs[word].play()
+  playSound(i) {
+    this.playWords[i].load()
+    this.playWords[i].play()
   }
 
   handleClick(e) {
@@ -33,19 +33,18 @@ class Displayletter extends React.Component {
     this.props.router.push("/")
   }
 
+
+
   render() {
     debug(this.props)
-    const cap = "cap"
-    const low = "low"
-    const word = "word"
-    const { dispatch, letter } = this.props
-    const singleLetter = letter
-
+    const { dispatch, letters, letter } = this.props
+    const wordsArr = letter.wordImage
 
     return (
       <div className="row letter-container">
         <div className="col-sm-12">
 
+<<<<<<< HEAD
         <audio key={singleLetter.capitalSound} ref={`${cap}`}>
           <source
             src={singleLetter.capitalSound}
@@ -102,26 +101,101 @@ class Displayletter extends React.Component {
           onClick={() =>
           this.playWord(word)}
         />
+=======
+          <audio
+          key={letter.capitalSound}
+          ref={(cap) => { this.playCap = cap; }}>
+            <source
+              src={letter.capitalSound}
+              preload="auto" />
+            <track
+              kind="captions"
+              src=""
+              srcLang="en" />
+          </audio>
 
-        </div>
-        <div className="col-sm-12">
-        <Link key={singleLetter.id} to={`/media/${singleLetter.capital}`}>
+          <audio
+          key={letter.lowerSound}
+          ref={(low) => { this.playLow = low; }}>
+            <source
+              src={letter.lowerSound}
+              preload="auto" />
+            <track
+              kind="captions"
+              src=""
+              srcLang="en" />
+          </audio>
+>>>>>>> wordImageSounds
+
           <button
             type="button"
-            className="btn"
-            onClick={() =>
-                dispatch({
-                  type: "RENDER_LETTER",
-                  payload: letter,
-                })
-            }>
-            Watch: {singleLetter.mediaName}
+            className="btn btn-xl display"
+            onClick={this.playCapital}>
+            {letter.capital}
           </button>
-        </Link>
+
+          <button
+            type="button"
+            className="btn btn-xl display"
+            onClick={this.playLower}>
+            {letter.lowercase}
+          </button>
+
+        </div>
+
+      <div className="col-sm-12">
+        {this.generateWord(wordsArr)}
+      </div>
+
+        <div className="col-sm-12">
+          <Link key={letter.id} to={`/media/${letter.capital}`}>
+            <button
+              type="button"
+              className="btn"
+              onClick={() =>
+                  dispatch({
+                    type: "RENDER_LETTER",
+                    payload: letter,
+                  })
+              }>
+              Watch: {letter.mediaName}
+            </button>
+          </Link>
+
         </div>
       </div>
     )
   }
+
+  generateWord(wordsArr) {
+    return wordsArr.map((word) => {
+      return (
+        <div>
+          <audio
+            key={word.id}
+            ref={(x) => { this.playWords[word.id] = x; }}>
+              <source src={word.sound} preload='auto'/>
+          </audio>
+          <img src={word.image} onClick={this.playSound.bind(this, word.id)} />
+        </div>
+      )
+    })
+  }
 }
 
 module.exports = connect(state => state)(Displayletter)
+
+  // letters: [
+  //   {
+  //     id: 1,
+  //     capital: "A",
+  //     lowercase: "a",
+  //     capitalSound: "/sounds/capitalSounds/A.mp3",
+  //     lowerSound: "/sounds/lowerSounds/a.mp3",
+  //     wordImage: [
+  //       {id:1, image:"images/words/aniwaniwa.png", sound: "sounds/ua.mp3"},
+  //       {id:2, image:"images/words/anuhe.png", sound: "sounds/anuhe.mp3"},
+  //     ],
+  //     multimedia: "/multimedia/aniwaniwa.webm",
+  //     mediaName: "Aniwaniwa Song",
+  //   },
