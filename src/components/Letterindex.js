@@ -8,13 +8,23 @@ const NavLink = require("./NavLink.js")
 
 class Letterindex extends React.Component {
 
+  constructor(){
+    super()
+    this.nextButton = this.nextButton.bind(this)
+  }
+
   handleClick(e) {
     e.preventDefault()
   }
 
+  nextButton(letter){
+    console.log('nextButton', letter.id);
+    return (alert("hello"))
+  }
+
   render() {
     debug(this.props)
-    const { dispatch, letters } = this.props
+    const { dispatch, letters, letter } = this.props
     return (
       <div className="row">
         <div className="col-sm-12">
@@ -51,10 +61,15 @@ class Letterindex extends React.Component {
           })
         }
 
-                <Link to="">
-                  <img id="next" src="../../images/next.gif" alt="next button" />
-                </Link>
 
+
+        <button
+          type="button"
+          onClick={()=>
+          this.nextButton(letter)}
+        >
+          <img id="next" src="../../images/next.gif" alt="next button" />
+        </button>
           {this.props.children}
 
         </div>
