@@ -166,7 +166,7 @@ module.exports = {
       lowerSound: "/sounds/lowerSounds/u.mp3",
       wordImage: [
         {id:1, image:"images/words/ua.png", sound:  "/sounds/ua.mp3"},
-        {id:2, image:"images/words/uenuku.png", sound:  "/sounds/uenuku.mp3"},
+        {id:2, image:"images/words/uenuku.png", sound:  "/sounds/ua.mp3"},
       ],
       multimedia: "/multimedia/aniwaniwa.webm",
       mediaName: "Rain rain go away",

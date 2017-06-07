@@ -14,14 +14,17 @@ class Displayletter extends React.Component {
   }
 
   playCapital() {
+    this.playCap.load()
     this.playCap.play()
   }
 
   playLower() {
+    this.playLow.load()
     this.playLow.play()
   }
 
   playSound(i) {
+    this.playWords[i].load()
     this.playWords[i].play()
   }
 
