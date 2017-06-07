@@ -17,9 +17,24 @@ class Letterindex extends React.Component {
     e.preventDefault()
   }
 
-  nextButton(letter){
-    console.log('nextButton', letter.id);
-    return (alert("hello"))
+  nextButton(letter,letters,dispatch){
+    const id = letters.findIndex(item =>{
+      return item.id ===letter.id
+    })
+    if(id === letters.length){
+      dispatch({
+        type: "RENDER_LETTER",
+        payload: letters[0],
+      })
+    }
+    else {
+      return (
+        dispatch({
+          type: "RENDER_LETTER",
+          payload: letters[id+1],
+        })
+      )
+    }
   }
 
   render() {
@@ -66,7 +81,7 @@ class Letterindex extends React.Component {
         <button
           type="button"
           onClick={()=>
-          this.nextButton(letter)}
+          this.nextButton(letter, letters, dispatch)}
         >
           <img id="next" src="../../images/next.gif" alt="next button" />
         </button>
