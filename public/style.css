@@ -86,16 +86,28 @@ img {
   font-size: 4em;
 background-color: yellow;}
 
+
+#wordImage:hover {
+  cursor: pointer;
+}
 #next {
   position: absolute;
   right: 15px;
   top: 50%;
 }
 
+#next:hover {
+  cursor: pointer;
+}
+
 #back {
   position: absolute;
   left: 15px;
   top: 50%;
+}
+
+#back {
+  cursor: pointer;
 }
 
 .letter-container {
