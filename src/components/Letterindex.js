@@ -2,7 +2,7 @@ const debug = require("debug")("components:Letterindex")
 const React = require("react")
 const { connect } = require("react-redux")
 const request = require("superagent")
-const { Link, Redirect} = require("react-router")
+const { Link} = require("react-router")
 
 const NavLink = require("./NavLink.js")
 
