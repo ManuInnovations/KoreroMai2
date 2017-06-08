@@ -24,7 +24,7 @@ class Medialibrary extends React.Component {
                   <Link key={letter.id} to={`/media/${letter.capital}`}>
                     <figure>
                       <img
-                        src={`${letter.wordImage}`}
+                        src={`${letter.wordImage[0].image}`}
                         className="img-fluid"
                         onClick={() =>
                           dispatch({
@@ -32,9 +32,6 @@ class Medialibrary extends React.Component {
                               payload: letter,
                             })
                         } />
-                      <figcaption>
-                        {letter.mediaName}
-                      </figcaption>
                     </figure>
                   </Link>
                 </div>
