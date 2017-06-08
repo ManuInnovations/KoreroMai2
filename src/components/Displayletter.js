@@ -114,7 +114,7 @@ class Displayletter extends React.Component {
             ref={(x) => { this.playWords[word.id] = x; }}>
               <source src={word.sound} preload='auto'/>
           </audio>
-          <img src={word.image} onClick={this.playSound.bind(this, word.id)} id="wordImage" />
+          <img src={word.image} onClick={this.playSound.bind(this, word.id)} id="wordsImage" />
         </div>
       )
     })

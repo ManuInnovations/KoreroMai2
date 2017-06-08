@@ -87,7 +87,12 @@ img {
 background-color: yellow;}
 
 
-#wordImage:hover {
+#wordsImage {
+  width: 20%;
+float: left;
+}
+
+#wordsImage:hover {
   cursor: pointer;
 }
 #next {
