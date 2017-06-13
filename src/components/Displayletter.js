@@ -81,7 +81,7 @@ class Displayletter extends React.Component {
           </button>
         </div>
 
-        <div className="col-sm-12">
+        <div className="col-sm-12 images">
           {this.generateWord(wordsArr)}
         </div>
 
