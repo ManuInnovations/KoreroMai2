@@ -43,8 +43,8 @@ class Displayletter extends React.Component {
         <div className="col-sm-12">
 
           <audio
-          key={letter.capitalSound}
-          ref={(cap) => { this.playCap = cap; }}>
+            key={letter.capitalSound}
+            ref={(cap) => { this.playCap = cap; }}>
             <source
               src={letter.capitalSound}
               preload="auto" />
@@ -55,8 +55,8 @@ class Displayletter extends React.Component {
           </audio>
 
           <audio
-          key={letter.lowerSound}
-          ref={(low) => { this.playLow = low; }}>
+            key={letter.lowerSound}
+            ref={(low) => { this.playLow = low; }}>
             <source
               src={letter.lowerSound}
               preload="auto" />
@@ -81,7 +81,7 @@ class Displayletter extends React.Component {
           </button>
         </div>
 
-        <div className="col-sm-12">
+        <div className="col-sm-12 images">
           {this.generateWord(wordsArr)}
         </div>
 
@@ -91,10 +91,10 @@ class Displayletter extends React.Component {
               type="button"
               className="btn"
               onClick={() =>
-                  dispatch({
-                    type: "RENDER_LETTER",
-                    payload: letter,
-                  })
+                dispatch({
+                  type: "RENDER_LETTER",
+                  payload: letter,
+                })
               }>
               Watch: {letter.mediaName}
             </button>
@@ -112,7 +112,7 @@ class Displayletter extends React.Component {
           <audio
             key={word.id}
             ref={(x) => { this.playWords[word.id] = x; }}>
-              <source src={word.sound} preload='auto'/>
+            <source src={word.sound} preload='auto'/>
           </audio>
           <img src={word.image} onClick={this.playSound.bind(this, word.id)} id="wordsImage" />
         </div>
@@ -123,17 +123,17 @@ class Displayletter extends React.Component {
 
 module.exports = connect(state => state)(Displayletter)
 
-  // letters: [
-  //   {
-  //     id: 1,
-  //     capital: "A",
-  //     lowercase: "a",
-  //     capitalSound: "/sounds/capitalSounds/A.mp3",
-  //     lowerSound: "/sounds/lowerSounds/a.mp3",
-  //     wordImage: [
-  //       {id:1, image:"images/words/aniwaniwa.png", sound: "sounds/ua.mp3"},
-  //       {id:2, image:"images/words/anuhe.png", sound: "sounds/anuhe.mp3"},
-  //     ],
-  //     multimedia: "/multimedia/aniwaniwa.webm",
-  //     mediaName: "Aniwaniwa Song",
-  //   },
+// letters: [
+//   {
+//     id: 1,
+//     capital: "A",
+//     lowercase: "a",
+//     capitalSound: "/sounds/capitalSounds/A.mp3",
+//     lowerSound: "/sounds/lowerSounds/a.mp3",
+//     wordImage: [
+//       {id:1, image:"images/words/aniwaniwa.png", sound: "sounds/ua.mp3"},
+//       {id:2, image:"images/words/anuhe.png", sound: "sounds/anuhe.mp3"},
+//     ],
+//     multimedia: "/multimedia/aniwaniwa.webm",
+//     mediaName: "Aniwaniwa Song",
+//   },

@@ -89,7 +89,13 @@ background-color: yellow;}
 
 #wordsImage {
   width: 20%;
-float: left;
+  margin: 1em;
+  float: left;
+}
+
+.images {
+  padding: 2em;
+  margin-left: 3em;
 }
 
 #wordsImage:hover {

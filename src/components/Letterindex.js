@@ -20,7 +20,7 @@ class Letterindex extends React.Component {
 
   nextButton(letter,letters,dispatch){
     const id = letters.findIndex(item =>{
-      return item.id ===letter.id
+      return item.id === letter.id
     })
     if(id === (letters.length -1)){
       this.props.router.push(`/letterindex/${letters[0].capital}`)
