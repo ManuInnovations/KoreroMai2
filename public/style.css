@@ -205,8 +205,12 @@ ul.topnav li a:hover {
   /** ABOUT */
 
 .about {
-  text-align: left;
+  text-align: center;
   padding: 3em;
+}
+
+.profile img {
+padding-top: 1em;
 }
 
 .contact {
