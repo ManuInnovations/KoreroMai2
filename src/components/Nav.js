@@ -25,7 +25,7 @@ class Nav extends React.Component {
             </li>
             <li className="nav-right">
               <Link to="/contents">
-                <img src="images/abc.png" alt="abc blocks" />
+                <img className="blocks" src="images/abc.png" alt="abc blocks" />
               </Link>
             </li>
           </ul>

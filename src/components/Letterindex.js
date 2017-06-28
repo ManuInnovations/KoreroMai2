@@ -72,7 +72,6 @@ class Letterindex extends React.Component {
             this.previousButton(letter, letters, dispatch)}
           />
         {
-
           letters.map((letter) => {
 
             return (
@@ -101,6 +100,7 @@ class Letterindex extends React.Component {
             )
           })
         }
+        
         <img id="next" src="../../images/next.gif" alt="next button"
         onClick={()=>
           this.nextButton(letter, letters, dispatch)}
