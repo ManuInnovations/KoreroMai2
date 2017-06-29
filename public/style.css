@@ -130,6 +130,10 @@ img {
   margin-top: 1em;
 }
 
+#mediashow-back:hover {
+  cursor: pointer;
+}
+
 /** WORDS AND LETTERS */
 
 .images {
