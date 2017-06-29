@@ -27,7 +27,7 @@ class Privacy extends React.Component {
           <p>We do not gather or store any personal information from users of this web app, other than:
           Personal information, provided to us by
           you through correspondence
-          and discussions;</p>
+          and discussions.</p>
 
           <h2>Security</h2>
 

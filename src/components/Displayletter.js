@@ -68,14 +68,14 @@ class Displayletter extends React.Component {
 
           <button
             type="button"
-            className="btn btn-xl display"
+            className="btn-xl display"
             onClick={this.playCapital}>
             {letter.capital}
           </button>
 
           <button
             type="button"
-            className="btn btn-xl display"
+            className="btn-xl display"
             onClick={this.playLower}>
             {letter.lowercase}
           </button>
@@ -89,7 +89,7 @@ class Displayletter extends React.Component {
           <Link key={letter.id} to={`/media/${letter.capital}`}>
             <button
               type="button"
-              className="btn"
+              className="media-watch"
               onClick={() =>
                 dispatch({
                   type: "RENDER_LETTER",
