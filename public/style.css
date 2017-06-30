@@ -136,6 +136,10 @@ img {
 
 /** WORDS AND LETTERS */
 
+.listen {
+  border: solid grey 2px;
+}
+
 .images {
   padding: 2em;
   margin-left: 3em;
