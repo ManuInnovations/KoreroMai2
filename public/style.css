@@ -138,6 +138,7 @@ img {
 
 .listen {
   border: solid grey 2px;
+  height:auto;
 }
 
 .images {
@@ -302,5 +303,9 @@ padding-top: 1em;
   .blocks {
     width: 30px;
   }
+.listen {
+  border: solid grey 2px;
+  min-height: 65vh;
+}
 
 }

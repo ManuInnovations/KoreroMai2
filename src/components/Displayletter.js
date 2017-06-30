@@ -80,7 +80,7 @@ class Displayletter extends React.Component {
             {letter.lowercase}
           </button>
 
-          <img src="/images/listen.png" width="50px"/>
+          <img src="/images/listen.png" width="50px" />
 
           <div className="images">
             {this.generateWord(wordsArr)}
