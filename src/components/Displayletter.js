@@ -40,7 +40,7 @@ class Displayletter extends React.Component {
 
     return (
       <div className="row letter-container">
-        <div className="col-sm-12">
+        <div className="col-sm-12 listen">
 
           <audio
             key={letter.capitalSound}
@@ -79,10 +79,13 @@ class Displayletter extends React.Component {
             onClick={this.playLower}>
             {letter.lowercase}
           </button>
-        </div>
 
-        <div className="col-sm-12 images">
-          {this.generateWord(wordsArr)}
+          <img src="/images/listen.png" width="50px" />
+
+          <div className="images">
+            {this.generateWord(wordsArr)}
+          </div>
+
         </div>
 
         <div className="col-sm-12">
