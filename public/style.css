@@ -10,6 +10,8 @@ CONTENTPAGE
 ABOUT
 MEDIA LIBRARY
 
+MEDIA QUERIES
+
 **/
 
 
@@ -25,20 +27,18 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  min-height: 100vh;
+  color: grey;
 }
 
 .container {
   margin: 0;
   padding: 0;
-  display: flex;
-  justify-content: center;
 }
 
 .content {
   width: 100%;
-  min-height: 85vh;
-  background-color: white;
+  min-height: 100vh;
+  background-color: #D3D3D3;
   margin: auto;
   display: flex;
   justify-content: center;
@@ -51,24 +51,25 @@ img {
   margin: 0;
 }
 
-.glyphicon {
-  font-size: 1.5em;
-}
-
 /** BUTTONS **/
+
+
+
 
 .active .btn {
   background-color: orange;
 }
 
 .btn {
-  margin-right: 10px;
-  margin-top: 20px;
+  margin-right: 5px;
+  margin-top: 10px;
   color: white;
   background-color: blue;
-  padding: 15px 25px;
-  font-size: 15px;
+  padding: 5px 10px;
+  font-size: 20px;
 }
+
+
 
 .play {
   font-size: 30px;
@@ -176,13 +177,21 @@ img {
 
 /** NAVIGATION **/
 
+.navigation {
+  width: 100%;
+  text-align: center;
+  display: inline;
+}
+
 ul.topnav {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #ff6600;
+  background-color: #D3D3D3;
   font-size: 1.5rem;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 ul.topnav li {
@@ -192,9 +201,16 @@ ul.topnav li {
 ul.topnav li a {
   display: block;
   color: white;
-  text-align: center;
   padding: 10px 10px;
   text-decoration: none;
+  text-align: center;
+}
+
+
+ul.topnav li.nav-right,
+ul.topnav li {
+  float: none;
+  font-size: 1rem;
 }
 
 ul.topnav li a:hover {
@@ -205,10 +221,7 @@ ul.topnav li.nav-right {
 }
 
 .brand {
-  font-style: italic;
   color: white;
-  padding-top: 12px;
-  text-align: center;
 }
 
 .blocks {
@@ -253,9 +266,24 @@ ul.topnav li.nav-right {
 
 /** CONTENT PAGE **/
 
+.contentButtons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 3em;
+}
+
+.contents-btn {
+  margin: 15px;
+  padding: 10px 0 10px 0;
+  font-size: 2em;
+  border: solid 2px;
+}
+
 .contentpage {
   width: 100%;
   margin: 0;
+  min-height: 100vh;
 }
 
 /** ABOUT **/
@@ -284,25 +312,25 @@ padding-top: 1em;
   margin-top: 3rem;
 }
 
+/** MEDIA QUERIES **/
 
-/** MOBILE VIEW **/
-@media screen and (max-width: 600px){
-  .content {
-    min-height: 66vh;
-  }
-  .btn {
-    margin-right: 5px;
-    margin-top: 10px;
-    color: white;
-    background-color: blue;
-    padding: 5px 10px;
-    font-size: 20px;
-  }
-  ul.topnav li.nav-right,
-  ul.topnav li {
-    float: none;
-    font-size: 1rem;
-  }
+@media min-width: 600px {
+
+.content {
+  min-height: 85vh;
+}
+
+.btn {
+  margin-right: 10px;
+  margin-top: 20px;
+  padding: 15px 25px;
+  font-size: 15px;
+}
+
+}
+
+
+
   .btn-xl {
     padding: 10px 20px;
     font-size: 20px;

@@ -22,15 +22,16 @@ class Nav extends React.Component {
             </Link>
           </li>
           <li className='nav-right'>
-            <Link to='/contents'>
-              <img className='blocks' src='images/grid.png' alt='grid icon' />
-            </Link>
-          </li>
-          <li className='nav-right'>
             <Link to='/media'>
               <img className='blocks' src='images/tv.png' alt='grid icon' />
             </Link>
           </li>
+          <li className='nav-right'>
+            <Link to='/contents'>
+              <img className='blocks' src='images/grid.png' alt='grid icon' />
+            </Link>
+          </li>
+
         </ul>
       </div>
     )

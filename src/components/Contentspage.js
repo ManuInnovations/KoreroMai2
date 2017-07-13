@@ -23,45 +23,47 @@ class Contentspage extends React.Component {
 
     return (
         <div className='contentpage'>
-          <Nav />
-            {
-            letters.map((letter) => {
-              return (
+          <h2>Phonics Index</h2>
+            <div className='contentButtons'>
+              {
+              letters.map((letter) => {
+                return (
 
-                <Link key={letter.id} to={`/letterindex/${letter.capital}`}>
-                  <div
-                    className='wiggle-me'
-                    role='group'
-                    aria-label='...'>
+                  <Link key={letter.id} to={`/letterindex/${letter.capital}`}>
+                    <div
+                      className='wiggle-me'
+                      role='group'
+                      aria-label='...'>
 
-                    <RaisedButton
-                      type='button'
-                      className='btn'
-                      onClick={() =>
-                          dispatch({
-                            type: 'RENDER_LETTER',
-                            payload: letter,
-                          })
-                      }>
-                      {letter.capital}
-                    </RaisedButton>
+                      <RaisedButton
+                        type='button'
+                        className='contents-btn'
+                        onClick={() =>
+                            dispatch({
+                              type: 'RENDER_LETTER',
+                              payload: letter,
+                            })
+                        }>
+                        {letter.capital}
+                      </RaisedButton>
 
-                  </div>
-                </Link>
-              )
-            })
-          }
-        <Link to='/media'>
-          <RaisedButton
-            type='button'
-            className='btn btn-xl'>
-            Go to Media Library
-          </RaisedButton>
-        </Link>
-
+                    </div>
+                  </Link>
+                )
+              })
+            }
+          </div>
       </div>
     )
   }
 }
 
 module.exports = connect(state => state)(Contentspage)
+
+    // <Link to='/media'>
+    //   <RaisedButton
+    //     type='button'
+    //     className='btn btn-xl'>
+    //     Go to Media Library
+    //   </RaisedButton>
+    // </Link>
