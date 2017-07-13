@@ -1,7 +1,7 @@
-const React = require("react")
-const { connect } = require("react-redux")
-const { Link } = require("react-router")
-const request = require("superagent")
+import React from 'react'
+import { connect } from 'react-redux'
+import { Link } from 'react-router'
+import request from 'superagent'
 
 class Home extends React.Component {
 
@@ -15,17 +15,20 @@ class Home extends React.Component {
 
     return (
       <div className="row">
-        <div className="col-sm-12">
-          <h1>Nau mai, haere mai</h1>
-          <h2>Learn te reo Māori</h2>
+        <div className="col-sm-12 home">
+
+          <h1>Kōrero Mai</h1>
+          <img src='./images/pipi.gif' width='200px' />
+          <h2>Nau mai, haere mai</h2>
+          <h3>Learn te reo Māori</h3>
 
           <Link to="/contents">
 
             <button
               name="play"
               id="letters"
-              className="btn btn-default">
-              Play!
+              className="btn btn-default play">
+              Let's Play!
             </button>
 
           </Link>

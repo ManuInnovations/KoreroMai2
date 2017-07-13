@@ -5,6 +5,7 @@ BUTTONS
 WORDS AND LETTERS
 NAVIGATION
 FOOTER
+HOME
 ABOUT
 MEDIA LIBRARY
 
@@ -30,14 +31,19 @@ body {
   width: 100%;
   margin: 0;
   padding: 0;
+  display: flex;
+  justify-content: center;
 }
 
 .content {
   min-height: 85vh;
   background-color: white;
-  text-align: center;
   width: 90%;
   margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 img {
@@ -62,6 +68,10 @@ img {
   background-color: blue;
   padding: 15px 25px;
   font-size: 15px;
+}
+
+.play {
+  font-size: 30px;
 }
 
 .btn:hover {
@@ -193,42 +203,50 @@ ul.topnav li a:hover {
     float: right;
   }
 
-  .brand {
-    font-style: italic;
-    color: white;
-    padding-top: 12px;
-    text-align: center;
-  }
+.brand {
+  font-style: italic;
+  color: white;
+  padding-top: 12px;
+  text-align: center;
+}
 
-  .blocks {
-    width: 30px;
-  }
+.blocks {
+  width: 30px;
+}
 
-  .is-active {
-    color: yellow;
-  }
+.is-active {
+  color: yellow;
+}
 
-  /** FOOTER **/
+/** FOOTER **/
 
-  .footer {
-    padding: 10px;
-    background-color: #bd1ebd;
-    color: #ffffff;
-    text-align: center;
-  }
+.footer {
+  padding: 10px;
+  background-color: #bd1ebd;
+  color: #ffffff;
+  text-align: center;
+}
 
-  #info {
-    color: #ffffff;
-    text-decoration: none;
-  }
+#info {
+  color: #ffffff;
+  text-decoration: none;
+}
 
-  .privacy-policy {
-    text-align: left;
-  }
+.privacy-policy {
+  text-align: left;
+}
 
+/** HOME **/
 
+.home h1{
+  padding: 1em;
+}
 
-  /** ABOUT */
+.home h2{
+  padding: 1em 0 .3em;
+}
+
+/** ABOUT **/
 
 .about {
   text-align: center;

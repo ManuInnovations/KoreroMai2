@@ -1,6 +1,7 @@
-const React = require("react")
-const { connect } = require("react-redux")
-const { Link } = require("react-router")
+import React from 'react'
+import { connect } from 'react-redux'
+import { Link } from 'react-router'
+
 
 class Footer extends React.Component {
 

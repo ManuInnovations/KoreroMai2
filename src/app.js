@@ -1,20 +1,21 @@
 const debug = require("debug")("components:App")
-const React = require("react")
-const { connect } = require("react-redux")
-const Nav = require("./components/Nav")
-const Footer = require("./components/Footer")
+import React from 'react'
+import { connect } from 'react-redux'
+import Nav from './components/Nav'
+import Footer from './components/Footer'
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
 
 const App = (props) => {
   debug({ props })
 
   return (
-    <div className="container">
-      <Nav />
-      <div className="content">
-        {props.children}
+    <MuiThemeProvider>
+      <div className="container">
+        <div className="content">
+          {props.children}
+        </div>
       </div>
-      <Footer />
-    </div>
+    </MuiThemeProvider>
   )
 }
 
