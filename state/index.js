@@ -213,5 +213,4 @@ module.exports = {
   ],
   letter: {},
   completed: 0,
-  isOpen: false,
 }

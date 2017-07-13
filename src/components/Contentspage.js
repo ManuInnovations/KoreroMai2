@@ -4,15 +4,7 @@ import { connect } from 'react-redux'
 import { Link } from 'react-router'
 import request from 'superagent'
 import Nav from './Nav'
-import injectTapEventPlugin from 'react-tap-event-plugin';
-import RaisedButton from 'material-ui/RaisedButton';
-import { ExpandableBottomSheet } from 'material-ui-bottom-sheet'
-import { List, ListItem, Subheader } from 'material-ui'
-
-
-
-injectTapEventPlugin();
-
+import RaisedButton from 'material-ui/RaisedButton'
 
 class Contentspage extends React.Component {
 
@@ -57,19 +49,6 @@ class Contentspage extends React.Component {
             }
           </div>
 
-          <div>
-            <RaisedButton label="Open BottomSheet" onTouchTap={() => this.setState({isOpen: true})} />
-
-            <ExpandableBottomSheet
-            onRequestClose={() => this.setState({isOpen: false})}
-            onTopReached={() => console.log('onTopReached')}
-            >
-              <List>
-                <ListItem primaryText="About Us"/>
-                <ListItem primaryText="Privacy"/>
-              </List>
-            </ExpandableBottomSheet>
-          </div>
 
       </div>
     )
