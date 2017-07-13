@@ -7,36 +7,34 @@ class Nav extends React.Component {
 
   handleClick(e) {
     e.preventDefault()
-    this.props.router.push("/")
+    this.props.router.push('/')
   }
 
   render() {
 
     return (
 
-      <AppBar title='Kōrero Mai' />
+      <div className='navigation'>
+        <ul className='topnav'>
+          <li className='brand'>
+            <Link to='#'>
+              Kōrero Mai
+            </Link>
+          </li>
+          <li className='nav-right'>
+            <Link to='/contents'>
+              <img className='blocks' src='images/grid.png' alt='grid icon' />
+            </Link>
+          </li>
+          <li className='nav-right'>
+            <Link to='/media'>
+              <img className='blocks' src='images/tv.png' alt='grid icon' />
+            </Link>
+          </li>
+        </ul>
+      </div>
     )
   }
 }
 
 module.exports = connect(state => state)(Nav)
-
-  // <div className="row">
-  //       <div className="col-sm-12">
-  //         <ul className="topnav">
-  //           <li>
-  //             <Link to="#">
-  //               <span className="glyphicon glyphicon-home" aria-hidden="true" />
-  //             </Link>
-  //           </li>
-  //           <li className="brand">
-  //             Kōrero Mai
-  //           </li>
-  //           <li className="nav-right">
-  //             <Link to="/contents">
-  //               <img className="blocks" src="images/abc.png" alt="abc blocks" />
-  //             </Link>
-  //           </li>
-  //         </ul>
-  //       </div>
-  //     </div>

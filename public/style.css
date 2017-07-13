@@ -6,6 +6,7 @@ WORDS AND LETTERS
 NAVIGATION
 FOOTER
 HOME
+CONTENTPAGE
 ABOUT
 MEDIA LIBRARY
 
@@ -28,7 +29,6 @@ body {
 }
 
 .container {
-  width: 100%;
   margin: 0;
   padding: 0;
   display: flex;
@@ -36,9 +36,9 @@ body {
 }
 
 .content {
+  width: 100%;
   min-height: 85vh;
   background-color: white;
-  width: 90%;
   margin: auto;
   display: flex;
   justify-content: center;
@@ -200,9 +200,9 @@ ul.topnav li a {
 ul.topnav li a:hover {
   color: #0000ff;}
 
-  ul.topnav li.nav-right {
-    float: right;
-  }
+ul.topnav li.nav-right {
+  float: right;
+}
 
 .brand {
   font-style: italic;
@@ -249,6 +249,13 @@ ul.topnav li a:hover {
 
 .home h3 {
   padding: 0 0 1em;
+}
+
+/** CONTENT PAGE **/
+
+.contentpage {
+  width: 100%;
+  margin: 0;
 }
 
 /** ABOUT **/

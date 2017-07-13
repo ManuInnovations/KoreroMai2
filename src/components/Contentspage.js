@@ -22,8 +22,7 @@ class Contentspage extends React.Component {
     const { dispatch, letters } = this.props
 
     return (
-      <div className='row'>
-        <div className='col-sm-12'>
+        <div className='contentpage'>
           <Nav />
             {
             letters.map((letter) => {
@@ -31,7 +30,7 @@ class Contentspage extends React.Component {
 
                 <Link key={letter.id} to={`/letterindex/${letter.capital}`}>
                   <div
-                    className='btn-group btn-group-xl btn-group-center wiggle-me'
+                    className='wiggle-me'
                     role='group'
                     aria-label='...'>
 
@@ -52,7 +51,6 @@ class Contentspage extends React.Component {
               )
             })
           }
-        </div>
         <Link to='/media'>
           <RaisedButton
             type='button'
