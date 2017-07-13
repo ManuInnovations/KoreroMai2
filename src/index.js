@@ -30,25 +30,25 @@ const Root = ({ store }) => {
   return (
     <Provider store={store} >
       <Router history={hashHistory} >
-        <Route path="/" component={App} store={store}>
+        <Route path='/' component={App} store={store}>
           <IndexRoute component={Home} />
-          <Route path="/contents" component={Contentspage} />
-          <Route path="/letterindex" component={Letterindex}>
-            <Route path="/letterindex/:id" component={Displayletter} />
-            <Route path="/letterindex/:id/watch" component={Mediashow}/>
+          <Route path='/contents' component={Contentspage} />
+          <Route path='/letterindex' component={Letterindex}>
+            <Route path='/letterindex/:id' component={Displayletter} />
+            <Route path='/letterindex/:id/watch' component={Mediashow}/>
           </Route>
-          <Route path="/media" component={Medialibrary} />
-          <Route path="/media/:id" component={Mediashow} />
-          <Route path="/privacy" component={Privacy} />
-          <Route path="/about" component={About} />
+          <Route path='/media' component={Medialibrary} />
+          <Route path='/media/:id' component={Mediashow} />
+          <Route path='/privacy' component={Privacy} />
+          <Route path='/about' component={About} />
         </Route>
       </Router>
     </Provider>
   )
 }
 
-document.addEventListener("DOMContentLoaded", () => {
-  const root = document.querySelector("#app")
+document.addEventListener('DOMContentLoaded', () => {
+  const root = document.querySelector('#app')
   ReactDOM.render(
     <Root store={store} />,
     root,

@@ -1,8 +1,15 @@
-const debug = require("debug")("components:Contentspage")
-const React = require("react")
-const { connect } = require("react-redux")
-const request = require("superagent")
-const { Link } = require("react-router")
+const debug = require('debug')('components:Contentspage')
+import React from 'react'
+import { connect } from 'react-redux'
+import { Link } from 'react-router'
+import request from 'superagent'
+import Nav from './Nav'
+import injectTapEventPlugin from 'react-tap-event-plugin';
+import RaisedButton from 'material-ui/RaisedButton';
+
+
+injectTapEventPlugin();
+
 
 class Contentspage extends React.Component {
 
@@ -15,29 +22,30 @@ class Contentspage extends React.Component {
     const { dispatch, letters } = this.props
 
     return (
-      <div className="row">
-        <div className="col-sm-12">
+      <div className='row'>
+        <div className='col-sm-12'>
+          <Nav />
             {
             letters.map((letter) => {
               return (
 
                 <Link key={letter.id} to={`/letterindex/${letter.capital}`}>
                   <div
-                    className="btn-group btn-group-xl btn-group-center wiggle-me"
-                    role="group"
-                    aria-label="...">
+                    className='btn-group btn-group-xl btn-group-center wiggle-me'
+                    role='group'
+                    aria-label='...'>
 
-                    <button
-                      type="button"
-                      className="btn"
+                    <RaisedButton
+                      type='button'
+                      className='btn'
                       onClick={() =>
                           dispatch({
-                            type: "RENDER_LETTER",
+                            type: 'RENDER_LETTER',
                             payload: letter,
                           })
                       }>
                       {letter.capital}
-                    </button>
+                    </RaisedButton>
 
                   </div>
                 </Link>
@@ -45,12 +53,12 @@ class Contentspage extends React.Component {
             })
           }
         </div>
-        <Link to="/media">
-          <button
-            type="button"
-            className="btn btn-xl">
+        <Link to='/media'>
+          <RaisedButton
+            type='button'
+            className='btn btn-xl'>
             Go to Media Library
-          </button>
+          </RaisedButton>
         </Link>
 
       </div>

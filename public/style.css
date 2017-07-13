@@ -72,6 +72,7 @@ img {
 
 .play {
   font-size: 30px;
+  padding: 15px;
 }
 
 .btn:hover {
@@ -244,6 +245,10 @@ ul.topnav li a:hover {
 
 .home h2{
   padding: 1em 0 .3em;
+}
+
+.home h3 {
+  padding: 0 0 1em;
 }
 
 /** ABOUT **/
