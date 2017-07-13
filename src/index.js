@@ -1,28 +1,28 @@
-const debug = require("debug")("index")
+import {index as debug} from 'debug';
 
 localStorage.debug = "*"
 
 // modules
-const React = require("react")
-const ReactDOM = require("react-dom")
-const { Provider } = require("react-redux")
-const { createStore } = require("redux")
-const createHistory = require("history").createHashHistory
-const { Router, Route, IndexRoute, hashHistory } = require("react-router")
+import React from 'react'
+import ReactDOM from 'react-dom'
+import { Provider } from 'react-redux'
+import { createStore } from 'redux'
+const createHistory = require('history').createHashHistory
+import { Router, Route, IndexRoute, hashHistory } from 'react-router'
 
-const reducer = require("./reducers")
-const initialState = require("../state")
+import reducer from './reducers'
+import initialState from '../state'
 
 //top level components
-const App = require("./app")
-const Home = require("./components/Home")
-const Contentspage = require("./components/Contentspage")
-const Letterindex = require("./components/Letterindex")
-const Displayletter = require("./components/Displayletter")
-const Privacy = require("./components/Privacy")
-const About = require("./components/About")
-const Mediashow = require("./components/Mediashow")
-const Medialibrary = require("./components/Medialibrary")
+import App from './app'
+import Home from './components/Home'
+import Contentspage from './components/Contentspage'
+import Letterindex from './components/Letterindex'
+import Displayletter from './components/Displayletter'
+import Privacy from './components/Privacy'
+import About from './components/About'
+import Mediashow from './components/Mediashow'
+import Medialibrary from './components/Medialibrary'
 
 const store = createStore(reducer, initialState)
 
