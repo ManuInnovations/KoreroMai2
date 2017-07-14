@@ -1,37 +1,36 @@
-const debug = require("debug")("components:Privacy")
-const React = require("react")
-const { connect } = require("react-redux")
+const debug = require('debug')('components:Privacy')
+import React from 'react'
+import { connect } from 'react-redux'
 
 class Privacy extends React.Component {
 
   handleClick(e) {
     e.preventDefault()
-    this.props.router.push("/")
+    this.props.router.push('/')
   }
 
   render() {
     debug(this.props)
 
     return (
-      <div className="row privacy-policy">
-        <div className="col-sm-12">
-          <h1>Kōrero Mai privacy policy</h1>
+      <div className='privacy-policy'>
+          <h2>Kōrero Mai privacy policy</h2>
 
-          <p>Your privacy on the Internet is important to us.
+          <p className='opening'>Your privacy on the Internet is important to us.
           This privacy policy discloses what information
           we gather,
           how we use it, and how to correct or change it.</p>
 
-          <h2>Information</h2>
+          <h3>Information</h3>
 
-          <p>We do not gather or store any personal information from users of this web app, other than:
+          <p className='article'>We do not gather or store any personal information from users of this web app, other than:
           Personal information, provided to us by
           you through correspondence
           and discussions.</p>
 
-          <h2>Security</h2>
+          <h3>Security</h3>
 
-          <p>We are committed to ensuring that
+          <p className='article'>We are committed to ensuring that
           your information is secure.
           In order to prevent unauthorised access
           or disclosure we have
@@ -40,9 +39,9 @@ class Privacy extends React.Component {
           to safeguard and secure the information we
           collect online.</p>
 
-          <h2>Use of your information</h2>
+          <h3>Use of your information</h3>
 
-          <p>We will never sell or rent your
+          <p className='article'>We will never sell or rent your
           personal information to third parties.
           We will use information we collect
           from you for the primary purpose for
@@ -50,9 +49,9 @@ class Privacy extends React.Component {
           secondary purposes that are related to the
           primary purpose of collection.</p>
 
-          <h2>Email Newsletters and other notices</h2>
+          <h3>Email Newsletters and other notices</h3>
 
-          <p>It is our policy to send only send emails
+          <p className='article'>It is our policy to send only send emails
           you elect to receive in a sign-up process. In addition, we may
           send out promotional material to you promoting
           new or amended material on our site where we
@@ -60,9 +59,9 @@ class Privacy extends React.Component {
           policy to immediately remove any person from
           any mailing list upon the person’s request.</p>
 
-          <h2>Cookies</h2>
+          <h3>Cookies</h3>
 
-          <p>Cookies are small pieces of information
+          <p className='article'>Cookies are small pieces of information
           that are stored in a browser-related file on
           your computer’s hard drive when you use our
           Web site. Cookies are widely used on most major
@@ -86,9 +85,9 @@ class Privacy extends React.Component {
           decline cookies if you prefer. This may prevent
           you from taking full advantage of our website.</p>
 
-          <h2>Access and removal of Information</h2>
+          <h3>Access and removal of Information</h3>
 
-          <p>You have the right to seek access the personal
+          <p className='article'>You have the right to seek access the personal
           information held about you and to advise us of any
           inaccuracy. There are some exceptions to this
           right set out in the Privacy Act. If you make an
@@ -97,13 +96,12 @@ class Privacy extends React.Component {
           We may charge a fee to cover the costs of meeting
           your request.</p>
 
-          <h2>Updates to our information practices</h2>
+          <h3>Updates to our information practices</h3>
 
-          <p>We reserve the right to change this policy.
+          <p className='article'>We reserve the right to change this policy.
           By continuing to use the Website, you agree to be
           bound by the amended policy. You should check from
           time to time to see if the policy has changed.</p>
-        </div>
       </div>
     )
   }
