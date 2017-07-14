@@ -5,6 +5,7 @@ import { Link } from 'react-router'
 import request from 'superagent'
 import Nav from './Nav'
 import RaisedButton from 'material-ui/RaisedButton'
+import MobileViewFooter from './MobileViewFooter'
 
 class Contentspage extends React.Component {
 
@@ -14,12 +15,12 @@ class Contentspage extends React.Component {
 
   render() {
     debug(this.props)
-    const { dispatch, letters, isOpen } = this.props
+    const { dispatch, letters } = this.props
 
     return (
         <div className='contentpage'>
           <h2>Phonics Index</h2>
-            <div className='contentButtons'>
+            <div className='buttonContainer'>
               {
               letters.map((letter) => {
                 return (
@@ -49,6 +50,7 @@ class Contentspage extends React.Component {
             }
           </div>
 
+        <MobileViewFooter />
 
       </div>
     )

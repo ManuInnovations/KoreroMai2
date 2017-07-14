@@ -53,9 +53,6 @@ img {
 
 /** BUTTONS **/
 
-
-
-
 .active .btn {
   background-color: orange;
 }
@@ -250,6 +247,50 @@ ul.topnav li.nav-right {
   text-align: left;
 }
 
+/** MOBILE VIEW FOOTER **/
+
+footer {
+  background-color: grey;
+  padding-top: 1px;
+  padding-bottom: 10px;
+}
+
+.footerButtonsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 3em;
+  margin-bottom: 2em;
+  background-color: grey;
+}
+
+.footer-btn {
+  margin: 5px;
+  padding: 2px 0 2px 0;
+  font-size: 1em;
+  border: solid 1px;
+}
+
+.mob-tv {
+  width: 50px;
+  background-color: #D3D3D3;
+  border-radius: 50px;
+}
+
+#mob-privacy {
+  text-align: left;
+  text-decoration: none;
+  color: white;
+  margin-right: 125px;
+  margin-left: -20px;
+}
+
+#mob-about {
+  text-align: right;
+  text-decoration: none;
+  color: white;
+}
+
 /** HOME **/
 
 .home h1{
@@ -266,7 +307,7 @@ ul.topnav li.nav-right {
 
 /** CONTENT PAGE **/
 
-.contentButtons {
+.buttonContainer {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
