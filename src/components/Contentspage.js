@@ -5,7 +5,7 @@ import { Link } from 'react-router'
 import request from 'superagent'
 import Nav from './Nav'
 import RaisedButton from 'material-ui/RaisedButton'
-import MobileViewFooter from './MobileViewFooter'
+import Footer from './Footer'
 
 class Contentspage extends React.Component {
 
@@ -50,7 +50,7 @@ class Contentspage extends React.Component {
             }
           </div>
 
-        <MobileViewFooter />
+        <Footer />
 
       </div>
     )

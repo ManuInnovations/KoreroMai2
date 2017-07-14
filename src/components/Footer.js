@@ -13,22 +13,15 @@ class Footer extends React.Component {
   render() {
 
     return (
-      <div className="row footer">
-        <div className="col-sm-12">
+      <div className="footer">
           <footer>
-
-            &copy; Manu Innovations Ltd. 2017
-
-            <Link to="/privacy" id="info">
+            <Link to="/privacy" id="privacy">
               &nbsp; Privacy Policy
             </Link>
-
-            <Link to="/about" id="info">
+            <Link to="/about" id="about">
               &nbsp; About Us
             </Link>
-
           </footer>
-        </div>
       </div>
     )
   }

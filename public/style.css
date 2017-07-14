@@ -232,19 +232,25 @@ ul.topnav li.nav-right {
 /** FOOTER **/
 
 .footer {
-  padding: 10px;
-  background-color: #bd1ebd;
-  color: #ffffff;
+  padding: 5px;
+  background-color: grey;
+  color: white;
   text-align: center;
+  min-height: 30px;
 }
 
-#info {
-  color: #ffffff;
+#privacy {
+  color: white;
   text-decoration: none;
+  float: left;
+  margin-top: 5px;
 }
 
-.privacy-policy {
-  text-align: left;
+#about {
+  color: white;
+  text-decoration: none;
+  float: right;
+  margin-top: 5px;
 }
 
 /** MOBILE VIEW FOOTER **/
