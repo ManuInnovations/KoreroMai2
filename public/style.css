@@ -339,7 +339,12 @@ footer {
 
 .privacy-policy {
   text-align: left;
-  padding: 1em;
+  padding: 2em;
+  font-size: .8em;
+}
+
+.privacy-heading {
+  text-align: center;
 }
 
 .article {
