@@ -14,7 +14,7 @@ class Privacy extends React.Component {
 
     return (
       <div className='privacy-policy'>
-          <h2 className='privacy-heading'>Kōrero Mai privacy policy</h2>
+          <h2 className='privacy-heading'>Kōrero Mai Privacy Policy</h2>
 
           <p className='opening'>Your privacy on the Internet is important to us.
           This privacy policy discloses what information we gather,

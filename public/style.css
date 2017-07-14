@@ -354,12 +354,23 @@ footer {
 /** ABOUT **/
 
 .about {
+  text-align: left;
+  padding: 2em;
+  font-size: .8em;
+}
+
+.about-heading {
   text-align: center;
-  padding: 3em;
+}
+
+.profile {
+  min-height: 90px;
 }
 
 .profile img {
-padding-top: 1em;
+  width: 30%;
+  float:left;
+  margin-right: 10px;
 }
 
 .contact {
