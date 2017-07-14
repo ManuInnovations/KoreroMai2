@@ -318,10 +318,11 @@ footer {
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 3em;
+  min-height: 80vh;
 }
 
 .contents-btn {
-  margin: 15px;
+  margin: 5px;
   padding: 10px 0 10px 0;
   font-size: 2em;
   border: solid 2px;
