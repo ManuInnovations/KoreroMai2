@@ -1,6 +1,8 @@
 const debug = require('debug')('components:Privacy')
 import React from 'react'
 import { connect } from 'react-redux'
+import { Link } from 'react-router'
+
 
 class Privacy extends React.Component {
 
@@ -56,6 +58,10 @@ class Privacy extends React.Component {
 
           <p className='article'>We reserve the right to change this policy.
           By continuing to use the Website, you agree to be bound by the amended policy. You should check from time to time to see if the policy has changed.</p>
+
+          <Link to='/contents'>
+            <p>Back to Contents</p>
+          </Link>
       </div>
     )
   }

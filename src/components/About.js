@@ -1,5 +1,6 @@
 import React from 'react'
 import { connect } from 'react-redux'
+import { Link } from 'react-router'
 
 class About extends React.Component {
 
@@ -49,11 +50,14 @@ class About extends React.Component {
           koutou!</p>
         </div>
         <div className='contact'>
-          <h4>Please get in touch via
+          <h4>Please get in touch,
           Email: hello@manu.net.nz</h4>
           <h4>To find out more about
           Manu: <a href='https://www.manu.net.nz'>www.manu.net.nz</a></h4>
           <h4>To contact Katie, Email: dellerka@gmail.com</h4>
+          <Link to='/contents'>
+            <p>Back to Contents</p>
+          </Link>
         </div>
       </div>
     )
