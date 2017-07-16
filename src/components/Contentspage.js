@@ -43,12 +43,17 @@ class Contentspage extends React.Component {
                         {letter.capital}
                       </RaisedButton>
 
+
                     </div>
                   </Link>
                 )
               })
             }
           </div>
+
+            <Link to='/media'>
+              <img className='content-tv' src='images/tv.png' alt='grid icon' />
+            </Link>
 
         <Footer />
 

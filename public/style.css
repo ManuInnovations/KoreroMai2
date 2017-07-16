@@ -318,14 +318,14 @@ footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 3em;
-  min-height: 80vh;
+  margin: 0;
+  min-height: 70vh;
 }
 
 .contents-btn {
-  margin: 5px;
-  padding: 10px 0 10px 0;
-  font-size: 2em;
+  margin: 0px 3px 0px;
+  padding: 6px 0 6px 0;
+  font-size: 1.5em;
   border: solid 2px;
 }
 
@@ -333,6 +333,11 @@ footer {
   width: 100%;
   margin: 0;
   min-height: 100vh;
+}
+
+.content-tv {
+  width: 20%;
+  margin-bottom: 20px;
 }
 
 /** PRIVACY **/
