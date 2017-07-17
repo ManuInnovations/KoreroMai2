@@ -1,8 +1,8 @@
-const debug = require("debug")("components:Medialibrary")
-const React = require("react")
-const { connect } = require("react-redux")
-const request = require("superagent")
-const { Link } = require("react-router")
+const debug = require('debug')('components:Medialibrary')
+import React from 'react'
+import { connect } from 'react-redux'
+import request from 'superagent'
+import { Link } from 'react-router'
 
 class Medialibrary extends React.Component {
 
@@ -15,29 +15,30 @@ class Medialibrary extends React.Component {
     const { dispatch, letters } = this.props
 
     return (
-      <div className="row">
-        <h1>Media Library</h1>
+      <div className='preview'>
+        <h2>Media Library</h2>
+          <ul>
           {
             letters.map((letter) => {
               return (
-                <div className="col-sm-3 preview">
+                <li>
                   <Link key={letter.id} to={`/media/${letter.capital}`}>
-                    <figure>
-                      <img
-                        src={`${letter.wordImage[0].image}`}
-                        className="img-fluid"
-                        onClick={() =>
-                          dispatch({
-                            type: "RENDER_LETTER",
-                              payload: letter,
-                            })
-                        } />
-                    </figure>
+                    <img
+                      src={`${letter.wordImage[0].image}`}
+                      className='img-fluid'
+                      onClick={() =>
+                        dispatch({
+                          type: 'RENDER_LETTER',
+                            payload: letter,
+                          })
+                      } />
                   </Link>
-                </div>
+                  <p className='library-text'>{letter.mediaName}</p>
+                </li>
               )
             })
           }
+        </ul>
       </div>
     )
   }

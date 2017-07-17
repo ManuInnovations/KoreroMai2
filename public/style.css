@@ -386,12 +386,25 @@ footer {
 /** MEDIA LIBRARY */
 
 .preview {
-  width: 20%;
-  margin: 3rem;
+  margin: 0;
+  padding: 0;
+}
+
+.preview ul {
+  list-style: none;
+  margin-left: -50px;
+}
+
+.preview img {
+  width: 40%;
 }
 
 .video {
   margin-top: 3rem;
+}
+
+.library-text {
+  text-align: right;
 }
 
 /** MEDIA QUERIES **/
