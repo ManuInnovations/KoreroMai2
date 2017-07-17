@@ -1,66 +1,31 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import { Link } from 'react-router'
-import RaisedButton from 'material-ui/RaisedButton'
 
-const debug = require('debug')('components:MobileViewFooter')
 
 class MobileViewFooter extends React.Component {
 
   handleClick(e) {
     e.preventDefault()
+    this.props.router.push("/")
   }
 
   render() {
-    debug(this.props)
-    const { dispatch, letters } = this.props
 
     return (
-      <div className='mobile-footer'>
+      <div className="footer">
           <footer>
-              <div className='footerButtonsContainer'>
-                {
-                letters.map((letter) => {
-                  return (
-
-                    <Link key={letter.id} to={`/letterindex/${letter.capital}`}>
-                      <div
-                        className='wiggle-me'
-                        role='group'
-                        aria-label='...'>
-
-                        <RaisedButton
-                          type='button'
-                          className='footer-btn'
-                          onClick={() =>
-                              dispatch({
-                                type: 'RENDER_LETTER',
-                                payload: letter,
-                              })
-                          }>
-                          {letter.capital}
-                        </RaisedButton>
-
-                      </div>
-                    </Link>
-                  )
-                })
-              }
-            </div>
-
-            <Link to='/media'>
-              <img className='mob-tv' src='images/tv.png' alt='grid icon' />
-            </Link>
-            <br />
-
-            <Link to="/privacy" id="mob-privacy">
+            <Link to="/privacy" id="privacy">
               &nbsp; Privacy Policy
             </Link>
 
-            <Link to="/about" id="mob-about">
-              &nbsp; About Us
+            <Link to="/letters">
+              <img id='footer-index' src='images/grid.png' alt='grid icon' />
             </Link>
 
+            <Link to="/about" id="about">
+              &nbsp; About Us
+            </Link>
           </footer>
       </div>
     )

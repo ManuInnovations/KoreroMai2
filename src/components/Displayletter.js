@@ -1,8 +1,12 @@
-const debug = require("debug")("components:Displayletter")
-const React = require("react")
-const { connect } = require("react-redux")
-const request = require("superagent")
-const { Link } = require("react-router")
+const debug = require('debug')('components:Displayletter')
+import React from 'react'
+import { connect } from 'react-redux'
+import { Link } from 'react-router'
+import request from 'superagent'
+
+import LetterIndex from './Letterindex.js'
+import MobileViewFooter from './MobileViewFooter.js'
+
 
 class Displayletter extends React.Component {
 
@@ -30,7 +34,7 @@ class Displayletter extends React.Component {
 
   handleClick(e) {
     e.preventDefault()
-    this.props.router.push("/")
+    this.props.router.push('/')
   }
 
   render() {
@@ -39,19 +43,19 @@ class Displayletter extends React.Component {
     const wordsArr = letter.wordImage
 
     return (
-      <div className="row letter-container">
-        <div className="col-sm-12 listen">
+      <div className='letter-container'>
+          <h2>Letter</h2>
 
           <audio
             key={letter.capitalSound}
             ref={(cap) => { this.playCap = cap; }}>
             <source
               src={letter.capitalSound}
-              preload="auto" />
+              preload='auto' />
             <track
-              kind="captions"
-              src=""
-              srcLang="en" />
+              kind='captions'
+              src=''
+              srcLang='en' />
           </audio>
 
           <audio
@@ -59,50 +63,48 @@ class Displayletter extends React.Component {
             ref={(low) => { this.playLow = low; }}>
             <source
               src={letter.lowerSound}
-              preload="auto" />
+              preload='auto' />
             <track
-              kind="captions"
-              src=""
-              srcLang="en" />
+              kind='captions'
+              src=''
+              srcLang='en' />
           </audio>
 
           <button
-            type="button"
-            className="btn-xl display"
+            type='button'
+            className='display'
             onClick={this.playCapital}>
             {letter.capital}
           </button>
 
           <button
-            type="button"
-            className="btn-xl display"
+            type='button'
+            className='display'
             onClick={this.playLower}>
             {letter.lowercase}
           </button>
 
-          <img src="/images/listen.png" width="50px" />
+          <img src='/images/listen.png' width='30px' />
 
-          <div className="images">
+          <div className='images'>
             {this.generateWord(wordsArr)}
           </div>
 
-        </div>
-
-        <div className="col-sm-12">
           <Link key={letter.id} to={`/media/${letter.capital}`}>
             <button
-              type="button"
-              className="media-watch"
+              type='button'
+              className='media-watch'
               onClick={() =>
                 dispatch({
-                  type: "RENDER_LETTER",
+                  type: 'RENDER_LETTER',
                   payload: letter,
                 })
               }>
               Watch: {letter.mediaName}
             </button>
           </Link>
-        </div>
+
+          <MobileViewFooter />
 
       </div>
     )
@@ -117,7 +119,7 @@ class Displayletter extends React.Component {
             ref={(x) => { this.playWords[word.id] = x; }}>
             <source src={word.sound} preload='auto'/>
           </audio>
-          <img src={word.image} onClick={this.playSound.bind(this, word.id)} id="wordsImage" />
+          <img src={word.image} onClick={this.playSound.bind(this, word.id)} id='wordsImage' />
         </div>
       )
     })
@@ -125,18 +127,3 @@ class Displayletter extends React.Component {
 }
 
 module.exports = connect(state => state)(Displayletter)
-
-// letters: [
-//   {
-//     id: 1,
-//     capital: "A",
-//     lowercase: "a",
-//     capitalSound: "/sounds/capitalSounds/A.mp3",
-//     lowerSound: "/sounds/lowerSounds/a.mp3",
-//     wordImage: [
-//       {id:1, image:"images/words/aniwaniwa.png", sound: "sounds/ua.mp3"},
-//       {id:2, image:"images/words/anuhe.png", sound: "sounds/anuhe.mp3"},
-//     ],
-//     multimedia: "/multimedia/aniwaniwa.webm",
-//     mediaName: "Aniwaniwa Song",
-//   },

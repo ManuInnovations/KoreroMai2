@@ -22,7 +22,7 @@ class Home extends React.Component {
         <h2>Nau mai, haere mai</h2>
         <h3>Learn te reo Māori</h3>
 
-        <Link to='/contents'>
+        <Link to='/letters'>
           <RaisedButton
             className='play'>
             Let's Play!

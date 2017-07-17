@@ -55,7 +55,7 @@ class About extends React.Component {
           <h4>To find out more about
           Manu: <a href='https://www.manu.net.nz'>www.manu.net.nz</a></h4>
           <h4>To contact Katie, Email: dellerka@gmail.com</h4>
-          <Link to='/contents'>
+          <Link to='/letters'>
             <p>Back to Contents</p>
           </Link>
         </div>

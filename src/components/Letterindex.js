@@ -64,9 +64,7 @@ class Letterindex extends React.Component {
     const currentLetter = letter.capital
 
     return (
-      <div className="row">
-        <div className="col-sm-12">
-
+      <div>
           <img id="back" src="../../images/back.gif" alt="back button"
             onClick={()=>
             this.previousButton(letter, letters, dispatch)}
@@ -100,14 +98,12 @@ class Letterindex extends React.Component {
             )
           })
         }
-        
+
         <img id="next" src="../../images/next.gif" alt="next button"
         onClick={()=>
           this.nextButton(letter, letters, dispatch)}
           />
-        {this.props.children}
 
-        </div>
       </div>
     )
   }

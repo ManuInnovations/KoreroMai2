@@ -19,13 +19,13 @@ class Contentspage extends React.Component {
 
     return (
         <div className='contentpage'>
-          <h2>Phonics Index</h2>
+          <h2>Letter Index</h2>
             <div className='buttonContainer'>
               {
               letters.map((letter) => {
                 return (
 
-                  <Link key={letter.id} to={`/letterindex/${letter.capital}`}>
+                  <Link key={letter.id} to={`/letters/${letter.capital}`}>
                     <div
                       className='wiggle-me'
                       role='group'

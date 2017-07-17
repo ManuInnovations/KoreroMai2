@@ -146,19 +146,9 @@ img {
 
 /** WORDS AND LETTERS */
 
-.listen {
-  border: solid grey 2px;
-  height:auto;
-}
-
-.images {
-  padding: 2em;
-  margin-left: 3em;
-}
-
 #wordsImage {
-  width: 25%;
-  margin: 15px;
+  width: 5%;
+  margin: 5px;
   float: left;
 }
 
@@ -168,9 +158,7 @@ img {
 
 .letter-container {
   background-color: white;
-  width: 70%;
-  margin-left: 15%;
-  margin-top: 3em;
+  width: 100%;
 }
 
 /** NAVIGATION **/
@@ -252,6 +240,10 @@ ul.topnav li.nav-right {
   text-decoration: none;
   float: right;
   margin-top: 5px;
+}
+
+#footer-index {
+  width: 20px;
 }
 
 /** MOBILE VIEW FOOTER **/

@@ -32,11 +32,9 @@ const Root = ({ store }) => {
       <Router history={hashHistory} >
         <Route path='/' component={App} store={store}>
           <IndexRoute component={Home} />
-          <Route path='/contents' component={Contentspage} />
-          <Route path='/letterindex' component={Letterindex}>
-            <Route path='/letterindex/:id' component={Displayletter} />
-            <Route path='/letterindex/:id/watch' component={Mediashow}/>
-          </Route>
+          <Route path='/letters' component={Contentspage} />
+          <Route path='/letters/:id' component={Displayletter} />
+          <Route path='/letters/:id/watch' component={Mediashow}/>
           <Route path='/media' component={Medialibrary} />
           <Route path='/media/:id' component={Mediashow} />
           <Route path='/privacy' component={Privacy} />

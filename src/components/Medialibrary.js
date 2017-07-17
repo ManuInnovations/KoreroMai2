@@ -39,7 +39,7 @@ class Medialibrary extends React.Component {
             })
           }
         </ul>
-        <Link to='/contents'>
+        <Link to='/letters'>
           <img id='medialibrary-index' src='images/grid.png' alt='grid icon' />
         </Link>
         <Footer />

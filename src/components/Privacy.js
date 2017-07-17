@@ -59,7 +59,7 @@ class Privacy extends React.Component {
           <p className='article'>We reserve the right to change this policy.
           By continuing to use the Website, you agree to be bound by the amended policy. You should check from time to time to see if the policy has changed.</p>
 
-          <Link to='/contents'>
+          <Link to='/letters'>
             <p>Back to Contents</p>
           </Link>
       </div>
