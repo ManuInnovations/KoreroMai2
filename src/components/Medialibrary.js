@@ -3,6 +3,7 @@ import React from 'react'
 import { connect } from 'react-redux'
 import request from 'superagent'
 import { Link } from 'react-router'
+import Footer from './Footer'
 
 class Medialibrary extends React.Component {
 
@@ -31,14 +32,17 @@ class Medialibrary extends React.Component {
                           type: 'RENDER_LETTER',
                             payload: letter,
                           })
-                      } />
+                      } />{letter.mediaName}
                   </Link>
-                  <p className='library-text'>{letter.mediaName}</p>
                 </li>
               )
             })
           }
         </ul>
+        <Link to='/contents'>
+          <img id='medialibrary-index' src='images/grid.png' alt='grid icon' />
+        </Link>
+        <Footer />
       </div>
     )
   }
