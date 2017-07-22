@@ -4,16 +4,12 @@ import { Link } from 'react-router'
 import AppBar from 'material-ui/AppBar'
 
 class Nav extends React.Component {
-
   handleClick(e) {
     e.preventDefault()
     this.props.router.push('/')
   }
-
   render() {
-
     return (
-
       <div className='navigation'>
         <ul className='topnav'>
           <li className='brand'>
@@ -31,7 +27,6 @@ class Nav extends React.Component {
               <img className='blocks' src='images/grid.png' alt='grid icon' />
             </Link>
           </li>
-
         </ul>
       </div>
     )

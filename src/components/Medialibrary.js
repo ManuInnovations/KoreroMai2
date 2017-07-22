@@ -6,15 +6,12 @@ import { Link } from 'react-router'
 import Footer from './Footer'
 
 class Medialibrary extends React.Component {
-
   handleClick(e) {
     e.preventDefault()
   }
-
   render() {
     debug(this.props)
     const { dispatch, letters } = this.props
-
     return (
       <div className='preview'>
         <h2>Media Library</h2>

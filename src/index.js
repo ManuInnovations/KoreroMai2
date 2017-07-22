@@ -1,7 +1,5 @@
 import {index as debug} from 'debug';
-
 localStorage.debug = "*"
-
 // modules
 import React from 'react'
 import ReactDOM from 'react-dom'
@@ -9,10 +7,8 @@ import { Provider } from 'react-redux'
 import { createStore } from 'redux'
 const createHistory = require('history').createHashHistory
 import { Router, Route, IndexRoute, hashHistory } from 'react-router'
-
 import reducer from './reducers'
 import initialState from '../state'
-
 //top level components
 import App from './app'
 import Home from './components/Home'
@@ -23,9 +19,7 @@ import Privacy from './components/Privacy'
 import About from './components/About'
 import Mediashow from './components/Mediashow'
 import Medialibrary from './components/Medialibrary'
-
 const store = createStore(reducer, initialState)
-
 const Root = ({ store }) => {
   return (
     <Provider store={store} >
@@ -44,7 +38,6 @@ const Root = ({ store }) => {
     </Provider>
   )
 }
-
 document.addEventListener('DOMContentLoaded', () => {
   const root = document.querySelector('#app')
   ReactDOM.render(

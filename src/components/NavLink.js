@@ -3,10 +3,9 @@ const { Link } = require ('react-router')
 const { connect } = require("react-redux")
 
 class NavLink extends React.Component {
-
   render() {
     return (
-      <Link {...this.props} activeClassName="active"/>
+      <Link {...this.props} activeClassName='active'/>
     )
   }
 }

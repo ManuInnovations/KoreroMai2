@@ -7,7 +7,6 @@ import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
 
 const App = (props) => {
   debug({ props })
-
   return (
     <MuiThemeProvider>
       <div className='container'>

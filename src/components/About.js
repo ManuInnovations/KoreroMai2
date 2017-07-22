@@ -3,14 +3,11 @@ import { connect } from 'react-redux'
 import { Link } from 'react-router'
 
 class About extends React.Component {
-
   handleClick(e) {
     e.preventDefault()
     this.props.router.push('/')
   }
-
   render() {
-
     return (
       <div className='about'>
           <h2 className='about-heading'>About Us</h2>
