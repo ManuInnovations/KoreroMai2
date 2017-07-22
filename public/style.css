@@ -10,6 +10,7 @@ CONTENTPAGE
 ABOUT
 PRIVACY
 MEDIA LIBRARY
+MEDIA WATCH
 
 MEDIA QUERIES
 
@@ -404,13 +405,32 @@ ul.topnav li.nav-right {
   margin-bottom: 1em;
 }
 
-.video {
-  margin-top: 3rem;
-}
-
 .library-text {
   text-align: right;
 }
+
+/** MEDIA WATCH **/
+
+.media-container {
+  width: 100%;
+
+}
+
+.video-box {
+  min-height: 75vh;
+}
+
+.video {
+  margin-top: 5em;
+}
+
+video::-webkit-media-controls-enclosure {
+    overflow:hidden;
+}
+video::-webkit-media-controls-panel {
+    width: calc(100% + 80px);
+}
+
 
 /** MEDIA QUERIES **/
 
