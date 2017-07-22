@@ -149,7 +149,7 @@ class Displayletter extends React.Component {
           </div>
 
           <Link key={letter.id} to={`/media/${letter.capital}`}>
-            <img src='/images/play.png' width='30px' />
+            <img src='/images/play.png' id='media-play' />
           </Link>
 
         </div>

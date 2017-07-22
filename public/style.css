@@ -190,6 +190,10 @@ img {
   flex-grow: 1;
 }
 
+#media-play {
+  width: 50px;
+}
+
 
 /** NAVIGATION **/
 
