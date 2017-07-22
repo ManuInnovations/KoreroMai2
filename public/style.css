@@ -67,8 +67,6 @@ img {
   font-size: 20px;
 }
 
-
-
 .play {
   font-size: 30px;
   padding: 15px;
@@ -146,20 +144,40 @@ img {
 
 /** WORDS AND LETTERS */
 
-#wordsImage {
-  width: 5%;
-  margin: 5px;
-  float: left;
-}
-
-#wordsImage:hover {
-  cursor: pointer;
-}
-
 .letter-container {
-  background-color: white;
+  background-color: #D3D3D3;
   width: 100%;
+  min-height: 100vh;
 }
+
+.display-letter {
+  font-size: 4em;
+  margin-right: 15px;
+  margin-top: .5em;
+}
+
+.word-container {
+  min-height: 67vh;
+}
+
+.words-box {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5em;
+  margin-bottom: 1em;
+}
+
+#wordImage {
+  width: 60%;
+  flex-grow: 1;
+}
+
+
+
+
+
 
 /** NAVIGATION **/
 
@@ -246,49 +264,6 @@ ul.topnav li.nav-right {
   width: 20px;
 }
 
-/** MOBILE VIEW FOOTER **/
-
-footer {
-  background-color: grey;
-  padding-top: 1px;
-  padding-bottom: 10px;
-}
-
-.footerButtonsContainer {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 3em;
-  margin-bottom: 2em;
-  background-color: grey;
-}
-
-.footer-btn {
-  margin: 4px;
-  padding: 0;
-  font-size: 1em;
-  border: solid 1px;
-}
-
-.mob-tv {
-  width: 50px;
-  background-color: #D3D3D3;
-  border-radius: 50px;
-}
-
-#mob-privacy {
-  text-align: left;
-  text-decoration: none;
-  color: white;
-  margin-right: 125px;
-  margin-left: -20px;
-}
-
-#mob-about {
-  text-align: right;
-  text-decoration: none;
-  color: white;
-}
 
 /** HOME **/
 
@@ -397,7 +372,6 @@ footer {
   margin-left: 1em;
   margin-right: 2em;
   margin-bottom: 1em;
-
 }
 
 .preview img {
@@ -406,7 +380,6 @@ footer {
 
 .preview a {
     text-decoration: none;
-
 }
 
 #medialibrary-index {
@@ -439,9 +412,6 @@ footer {
 }
 
 }
-
-
-
   .btn-xl {
     padding: 10px 20px;
     font-size: 20px;

@@ -70,41 +70,37 @@ class Displayletter extends React.Component {
               srcLang='en' />
           </audio>
 
+        <div className='letters-box'>
           <button
             type='button'
-            className='display'
+            className='display-letter'
             onClick={this.playCapital}>
             {letter.capital}
           </button>
 
           <button
             type='button'
-            className='display'
+            className='display-letter'
             onClick={this.playLower}>
             {letter.lowercase}
           </button>
 
           <img src='/images/listen.png' width='30px' />
+        </div>
 
-          <div className='images'>
+        <div className='word-container'>
+
+          <div className='words-box'>
             {this.generateWord(wordsArr)}
           </div>
 
           <Link key={letter.id} to={`/media/${letter.capital}`}>
-            <button
-              type='button'
-              className='media-watch'
-              onClick={() =>
-                dispatch({
-                  type: 'RENDER_LETTER',
-                  payload: letter,
-                })
-              }>
-              Watch: {letter.mediaName}
-            </button>
+            <img src='/images/play.png' width='30px' />
           </Link>
 
-          <MobileViewFooter />
+        </div>
+
+        <MobileViewFooter />
 
       </div>
     )
@@ -119,7 +115,8 @@ class Displayletter extends React.Component {
             ref={(x) => { this.playWords[word.id] = x; }}>
             <source src={word.sound} preload='auto'/>
           </audio>
-          <img src={word.image} onClick={this.playSound.bind(this, word.id)} id='wordsImage' />
+
+          <img id='wordImage' src={word.image} onClick={this.playSound.bind(this, word.id)} />
         </div>
       )
     })
