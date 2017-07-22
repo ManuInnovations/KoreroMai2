@@ -277,14 +277,14 @@ ul.topnav li.nav-right {
 #privacy {
   color: white;
   text-decoration: none;
-  float: left;
+  float: right;
   margin-top: 5px;
 }
 
 #about {
   color: white;
   text-decoration: none;
-  float: right;
+  float: left;
   margin-top: 5px;
   margin-right: 5px;
 }
