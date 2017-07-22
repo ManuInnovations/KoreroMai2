@@ -15,6 +15,48 @@ class Displayletter extends React.Component {
     this.playCapital = this.playCapital.bind(this)
     this.playLower = this.playLower.bind(this)
     this.playWords = {}
+    this.nextButton = this.nextButton.bind(this)
+    this.previousButton = this.previousButton.bind(this)
+  }
+
+  nextButton(letter,letters,dispatch){
+    const id = letters.findIndex(item =>{
+      return item.id === letter.id
+    })
+    if(id === (letters.length -1)){
+      this.props.router.push(`/letterindex/${letters[0].capital}`)
+      dispatch({
+        type: "RENDER_LETTER",
+        payload: letters[0],
+      })
+    }
+    else {
+      this.props.router.push(`/letterindex/${letters[id+1].capital}`)
+        dispatch({
+          type: "RENDER_LETTER",
+          payload: letters[id+1],
+        })
+    }
+  }
+
+  previousButton(letter,letters,dispatch){
+    const id = letters.findIndex(item =>{
+      return item.id ===letter.id
+    })
+    if(id === 0){
+      this.props.router.push(`/letterindex/${letters[letters.length-1].capital}`)
+      dispatch({
+        type: "RENDER_LETTER",
+        payload: letters[letters.length-1],
+      })
+    }
+    else {
+      this.props.router.push(`/letterindex/${letters[id-1].capital}`)
+      dispatch({
+        type: "RENDER_LETTER",
+        payload: letters[id-1],
+      })
+    }
   }
 
   playCapital() {
@@ -41,6 +83,7 @@ class Displayletter extends React.Component {
     debug(this.props)
     const { dispatch, letters, letter } = this.props
     const wordsArr = letter.wordImage
+    const currentLetter = letter.capital
 
     return (
       <div className='letter-container'>
@@ -71,6 +114,12 @@ class Displayletter extends React.Component {
           </audio>
 
         <div className='letters-box'>
+
+          <img id='previous-letter' src="../../images/previous.png" alt="back button"
+            onClick={()=>
+            this.previousButton(letter, letters, dispatch)}
+          />
+
           <button
             type='button'
             className='display-letter'
@@ -86,6 +135,11 @@ class Displayletter extends React.Component {
           </button>
 
           <img src='/images/listen.png' width='30px' />
+
+          <img id='next-letter' src="../../images/next.png" alt="next button"
+          onClick={()=>
+            this.nextButton(letter, letters, dispatch)}
+            />
         </div>
 
         <div className='word-container'>

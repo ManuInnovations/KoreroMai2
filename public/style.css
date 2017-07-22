@@ -150,14 +150,30 @@ img {
   min-height: 100vh;
 }
 
+.letters-box {
+  padding-top: 1em;
+}
+
 .display-letter {
   font-size: 4em;
-  margin-right: 15px;
-  margin-top: .5em;
+  margin-right: 10px;
+  margin-top: .8em;
+}
+
+#next-letter {
+  position: absolute;
+  left: 320px;
+  width: 40px;
+}
+
+#previous-letter {
+  position: absolute;
+  right: 320px;
+  width: 40px;
 }
 
 .word-container {
-  min-height: 67vh;
+  min-height: 62vh;
 }
 
 .words-box {
@@ -173,10 +189,6 @@ img {
   width: 60%;
   flex-grow: 1;
 }
-
-
-
-
 
 
 /** NAVIGATION **/
