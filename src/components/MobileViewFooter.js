@@ -7,23 +7,23 @@ class MobileViewFooter extends React.Component {
 
   handleClick(e) {
     e.preventDefault()
-    this.props.router.push("/")
+    this.props.router.push('/')
   }
 
   render() {
 
     return (
-      <div className="footer">
+      <div className='footer-two'>
           <footer>
-            <Link to="/privacy" id="privacy">
+            <Link to='/privacy' id='privacy'>
               &nbsp; Privacy Policy
             </Link>
 
-            <Link to="/letters">
+            <Link to='/letters'>
               <img id='footer-index' src='images/grid.png' alt='grid icon' />
             </Link>
 
-            <Link to="/about" id="about">
+            <Link to='/about' id='about'>
               &nbsp; About Us
             </Link>
           </footer>
