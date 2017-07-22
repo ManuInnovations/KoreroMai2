@@ -1,33 +1,23 @@
-const React = require("react")
-const { connect } = require("react-redux")
-const { Link } = require("react-router")
+import React from 'react'
+import { connect } from 'react-redux'
+import { Link } from 'react-router'
 
 class Footer extends React.Component {
-
   handleClick(e) {
     e.preventDefault()
-    this.props.router.push("/")
+    this.props.router.push('/')
   }
-
   render() {
-
     return (
-      <div className="row footer">
-        <div className="col-sm-12">
+      <div className='footer'>
           <footer>
-
-            &copy; Manu Innovations Ltd. 2017
-
-            <Link to="/privacy" id="info">
-              &nbsp; Privacy Policy
-            </Link>
-
-            <Link to="/about" id="info">
+            <Link to='/about' id='about'>
               &nbsp; About Us
             </Link>
-
+            <Link to='/privacy' id='privacy'>
+              &nbsp; Privacy Policy
+            </Link>
           </footer>
-        </div>
       </div>
     )
   }

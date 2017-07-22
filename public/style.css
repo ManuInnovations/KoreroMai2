@@ -1,14 +1,22 @@
-/** CONTENTS
+/**********************************
+************************************
 
 GENERAL
 BUTTONS
 WORDS AND LETTERS
 NAVIGATION
 FOOTER
+HOME
+CONTENTPAGE
 ABOUT
+PRIVACY
 MEDIA LIBRARY
+MEDIA WATCH
 
-**/
+MEDIA QUERIES
+
+************************************
+*************************************/
 
 
 /** GENERAL **/
@@ -23,30 +31,28 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  min-height: 100vh;
+  color: grey;
 }
 
 .container {
-  width: 100%;
   margin: 0;
   padding: 0;
 }
 
 .content {
-  min-height: 85vh;
-  background-color: white;
-  text-align: center;
-  width: 90%;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #D3D3D3;
   margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 img {
   padding: 0;
   margin: 0;
-}
-
-.glyphicon {
-  font-size: 1.5em;
 }
 
 /** BUTTONS **/
@@ -56,12 +62,17 @@ img {
 }
 
 .btn {
-  margin-right: 10px;
-  margin-top: 20px;
+  margin-right: 5px;
+  margin-top: 10px;
   color: white;
   background-color: blue;
-  padding: 15px 25px;
-  font-size: 15px;
+  padding: 5px 10px;
+  font-size: 20px;
+}
+
+.play {
+  font-size: 30px;
+  padding: 15px;
 }
 
 .btn:hover {
@@ -136,42 +147,74 @@ img {
 
 /** WORDS AND LETTERS */
 
-.listen {
-  border: solid grey 2px;
-  height:auto;
-}
-
-.images {
-  padding: 2em;
-  margin-left: 3em;
-}
-
-#wordsImage {
-  width: 25%;
-  margin: 15px;
-  float: left;
-}
-
-#wordsImage:hover {
-  cursor: pointer;
-}
-
 .letter-container {
-  background-color: white;
-  width: 70%;
-  margin-left: 15%;
-  margin-top: 3em;
+  background-color: #D3D3D3;
+  width: 100%;
+  min-height: 100vh;
 }
+
+.letters-box {
+  padding-top: 1em;
+}
+
+.display-letter {
+  font-size: 4em;
+  margin-right: 10px;
+  margin-top: .8em;
+}
+
+#next-letter {
+  position: absolute;
+  left: 320px;
+  width: 40px;
+}
+
+#previous-letter {
+  position: absolute;
+  right: 320px;
+  width: 40px;
+}
+
+.word-container {
+  min-height: 61vh;
+}
+
+.words-box {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5em;
+  margin-bottom: 1em;
+}
+
+#wordImage {
+  width: 60%;
+  flex-grow: 1;
+}
+
+#media-play {
+  width: 50px;
+}
+
 
 /** NAVIGATION **/
+
+.navigation {
+  width: 100%;
+  text-align: center;
+  display: inline;
+}
 
 ul.topnav {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #ff6600;
+  background-color: #D3D3D3;
   font-size: 1.5rem;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 ul.topnav li {
@@ -181,98 +224,243 @@ ul.topnav li {
 ul.topnav li a {
   display: block;
   color: white;
-  text-align: center;
   padding: 10px 10px;
   text-decoration: none;
+  text-align: center;
+}
+
+
+ul.topnav li.nav-right,
+ul.topnav li {
+  float: none;
+  font-size: 1rem;
 }
 
 ul.topnav li a:hover {
   color: #0000ff;}
 
-  ul.topnav li.nav-right {
-    float: right;
-  }
+ul.topnav li.nav-right {
+  float: right;
+}
 
-  .brand {
-    font-style: italic;
-    color: white;
-    padding-top: 12px;
-    text-align: center;
-  }
+.brand {
+  color: white;
+}
 
-  .blocks {
-    width: 30px;
-  }
+.blocks {
+  width: 30px;
+}
 
-  .is-active {
-    color: yellow;
-  }
+.is-active {
+  color: yellow;
+}
 
-  /** FOOTER **/
+/** FOOTER **/
 
-  .footer {
-    padding: 10px;
-    background-color: #bd1ebd;
-    color: #ffffff;
-    text-align: center;
-  }
+.footer {
+  padding: 5px;
+  background-color: grey;
+  color: white;
+  text-align: center;
+  min-height: 30px;
+}
 
-  #info {
-    color: #ffffff;
-    text-decoration: none;
-  }
+.footer-two {
+  padding: 5px;
+  background-color: grey;
+  color: white;
+  text-align: center;
+  min-height: 30px;
+  vertical-align: middle;
+}
 
-  .privacy-policy {
-    text-align: left;
-  }
+#privacy {
+  color: white;
+  text-decoration: none;
+  float: right;
+  margin-top: 5px;
+}
+
+#about {
+  color: white;
+  text-decoration: none;
+  float: left;
+  margin-top: 5px;
+  margin-right: 5px;
+}
+
+#footer-index {
+  width: 20px;
+  padding-top: 5px;
+}
 
 
+/** HOME **/
 
-  /** ABOUT */
+.home h1{
+  padding: 0 0 1em;
+}
+
+.home h2{
+  padding: 1em 0 .3em;
+}
+
+.home h3 {
+  padding: 0 0 1em;
+}
+
+/** CONTENT PAGE **/
+
+.buttonContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0;
+  min-height: 70vh;
+}
+
+.contents-btn {
+  margin: 0px 3px 0px;
+  padding: 6px 0 6px 0;
+  font-size: 1.5em;
+  border: solid 2px;
+}
+
+.contentpage {
+  width: 100%;
+  margin: 0;
+  min-height: 100vh;
+}
+
+.content-tv {
+  width: 20%;
+  margin-bottom: 20px;
+}
+
+/** PRIVACY **/
+
+.privacy-policy {
+  text-align: left;
+  padding: 2em;
+  font-size: .8em;
+}
+
+.privacy-heading {
+  text-align: center;
+}
+
+.article {
+  margin-left: 3em;
+}
+
+/** ABOUT **/
 
 .about {
+  text-align: left;
+  padding: 2em;
+  font-size: .8em;
+}
+
+.about-heading {
   text-align: center;
-  padding: 3em;
+}
+
+.profile {
+  min-height: 90px;
 }
 
 .profile img {
-padding-top: 1em;
+  width: 30%;
+  float:left;
+  margin-right: 10px;
 }
 
 .contact {
-  text-align: center;
+  text-align: left;
+  text-decoration: none;
 }
 
 /** MEDIA LIBRARY */
 
 .preview {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.preview img {
+  vertical-align: middle;
+  margin-right: 4em;
+}
+
+.preview ul {
+  list-style: none;
+}
+
+.preview li {
+  text-align: left;
+  margin-left: 1em;
+  margin-right: 2em;
+  margin-bottom: 1em;
+}
+
+.preview img {
   width: 20%;
-  margin: 3rem;
+}
+
+.preview a {
+    text-decoration: none;
+}
+
+#medialibrary-index {
+  width: 15%;
+  margin-left: 3em;
+  margin-bottom: 1em;
+}
+
+.library-text {
+  text-align: right;
+}
+
+/** MEDIA WATCH **/
+
+.media-container {
+  width: 100%;
+
+}
+
+.video-box {
+  min-height: 75vh;
 }
 
 .video {
-  margin-top: 3rem;
+  margin-top: 5em;
+}
+
+video::-webkit-media-controls-enclosure {
+    overflow:hidden;
+}
+video::-webkit-media-controls-panel {
+    width: calc(100% + 80px);
 }
 
 
-/** MOBILE VIEW **/
-@media screen and (max-width: 600px){
-  .content {
-    min-height: 66vh;
-  }
-  .btn {
-    margin-right: 5px;
-    margin-top: 10px;
-    color: white;
-    background-color: blue;
-    padding: 5px 10px;
-    font-size: 20px;
-  }
-  ul.topnav li.nav-right,
-  ul.topnav li {
-    float: none;
-    font-size: 1rem;
-  }
+/** MEDIA QUERIES **/
+
+@media min-width: 600px {
+
+.content {
+  min-height: 85vh;
+}
+
+.btn {
+  margin-right: 10px;
+  margin-top: 20px;
+  padding: 15px 25px;
+  font-size: 15px;
+}
+
+}
   .btn-xl {
     padding: 10px 20px;
     font-size: 20px;

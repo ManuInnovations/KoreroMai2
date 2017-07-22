@@ -1,35 +1,33 @@
-const React = require("react")
-const { connect } = require("react-redux")
-const { Link } = require("react-router")
+import React from 'react'
+import { connect } from 'react-redux'
+import { Link } from 'react-router'
+import AppBar from 'material-ui/AppBar'
 
 class Nav extends React.Component {
-
   handleClick(e) {
     e.preventDefault()
-    this.props.router.push("/")
+    this.props.router.push('/')
   }
-
   render() {
-
     return (
-      <div className="row">
-        <div className="col-sm-12">
-          <ul className="topnav">
-            <li>
-              <Link to="#">
-                <span className="glyphicon glyphicon-home" aria-hidden="true" />
-              </Link>
-            </li>
-            <li className="brand">
+      <div className='navigation'>
+        <ul className='topnav'>
+          <li className='brand'>
+            <Link to='#'>
               Kōrero Mai
-            </li>
-            <li className="nav-right">
-              <Link to="/contents">
-                <img className="blocks" src="images/abc.png" alt="abc blocks" />
-              </Link>
-            </li>
-          </ul>
-        </div>
+            </Link>
+          </li>
+          <li className='nav-right'>
+            <Link to='/media'>
+              <img className='blocks' src='images/tv.png' alt='grid icon' />
+            </Link>
+          </li>
+          <li className='nav-right'>
+            <Link to='/contents'>
+              <img className='blocks' src='images/grid.png' alt='grid icon' />
+            </Link>
+          </li>
+        </ul>
       </div>
     )
   }

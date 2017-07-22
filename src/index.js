@@ -1,54 +1,45 @@
-const debug = require("debug")("index")
-
+import {index as debug} from 'debug';
 localStorage.debug = "*"
-
 // modules
-const React = require("react")
-const ReactDOM = require("react-dom")
-const { Provider } = require("react-redux")
-const { createStore } = require("redux")
-const createHistory = require("history").createHashHistory
-const { Router, Route, IndexRoute, hashHistory } = require("react-router")
-
-const reducer = require("./reducers")
-const initialState = require("../state")
-
+import React from 'react'
+import ReactDOM from 'react-dom'
+import { Provider } from 'react-redux'
+import { createStore } from 'redux'
+const createHistory = require('history').createHashHistory
+import { Router, Route, IndexRoute, hashHistory } from 'react-router'
+import reducer from './reducers'
+import initialState from '../state'
 //top level components
-const App = require("./app")
-const Home = require("./components/Home")
-const Contentspage = require("./components/Contentspage")
-const Letterindex = require("./components/Letterindex")
-const Displayletter = require("./components/Displayletter")
-const Privacy = require("./components/Privacy")
-const About = require("./components/About")
-const Mediashow = require("./components/Mediashow")
-const Medialibrary = require("./components/Medialibrary")
-
+import App from './app'
+import Home from './components/Home'
+import Contentspage from './components/Contentspage'
+import Letterindex from './components/Letterindex'
+import Displayletter from './components/Displayletter'
+import Privacy from './components/Privacy'
+import About from './components/About'
+import Mediashow from './components/Mediashow'
+import Medialibrary from './components/Medialibrary'
 const store = createStore(reducer, initialState)
-
 const Root = ({ store }) => {
   return (
     <Provider store={store} >
       <Router history={hashHistory} >
-        <Route path="/" component={App} store={store}>
+        <Route path='/' component={App} store={store}>
           <IndexRoute component={Home} />
-          <Route path="/contents" component={Contentspage} />
-          <Route path="/letterindex" component={Letterindex}>
-            <Route path="/letterindex/:id" component={Displayletter} />
-            <Route path="/letterindex/:id/watch" component={Mediashow}/>
-          </Route>
-          <Route path="/media" component={Medialibrary} />
-          <Route path="/media/:id" component={Mediashow} />
-          <Route path="/privacy" component={Privacy} />
-          <Route path="/about" component={About} />
+          <Route path='/letters' component={Contentspage} />
+          <Route path='/letters/:id' component={Displayletter} />
+          <Route path='/letters/:id/watch' component={Mediashow}/>
+          <Route path='/media' component={Medialibrary} />
+          <Route path='/media/:id' component={Mediashow} />
+          <Route path='/privacy' component={Privacy} />
+          <Route path='/about' component={About} />
         </Route>
       </Router>
     </Provider>
   )
 }
-
-document.addEventListener("DOMContentLoaded", () => {
-  const root = document.querySelector("#app")
+document.addEventListener('DOMContentLoaded', () => {
+  const root = document.querySelector('#app')
   ReactDOM.render(
     <Root store={store} />,
     root,
