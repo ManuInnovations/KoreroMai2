@@ -341,8 +341,12 @@ ul.topnav li.nav-right {
 
 .privacy-policy {
   text-align: left;
-  padding: 2em;
   font-size: .8em;
+  width: 100%;
+}
+
+.privacy-box {
+  padding: 2em;
 }
 
 .privacy-heading {
@@ -356,10 +360,14 @@ ul.topnav li.nav-right {
 /** ABOUT **/
 
 .about {
-  text-align: left;
   padding: 0em;
   font-size: .8em;
   width: 100%;
+}
+
+.about-box {
+  text-align: left;
+  padding: 0 2em;
 }
 
 .about-heading {
@@ -367,17 +375,23 @@ ul.topnav li.nav-right {
 }
 
 .profile {
-  min-height: 90px;
+  min-height: 50px;
 }
 
 .profile img {
-  width: 30%;
+  width: 15%;
   float:left;
   margin-right: 10px;
 }
 
+.purpose {
+  margin-top: 2em;
+}
+
 .contact {
   text-align: left;
+}
+.contact a {
   text-decoration: none;
 }
 
@@ -474,20 +488,23 @@ video::-webkit-media-controls-panel {
     font-size: 1em;
     min-height: 100vh;
   }
+  .about-box {
+    min-height: 92vh;
+    text-align: left;
+    padding: 0 5em;
+  }
   .profile {
     min-height: 50px;
     width: 60%
   }
   .profile img {
     width: 15%;
-    float:left;
-    margin-right: 10px;
+  }
+  .contact {
+    margin-top: 2em;
+    text-align: center;
   }
 
-  .contact {
-    text-align: left;
-    text-decoration: none;
-  }
 }
 
 /* Landscape */

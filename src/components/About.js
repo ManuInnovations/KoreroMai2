@@ -13,7 +13,7 @@ class About extends React.Component {
       <div className='about'>
         <div className='about-box'>
           <h2 className='about-heading'>About Us</h2>
-          <h3>Kia Ora! Kōrero Mai was made with aroha by the team at Manu, and with the assistance of the talented UX designer, Katie Deller.</h3>
+          <p>Kia Ora! Kōrero Mai was made with aroha by the team at Manu, and with the assistance of the talented UX designer, Katie Deller.</p>
           <div className='profile'>
             <img src='images/janie.png' alt='Janie Tito' />
             <p><b>Janie Tito</b></p>
@@ -49,11 +49,11 @@ class About extends React.Component {
             koutou!</p>
           </div>
           <div className='contact'>
-            <h4>Please get in touch,
-            Email: hello@manu.net.nz</h4>
-            <h4>To find out more about
-            Manu: <a href='https://www.manu.net.nz'>www.manu.net.nz</a></h4>
-            <h4>To contact Katie, Email: kdellerdesign@gmail.com</h4>
+            <p>Please get in touch,
+            Email: <b>hello@manu.net.nz</b></p>
+            <p>To find out more about
+            Manu: <a href='https://www.manu.net.nz'><b>www.manu.net.nz</b></a></p>
+            <p>To contact Katie, Email: <b>kdellerdesign@gmail.com</b></p>
           </div>
         </div>
         <MobileViewFooter />

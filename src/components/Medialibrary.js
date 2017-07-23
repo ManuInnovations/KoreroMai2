@@ -3,7 +3,7 @@ import React from 'react'
 import { connect } from 'react-redux'
 import request from 'superagent'
 import { Link } from 'react-router'
-import Footer from './Footer'
+import MobileViewFooter from './MobileViewFooter'
 
 class Medialibrary extends React.Component {
   handleClick(e) {
@@ -36,10 +36,7 @@ class Medialibrary extends React.Component {
             })
           }
         </ul>
-        <Link to='/letters'>
-          <img id='medialibrary-index' src='images/grid.png' alt='grid icon' />
-        </Link>
-        <Footer />
+        <MobileViewFooter />
       </div>
     )
   }
