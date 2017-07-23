@@ -489,12 +489,12 @@ video::-webkit-media-controls-panel {
     min-height: 100vh;
   }
   .about-box {
-    min-height: 92vh;
+    min-height: 93vh;
     text-align: left;
     padding: 0 5em;
   }
   .profile {
-    min-height: 50px;
+    min-height: 70px;
     width: 60%
   }
   .profile img {
