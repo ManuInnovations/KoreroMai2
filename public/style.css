@@ -357,8 +357,9 @@ ul.topnav li.nav-right {
 
 .about {
   text-align: left;
-  padding: 2em;
+  padding: 0em;
   font-size: .8em;
+  width: 100%;
 }
 
 .about-heading {
@@ -426,7 +427,6 @@ ul.topnav li.nav-right {
 
 .media-container {
   width: 100%;
-
 }
 
 .video-box {
@@ -446,6 +446,59 @@ video::-webkit-media-controls-panel {
 
 
 /** MEDIA QUERIES **/
+
+/* iPad 3 and 4 */
+
+/* Portrait */
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (orientation: portrait)
+  and (-webkit-min-device-pixel-ratio: 2) {
+  .buttonContainer {
+    min-height: 67vh;
+    padding: 3em;
+  }
+  .contents-btn {
+    margin: 0px 10px 0px;
+    padding: 9px 5px;
+    font-size: 5em;
+    border: solid 2px;
+    width: 150px;
+  }
+  .content-tv {
+    width: 15%;
+    margin-bottom: 20px;
+  }
+  .about {
+    font-size: 1em;
+    min-height: 100vh;
+  }
+  .profile {
+    min-height: 50px;
+    width: 60%
+  }
+  .profile img {
+    width: 15%;
+    float:left;
+    margin-right: 10px;
+  }
+
+  .contact {
+    text-align: left;
+    text-decoration: none;
+  }
+}
+
+/* Landscape */
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (orientation: landscape)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+
 
 @media min-width: 600px {
 
