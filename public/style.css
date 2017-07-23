@@ -504,6 +504,13 @@ video::-webkit-media-controls-panel {
     margin-top: 2em;
     text-align: center;
   }
+  .privacy-policy {
+    font-size: 1em;
+  }
+  .privacy-box {
+    padding: 3em;
+    min-height: 87vh;
+  }
 
 }
 
