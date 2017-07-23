@@ -424,17 +424,15 @@ ul.topnav li.nav-right {
 }
 
 .preview a {
-    text-decoration: none;
-}
-
-#medialibrary-index {
-  width: 15%;
-  margin-left: 3em;
-  margin-bottom: 1em;
+  text-decoration: none;
 }
 
 .library-text {
   text-align: right;
+}
+
+.media-name {
+
 }
 
 /** MEDIA WATCH **/
@@ -510,6 +508,21 @@ video::-webkit-media-controls-panel {
   .privacy-box {
     padding: 3em;
     min-height: 87vh;
+  }
+  .preview img {
+    margin-right: 8em;
+  }
+  .preview li {
+    text-align: left;
+    margin-left: 8em;
+    margin-right: 3em;
+    margin-bottom: 3em;
+  }
+  .preview img {
+    width: 20%;
+  }
+  .library-text {
+    text-align: right;
   }
 
 }

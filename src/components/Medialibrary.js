@@ -29,7 +29,8 @@ class Medialibrary extends React.Component {
                           type: 'RENDER_LETTER',
                             payload: letter,
                           })
-                      } />{letter.mediaName}
+                      } />
+                    <p className='media-name'>{letter.mediaName}</p>
                   </Link>
                 </li>
               )
