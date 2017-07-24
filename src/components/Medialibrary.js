@@ -15,11 +15,12 @@ class Medialibrary extends React.Component {
     return (
       <div className='preview'>
         <h2>Media Library</h2>
-          <ul>
+          <div className='media-box'>
           {
             letters.map((letter) => {
               return (
-                <li>
+                <div>
+                <div className='media-image'>
                   <Link key={letter.id} to={`/media/${letter.capital}`}>
                     <img
                       src={`${letter.wordImage[0].image}`}
@@ -30,13 +31,17 @@ class Medialibrary extends React.Component {
                             payload: letter,
                           })
                       } />
-                    <p className='media-name'>{letter.mediaName}</p>
+
                   </Link>
-                </li>
+                </div>
+                <div className='media-name'>
+                  <p>{letter.mediaName}</p>
+                </div>
+              </div>
               )
             })
           }
-        </ul>
+          </div>
         <MobileViewFooter />
       </div>
     )

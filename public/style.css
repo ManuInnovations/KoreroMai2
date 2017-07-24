@@ -396,43 +396,20 @@ ul.topnav li.nav-right {
 }
 
 /** MEDIA LIBRARY */
-
 .preview {
-  margin: 0;
-  padding: 0;
   width: 100%;
 }
 
-.preview img {
-  vertical-align: middle;
-  margin-right: 4em;
+.media-box {
+  padding: 1em;
 }
 
-.preview ul {
-  list-style: none;
-}
-
-.preview li {
-  text-align: left;
-  margin-left: 1em;
-  margin-right: 2em;
-  margin-bottom: 1em;
-}
-
-.preview img {
-  width: 20%;
-}
-
-.preview a {
-  text-decoration: none;
-}
-
-.library-text {
-  text-align: right;
+.media-image img {
+  width: 30%;
 }
 
 .media-name {
-
+  text-align: center;
 }
 
 /** MEDIA WATCH **/
