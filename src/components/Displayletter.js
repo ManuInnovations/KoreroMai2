@@ -139,7 +139,7 @@ class Displayletter extends React.Component {
   generateWord(wordsArr) {
     return wordsArr.map((word) => {
       return (
-        <div>
+        <div className='split-words'>
           <audio
             key={word.id}
             ref={(x) => { this.playWords[word.id] = x; }}>

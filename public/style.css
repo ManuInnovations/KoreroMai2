@@ -3,7 +3,7 @@
 
 GENERAL
 BUTTONS
-WORDS AND LETTERS
+DISPLAY LETTER
 NAVIGATION
 FOOTER
 HOME
@@ -145,7 +145,7 @@ img {
   cursor: pointer;
 }
 
-/** WORDS AND LETTERS */
+/** DISPLAY LETTER */
 
 .letter-container {
   background-color: #D3D3D3;
@@ -192,7 +192,7 @@ img {
 }
 
 #wordImage {
-  width: 60%;
+  width: 90%;
   flex-grow: 1;
 }
 
@@ -411,7 +411,7 @@ ul.topnav li.nav-right {
 
 .media-box {
   padding: 1em;
-  min-height: 78vh;
+  min-height: 79vh;
 }
 
 .media-image {
@@ -513,7 +513,7 @@ video::-webkit-media-controls-panel {
   .media-box {
     width: 80%;
     margin: auto;
-    min-height: 85vh;
+    min-height: 86vh;
     padding: 1em;
   }
   .media-image img {
@@ -547,8 +547,8 @@ video::-webkit-media-controls-panel {
     padding-top: 5em;
     margin-bottom: 2em;
   }
-  #wordImage {
-    width: 90%;
+  .split-words {
+    width: 30%;
   }
   #media-play {
     width: 70px;
@@ -624,73 +624,44 @@ video::-webkit-media-controls-panel {
     margin-left: 2em;
   }
   .media-box {
-
-  }
-  .media-each {
-    float: left;
-    width: 100%;
+    min-height: 81vh;
   }
   .media-image img {
     width: 15%;
     float: left;
   }
-
-.media-name {
-  text-align: center;
-  margin-bottom: 1px;
-  float: left;
-}
-
-}
-
-
-@media min-width: 600px {
-
-.content {
-  min-height: 85vh;
-}
-
-.btn {
-  margin-right: 10px;
-  margin-top: 20px;
-  padding: 15px 25px;
-  font-size: 15px;
-}
-
-}
-  .btn-xl {
-    padding: 10px 20px;
-    font-size: 20px;
-    margin-top: 1em;
-    margin-bottom: 1em;
+  .letter-box {
+    padding: 3em;
+  }
+  .letters {
+    padding-top: 2em;
+  }
+  .letter-button {
+    font-size: 5em;
     margin-right: 1em;
+    margin-top: .8em;
   }
-
-  #next {
-  width: 50px;
-  }
-  #back {
-  width: 50px;
-  }
-  #wordsImage {
-    width: 70%;
-    margin: 0;
-    padding: 0;
-    float: left;
-  }
-  .media-watch {
-    font-size: 1em;
-  }
-  #mediashow-back {
+  #next-letter {
+    left: 800px;
     width: 50px;
-    margin-top: 2em;
   }
-  .blocks {
-    width: 30px;
+  #previous-letter {
+    right: 800px;
+    width: 50px;
   }
-.listen {
-  border: solid grey 2px;
-  min-height: 60vh;
-}
+  .word-container {
+    min-height: 47vh;
+  }
+  .words-box {
+    padding-top: 3em;
+    margin-bottom: 2em;
+  }
+  #wordImage {
+    width: 100%;
+  }
+  .split-words {
+    margin: 20px;
+    width: 20%;
+  }
 
 }
