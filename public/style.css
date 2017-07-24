@@ -432,10 +432,12 @@ ul.topnav li.nav-right {
 
 .media-container {
   width: 100%;
+  min-height: 100vh;
 }
 
 .video-box {
-  min-height: 75vh;
+  padding: 2em;
+  min-height: 85vh;
 }
 
 .video {
@@ -446,7 +448,12 @@ video::-webkit-media-controls-enclosure {
     overflow:hidden;
 }
 video::-webkit-media-controls-panel {
-    width: calc(100% + 80px);
+    width: calc(100% + 60px);
+}
+
+.mediabackbutton {
+  width: 50px;
+  margin-top: 3em;
 }
 
 
@@ -551,6 +558,16 @@ video::-webkit-media-controls-panel {
   }
   #media-play {
     width: 70px;
+  }
+  .video-box {
+    padding: 2em;
+    min-height: 90vh;
+  }
+  .video {
+    margin-top: 8em;
+  }
+  video::-webkit-media-controls-panel {
+      width: calc(100% + 55px);
   }
 
 }
