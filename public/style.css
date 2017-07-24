@@ -528,7 +528,7 @@ video::-webkit-media-controls-panel {
   }
   .letter-button {
     font-size: 6em;
-    margin-right: 20px;
+    margin-right: 70px;
     margin-top: 1em;
   }
   #next-letter {
@@ -543,18 +543,15 @@ video::-webkit-media-controls-panel {
     min-height: 59vh;
   }
   .words-box {
-    padding-top: 6em;
+    padding-top: 5em;
     margin-bottom: 2em;
   }
-
-#wordImage {
-  width: 60%;
-  flex-grow: 1;
-}
-
-#media-play {
-  width: 50px;
-}
+  #wordImage {
+    width: 90%;
+  }
+  #media-play {
+    width: 70px;
+  }
 
 }
 
