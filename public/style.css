@@ -412,20 +412,20 @@ ul.topnav li.nav-right {
 
 .media-box {
   padding: 2em;
+  width: 100%;
+  min-height: 74vh;
 }
 
-.media-each {
-  float: left;
-  width: 100%;
+.media-image {
+  font-size: 0;
 }
 
 .media-image img {
-  width: 30%;
-}
-
-.media-name {
-  text-align: center;
-  margin-bottom: 10px;
+  width: 20%;
+  margin-left: 20px;
+  margin-right:10px;
+  margin-top: 10px;
+  float: left;
 }
 
 /** MEDIA WATCH **/
@@ -629,6 +629,23 @@ video::-webkit-media-controls-panel {
   .article {
     margin-left: 2em;
   }
+  .media-box {
+
+  }
+  .media-each {
+    float: left;
+    width: 100%;
+  }
+  .media-image img {
+    width: 15%;
+    float: left;
+  }
+
+.media-name {
+  text-align: center;
+  margin-bottom: 1px;
+  float: left;
+}
 
 }
 

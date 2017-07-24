@@ -14,12 +14,11 @@ class Medialibrary extends React.Component {
     const { dispatch, letters } = this.props
     return (
       <div className='preview'>
+        <h2>Media Library</h2>
           <div className='media-box'>
-            <h2>Media Library</h2>
           {
             letters.map((letter) => {
               return (
-                <div className='media-each'>
                   <div className='media-image'>
                     <Link key={letter.id} to={`/media/${letter.capital}`}>
                       <img
@@ -31,13 +30,8 @@ class Medialibrary extends React.Component {
                               payload: letter,
                             })
                         } />
-
                     </Link>
                   </div>
-                  <div className='media-name'>
-                    <p>{letter.mediaName}</p>
-                  </div>
-                </div>
               )
             })
           }
