@@ -16,36 +16,38 @@ class Contentspage extends React.Component {
     const { dispatch, letters } = this.props
     return (
         <div className='contentpage'>
-          <h2>Letter Index</h2>
-            <div className='buttonContainer'>
-              {
-              letters.map((letter) => {
-                return (
-                  <Link key={letter.id} to={`/letters/${letter.capital}`}>
-                    <div
-                      className='wiggle-me'
-                      role='group'
-                      aria-label='...'>
-                      <RaisedButton
-                        type='button'
-                        className='contents-btn'
-                        onClick={() =>
-                            dispatch({
-                              type: 'RENDER_LETTER',
-                              payload: letter,
-                            })
-                        }>
-                        {letter.capital}
-                      </RaisedButton>
-                    </div>
-                  </Link>
-                )
-              })
-            }
+          <div className='content-box'>
+            <h2>Letter Index</h2>
+              <div className='buttonContainer'>
+                {
+                letters.map((letter) => {
+                  return (
+                    <Link key={letter.id} to={`/letters/${letter.capital}`}>
+                      <div
+                        className='wiggle-me'
+                        role='group'
+                        aria-label='...'>
+                        <RaisedButton
+                          type='button'
+                          className='contents-btn'
+                          onClick={() =>
+                              dispatch({
+                                type: 'RENDER_LETTER',
+                                payload: letter,
+                              })
+                          }>
+                          {letter.capital}
+                        </RaisedButton>
+                      </div>
+                    </Link>
+                  )
+                })
+              }
+            </div>
+            <Link to='/media'>
+              <img className='content-tv' src='images/tv.png' alt='grid icon' />
+            </Link>
           </div>
-          <Link to='/media'>
-            <img className='content-tv' src='images/tv.png' alt='grid icon' />
-          </Link>
         <Footer />
       </div>
     )
