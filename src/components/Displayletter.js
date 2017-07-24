@@ -76,6 +76,7 @@ class Displayletter extends React.Component {
     const currentLetter = letter.capital
     return (
       <div className='letter-container'>
+        <div className='letter-box'>
           <h2>Letter</h2>
           <audio
             key={letter.capitalSound}
@@ -99,36 +100,37 @@ class Displayletter extends React.Component {
               src=''
               srcLang='en' />
           </audio>
-        <div className='letters-box'>
-          <img id='previous-letter' src="../../images/previous.png" alt="back button"
-            onClick={()=>
-            this.previousButton(letter, letters, dispatch)}
-          />
-          <button
-            type='button'
-            className='display-letter'
-            onClick={this.playCapital}>
-            {letter.capital}
-          </button>
-          <button
-            type='button'
-            className='display-letter'
-            onClick={this.playLower}>
-            {letter.lowercase}
-          </button>
-          <img src='/images/listen.png' width='30px' />
-          <img id='next-letter' src="../../images/next.png" alt="next button"
-          onClick={()=>
-            this.nextButton(letter, letters, dispatch)}
+          <div className='letters'>
+            <img id='previous-letter' src="../../images/previous.png" alt="back button"
+              onClick={()=>
+              this.previousButton(letter, letters, dispatch)}
             />
-        </div>
-        <div className='word-container'>
-          <div className='words-box'>
-            {this.generateWord(wordsArr)}
+            <button
+              type='button'
+              className='letter-button'
+              onClick={this.playCapital}>
+              {letter.capital}
+            </button>
+            <button
+              type='button'
+              className='letter-button'
+              onClick={this.playLower}>
+              {letter.lowercase}
+            </button>
+            <img src='/images/listen.png' width='30px' />
+            <img id='next-letter' src="../../images/next.png" alt="next button"
+            onClick={()=>
+              this.nextButton(letter, letters, dispatch)}
+              />
           </div>
-          <Link key={letter.id} to={`/media/${letter.capital}`}>
-            <img src='/images/play.png' id='media-play' />
-          </Link>
+          <div className='word-container'>
+            <div className='words-box'>
+              {this.generateWord(wordsArr)}
+            </div>
+            <Link key={letter.id} to={`/media/${letter.capital}`}>
+              <img src='/images/play.png' id='media-play' />
+            </Link>
+          </div>
         </div>
         <MobileViewFooter />
       </div>

@@ -150,14 +150,17 @@ img {
 .letter-container {
   background-color: #D3D3D3;
   width: 100%;
-  min-height: 100vh;
 }
 
-.letters-box {
+.letter-box {
+  padding: 2em;
+}
+
+.letters {
   padding-top: 1em;
 }
 
-.display-letter {
+.letter-button {
   font-size: 4em;
   margin-right: 10px;
   margin-top: .8em;
@@ -176,7 +179,7 @@ img {
 }
 
 .word-container {
-  min-height: 61vh;
+  min-height: 52vh;
 }
 
 .words-box {
