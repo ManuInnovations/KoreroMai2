@@ -569,6 +569,10 @@ video::-webkit-media-controls-panel {
   video::-webkit-media-controls-panel {
       width: calc(100% + 55px);
   }
+  .mediabackbutton {
+    width: 70px;
+    margin-top: 4em;
+  }
 
 }
 
