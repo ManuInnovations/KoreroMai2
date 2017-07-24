@@ -269,7 +269,7 @@ ul.topnav li.nav-right {
 }
 
 .footer-two {
-  padding: 5px;
+  padding: 5px 15px;
   background-color: grey;
   color: white;
   text-align: center;
@@ -296,6 +296,7 @@ ul.topnav li.nav-right {
 #footer-index {
   width: 20px;
   padding-top: 5px;
+  margin-left: 10px;
 }
 
 
@@ -349,12 +350,12 @@ ul.topnav li.nav-right {
 
 .privacy-policy {
   text-align: left;
-  font-size: .8em;
   width: 100%;
 }
 
 .privacy-box {
   padding: 2em;
+  font-size: .8em;
 }
 
 .privacy-heading {
@@ -369,11 +370,11 @@ ul.topnav li.nav-right {
 
 .about {
   padding: 0em;
-  font-size: .8em;
   width: 100%;
 }
 
 .about-box {
+  font-size: .8em;
   text-align: left;
   padding: 2em;
   padding-bottom: 0;
@@ -470,7 +471,7 @@ video::-webkit-media-controls-panel {
     padding: 3em;
   }
   .content-box {
-    min-height: 93vh;
+    min-height: 92vh;
   }
   .contents-btn {
     margin: 0px 10px 0px;
@@ -513,7 +514,7 @@ video::-webkit-media-controls-panel {
   .media-box {
     width: 80%;
     margin: auto;
-    min-height: 86vh;
+    min-height: 85vh;
     padding: 1em;
   }
   .media-image img {
@@ -541,7 +542,7 @@ video::-webkit-media-controls-panel {
     width: 80px;
   }
   .word-container {
-    min-height: 59vh;
+    min-height: 58vh;
   }
   .words-box {
     padding-top: 5em;
@@ -555,7 +556,7 @@ video::-webkit-media-controls-panel {
   }
   .video-box {
     padding: 2em;
-    min-height: 90vh;
+    min-height: 89vh;
   }
   .video {
     margin-top: 8em;
@@ -567,6 +568,28 @@ video::-webkit-media-controls-panel {
     width: 70px;
     margin-top: 4em;
   }
+  .footer {
+    padding: 5px;
+    min-height: 40px;
+    font-size: 1.5em;
+  }
+  .footer-two {
+    padding: 5px;
+    min-height: 40px;
+    font-size: 1.5em;
+  }
+  #privacy {
+    margin-right: 35px;
+  }
+  #about {
+    margin-right: 5px;
+    margin-left: 25px;
+  }
+  #footer-index {
+    width: 30px;
+    padding-top: 5px;
+    margin-left: 15px;
+  }
 
 }
 
@@ -577,7 +600,7 @@ video::-webkit-media-controls-panel {
   and (orientation: landscape)
   and (-webkit-min-device-pixel-ratio: 2) {
   .buttonContainer {
-    min-height: 67vh;
+    min-height: 65vh;
     width: 50%;
     margin: auto;
   }
@@ -594,7 +617,7 @@ video::-webkit-media-controls-panel {
     width: 100%;
   }
   .about-box {
-    min-height: 83vh;
+    min-height: 82vh;
     padding: 3em;
   }
   .profile {
@@ -615,7 +638,8 @@ video::-webkit-media-controls-panel {
     text-align: center;
   }
   .privacy-box {
-    padding: 6em;
+    padding: 5em;
+    min-height: 76vh;
   }
   .privacy-heading {
     margin-bottom: 2em;
@@ -624,7 +648,7 @@ video::-webkit-media-controls-panel {
     margin-left: 2em;
   }
   .media-box {
-    min-height: 81vh;
+    min-height: 80vh;
   }
   .media-image img {
     width: 15%;
@@ -650,10 +674,10 @@ video::-webkit-media-controls-panel {
     width: 50px;
   }
   .word-container {
-    min-height: 47vh;
+    min-height: 45vh;
   }
   .words-box {
-    padding-top: 3em;
+    padding-top: 2em;
     margin-bottom: 2em;
   }
   #wordImage {
@@ -665,7 +689,7 @@ video::-webkit-media-controls-panel {
   }
   .video-box {
     padding: 2em;
-    min-height: 87vh;
+    min-height: 85vh;
     width: 85%;
     margin: auto;
   }
@@ -673,5 +697,26 @@ video::-webkit-media-controls-panel {
     width: 60px;
     margin-top: 1em;
   }
-
+  .footer {
+    padding: 10px;
+    min-height: 30px;
+    font-size: 1.2em;
+  }
+  .footer-two {
+    padding: 10px;
+    min-height: 25px;
+    font-size: 1.2em;
+  }
+  #privacy {
+    margin-right: 35px;
+  }
+  #about {
+    margin-right: 5px;
+    margin-left: 25px;
+  }
+  #footer-index {
+    width: 25px;
+    padding-top: 5px;
+    margin-left: 15px;
+  }
 }
