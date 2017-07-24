@@ -582,6 +582,45 @@ video::-webkit-media-controls-panel {
   and (max-device-width: 1024px)
   and (orientation: landscape)
   and (-webkit-min-device-pixel-ratio: 2) {
+  .buttonContainer {
+    min-height: 67vh;
+    width: 50%;
+    margin: auto;
+  }
+
+  .contents-btn {
+    margin: 10px 20px 10px;
+    font-size: 4em;
+  }
+  .content-tv {
+    width: 10%;
+    margin-bottom: 10px;
+  }
+  .about {
+    font-size: 1em;
+    width: 100%;
+  }
+  .about-box {
+    min-height: 83vh;
+    padding: 3em;
+  }
+  .profile {
+    min-height: 100px;
+    margin-left: 1.5em;
+    margin-bottom: 2em;
+    float:left;
+  }
+  .profile img {
+    width: 30%;
+    float:left;
+    margin-right: 5px;
+  }
+  .purpose {
+    clear: both;
+  }
+  .contact {
+    text-align: center;
+  }
 
 }
 
