@@ -587,7 +587,6 @@ video::-webkit-media-controls-panel {
     width: 50%;
     margin: auto;
   }
-
   .contents-btn {
     margin: 10px 20px 10px;
     font-size: 4em;
@@ -620,6 +619,15 @@ video::-webkit-media-controls-panel {
   }
   .contact {
     text-align: center;
+  }
+  .privacy-box {
+    padding: 6em;
+  }
+  .privacy-heading {
+    margin-bottom: 2em;
+  }
+  .article {
+    margin-left: 2em;
   }
 
 }
