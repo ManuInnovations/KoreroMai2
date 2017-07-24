@@ -14,8 +14,8 @@ class Medialibrary extends React.Component {
     const { dispatch, letters } = this.props
     return (
       <div className='preview'>
-        <h2>Media Library</h2>
           <div className='media-box'>
+            <h2>Media Library</h2>
           {
             letters.map((letter) => {
               return (
