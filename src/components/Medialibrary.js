@@ -19,25 +19,25 @@ class Medialibrary extends React.Component {
           {
             letters.map((letter) => {
               return (
-                <div>
-                <div className='media-image'>
-                  <Link key={letter.id} to={`/media/${letter.capital}`}>
-                    <img
-                      src={`${letter.wordImage[0].image}`}
-                      className='img-fluid'
-                      onClick={() =>
-                        dispatch({
-                          type: 'RENDER_LETTER',
-                            payload: letter,
-                          })
-                      } />
+                <div className='media-each'>
+                  <div className='media-image'>
+                    <Link key={letter.id} to={`/media/${letter.capital}`}>
+                      <img
+                        src={`${letter.wordImage[0].image}`}
+                        className='img-fluid'
+                        onClick={() =>
+                          dispatch({
+                            type: 'RENDER_LETTER',
+                              payload: letter,
+                            })
+                        } />
 
-                  </Link>
+                    </Link>
+                  </div>
+                  <div className='media-name'>
+                    <p>{letter.mediaName}</p>
+                  </div>
                 </div>
-                <div className='media-name'>
-                  <p>{letter.mediaName}</p>
-                </div>
-              </div>
               )
             })
           }

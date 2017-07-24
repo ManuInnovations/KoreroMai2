@@ -272,6 +272,7 @@ ul.topnav li.nav-right {
   text-align: center;
   min-height: 30px;
   vertical-align: middle;
+  clear: both;
 }
 
 #privacy {
@@ -398,10 +399,15 @@ ul.topnav li.nav-right {
 /** MEDIA LIBRARY */
 .preview {
   width: 100%;
+  margin: 0 auto;
 }
 
 .media-box {
   padding: 1em;
+}
+
+.media-each {
+  float: left;
 }
 
 .media-image img {
