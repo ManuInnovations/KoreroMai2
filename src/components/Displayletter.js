@@ -20,14 +20,14 @@ class Displayletter extends React.Component {
       return item.id === letter.id
     })
     if(id === (letters.length -1)){
-      this.props.router.push(`/letterindex/${letters[0].capital}`)
+      this.props.router.push(`/letters/${letters[0].capital}`)
       dispatch({
         type: "RENDER_LETTER",
         payload: letters[0],
       })
     }
     else {
-      this.props.router.push(`/letterindex/${letters[id+1].capital}`)
+      this.props.router.push(`/letters/${letters[id+1].capital}`)
         dispatch({
           type: "RENDER_LETTER",
           payload: letters[id+1],
@@ -39,14 +39,14 @@ class Displayletter extends React.Component {
       return item.id ===letter.id
     })
     if(id === 0){
-      this.props.router.push(`/letterindex/${letters[letters.length-1].capital}`)
+      this.props.router.push(`/letters/${letters[letters.length-1].capital}`)
       dispatch({
         type: "RENDER_LETTER",
         payload: letters[letters.length-1],
       })
     }
     else {
-      this.props.router.push(`/letterindex/${letters[id-1].capital}`)
+      this.props.router.push(`/letters/${letters[id-1].capital}`)
       dispatch({
         type: "RENDER_LETTER",
         payload: letters[id-1],
@@ -101,7 +101,7 @@ class Displayletter extends React.Component {
               srcLang='en' />
           </audio>
           <div className='letters'>
-            <img id='previous-letter' src="../../images/previous.png" alt="back button"
+            <img id='previous-letter' src='../../images/previous.png' alt='back button'
               onClick={()=>
               this.previousButton(letter, letters, dispatch)}
             />
@@ -137,16 +137,16 @@ class Displayletter extends React.Component {
     )
   }
   generateWord(wordsArr) {
-    return wordsArr.map((word) => {
+    return wordsArr.map((word, index) => {
       return (
-        <div className='split-words'>
+        <div className='split-words' key={index}>
           <audio
             key={word.id}
             ref={(x) => { this.playWords[word.id] = x; }}>
             <source src={word.sound} preload='auto'/>
           </audio>
 
-          <img id='wordImage' src={word.image} onClick={this.playSound.bind(this, word.id)} />
+          <img id='wordImage' src={word.image} onClick={this.playSound.bind(this, word.id)} key={index} />
         </div>
       )
     })

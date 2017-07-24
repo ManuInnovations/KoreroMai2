@@ -3,6 +3,9 @@ import { connect } from 'react-redux'
 import { Link } from 'react-router'
 import request from 'superagent'
 import RaisedButton from 'material-ui/RaisedButton'
+// Needed for onTouchTap
+import injectTapEventPlugin from 'react-tap-event-plugin';
+injectTapEventPlugin();
 
 class Home extends React.Component {
   handleClick(e) {
