@@ -663,5 +663,15 @@ video::-webkit-media-controls-panel {
     margin: 20px;
     width: 20%;
   }
+  .video-box {
+    padding: 2em;
+    min-height: 87vh;
+    width: 85%;
+    margin: auto;
+  }
+  .mediabackbutton {
+    width: 60px;
+    margin-top: 1em;
+  }
 
 }
