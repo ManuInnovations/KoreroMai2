@@ -15,17 +15,14 @@ class Contentspage extends React.Component {
     debug(this.props)
     const { dispatch, letters } = this.props
     return (
-        <div className='contentpage'>
-          <h2>Letter Index</h2>
-            <div className='buttonContainer'>
-              {
-              letters.map((letter) => {
-                return (
-                  <Link key={letter.id} to={`/letters/${letter.capital}`}>
-                    <div
-                      className='wiggle-me'
-                      role='group'
-                      aria-label='...'>
+        <div className='content-container'>
+          <div className='content-box'>
+            <h2>Letter Index</h2>
+              <div className='button-container'>
+                {
+                letters.map((letter) => {
+                  return (
+                    <Link key={letter.id} to={`/letters/${letter.capital}`}>
                       <RaisedButton
                         type='button'
                         className='contents-btn'
@@ -37,15 +34,15 @@ class Contentspage extends React.Component {
                         }>
                         {letter.capital}
                       </RaisedButton>
-                    </div>
-                  </Link>
-                )
-              })
-            }
+                    </Link>
+                  )
+                })
+              }
+            </div>
+            <Link to='/media'>
+              <img className='content-tv' src='images/tv.png' alt='grid icon' />
+            </Link>
           </div>
-          <Link to='/media'>
-            <img className='content-tv' src='images/tv.png' alt='grid icon' />
-          </Link>
         <Footer />
       </div>
     )

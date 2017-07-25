@@ -20,14 +20,14 @@ class Displayletter extends React.Component {
       return item.id === letter.id
     })
     if(id === (letters.length -1)){
-      this.props.router.push(`/letterindex/${letters[0].capital}`)
+      this.props.router.push(`/letters/${letters[0].capital}`)
       dispatch({
         type: "RENDER_LETTER",
         payload: letters[0],
       })
     }
     else {
-      this.props.router.push(`/letterindex/${letters[id+1].capital}`)
+      this.props.router.push(`/letters/${letters[id+1].capital}`)
         dispatch({
           type: "RENDER_LETTER",
           payload: letters[id+1],
@@ -39,14 +39,14 @@ class Displayletter extends React.Component {
       return item.id ===letter.id
     })
     if(id === 0){
-      this.props.router.push(`/letterindex/${letters[letters.length-1].capital}`)
+      this.props.router.push(`/letters/${letters[letters.length-1].capital}`)
       dispatch({
         type: "RENDER_LETTER",
         payload: letters[letters.length-1],
       })
     }
     else {
-      this.props.router.push(`/letterindex/${letters[id-1].capital}`)
+      this.props.router.push(`/letters/${letters[id-1].capital}`)
       dispatch({
         type: "RENDER_LETTER",
         payload: letters[id-1],
@@ -76,6 +76,7 @@ class Displayletter extends React.Component {
     const currentLetter = letter.capital
     return (
       <div className='letter-container'>
+        <div className='letter-box'>
           <h2>Letter</h2>
           <audio
             key={letter.capitalSound}
@@ -99,52 +100,53 @@ class Displayletter extends React.Component {
               src=''
               srcLang='en' />
           </audio>
-        <div className='letters-box'>
-          <img id='previous-letter' src="../../images/previous.png" alt="back button"
-            onClick={()=>
-            this.previousButton(letter, letters, dispatch)}
-          />
-          <button
-            type='button'
-            className='display-letter'
-            onClick={this.playCapital}>
-            {letter.capital}
-          </button>
-          <button
-            type='button'
-            className='display-letter'
-            onClick={this.playLower}>
-            {letter.lowercase}
-          </button>
-          <img src='/images/listen.png' width='30px' />
-          <img id='next-letter' src="../../images/next.png" alt="next button"
-          onClick={()=>
-            this.nextButton(letter, letters, dispatch)}
+          <div className='letters'>
+            <img id='previous-letter' src='../../images/previous.png' alt='back button'
+              onClick={()=>
+              this.previousButton(letter, letters, dispatch)}
             />
-        </div>
-        <div className='word-container'>
-          <div className='words-box'>
-            {this.generateWord(wordsArr)}
+            <button
+              type='button'
+              className='letter-button'
+              onClick={this.playCapital}>
+              {letter.capital}
+            </button>
+            <button
+              type='button'
+              className='letter-button'
+              onClick={this.playLower}>
+              {letter.lowercase}
+            </button>
+            <img src='/images/listen.png' width='30px' />
+            <img id='next-letter' src="../../images/next.png" alt="next button"
+            onClick={()=>
+              this.nextButton(letter, letters, dispatch)}
+              />
           </div>
-          <Link key={letter.id} to={`/media/${letter.capital}`}>
-            <img src='/images/play.png' id='media-play' />
-          </Link>
+          <div className='word-container'>
+            <div className='words-box'>
+              {this.generateWord(wordsArr)}
+            </div>
+            <Link key={letter.id} to={`/media/${letter.capital}`}>
+              <img src='/images/play.png' id='media-play' />
+            </Link>
+          </div>
         </div>
         <MobileViewFooter />
       </div>
     )
   }
   generateWord(wordsArr) {
-    return wordsArr.map((word) => {
+    return wordsArr.map((word, index) => {
       return (
-        <div>
+        <div className='split-words' key={index}>
           <audio
             key={word.id}
             ref={(x) => { this.playWords[word.id] = x; }}>
             <source src={word.sound} preload='auto'/>
           </audio>
 
-          <img id='wordImage' src={word.image} onClick={this.playSound.bind(this, word.id)} />
+          <img id='wordImage' src={word.image} onClick={this.playSound.bind(this, word.id)} key={index} />
         </div>
       )
     })

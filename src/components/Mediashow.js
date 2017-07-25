@@ -14,9 +14,9 @@ class Mediashow extends React.Component {
     debug(this.props)
     const { dispatch, letter } = this.props
     return (
-      <div className='media-container'>
-        <h2>Watch</h2>
+      <div className='video-container'>
         <div className='video-box'>
+          <h2>Watch</h2>
           <div className='video'>
             <video width='90%' controls>
               <source src={letter.multimedia} type='video/webm' />
@@ -25,7 +25,7 @@ class Mediashow extends React.Component {
             </video>
           </div>
           <div>
-              <img id='mediashow-back' src='../../images/previous.png' alt='back button' onClick={browserHistory.goBack} />
+            <img  src='../../images/previous.png' alt='back button' onClick={browserHistory.goBack} className='mediabackbutton' />
           </div>
         </div>
         <MobileViewFooter />

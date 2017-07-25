@@ -3,7 +3,7 @@ import React from 'react'
 import { connect } from 'react-redux'
 import request from 'superagent'
 import { Link } from 'react-router'
-import Footer from './Footer'
+import MobileViewFooter from './MobileViewFooter'
 
 class Medialibrary extends React.Component {
   handleClick(e) {
@@ -13,33 +13,31 @@ class Medialibrary extends React.Component {
     debug(this.props)
     const { dispatch, letters } = this.props
     return (
-      <div className='preview'>
-        <h2>Media Library</h2>
-          <ul>
+      <div className='medialibrary-container'>
+        <div className='medialibrary-box'>
+          <h2>Media Library</h2>
           {
-            letters.map((letter) => {
+            letters.map((letter, index) => {
               return (
-                <li>
-                  <Link key={letter.id} to={`/media/${letter.capital}`}>
-                    <img
-                      src={`${letter.wordImage[0].image}`}
-                      className='img-fluid'
-                      onClick={() =>
-                        dispatch({
-                          type: 'RENDER_LETTER',
-                            payload: letter,
-                          })
-                      } />{letter.mediaName}
-                  </Link>
-                </li>
+                  <div className='media-image' key={index}>
+                    <Link key={letter.id} to={`/media/${letter.capital}`}>
+                      <img
+                        key={index}
+                        src={`${letter.wordImage[0].image}`}
+                        className='img-fluid'
+                        onClick={() =>
+                          dispatch({
+                            type: 'RENDER_LETTER',
+                              payload: letter,
+                            })
+                        } />
+                    </Link>
+                  </div>
               )
             })
           }
-        </ul>
-        <Link to='/letters'>
-          <img id='medialibrary-index' src='images/grid.png' alt='grid icon' />
-        </Link>
-        <Footer />
+        </div>
+        <MobileViewFooter />
       </div>
     )
   }

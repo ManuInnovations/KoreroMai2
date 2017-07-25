@@ -17,6 +17,9 @@ class MobileViewFooter extends React.Component {
           <Link to='/letters'>
             <img id='footer-index' src='images/grid.png' alt='grid icon' />
           </Link>
+          <Link to='/media'>
+            <img id='footer-media' src='images/tv.png' alt='tv icon' />
+          </Link>
           <Link to='/privacy' id='privacy'>
             &nbsp; Privacy Policy
           </Link>
