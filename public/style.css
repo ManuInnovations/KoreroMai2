@@ -207,6 +207,7 @@ video::-webkit-media-controls-panel {
 .mediabackbutton {
   width: 50px;
   margin-top: 3em;
+  cursor: pointer;
 }
 
 /** DISPLAY LETTER ***********************************/
@@ -236,18 +237,21 @@ video::-webkit-media-controls-panel {
   font-size: 4em;
   margin-right: 10px;
   margin-top: .8em;
+  cursor: pointer;
 }
 
 #next-letter {
   position: absolute;
   left: 320px;
   width: 40px;
+  cursor: pointer;
 }
 
 #previous-letter {
   position: absolute;
   right: 320px;
   width: 40px;
+  cursor: pointer;
 }
 
 .words-box {
@@ -263,6 +267,7 @@ video::-webkit-media-controls-panel {
   width: 100%;
   flex-grow: 1;
   margin: 0 15px 0 0;
+  cursor: pointer;
 }
 
 #media-play {
@@ -318,11 +323,11 @@ video::-webkit-media-controls-panel {
 /** PRIVACY ********************************************/
 
 .privacy-container {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    height: auto;
-    margin: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  margin: 0;
 }
 
 .privacy-box {
@@ -610,10 +615,10 @@ video::-webkit-media-controls-panel {
 @media (min-width: 1025px){
   /*CONTENT*/
   .content-box {
-    max-width: 70%;
+    max-width: 60%;
   }
   .button-container {
-    padding-top: 3em;
+    padding-top: 4em;
   }
   .content-tv {
     width: 8%;
@@ -631,7 +636,6 @@ video::-webkit-media-controls-panel {
   #privacy {
     margin-top: 8px;
   }
-
   #about {
     margin-top: 8px;
   }
@@ -665,19 +669,26 @@ video::-webkit-media-controls-panel {
     padding: 20px;
     margin-right: 50px;
     margin-top: .8em;
+    width: 150px;
+  }
+  .listen-icon {
+    width: 50px;
   }
   #next-letter {
     position: absolute;
-    left: 900px;
+    left: 1000px;
     width: 40px;
   }
   #previous-letter {
     position: absolute;
-    right: 900px;
+    right: 1000px;
     width: 40px;
   }
   #wordImage {
     margin: 0 60px 0 0;
+  }
+  .split-words {
+    margin: 10px;
   }
   #media-play {
     width: 60px;

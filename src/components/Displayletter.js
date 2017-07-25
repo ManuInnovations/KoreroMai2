@@ -117,7 +117,7 @@ class Displayletter extends React.Component {
               onClick={this.playLower}>
               {letter.lowercase}
             </button>
-            <img src='/images/listen.png' width='30px' />
+            <img src='/images/listen.png' width='30px' className='listen-icon' />
             <img id='next-letter' src="../../images/next.png" alt="next button"
             onClick={()=>
               this.nextButton(letter, letters, dispatch)}
