@@ -411,9 +411,9 @@ video::-webkit-media-controls-panel {
   flex: 1;
   max-width: 80%;
   margin: auto;
-  font-size: 0.8em;
+  font-size: 0.7em;
   text-align: left;
-  min-height: calc(100vh - 70px);
+  min-height: calc(100vh - 60px);
 }
 
 .about-heading {
@@ -435,7 +435,7 @@ video::-webkit-media-controls-panel {
 }
 
 .contact {
-  text-align: left;
+  text-align: center;
 }
 .contact a {
   text-decoration: none;
