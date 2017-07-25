@@ -14,7 +14,7 @@ class Mediashow extends React.Component {
     debug(this.props)
     const { dispatch, letter } = this.props
     return (
-      <div className='media-container'>
+      <div className='video-container'>
         <div className='video-box'>
           <h2>Watch</h2>
           <div className='video'>
