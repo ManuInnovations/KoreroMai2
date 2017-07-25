@@ -13,7 +13,7 @@ class About extends React.Component {
       <div className='about-container'>
         <div className='about-box'>
           <h2 className='about-heading'>About Us</h2>
-          <p>Kia Ora! Kōrero Mai was made with aroha by the team at Manu, and with the assistance of the talented UX designer, Katie Deller.</p>
+          <p>Kia Ora! Kōrero Mai was made with aroha by the team at Manu Innovations, and with the assistance of the talented UX designer, Katie Deller.</p>
           <div className='profile'>
             <img src='images/janie.png' alt='Janie Tito' />
             <p><b>Janie Tito</b></p>
