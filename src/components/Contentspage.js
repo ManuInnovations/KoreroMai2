@@ -15,30 +15,25 @@ class Contentspage extends React.Component {
     debug(this.props)
     const { dispatch, letters } = this.props
     return (
-        <div className='contentpage'>
+        <div className='content-container'>
           <div className='content-box'>
             <h2>Letter Index</h2>
-              <div className='buttonContainer'>
+              <div className='button-container'>
                 {
                 letters.map((letter) => {
                   return (
                     <Link key={letter.id} to={`/letters/${letter.capital}`}>
-                      <div
-                        className='wiggle-me'
-                        role='group'
-                        aria-label='...'>
-                        <RaisedButton
-                          type='button'
-                          className='contents-btn'
-                          onClick={() =>
-                              dispatch({
-                                type: 'RENDER_LETTER',
-                                payload: letter,
-                              })
-                          }>
-                          {letter.capital}
-                        </RaisedButton>
-                      </div>
+                      <RaisedButton
+                        type='button'
+                        className='contents-btn'
+                        onClick={() =>
+                            dispatch({
+                              type: 'RENDER_LETTER',
+                              payload: letter,
+                            })
+                        }>
+                        {letter.capital}
+                      </RaisedButton>
                     </Link>
                   )
                 })

@@ -1,61 +1,40 @@
 /**********************************
-************************************
 
 GENERAL
 BUTTONS
-DISPLAY LETTER
+
 NAVIGATION
 FOOTER
+
 HOME
-CONTENTPAGE
-ABOUT
-PRIVACY
+CONTENT PAGE
 MEDIA LIBRARY
 MEDIA WATCH
+DISPLAY LETTER
+ABOUT
+PRIVACY
 
 MEDIA QUERIES
 
-************************************
 *************************************/
 
 
-/** GENERAL **/
+/** GENERAL ****************************************/
 
-html {
+html body {
   height: 100%;
-}
-
-body {
-  display: flex;
-  flex-direction: column;
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
-  color: grey;
 }
 
 .container {
   margin: 0;
   padding: 0;
-}
-
-.content {
-  width: 100%;
-  min-height: 100vh;
+  font-family: sans-serif;
   background-color: #D3D3D3;
-  margin: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
 }
 
-img {
-  padding: 0;
-  margin: 0;
-}
-
-/** BUTTONS **/
+/** BUTTONS *****************************************/
 
 .active .btn {
   background-color: orange;
@@ -93,18 +72,6 @@ img {
 
 .btn-xl:hover {
   background-color: yellow;
-}
-
-@-ms-keyframes     wiggle{0%{-ms-transform:rotate(5deg);}50%{-ms-transform:rotate(-5deg);}100%{-ms-transform:rotate(5deg);}}
-@-moz-keyframes wiggle{0%{-moz-transform:rotate(5deg);}50%{-moz-transform:rotate(-5deg);}100%{-moz-transform:rotate(5deg);}}
-@-webkit-keyframes wiggle{0%{-webkit-transform:rotate(5deg);}50%{-webkit-transform:rotate(-5deg);}100%{-webkit-transform:rotate(5deg);}}
-@keyframes wiggle{0%{transform:rotate(5deg);}50%{transform:rotate(-5deg);}100%{transform:rotate(5deg);}}
-
-.wiggle-me:hover {
-  -ms-animation:wiggle .3s 2;
-  -moz-animation:wiggle .3s 2;
-  -webkit-animation:wiggle .3s 2;
-  animation:wiggle .3s 2;
 }
 
 #next {
@@ -145,63 +112,7 @@ img {
   cursor: pointer;
 }
 
-/** DISPLAY LETTER */
-
-.letter-container {
-  background-color: #D3D3D3;
-  width: 100%;
-}
-
-.letter-box {
-  padding: 2em;
-}
-
-.letters {
-  padding-top: 1em;
-}
-
-.letter-button {
-  font-size: 4em;
-  margin-right: 10px;
-  margin-top: .8em;
-}
-
-#next-letter {
-  position: absolute;
-  left: 320px;
-  width: 40px;
-}
-
-#previous-letter {
-  position: absolute;
-  right: 320px;
-  width: 40px;
-}
-
-.word-container {
-  min-height: 52vh;
-}
-
-.words-box {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: center;
-  padding-top: 5em;
-  margin-bottom: 1em;
-}
-
-#wordImage {
-  width: 90%;
-  flex-grow: 1;
-}
-
-#media-play {
-  width: 50px;
-}
-
-
-/** NAVIGATION **/
+/** NAVIGATION *************************************/
 
 .navigation {
   width: 100%;
@@ -214,7 +125,6 @@ ul.topnav {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #D3D3D3;
   font-size: 1.5rem;
   padding-left: 50px;
   padding-right: 50px;
@@ -258,7 +168,7 @@ ul.topnav li.nav-right {
   color: yellow;
 }
 
-/** FOOTER **/
+/** FOOTER **************************************/
 
 .footer {
   padding: 5px;
@@ -299,120 +209,86 @@ ul.topnav li.nav-right {
   margin-left: 10px;
 }
 
+/** HOME ****************************************/
 
-/** HOME **/
+.home-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  margin: 0;
+  text-align: center;
+}
 
-.home h1{
+.home-box {
+  padding-top: 4em;
+  flex: 1;
+  max-width: 80%;
+  margin: auto;
+  min-height: calc(100vh - 40px);
+}
+
+.home-box h1{
   padding: 0 0 1em;
 }
 
-.home h2{
+.home-box h2{
   padding: 1em 0 .3em;
 }
 
-.home h3 {
+.home-box h3 {
   padding: 0 0 1em;
 }
 
-/** CONTENT PAGE **/
+/** CONTENT PAGE **********************************/
 
-.buttonContainer {
+.content-container {
+  width: 100%;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: column;
+  height: auto;
   margin: 0;
-  min-height: 70vh;
+  text-align: center;
 }
 
 .content-box {
   padding-top: 2em;
+  flex: 1;
+  max-width: 80%;
+  margin: auto;
+  min-height: calc(100vh - 70px);
 }
 
 .contents-btn {
-  margin: 0px 3px 0px;
-  padding: 6px 0 6px 0;
+  padding: 5px;
   font-size: 2em;
   border: solid 2px;
-}
-
-.contentpage {
-  width: 100%;
-  margin: 0;
-  min-height: 100vh;
+  margin: 6px;
 }
 
 .content-tv {
   width: 15%;
   margin-bottom: 5px;
+  margin-top: 2em;
 }
 
-/** PRIVACY **/
+/** MEDIA LIBRARY **********************************/
 
-.privacy-policy {
-  text-align: left;
+.medialibrary-container {
   width: 100%;
-}
-
-.privacy-box {
-  padding: 2em;
-  font-size: .8em;
-}
-
-.privacy-heading {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  margin: 0;
   text-align: center;
 }
 
-.article {
-  margin-left: 3em;
-}
-
-/** ABOUT **/
-
-.about {
-  padding: 0em;
-  width: 100%;
-}
-
-.about-box {
-  font-size: .8em;
-  text-align: left;
-  padding: 2em;
-  padding-bottom: 0;
-}
-
-.about-heading {
-  text-align: center;
-}
-
-.profile {
-  min-height: 40px;
-}
-
-.profile img {
-  width: 10%;
-  float:left;
-  margin-right: 10px;
-}
-
-.purpose {
-  margin-top: 1.5em;
-}
-
-.contact {
-  text-align: left;
-}
-.contact a {
-  text-decoration: none;
-}
-
-/** MEDIA LIBRARY */
-.preview {
-  width: 100%;
-}
-
-.media-box {
-  padding: 1em;
-  min-height: 79vh;
+.medialibrary-box {
+  padding-top: 2em;
+  flex: 1;
+  max-width: 80%;
+  min-height: calc(100vh - 70px);
+  margin-left: 2em;
 }
 
 .media-image {
@@ -420,14 +296,12 @@ ul.topnav li.nav-right {
 }
 
 .media-image img {
-  width: 20%;
-  margin-left: 20px;
-  margin-right:10px;
-  margin-top: 10px;
+  width: 23%;
+  margin: 10px;
   float: left;
 }
 
-/** MEDIA WATCH **/
+/** MEDIA WATCH *************************************/
 
 .media-container {
   width: 100%;
@@ -455,55 +329,174 @@ video::-webkit-media-controls-panel {
   margin-top: 3em;
 }
 
+/** DISPLAY LETTER ***********************************/
 
-/** MEDIA QUERIES **/
+.letter-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  margin: 0;
+  text-align: center;
+}
 
-/* iPad 3 and 4 */
+.letter-box {
+  padding-top: 2em;
+  flex: 1;
+  max-width: 80%;
+  margin: auto;
+  min-height: calc(100vh - 70px);
+}
 
-/* Portrait */
+.letters {
+  padding-top: 1em;
+}
+
+.letter-button {
+  font-size: 4em;
+  margin-right: 10px;
+  margin-top: .8em;
+}
+
+#next-letter {
+  position: absolute;
+  left: 320px;
+  width: 40px;
+}
+
+#previous-letter {
+  position: absolute;
+  right: 320px;
+  width: 40px;
+}
+
+.words-box {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  padding-top: 3em;
+  margin-bottom: 1em;
+}
+
+#wordImage {
+  width: 100%;
+  flex-grow: 1;
+  margin: 0 15px 0 0;
+}
+
+#media-play {
+  width: 50px;
+}
+
+/** ABOUT *****************************************/
+
+.about-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  margin: 0;
+  text-align: center;
+}
+
+.about-box {
+  padding-top: 2em;
+  flex: 1;
+  max-width: 80%;
+  margin: auto;
+  font-size: 0.8em;
+  text-align: left;
+  min-height: calc(100vh - 70px);
+}
+
+.about-heading {
+  text-align: center;
+}
+
+.profile {
+  min-height: 40px;
+}
+
+.profile img {
+  width: 10%;
+  float:left;
+  margin-right: 10px;
+}
+
+.purpose {
+  margin-top: 1.5em;
+}
+
+.contact {
+  text-align: left;
+}
+.contact a {
+  text-decoration: none;
+}
+
+/** PRIVACY ********************************************/
+
+.privacy-policy {
+  text-align: left;
+  width: 100%;
+}
+
+.privacy-box {
+  padding: 2em;
+  font-size: .8em;
+}
+
+.privacy-heading {
+  text-align: center;
+}
+
+.article {
+  margin-left: 3em;
+}
+
+/** MEDIA QUERIES ***************************************/
+
+/* iPad 3 and 4 **************/
+
+/* Portrait **********/
 @media only screen
   and (min-device-width: 768px)
   and (max-device-width: 1024px)
   and (orientation: portrait)
   and (-webkit-min-device-pixel-ratio: 2) {
-  .buttonContainer {
-    min-height: 67vh;
-    padding: 3em;
+  .home-box {
+    padding-top: 8em;
+  }
+  .home-box h2{
+    padding: 2em 0 1em;
+  }
+  .home-box h3 {
+    padding: 0 0 3em;
   }
   .content-box {
-    min-height: 92vh;
+    min-height: calc(100vh - 80px);
+  }
+  .button-container {
+    padding-top: 2em;
+    padding-bottom: 2em;
   }
   .contents-btn {
-    margin: 0px 10px 0px;
-    padding: 9px 5px;
-    font-size: 5em;
-    border: solid 2px;
-    width: 150px;
-  }
-  .content-tv {
-    width: 10%;
-    margin-bottom: 10px;
-  }
-  .about {
-    font-size: 1em;
-    min-height: 100vh;
+    padding: 15px;
+    font-size: 3em;
   }
   .about-box {
-    min-height: 90vh;
-    text-align: left;
-    padding: 2em 5em;
+    font-size: 1em;
+    min-height: calc(100vh - 85px);
   }
   .profile {
-    min-height: 70px;
-    width: 60%
-  }
-  .profile img {
-    width: 15%;
+    min-height: 80px;
   }
   .contact {
-    margin-top: 2em;
     text-align: center;
+    margin-top: 3em;
   }
+
   .privacy-policy {
     font-size: 1em;
   }
@@ -593,7 +586,7 @@ video::-webkit-media-controls-panel {
 
 }
 
-/* Landscape */
+/* Landscape *************/
 @media only screen
   and (min-device-width: 768px)
   and (max-device-width: 1024px)

@@ -10,7 +10,7 @@ class About extends React.Component {
   }
   render() {
     return (
-      <div className='about'>
+      <div className='about-container'>
         <div className='about-box'>
           <h2 className='about-heading'>About Us</h2>
           <p>Kia Ora! Kōrero Mai was made with aroha by the team at Manu, and with the assistance of the talented UX designer, Katie Deller.</p>

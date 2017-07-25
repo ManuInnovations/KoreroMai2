@@ -13,15 +13,16 @@ class Medialibrary extends React.Component {
     debug(this.props)
     const { dispatch, letters } = this.props
     return (
-      <div className='preview'>
-        <h2>Media Library</h2>
-          <div className='media-box'>
+      <div className='medialibrary-container'>
+        <div className='medialibrary-box'>
+          <h2>Media Library</h2>
           {
-            letters.map((letter) => {
+            letters.map((letter, index) => {
               return (
-                  <div className='media-image'>
+                  <div className='media-image' key={index}>
                     <Link key={letter.id} to={`/media/${letter.capital}`}>
                       <img
+                        key={index}
                         src={`${letter.wordImage[0].image}`}
                         className='img-fluid'
                         onClick={() =>
@@ -35,7 +36,7 @@ class Medialibrary extends React.Component {
               )
             })
           }
-          </div>
+        </div>
         <MobileViewFooter />
       </div>
     )
