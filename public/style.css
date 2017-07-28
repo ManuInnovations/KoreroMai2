@@ -42,7 +42,6 @@ html body {
   color: white;
   text-align: center;
   min-height: 30px;
-
 }
 
 .footer-two {
@@ -225,7 +224,7 @@ video::-webkit-media-controls-panel {
   flex: 1;
   max-width: 80%;
   margin: auto;
-  min-height: calc(100vh - 70px);
+  min-height: calc(100vh - 100px);
 }
 
 .letters {
@@ -240,13 +239,13 @@ video::-webkit-media-controls-panel {
 
 #next-letter {
   position: absolute;
-  left: 320px;
+  left: 80%;
   width: 40px;
 }
 
 #previous-letter {
   position: absolute;
-  right: 320px;
+  right: 80%;
   width: 40px;
 }
 
@@ -400,9 +399,6 @@ video::-webkit-media-controls-panel {
   }
   .about-content {
     column-count: 2;
-    page-break-inside: avoid; /* For Firefox. */
-    -webkit-column-break-inside: avoid; /* For Chrome & friends. */
-    break-inside: avoid; /* For standard browsers like IE. :-) */
   }
   .about-text {
     margin-bottom: 30px;
@@ -454,5 +450,37 @@ video::-webkit-media-controls-panel {
   }
   .privacy-articles {
     column-count: 2;
+  }
+}
+
+/*DISPLAY LETTER*/
+@media (min-width: 400px) {
+  .letter-box {
+    min-height: calc(100vh - 70px);
+  }
+  .letters {
+    padding-top: 2em;
+  }
+  .letter-button {
+    margin-top: 1em;
+    width: 100px;
+  }
+  .listen-icon {
+    width: 40px;
+  }
+  #next-letter {
+    left: 80%;
+  }
+  #previous-letter {
+    right: 80%;
+  }
+}
+
+@media (min-width: 800px) {
+  .split-words {
+    margin: 10px;
+  }
+  .letter-button {
+    margin-right: .8em;
   }
 }
