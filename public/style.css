@@ -194,6 +194,11 @@ html body {
 
 .video {
   margin-top: 4em;
+  width: 100%;
+}
+
+video {
+  width: 90%;
 }
 
 video::-webkit-media-controls-enclosure {
@@ -483,5 +488,30 @@ video::-webkit-media-controls-panel {
   }
   .letter-button {
     margin-right: .8em;
+  }
+}
+
+/*MEDIA WATCH*/
+@media (min-width: 800px) {
+  .video {
+    margin-top: 2em;
+  }
+  .mediabackbutton {
+    margin-top: 1em;
+  }
+}
+@media (min-width: 1000px) {
+  video {
+    width: 70%;
+  }
+}
+@media (min-width: 1200px) {
+  video {
+    width: 60%;
+  }
+}
+@media (min-width: 1400px) {
+  video {
+    width: 50%;
   }
 }
