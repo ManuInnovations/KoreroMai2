@@ -193,14 +193,15 @@ html body {
 }
 
 .video {
-  margin-top: 5em;
+  margin-top: 4em;
 }
 
 video::-webkit-media-controls-enclosure {
   overflow:hidden;
 }
 video::-webkit-media-controls-panel {
-  width: calc(100% + 60px);
+  width: calc(100% + 90px);
+  height: 2em;
 }
 
 .mediabackbutton {
