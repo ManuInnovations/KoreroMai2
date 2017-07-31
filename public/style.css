@@ -149,8 +149,7 @@ html body {
 
 .medialibrary-container {
   width: 100%;
-  display: flex;
-  flex-direction: column;
+  display: block;
   height: auto;
   margin: 0;
   text-align: center;
@@ -159,9 +158,9 @@ html body {
 .medialibrary-box {
   padding-top: 2em;
   flex: 1;
-  max-width: 80%;
-  min-height: calc(100vh - 70px);
-  margin-left: 2em;
+  min-height: calc(100vh - 96px);
+  margin: auto;
+  padding-left: 1em;
 }
 
 .media-image {
@@ -169,8 +168,8 @@ html body {
 }
 
 .media-image img {
-  width: 23%;
-  margin: 10px;
+  width: 15%;
+  margin: 5px;
   float: left;
 }
 
@@ -513,5 +512,29 @@ video::-webkit-media-controls-panel {
 @media (min-width: 1400px) {
   video {
     width: 50%;
+  }
+}
+
+/*MEDIA LIBRARY*/
+@media (min-width: 400px) {
+  .medialibrary-box {
+    min-height: calc(100vh - 92px);
+    padding-left: 2em;
+  }
+  .media-image img {
+    width: 17%;
+    margin: 10px;
+  }
+}
+@media (min-width: 500px) {
+  .media-image img {
+    width: 15%;
+  }
+}
+@media (min-width: 800px) {
+  .media-image img {
+    width: 10%;
+    margin-top: 40px;
+    margin-right: 20px;
   }
 }
