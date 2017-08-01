@@ -15,7 +15,7 @@ class Home extends React.Component {
   render() {
     const { dispatch } = this.props
     return (
-      <div className='home-container'>
+      <div className='container'>
         <div className='home-box'>
           <h1>Kōrero Mai</h1>
           <img src='./images/pipi.gif' width='200px' />

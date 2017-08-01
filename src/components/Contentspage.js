@@ -15,7 +15,7 @@ class Contentspage extends React.Component {
     debug(this.props)
     const { dispatch, letters } = this.props
     return (
-        <div className='content-container'>
+        <div className='container'>
           <div className='content-box'>
             <h2>Letter Index</h2>
               <div className='button-container'>

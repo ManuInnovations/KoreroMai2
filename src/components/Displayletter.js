@@ -75,7 +75,7 @@ class Displayletter extends React.Component {
     const wordsArr = letter.wordImage
     const currentLetter = letter.capital
     return (
-      <div className='letter-container'>
+      <div className='container'>
         <div className='letter-box'>
           <h2>Letter</h2>
           <audio

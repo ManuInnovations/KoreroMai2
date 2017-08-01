@@ -30,6 +30,11 @@ html body {
   padding: 0;
   font-family: sans-serif;
   background-color: #D3D3D3;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  text-align: center;
 }
 
 /** FOOTER **************************************/
@@ -84,15 +89,6 @@ html body {
 
 /** HOME ****************************************/
 
-.home-container {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  height: auto;
-  margin: 0;
-  text-align: center;
-}
-
 .home-box {
   padding-top: 4em;
   flex: 1;
@@ -114,15 +110,6 @@ html body {
 }
 
 /** CONTENT PAGE **********************************/
-
-.content-container {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  height: auto;
-  margin: 0;
-  text-align: center;
-}
 
 .content-box {
   padding-top: 2em;
@@ -175,15 +162,6 @@ html body {
 
 /** MEDIA WATCH *************************************/
 
-.video-container {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  height: auto;
-  margin: 0;
-  text-align: center;
-}
-
 .video-box {
   padding-top: 2em;
   flex: 1;
@@ -215,31 +193,21 @@ video::-webkit-media-controls-panel {
 
 /** DISPLAY LETTER ***********************************/
 
-.letter-container {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  height: auto;
-  margin: 0;
-  text-align: center;
-}
-
 .letter-box {
   padding-top: 2em;
   flex: 1;
   max-width: 80%;
   margin: auto;
-  min-height: calc(100vh - 100px);
+  min-height: calc(100vh - 95px);
 }
 
 .letters {
-  padding-top: 1em;
+  padding-top: 2em;
 }
 
 .letter-button {
   font-size: 4em;
-  margin-right: 10px;
-  margin-top: .8em;
+  padding: 20px;
 }
 
 #next-letter {
@@ -274,15 +242,6 @@ video::-webkit-media-controls-panel {
 }
 
 /** ABOUT *****************************************/
-
-.about-container {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  height: auto;
-  margin: 0;
-  text-align: center;
-}
 
 .about-box {
   padding-top: 2em;
@@ -320,14 +279,6 @@ video::-webkit-media-controls-panel {
 }
 
 /** PRIVACY ********************************************/
-
-.privacy-container {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  height: auto;
-  margin: 0;
-}
 
 .privacy-box {
   padding-top: 2em;
@@ -468,7 +419,7 @@ video::-webkit-media-controls-panel {
   }
   .letter-button {
     margin-top: 1em;
-    width: 150px;
+    width: 120px;
   }
   .listen-icon {
     width: 40px;

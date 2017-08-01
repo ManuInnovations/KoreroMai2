@@ -12,7 +12,7 @@ class Privacy extends React.Component {
   render() {
     debug(this.props)
     return (
-      <div className='privacy-container'>
+      <div className='container'>
         <div className='privacy-box'>
           <h2 className='privacy-heading'>Kōrero Mai Privacy Policy</h2>
           <div className='privacy-articles'>
