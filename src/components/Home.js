@@ -2,7 +2,6 @@ import React from 'react'
 import { connect } from 'react-redux'
 import { Link } from 'react-router'
 import request from 'superagent'
-import RaisedButton from 'material-ui/RaisedButton'
 // Needed for onTouchTap
 import injectTapEventPlugin from 'react-tap-event-plugin';
 injectTapEventPlugin();
@@ -22,10 +21,10 @@ class Home extends React.Component {
           <h2>Nau mai, haere mai</h2>
           <h3>Learn te reo Māori</h3>
           <Link to='/letters'>
-            <RaisedButton
+            <button
               className='play'>
               Let's Play!
-            </RaisedButton>
+            </button>
           </Link>
         </div>
       </div>
