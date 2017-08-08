@@ -16,6 +16,16 @@ MEDIA QUERIES
 
 *************************************/
 
+:root {
+  --blue: #2196F3;
+  --red: #F44336;
+  --yellow: #FFEB3B;
+  --green: #4CAF50;
+  --yellowBkgd: #FFF9C4;
+  --blueBkgd: #BBDEFB;
+  --greenBkgd: #C8E6C9;
+  --redBkgd: #FFCDD2;
+}
 
 /** GENERAL ****************************************/
 
@@ -43,18 +53,20 @@ html body {
   padding: 5px;
   padding-left: 20px;
   padding-right: 25px;
-  background-color: grey;
+  background-color: var(--green);
   color: white;
   text-align: center;
   min-height: 30px;
+  font-size: .7em;
 }
 
 .footer-two {
   padding: 5px;
   padding-left: 20px;
   padding-right: 25px;
-  background-color: grey;
+  background-color: var(--blue);
   color: white;
+  font-size: .7em;
   text-align: center;
   min-height: 30px;
   vertical-align: middle;
@@ -90,23 +102,35 @@ html body {
 /** HOME ****************************************/
 
 .home-box {
-  padding-top: 4em;
+  padding-top: 3em;
   flex: 1;
-  max-width: 80%;
+  width: 100%;
   margin: auto;
   min-height: calc(100vh - 40px);
+  background-color: var(--yellowBkgd);
 }
 
 .home-box h1{
-  padding: 0 0 1em;
+  padding: 0 0 .5em;
+  color: var(--blue);
 }
 
 .home-box h2{
-  padding: 1em 0 .3em;
+  padding: .5em 0 0em;
+  color: var(--green);
+
 }
 
 .home-box h3 {
   padding: 0 0 1em;
+  color: var(--blue);
+}
+
+.home-box button {
+  background-color: var(--red);
+  color: white;
+  font-size: 1.8em;
+  border: solid var(--green);
 }
 
 /** CONTENT PAGE **********************************/
@@ -114,9 +138,14 @@ html body {
 .content-box {
   padding-top: 2em;
   flex: 1;
-  max-width: 80%;
+  width: 100%;
   margin: auto;
-  min-height: calc(100vh - 70px);
+  min-height: calc(100vh - 80px);
+  background-color: var(--blueBkgd);
+}
+
+.content-box h2 {
+  color: var(--yellow);
 }
 
 .contents-btn {
@@ -140,14 +169,19 @@ html body {
   height: auto;
   margin: 0;
   text-align: center;
+  background-color: var(--redBkgd);
 }
 
 .medialibrary-box {
   padding-top: 2em;
   flex: 1;
-  min-height: calc(100vh - 96px);
+  min-height: calc(100vh - 106px);
   margin: auto;
   padding-left: 1em;
+}
+
+.medialibrary-box h2 {
+  color: var(--blue);
 }
 
 .media-image {
@@ -166,7 +200,12 @@ html body {
   padding-top: 2em;
   flex: 1;
   width: 100%;
-  min-height: calc(100vh - 70px);
+  min-height: calc(100vh - 80px);
+  background-color: var(--yellowBkgd);
+}
+
+.video-box h2 {
+  color: var(--green);
 }
 
 .video {
@@ -196,9 +235,14 @@ video::-webkit-media-controls-panel {
 .letter-box {
   padding-top: 2em;
   flex: 1;
-  max-width: 80%;
+  width: 100%;
   margin: auto;
-  min-height: calc(100vh - 95px);
+  min-height: calc(100vh - 80px);
+  background-color: var(--greenBkgd);
+}
+
+.letter-box h2 {
+  color: var(--red);
 }
 
 .letters {
@@ -242,15 +286,30 @@ video::-webkit-media-controls-panel {
 }
 
 /** ABOUT *****************************************/
+.about-container {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: var(--greenBkgd);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  text-align: center;
+}
 
 .about-box {
   padding-top: 2em;
   flex: 1;
-  max-width: 80%;
+  width: 80%;
   margin: auto;
   font-size: 0.7em;
   text-align: left;
   min-height: calc(100vh - 60px);
+}
+
+.about-box h2 {
+  color: var(--blue);
 }
 
 .about-heading {
@@ -279,15 +338,29 @@ video::-webkit-media-controls-panel {
 }
 
 /** PRIVACY ********************************************/
-
+.privacy-container {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: var(--redBkgd);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  text-align: center;
+}
 .privacy-box {
   padding-top: 2em;
   flex: 1;
-  max-width: 80%;
+  width: 80%;
   margin: auto;
   font-size: 0.8em;
   text-align: left;
   min-height: calc(100vh - 70px);
+}
+
+.privacy-box h2 {
+  color: var(--yellow);
 }
 
 .privacy-heading {
@@ -301,6 +374,21 @@ video::-webkit-media-controls-panel {
 /** MEDIA QUERIES ***************************************/
 
 /*HOME*/
+@media (min-width: 500px) {
+  .home-box h1{
+    font-size: 1.4em;
+  }
+  .home-box h2{
+    font-size: 1.2em;
+    padding: 0;
+  }
+  .home-box h3 {
+    padding: 0;
+  }
+  .home-box button {
+    font-size: 1.6em;
+  }
+}
 @media (min-width: 700px) {
   .home-box {
     padding-top: 4em;
