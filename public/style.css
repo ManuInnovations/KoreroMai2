@@ -16,10 +16,11 @@ MEDIA QUERIES
 
 *************************************/
 
+/** COLOUR VARIABLES **********************/
 :root {
   --blue: #2196F3;
   --red: #F44336;
-  --yellow: #FFEB3B;
+  --orange: #FF8000;
   --green: #4CAF50;
   --yellowBkgd: #FFF9C4;
   --blueBkgd: #BBDEFB;
@@ -145,7 +146,7 @@ html body {
 }
 
 .content-box h2 {
-  color: var(--yellow);
+  color: var(--orange);
 }
 
 .contents-btn {
@@ -360,7 +361,7 @@ video::-webkit-media-controls-panel {
 }
 
 .privacy-box h2 {
-  color: var(--yellow);
+  color: var(--orange);
 }
 
 .privacy-heading {
