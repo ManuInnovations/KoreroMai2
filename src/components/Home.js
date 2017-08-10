@@ -19,11 +19,11 @@ class Home extends React.Component {
           <h1>Kōrero Mai</h1>
           <img src='./images/pipi.gif' width='200px' />
           <h2>Nau mai, haere mai</h2>
-          <h3>Learn te reo Māori</h3>
+          <h3>Kia Ora! Let's learn Te Reo Māori with Kōrero Mai</h3>
           <Link to='/letters'>
             <button
               className='play'>
-              Let's Play!
+              Play!
             </button>
           </Link>
         </div>

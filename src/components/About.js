@@ -1,7 +1,9 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import { Link } from 'react-router'
-import MobileViewFooter from './MobileViewFooter.js'
+import Footer from './Footer.js'
+import Header from './Header.js'
+
 
 class About extends React.Component {
   handleClick(e) {
@@ -11,6 +13,7 @@ class About extends React.Component {
   render() {
     return (
       <div className='about-container'>
+        <Header />
         <div className='about-box'>
           <h2 className='about-heading'>About Us</h2>
           <div className='about-content'>
@@ -18,22 +21,22 @@ class About extends React.Component {
             <div className='profile-images'>
               <div className='profile'>
                 <img src='images/janie.png' alt='Janie Tito' />
-                <p><b>Janie Tito</b></p>
-                <p>Ngā Puhi me Ngāti Whātua</p>
+                <p><b>Janie Tito - developer</b></p>
+                <p><i>Ngā Puhi me Ngāti Whātua</i></p>
               </div>
               <div className='profile'>
                 <img src='images/anna.png' alt='Anna-Marie Vos' />
-                <p><b>Anna-Marie Vos</b></p> <p>Āwherika ki te Tonga</p>
+                <p><b>Anna-Marie Vos - developer</b></p> <p><i>Āwherika ki te Tonga</i></p>
               </div>
               <div className='profile'>
                 <img src='images/meghan.png' alt='Meghan Hughes' />
-                <p><b>Meghan Hughes</b></p>
-                <p>Ngāti Pākehā</p>
+                <p><b>Meghan Hughes - developer</b></p>
+                <p><i>Ngāti Pākehā</i></p>
               </div>
               <div className='profile'>
                 <img src='images/katie.png' alt='Katie Deller' />
-                <p><b>Katie Deller</b></p>
-                <p>Ngāti Porou</p>
+                <p><b>Katie Deller - designer</b></p>
+                <p><i>Ngāti Porou</i></p>
               </div>
             </div>
             <div className='purpose'>
@@ -52,15 +55,15 @@ class About extends React.Component {
               koutou!</p>
             </div>
             <div className='contact'>
-              <p>Please get in touch,
+              <p>Get in touch,
               Email: <b>hello@manu.net.nz</b></p>
+              <p>To contact Katie, Email: <b>kdellerdesign@gmail.com</b></p>
               <p>To find out more about
               Manu: <a href='https://www.manu.net.nz'><b>www.manu.net.nz</b></a></p>
-              <p>To contact Katie, Email: <b>kdellerdesign@gmail.com</b></p>
             </div>
           </div>
         </div>
-        <MobileViewFooter />
+        <Footer />
       </div>
     )
   }

@@ -3,8 +3,8 @@ import React from 'react'
 import { connect } from 'react-redux'
 import { Link } from 'react-router'
 import request from 'superagent'
-import LetterIndex from './Letterindex.js'
-import MobileViewFooter from './MobileViewFooter.js'
+import Footer from './Footer.js'
+import Header from './Header.js'
 
 class Displayletter extends React.Component {
   constructor() {
@@ -76,6 +76,7 @@ class Displayletter extends React.Component {
     const currentLetter = letter.capital
     return (
       <div className='container'>
+        <Header />
         <div className='letter-box'>
           <h2>Letter</h2>
           <audio
@@ -132,7 +133,7 @@ class Displayletter extends React.Component {
             </Link>
           </div>
         </div>
-        <MobileViewFooter />
+        <Footer />
       </div>
     )
   }
