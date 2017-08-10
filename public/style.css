@@ -341,9 +341,9 @@ video::-webkit-media-controls-panel {
   flex: 1;
   width: 80%;
   margin: auto;
-  font-size: 0.6em;
+  font-size: 0.7em;
   text-align: left;
-  min-height: calc(100vh - 90px);
+  min-height: calc(100vh - 64px);
 }
 
 .about-box h2 {
