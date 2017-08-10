@@ -61,7 +61,8 @@ html body {
 .header-name {
   color: white;
   float: left;
-  margin: .7em;
+  margin: .9em;
+  margin-left: 1em;
 }
 
 #header-index {
