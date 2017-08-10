@@ -54,7 +54,7 @@ html body {
 
 .header {
   background-color: var(--blue);
-  height: 50px;
+  height: 40px;
   font-size: 1em;
 }
 
@@ -65,14 +65,14 @@ html body {
 }
 
 #header-index {
-  width: 30px;
+  width: 25px;
   margin-right: 20px;
   margin-top: .5em;
   float: right;
 }
 
 #header-media {
-  width: 30px;
+  width: 25px;
   margin-right: 1.5em;
   float: right;
   margin-top: .4em;
@@ -83,7 +83,7 @@ html body {
 /** FOOTER **************************************/
 
 .footer {
-  padding-top: 2px;
+  padding-top: 1px;
   padding-left: 20px;
   padding-right: 25px;
   padding-bottom: 5px;
@@ -91,7 +91,7 @@ html body {
   color: white;
   text-align: center;
   min-height: 20px;
-  font-size: .7em;
+  font-size: .8em;
 }
 
 .footer-two {
@@ -175,7 +175,7 @@ html body {
   flex: 1;
   width: 100%;
   margin: auto;
-  min-height: calc(100vh - 80px);
+  min-height: calc(100vh - 65px);
   background-color: var(--blueBkgd);
 }
 
@@ -206,7 +206,7 @@ html body {
 
 .medialibrary-box {
   flex: 1;
-  min-height: calc(100vh - 127px);
+  min-height: calc(100vh - 105px);
   margin: auto;
   padding-left: 1em;
 }
@@ -231,7 +231,7 @@ html body {
 .video-box {
   flex: 1;
   width: 100%;
-  min-height: calc(100vh - 80px);
+  min-height: calc(100vh - 65px);
   background-color: var(--yellowBkgd);
 }
 
@@ -253,7 +253,7 @@ video::-webkit-media-controls-enclosure {
   overflow:hidden;
 }
 video::-webkit-media-controls-panel {
-  width: calc(100% + 90px);
+  width: calc(100% + 60px);
   height: 2em;
 }
 
@@ -267,19 +267,20 @@ video::-webkit-media-controls-panel {
 .letter-box {
   flex: 1;
   width: 100%;
-  min-height: calc(100vh - 80px);
+  min-height: calc(100vh - 65px);
   background-color: var(--greenBkgd);
 }
 
 .letter-box h2 {
   color: var(--purple);
   font-size: 1.5em;
+  padding-bottom: 1em;
 }
 
-.listen-icon {
+#listen-icon {
   position: absolute;
   left: 44%;
-  width: 40px;
+  width: 60px;
 }
 
 .letters {
@@ -288,7 +289,7 @@ video::-webkit-media-controls-panel {
 
 .letter-button {
   font-size: 4em;
-  padding-top: 45px;
+  padding-top: 1em;
   padding-right: 30px;
 }
 

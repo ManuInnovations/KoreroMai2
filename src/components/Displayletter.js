@@ -106,7 +106,7 @@ class Displayletter extends React.Component {
               onClick={()=>
               this.previousButton(letter, letters, dispatch)}
             />
-            <img src='/images/listen.png' width='30px'  className='listen-icon'/>
+            <img src='/images/listen.png' width='30px'  id='listen-icon' />
             <button
               type='button'
               className='letter-button'
