@@ -11,7 +11,9 @@ class Header extends React.Component {
     return (
       <div className='header'>
           <header>
-            <p className='header-name'>Kōrero Mai</p>
+            <Link to='/'>
+              <p className='header-name'>Kōrero Mai</p>
+            </Link>
             <Link to='/media'>
               <img id='header-media' src='images/tv.png' alt='tv icon' />
             </Link>

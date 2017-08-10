@@ -73,7 +73,7 @@ html body {
 
 #header-media {
   width: 30px;
-  margin-right: .8em;
+  margin-right: 1.5em;
   float: right;
   margin-top: .4em;
 
@@ -172,16 +172,16 @@ html body {
 /** CONTENT PAGE **********************************/
 
 .content-box {
-  padding-top: 1em;
   flex: 1;
   width: 100%;
   margin: auto;
-  min-height: calc(100vh - 100px);
+  min-height: calc(100vh - 80px);
   background-color: var(--blueBkgd);
 }
 
 .content-box h2 {
   color: var(--purple);
+  font-size: 1.5em;
 }
 
 .contents-btn {
@@ -206,7 +206,7 @@ html body {
 
 .medialibrary-box {
   flex: 1;
-  min-height: calc(100vh - 128px);
+  min-height: calc(100vh - 127px);
   margin: auto;
   padding-left: 1em;
 }
@@ -267,7 +267,6 @@ video::-webkit-media-controls-panel {
 .letter-box {
   flex: 1;
   width: 100%;
-  margin: auto;
   min-height: calc(100vh - 80px);
   background-color: var(--greenBkgd);
 }
@@ -277,13 +276,19 @@ video::-webkit-media-controls-panel {
   font-size: 1.5em;
 }
 
+.listen-icon {
+  position: absolute;
+  left: 44%;
+  width: 40px;
+}
+
 .letters {
-  padding-top: 1em;
+  padding-top: .5em;
 }
 
 .letter-button {
   font-size: 4em;
-  padding-top: 40px;
+  padding-top: 45px;
   padding-right: 30px;
 }
 
@@ -305,12 +310,11 @@ video::-webkit-media-controls-panel {
   justify-content: center;
   align-items: center;
   padding-top: 1em;
-  margin-bottom: 3em;
+  margin-bottom: 2em;
 }
 
 #wordImage {
   width: 100%;
-  flex-grow: 1;
   margin: 0 15px 0 0;
 }
 
