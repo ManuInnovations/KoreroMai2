@@ -62,6 +62,7 @@ class About extends React.Component {
               Manu: <a href='https://www.manu.net.nz'><b>www.manu.net.nz</b></a></p>
             </div>
           </div>
+          <div>Some graphics in this site provided by: <a target="_blank" href="https://www.vecteezy.com">Vecteezy</a></div>
         </div>
         <Footer />
       </div>
