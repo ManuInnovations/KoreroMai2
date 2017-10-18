@@ -8,11 +8,11 @@ module.exports = {
       capitalSound: '/sounds/capitalSounds/A.mp3',
       lowerSound: '/sounds/lowerSounds/a.wav',
       wordImage: [
-        {id:1, image:'images/words/aniwaniwa.png', sound: 'sounds/aniwaniwa.mp3'},
-        {id:2, image:'images/words/anuhe.png', sound: 'sounds/anuhe.mp3'},
-        {id:3, image:'images/words/placeholder.png', sound: 'sounds/ua.mp3'},
+        {id:1, image:'images/words/ahi.svg', sound: 'sounds/aniwaniwa.mp3'},
+        {id:2, image:'images/words/anuhe.svg', sound: 'sounds/anuhe.mp3'},
+        {id:3, image:'images/words/aroha.svg', sound: 'sounds/ua.mp3'},
       ],
-      multimedia: '/multimedia/aniwaniwa.webm',
+      multimedia: '/multimedia/anuhe.mp4',
       mediaName: 'Aniwaniwa Song',
     },
     {
