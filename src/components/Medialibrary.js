@@ -26,7 +26,7 @@ class Medialibrary extends React.Component {
                     <Link key={letter.id} to={`/media/${letter.capital}`}>
                       <img
                         key={index}
-                        src={`${letter.wordImage[0].image}`}
+                        src={`${letter.wordImage[1].image}`}
                         className='img-fluid'
                         onClick={() =>
                           dispatch({

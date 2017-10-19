@@ -13,7 +13,7 @@ module.exports = {
         {id:3, image:'images/words/aroha.svg', sound: 'sounds/ua.mp3'},
       ],
       multimedia: '/multimedia/anuhe.mp4',
-      mediaName: 'Aniwaniwa Song',
+      mediaName: 'Anuhe - Caterpillar',
     },
     {
       id: 2,
@@ -22,12 +22,12 @@ module.exports = {
       capitalSound: '/sounds/capitalSounds/E.mp3',
       lowerSound: '/sounds/lowerSounds/e.wav',
       wordImage: [
-        {id:1, image:'images/words/ekara.png', sound: 'sounds/ekara.mp3'},
-        {id:2, image:'images/words/ekara.png', sound: 'sounds/ekara.mp3'},
+        {id:1, image:'images/words/eo.svg', sound: 'sounds/ekara.mp3'},
+        {id:2, image:'images/words/ekara.svg', sound: 'sounds/ekara.mp3'},
         {id:3, image:'images/words/placeholder.png', sound: 'sounds/ua.mp3'},
       ],
-      multimedia: '/multimedia/aniwaniwa.webm',
-      mediaName: 'Ekara Animation',
+      multimedia: '/multimedia/ekara.mp4',
+      mediaName: 'Ekara - Eagle',
     },
     {
       id: 3,
