@@ -286,7 +286,7 @@ video::-webkit-media-controls-panel {
 .letter-button {
   font-size: 5em;
   font-weight: 600;
-  padding-top: 1em;
+  padding-top: 1.3em;
   padding-right: 30px;
   background:none;
   border:none;
@@ -303,10 +303,18 @@ video::-webkit-media-controls-panel {
   width: 40px;
 }
 
+#next-letter:hover {
+  cursor: pointer;
+}
+
 #previous-letter {
   position: absolute;
   right: 85%;
   width: 40px;
+}
+
+#previous-letter:hover {
+  cursor: pointer;
 }
 
 .words-box {
@@ -323,8 +331,17 @@ video::-webkit-media-controls-panel {
   margin: 0 15px 0 0;
 }
 
+#wordImage:hover {
+  cursor: pointer;
+}
+
 #media-play {
   width: 50px;
+  padding-top: 2em;
+}
+
+#media-play:hover {
+  cursor: pointer;
 }
 
 /** ABOUT *****************************************/
