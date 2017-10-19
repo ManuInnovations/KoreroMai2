@@ -19,7 +19,7 @@ class Mediashow extends React.Component {
       <div className='container'>
         <Header />
         <div className='video-box'>
-          <h2>Watch</h2>
+          <h2>Mātaki mai</h2>
           <div className='video'>
             <video controls>
               <source src={letter.multimedia} type='video/webm' />
