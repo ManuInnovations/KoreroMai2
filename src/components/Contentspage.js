@@ -3,7 +3,6 @@ import React from 'react'
 import { connect } from 'react-redux'
 import { Link } from 'react-router'
 import request from 'superagent'
-import RaisedButton from 'material-ui/RaisedButton'
 import Header from './Header'
 import Footer from './Footer'
 
@@ -26,7 +25,7 @@ class Contentspage extends React.Component {
                 letters.map((letter) => {
                   return (
                     <Link key={letter.id} to={`/letters/${letter.capital}`}>
-                      <RaisedButton
+                      <button
                         type='button'
                         className='contents-btn'
                         onClick={() =>
@@ -36,7 +35,7 @@ class Contentspage extends React.Component {
                             })
                         }>
                         {letter.capital}
-                      </RaisedButton>
+                      </button>
                     </Link>
                   )
                 })
