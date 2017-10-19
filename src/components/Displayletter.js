@@ -78,7 +78,6 @@ class Displayletter extends React.Component {
       <div className='container'>
         <Header />
         <div className='letter-box'>
-          <h2>Letter</h2>
           <audio
             key={letter.capitalSound}
             ref={(cap) => { this.playCap = cap; }}>
@@ -106,7 +105,7 @@ class Displayletter extends React.Component {
               onClick={()=>
               this.previousButton(letter, letters, dispatch)}
             />
-            <img src='/images/listen.png' width='30px'  id='listen-icon' />
+            <img src='/images/listen.svg' width='30px'  id='listen-icon' />
             <button
               type='button'
               className='letter-button'

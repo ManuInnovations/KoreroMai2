@@ -21,12 +21,12 @@ MEDIA QUERIES
 :root {
   --blue: #019cf7;
   --red: #ff8f6f;
-  --orange: #ffb85c;
+  --orange: #FFBE68;
   --green: #0ba569;
   --purple: #9C27B0;
   --yellowBkgd: #fed498;
-  --blueBkgd: #81d2ff;
-  --greenBkgd: #5cd296;
+  --blueBkgd: #2FB2FF;
+  --greenBkgd: #53CE8D;
   --redBkgd: #fe9774;
 }
 
@@ -53,7 +53,7 @@ html body {
 /** HEADER *************************************/
 
 .header {
-  background-color: var(--blue);
+  background-color: var(--blueBkgd);
   height: 40px;
   font-size: 1em;
 }
@@ -88,7 +88,7 @@ html body {
   padding-left: 20px;
   padding-right: 25px;
   padding-bottom: 5px;
-  background-color: var(--blue);
+  background-color: var(--blueBkgd);
   color: white;
   text-align: center;
   min-height: 20px;
@@ -99,7 +99,7 @@ html body {
   padding: 5px;
   padding-left: 20px;
   padding-right: 25px;
-  background-color: var(--blue);
+  background-color: var(--blueBkgd);
   color: white;
   font-size: 1em;
   text-align: center;
@@ -268,14 +268,9 @@ video::-webkit-media-controls-panel {
 .letter-box {
   flex: 1;
   width: 100%;
-  min-height: calc(100vh - 65px);
-  background-color: var(--greenBkgd);
-}
-
-.letter-box h2 {
-  color: var(--purple);
-  font-size: 1.5em;
-  padding-bottom: 1em;
+  padding-top: 4em;
+  min-height: calc(100vh - 131px);
+  background-color: var(--blueBkgd);
 }
 
 #listen-icon {
@@ -289,9 +284,17 @@ video::-webkit-media-controls-panel {
 }
 
 .letter-button {
-  font-size: 4em;
+  font-size: 5em;
+  font-weight: 600;
   padding-top: 1em;
   padding-right: 30px;
+  background:none;
+  border:none;
+  color: white;
+}
+
+.letter-button:hover {
+  cursor: pointer;
 }
 
 #next-letter {
@@ -312,11 +315,11 @@ video::-webkit-media-controls-panel {
   justify-content: center;
   align-items: center;
   padding-top: 1em;
-  margin-bottom: 2em;
+  margin: 0 1em 2em;
 }
 
 #wordImage {
-  width: 100%;
+  width: 80%;
   margin: 0 15px 0 0;
 }
 
