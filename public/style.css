@@ -654,23 +654,22 @@ video::-webkit-media-controls-panel {
 /*MEDIA LIBRARY*/
 @media (min-width: 400px) {
   .medialibrary-box {
-    min-height: calc(100vh - 92px);
+    min-height: calc(100vh - 85px);
     padding-left: 2em;
   }
   .media-image img {
-    width: 17%;
-    margin: 10px;
+    width: 50%;
   }
+.medialibrary-images {
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
 }
-@media (min-width: 500px) {
+}
+@media (min-width: 1000px) {
   .media-image img {
-    width: 15%;
+    width: 50%;
   }
-}
-@media (min-width: 800px) {
-  .media-image img {
-    width: 10%;
-    margin-top: 40px;
-    margin-right: 20px;
+  .medialibrary-images {
+    grid-template-columns: repeat(5, 1fr);
   }
 }
