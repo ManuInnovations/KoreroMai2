@@ -189,13 +189,18 @@ html body {
 .content-box h2 {
   color: #fff;
   font-size: 1.5em;
-  margin-top: 2em;
+  margin-top: 1em;
 }
 
 .content-box h3 {
   color: #fff;
   font-size: 1em;
-  margin-bottom: 3em;
+  margin-bottom: 1em;
+}
+
+.button-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .contents-btn {
@@ -491,15 +496,17 @@ video::-webkit-media-controls-panel {
   }
 }
 
-/*LETTER INDEX*/
+/*CONTENTS*/
 @media (min-width: 700px) {
-  .content-box {
-    min-height: calc(100vh - 65px);
-  }
   .button-container {
-    padding-top: 2em;
-    padding-bottom: 2em;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 15px;
+    max-width: 80%;
+    margin: 2em auto;
   }
+.content-box h2 {
+  margin-top: 3em;
+}
   .contents-btn {
     padding: 15px;
     font-size: 3em;
