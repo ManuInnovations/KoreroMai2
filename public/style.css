@@ -297,6 +297,7 @@ video::-webkit-media-controls-panel {
   background:none;
   border:none;
   color: white;
+  outline: none;
 }
 
 .letter-button:hover {
