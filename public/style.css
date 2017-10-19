@@ -494,7 +494,7 @@ video::-webkit-media-controls-panel {
 /*LETTER INDEX*/
 @media (min-width: 700px) {
   .content-box {
-    min-height: calc(100vh - 72px);
+    min-height: calc(100vh - 65px);
   }
   .button-container {
     padding-top: 2em;
