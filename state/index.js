@@ -36,7 +36,7 @@ module.exports = {
       capitalSound: '/sounds/capitalSounds/H.mp3',
       lowerSound: '/sounds/lowerSounds/h.wav',
       wordImage: [
-        {id:1, image:'images/words/placeholder.png', sound: 'sounds/harakeke.m4a'},
+        {id:1, image:'images/words/harakeke.svg', sound: 'sounds/harakeke.m4a'},
         {id:2, image:'images/words/hoiho.svg', sound: 'sounds/hoiho.m4a'},
         {id:3, image:'images/words/placeholder.png', sound: 'sounds/harikoa.m4a'},
       ],

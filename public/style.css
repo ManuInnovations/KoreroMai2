@@ -141,7 +141,7 @@ html body {
   width: 100%;
   margin: auto;
   min-height: 100vh;
-  background-color: var(--yellowBkgd);
+  background-color: var(--orange);
 }
 
 .home-box h1{
@@ -166,8 +166,12 @@ html body {
   font-size: 1.8em;
   border: solid var(--green);
   box-shadow: 3px 3px 5px var(--green);
-  border-radius: 15%;
+  border-radius: 10%;
+  min-width: 100px;
+}
 
+.home-box button:hover {
+  cursor: pointer;
 }
 
 /** CONTENT PAGE **********************************/
