@@ -3,7 +3,9 @@ import React from 'react'
 import { connect } from 'react-redux'
 import { Link, browserHistory } from 'react-router'
 import request from 'superagent'
-import MobileViewFooter from './MobileViewFooter.js'
+import Footer from './Footer.js'
+import Header from './Header.js'
+
 
 class Mediashow extends React.Component {
   handleClick(e) {
@@ -15,6 +17,7 @@ class Mediashow extends React.Component {
     const { dispatch, letter } = this.props
     return (
       <div className='container'>
+        <Header />
         <div className='video-box'>
           <h2>Watch</h2>
           <div className='video'>
@@ -28,7 +31,7 @@ class Mediashow extends React.Component {
             <img  src='../../images/previous.png' alt='back button' onClick={browserHistory.goBack} className='mediabackbutton' />
           </div>
         </div>
-        <MobileViewFooter />
+        <Footer />
       </div>
     )
   }

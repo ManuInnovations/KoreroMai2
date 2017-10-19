@@ -2,7 +2,9 @@ const debug = require('debug')('components:Privacy')
 import React from 'react'
 import { connect } from 'react-redux'
 import { Link } from 'react-router'
-import MobileViewFooter from './MobileViewFooter'
+import Footer from './Footer'
+import Header from './Header'
+
 
 class Privacy extends React.Component {
   handleClick(e) {
@@ -13,6 +15,7 @@ class Privacy extends React.Component {
     debug(this.props)
     return (
       <div className='privacy-container'>
+        <Header />
         <div className='privacy-box'>
           <h2 className='privacy-heading'>Kōrero Mai Privacy Policy</h2>
           <div className='privacy-articles'>
@@ -41,7 +44,7 @@ class Privacy extends React.Component {
             <p className='article'>We reserve the right to change this policy. By continuing to use the Website, you agree to be bound by the amended policy. You should check from time to time to see if the policy has changed.</p>
           </div>
         </div>
-        <MobileViewFooter />
+        <Footer />
       </div>
     )
   }

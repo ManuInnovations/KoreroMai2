@@ -3,7 +3,9 @@ import React from 'react'
 import { connect } from 'react-redux'
 import request from 'superagent'
 import { Link } from 'react-router'
-import MobileViewFooter from './MobileViewFooter'
+import Footer from './Footer'
+import Header from './Header'
+
 
 class Medialibrary extends React.Component {
   handleClick(e) {
@@ -14,6 +16,7 @@ class Medialibrary extends React.Component {
     const { dispatch, letters } = this.props
     return (
       <div className='medialibrary-container'>
+        <Header />
         <div className='medialibrary-box'>
           <h2>Media Library</h2>
           {
@@ -23,7 +26,7 @@ class Medialibrary extends React.Component {
                     <Link key={letter.id} to={`/media/${letter.capital}`}>
                       <img
                         key={index}
-                        src={`${letter.wordImage[0].image}`}
+                        src={`${letter.wordImage[1].image}`}
                         className='img-fluid'
                         onClick={() =>
                           dispatch({
@@ -37,7 +40,7 @@ class Medialibrary extends React.Component {
             })
           }
         </div>
-        <MobileViewFooter />
+        <Footer />
       </div>
     )
   }

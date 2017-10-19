@@ -3,8 +3,8 @@ import React from 'react'
 import { connect } from 'react-redux'
 import { Link } from 'react-router'
 import request from 'superagent'
-import Nav from './Nav'
 import RaisedButton from 'material-ui/RaisedButton'
+import Header from './Header'
 import Footer from './Footer'
 
 class Contentspage extends React.Component {
@@ -16,6 +16,7 @@ class Contentspage extends React.Component {
     const { dispatch, letters } = this.props
     return (
         <div className='container'>
+          <Header />
           <div className='content-box'>
             <h2>Letter Index</h2>
               <div className='button-container'>
@@ -39,9 +40,6 @@ class Contentspage extends React.Component {
                 })
               }
             </div>
-            <Link to='/media'>
-              <img className='content-tv' src='images/tv.png' alt='grid icon' />
-            </Link>
           </div>
         <Footer />
       </div>
