@@ -141,7 +141,7 @@ html body {
   width: 100%;
   margin: auto;
   min-height: 100vh;
-  background-color: var(--orange);
+  background-color: var(--yellowBkgd);
 }
 
 .home-box h1{
@@ -152,7 +152,6 @@ html body {
 .home-box h2{
   padding: .5em 0 0em;
   color: var(--green);
-
 }
 
 .home-box h3 {
@@ -172,6 +171,10 @@ html body {
 
 .home-box button:hover {
   cursor: pointer;
+}
+
+.play {
+  letter-spacing: 2px;
 }
 
 /** CONTENT PAGE **********************************/
