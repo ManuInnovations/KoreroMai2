@@ -23,7 +23,6 @@ MEDIA QUERIES
   --red: #ff8f6f;
   --orange: #FFBE68;
   --green: #0ba569;
-  --purple: #9C27B0;
   --yellowBkgd: #fed498;
   --blueBkgd: #2FB2FF;
   --greenBkgd: #53CE8D;
@@ -218,37 +217,35 @@ hr {
 /** MEDIA LIBRARY **********************************/
 
 .medialibrary-container {
-  width: 100%;
-  display: block;
-  height: auto;
-  margin: 0;
-  text-align: center;
-  background-color: var(--greenBkgd);
-  font-family: 'Montserrat', sans-serif;
-
+  background-color: var(--red);
 }
 
 .medialibrary-box {
-  flex: 1;
-  min-height: calc(100vh - 105px);
-  margin: auto;
-  padding-left: 1em;
+  min-height: calc(100vh - 85px);
 }
 
-.medialibrary-box h2 {
-  color: var(--purple);
-  font-size: 1.5em;
-}
-
-.media-image {
-  font-size: 0;
+.medialibrary-images {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 15px;
 }
 
 .media-image img {
-  width: 15%;
-  margin: 5px;
-  float: left;
+  width: 50%;
 }
+
+.medialibrary-box h2 {
+  color: #fff;
+  font-size: 1.5em;
+}
+
+.medialibrary-box h3 {
+  color: #fff;
+  font-size: 1em;
+  margin-bottom: 2em;
+}
+
+
 
 /** MEDIA WATCH *************************************/
 
