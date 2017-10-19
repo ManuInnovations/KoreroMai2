@@ -275,7 +275,13 @@ video::-webkit-media-controls-panel {
 
 #listen-icon {
   position: absolute;
-  left: 44%;
+  left: 50%;
+  width: 60px;
+}
+
+#click-icon {
+  position: absolute;
+  left: 30%;
   width: 60px;
 }
 
