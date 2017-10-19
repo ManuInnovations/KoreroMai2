@@ -121,7 +121,7 @@ module.exports = {
       wordImage: [
         {id:1, image:'images/words/one.svg', sound:  '/sounds/one.m4a'},
         {id:2, image:'images/words/ora.svg', sound:  '/sounds/ora.m4a'},
-        {id:3, image:'images/words/placeholder.png', sound: 'sounds/oru.m4a'},
+        {id:3, image:'images/words/oru.svg', sound: 'sounds/oru.m4a'},
       ],
       multimedia: '/multimedia/aniwaniwa.webm',
       mediaName: 'Ora - health',
