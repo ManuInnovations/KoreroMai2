@@ -565,17 +565,19 @@ video::-webkit-media-controls-panel {
 /*DISPLAY LETTER*/
 @media (min-width: 400px) {
   .letter-box {
-    min-height: calc(100vh - 70px);
+    min-height: calc(100vh - 130px);
   }
   .letters {
     padding-top: 2em;
   }
   .letter-button {
-    margin-top: 1em;
-    width: 120px;
+    margin-top: 0em;
   }
-  .listen-icon {
-    width: 40px;
+  #listen-icon {
+    left: 55%;
+  }
+  #click-icon {
+    left: 35%;
   }
   #next-letter {
     left: 80%;
@@ -590,7 +592,16 @@ video::-webkit-media-controls-panel {
     margin: 10px;
   }
   .letter-button {
-    margin-right: .8em;
+    margin-right: 20px;
+    font-size: 7em;
+  }
+}
+@media (min-width: 1000px) {
+  #listen-icon {
+    left: 55%;
+  }
+  #click-icon {
+    left: 40%;
   }
 }
 
