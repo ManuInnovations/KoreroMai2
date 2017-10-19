@@ -18,7 +18,9 @@ class Contentspage extends React.Component {
         <div className='container'>
           <Header />
           <div className='content-box'>
-            <h2>Māori Alphabet - Tātai reta Māori</h2>
+            <h2>Tātai reta Māori</h2>
+            <hr />
+            <h3>Choose a letter to hear sounds and words</h3>
               <div className='button-container'>
                 {
                 letters.map((letter) => {

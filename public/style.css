@@ -184,12 +184,19 @@ html body {
   width: 100%;
   margin: auto;
   min-height: calc(100vh - 65px);
-  background-color: var(--blueBkgd);
+  background-color: var(--greenBkgd);
 }
 
 .content-box h2 {
-  color: var(--purple);
+  color: #fff;
   font-size: 1.5em;
+  margin-top: 2em;
+}
+
+.content-box h3 {
+  color: #fff;
+  font-size: 1em;
+  margin-bottom: 3em;
 }
 
 .contents-btn {
@@ -197,6 +204,11 @@ html body {
   font-size: 2em;
   border: solid 2px;
   margin: 6px;
+}
+
+hr {
+  width: 30%;
+  margin-bottom: 1em;
 }
 
 /** MEDIA LIBRARY **********************************/
