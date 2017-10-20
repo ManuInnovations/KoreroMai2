@@ -515,7 +515,7 @@ video::-webkit-media-controls-panel {
   .button-container {
     grid-template-columns: repeat(5, 1fr);
     grid-gap: 15px;
-    max-width: 80%;
+    max-width: 60%;
     margin: 2em auto;
   }
   .content-box h2 {
@@ -524,6 +524,7 @@ video::-webkit-media-controls-panel {
   .contents-btn {
     padding: 15px;
     font-size: 3em;
+    min-width: 100px;
   }
   .content-tv {
     width: 10%;
