@@ -215,7 +215,7 @@ module.exports = {
       id: 16,
       capital: 'Ā',
       lowercase: 'ā',
-      capitalSound: '/sounds/capitalSounds/a.mp3',
+      capitalSound: '/sounds/capitalSounds/AA.mp3',
       lowerSound: '/sounds/lowerSounds/a.wav',
       wordImage: [
         {id:1, image:'images/words/placeholder.png', sound:  '/sounds/whatu.m4a'},
