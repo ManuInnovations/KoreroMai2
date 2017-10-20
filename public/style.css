@@ -23,7 +23,6 @@ MEDIA QUERIES
   --red: #ff8f6f;
   --orange: #FFBE68;
   --green: #0ba569;
-  --purple: #9C27B0;
   --yellowBkgd: #fed498;
   --blueBkgd: #2FB2FF;
   --greenBkgd: #53CE8D;
@@ -141,7 +140,7 @@ html body {
   width: 100%;
   margin: auto;
   min-height: 100vh;
-  background-color: var(--yellowBkgd);
+  background-color: var(--orange);
 }
 
 .home-box h1{
@@ -152,7 +151,6 @@ html body {
 .home-box h2{
   padding: .5em 0 0em;
   color: var(--green);
-
 }
 
 .home-box h3 {
@@ -166,8 +164,16 @@ html body {
   font-size: 1.8em;
   border: solid var(--green);
   box-shadow: 3px 3px 5px var(--green);
-  border-radius: 15%;
+  border-radius: 10%;
+  min-width: 100px;
+}
 
+.home-box button:hover {
+  cursor: pointer;
+}
+
+.play {
+  letter-spacing: 2px;
 }
 
 /** CONTENT PAGE **********************************/
@@ -177,55 +183,74 @@ html body {
   width: 100%;
   margin: auto;
   min-height: calc(100vh - 65px);
-  background-color: var(--blueBkgd);
+  background-color: var(--greenBkgd);
 }
 
 .content-box h2 {
-  color: var(--purple);
+  color: #fff;
   font-size: 1.5em;
+  margin-top: 1em;
+}
+
+.content-box h3 {
+  color: #fff;
+  font-size: 1em;
+  margin-bottom: 1em;
+}
+
+.button-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .contents-btn {
-  padding: 5px;
-  font-size: 2em;
-  border: solid 2px;
+  padding: 10px;
+  font-size: 3em;
+  color: #fff;
   margin: 6px;
+  border: none;
+  border-radius: 40%;
+  min-width: 80px;
+  background-color: var(--orange);
+}
+
+hr {
+  width: 30%;
+  margin-bottom: 1em;
 }
 
 /** MEDIA LIBRARY **********************************/
 
 .medialibrary-container {
-  width: 100%;
-  display: block;
-  height: auto;
-  margin: 0;
-  text-align: center;
-  background-color: var(--greenBkgd);
-  font-family: 'Montserrat', sans-serif;
-
+  background-color: var(--red);
 }
 
 .medialibrary-box {
-  flex: 1;
-  min-height: calc(100vh - 105px);
-  margin: auto;
-  padding-left: 1em;
+  min-height: calc(100vh - 85px);
 }
 
-.medialibrary-box h2 {
-  color: var(--purple);
-  font-size: 1.5em;
-}
-
-.media-image {
-  font-size: 0;
+.medialibrary-images {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 15px;
 }
 
 .media-image img {
-  width: 15%;
-  margin: 5px;
-  float: left;
+  width: 50%;
 }
+
+.medialibrary-box h2 {
+  color: #fff;
+  font-size: 1.5em;
+}
+
+.medialibrary-box h3 {
+  color: #fff;
+  font-size: 1em;
+  margin-bottom: 2em;
+}
+
+
 
 /** MEDIA WATCH *************************************/
 
@@ -233,12 +258,14 @@ html body {
   flex: 1;
   width: 100%;
   min-height: calc(100vh - 65px);
-  background-color: var(--yellowBkgd);
+  background-color: var(--orange);
 }
 
 .video-box h2 {
   color: var(--purple);
   font-size: 1.5em;
+  margin: 2em;
+  color: #fff;
 }
 
 .video {
@@ -297,6 +324,7 @@ video::-webkit-media-controls-panel {
   background:none;
   border:none;
   color: white;
+  outline: none;
 }
 
 .letter-button:hover {
@@ -470,14 +498,16 @@ video::-webkit-media-controls-panel {
   }
 }
 
-/*LETTER INDEX*/
+/*CONTENTS*/
 @media (min-width: 700px) {
-  .content-box {
-    min-height: calc(100vh - 72px);
-  }
   .button-container {
-    padding-top: 2em;
-    padding-bottom: 2em;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 15px;
+    max-width: 80%;
+    margin: 2em auto;
+  }
+  .content-box h2 {
+    margin-top: 3em;
   }
   .contents-btn {
     padding: 15px;
@@ -633,23 +663,28 @@ video::-webkit-media-controls-panel {
 /*MEDIA LIBRARY*/
 @media (min-width: 400px) {
   .medialibrary-box {
-    min-height: calc(100vh - 92px);
+    min-height: calc(100vh - 135px);
     padding-left: 2em;
   }
+  .medialibrary-box h2 {
+    margin-top: 3em;
+  }
+  .medialibrary-box h3 {
+    margin-bottom: 3em;
+  }
   .media-image img {
-    width: 17%;
-    margin: 10px;
+    width: 50%;
+  }
+  .medialibrary-images {
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
   }
 }
-@media (min-width: 500px) {
+@media (min-width: 1000px) {
   .media-image img {
-    width: 15%;
+    width: 50%;
   }
-}
-@media (min-width: 800px) {
-  .media-image img {
-    width: 10%;
-    margin-top: 40px;
-    margin-right: 20px;
+  .medialibrary-images {
+    grid-template-columns: repeat(5, 1fr);
   }
 }
