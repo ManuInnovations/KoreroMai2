@@ -436,7 +436,6 @@ video::-webkit-media-controls-panel {
   padding: 0;
   font-family: 'Montserrat', sans-serif;
   background-color: var(--redBkgd);
-  width: 100%;
   display: flex;
   flex-direction: column;
   height: auto;
@@ -452,7 +451,7 @@ video::-webkit-media-controls-panel {
 }
 
 .privacy-box h2 {
-  color: var(--purple);
+  color: #fff;
   font-size: 1.5em;
 }
 
@@ -462,6 +461,11 @@ video::-webkit-media-controls-panel {
 
 .article {
   margin-left: 2em;
+}
+
+.privacy-tohora {
+  width: 50%;
+  margin-top: 3em;
 }
 
 /** MEDIA QUERIES ***************************************/
@@ -534,7 +538,7 @@ video::-webkit-media-controls-panel {
 @media (min-width: 600px) {
   .about-box {
     font-size: 1em;
-    min-height: calc(100vh - 72px);
+    min-height: calc(100vh - 65px);
   }
   .about-content {
     column-count: 2;
@@ -580,15 +584,18 @@ video::-webkit-media-controls-panel {
 }
 
 /*PRIVACY*/
-@media (min-width: 700px) {
+@media (min-width: 400px) {
   .privacy-box {
-    max-width: 80%;
-    font-size: .9em;
     min-height: calc(100vh - 66px);
-
   }
+}
+@media (min-width: 700px) {
   .privacy-articles {
     column-count: 2;
+    font-size: 1.5em;
+  }
+  .privacy-box h2 {
+    font-size: 2.5em;
   }
 }
 
