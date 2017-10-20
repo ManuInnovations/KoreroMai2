@@ -180,8 +180,8 @@ html body {
 
 .content-box {
   flex: 1;
-  width: 100%;
   margin: auto;
+  width: 100%;
   min-height: calc(100vh - 65px);
   background-color: var(--greenBkgd);
 }
@@ -205,12 +205,12 @@ html body {
 
 .contents-btn {
   padding: 10px;
-  font-size: 3em;
+  font-size: 1.8em;
   color: #fff;
   margin: 6px;
   border: none;
   border-radius: 40%;
-  min-width: 80px;
+  min-width: 60px;
   background-color: var(--orange);
 }
 
@@ -232,11 +232,11 @@ hr {
 .medialibrary-images {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 15px;
+  grid-gap: 5px;
 }
 
 .media-image img {
-  width: 50%;
+  width: 40%;
 }
 
 .medialibrary-box h2 {
@@ -249,8 +249,6 @@ hr {
   font-size: 1em;
   margin-bottom: 2em;
 }
-
-
 
 /** MEDIA WATCH *************************************/
 
@@ -280,6 +278,7 @@ video {
 video::-webkit-media-controls-enclosure {
   overflow:hidden;
 }
+
 video::-webkit-media-controls-panel {
   width: calc(100% + 60px);
   height: 2em;
