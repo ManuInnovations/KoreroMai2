@@ -229,7 +229,7 @@ module.exports = {
       id: 17,
       capital: 'Ē',
       lowercase: 'ē',
-      capitalSound: '/sounds/capitalSounds/e.mp3',
+      capitalSound: '/sounds/capitalSounds/EE.mp3',
       lowerSound: '/sounds/lowerSounds/e.wav',
       wordImage: [
         {id:1, image:'images/words/placeholder.png', sound:  '/sounds/whatu.m4a'},
@@ -243,7 +243,7 @@ module.exports = {
       id: 18,
       capital: 'Ī',
       lowercase: 'ī',
-      capitalSound: '/sounds/capitalSounds/i.mp3',
+      capitalSound: '/sounds/capitalSounds/II.mp3',
       lowerSound: '/sounds/lowerSounds/i.wav',
       wordImage: [
         {id:1, image:'images/words/placeholder.png', sound:  '/sounds/whatu.m4a'},
@@ -257,7 +257,7 @@ module.exports = {
       id: 19,
       capital: 'Ō',
       lowercase: 'ō',
-      capitalSound: '/sounds/capitalSounds/o.mp3',
+      capitalSound: '/sounds/capitalSounds/OO.mp3',
       lowerSound: '/sounds/lowerSounds/o.wav',
       wordImage: [
         {id:1, image:'images/words/placeholder.png', sound:  '/sounds/whatu.m4a'},
@@ -271,7 +271,7 @@ module.exports = {
       id: 20,
       capital: 'Ū',
       lowercase: 'ū',
-      capitalSound: '/sounds/capitalSounds/u.mp3',
+      capitalSound: '/sounds/capitalSounds/UU.mp3',
       lowerSound: '/sounds/lowerSounds/u.wav',
       wordImage: [
         {id:1, image:'images/words/placeholder.png', sound:  '/sounds/whatu.m4a'},
