@@ -38,7 +38,7 @@ module.exports = {
       wordImage: [
         {id:1, image:'images/words/harakeke.svg', sound: 'sounds/harakeke.m4a'},
         {id:2, image:'images/words/hoiho.svg', sound: 'sounds/hoiho.m4a'},
-        {id:3, image:'images/words/placeholder.png', sound: 'sounds/harikoa.m4a'},
+        {id:3, image:'images/words/harikoa.svg', sound: 'sounds/harikoa.m4a'},
       ],
       multimedia: '/multimedia/aniwaniwa.webm',
       mediaName: 'Hoiho - Horse',
@@ -51,7 +51,7 @@ module.exports = {
       lowerSound: '/sounds/lowerSounds/i.wav',
       wordImage: [
         {id:1, image:'images/words/ika.svg', sound:  'sounds/ika.m4a'},
-        {id:2, image:'images/words/placeholder.png', sound: 'sounds/ihu.m4a'},
+        {id:2, image:'images/words/ihu.svg', sound: 'sounds/ihu.m4a'},
         {id:3, image:'images/words/irirangi.svg', sound:  'sounds/irirangi.m4a'},
       ],
       multimedia: '/multimedia/aniwaniwa.webm',
@@ -94,7 +94,7 @@ module.exports = {
       wordImage: [
         {id:1, image:'images/words/niho.svg', sound:  '/sounds/niho.m4a'},
         {id:2, image:'images/words/noke.svg', sound:  '/sounds/noke.m4a'},
-        {id:3, image:'images/words/placeholder.png', sound: 'sounds/nikau.m4a'},
+        {id:3, image:'images/words/nikau.svg', sound: 'sounds/nikau.m4a'},
       ],
       multimedia: '/multimedia/aniwaniwa.webm',
       mediaName: 'Noke - worm',
@@ -134,9 +134,9 @@ module.exports = {
       capitalSound: '/sounds/capitalSounds/P.mp3',
       lowerSound: '/sounds/lowerSounds/p.wav',
       wordImage: [
-        {id:1, image:'images/words/placeholder.png', sound:  '/sounds/poi.m4a'},
+        {id:1, image:'images/words/poi.svg', sound:  '/sounds/poi.m4a'},
         {id:2, image:'images/words/pungawerewere.svg', sound:  '/sounds/pungawerewere.m4a'},
-        {id:3, image:'images/words/placeholder.png', sound: 'sounds/puku.m4a'},
+        {id:3, image:'images/words/paraoa.svg', sound: 'sounds/puku.m4a'},
       ],
       multimedia: '/multimedia/aniwaniwa.webm',
       mediaName: 'Pungawerewere - spider',
@@ -150,7 +150,7 @@ module.exports = {
       wordImage: [
         {id:1, image:'images/words/ruru.svg', sound:  '/sounds/ruru.m4a'},
         {id:2, image:'images/words/ringa.svg', sound:  '/sounds/ringa.m4a'},
-        {id:3, image:'images/words/placeholder.png', sound: 'sounds/rangi.m4a'},
+        {id:3, image:'images/words/rangi.svg', sound: 'sounds/rangi.m4a'},
       ],
       multimedia: '/multimedia/aniwaniwa.webm',
       mediaName: 'Ringa - Hand',
@@ -162,9 +162,9 @@ module.exports = {
       capitalSound: '/sounds/capitalSounds/T.mp3',
       lowerSound: '/sounds/lowerSounds/t.wav',
       wordImage: [
-        {id:1, image:'images/words/placeholder.png', sound:  '/sounds/tinana.m4a'},
+        {id:1, image:'images/words/tinana.svg', sound:  '/sounds/tinana.m4a'},
         {id:2, image:'images/words/tohora.svg', sound:  '/sounds/tohora.m4a'},
-        {id:3, image:'images/words/placeholder.png', sound: 'sounds/tuatara.m4a'},
+        {id:3, image:'images/words/tuatara.svg', sound: 'sounds/tuatara.m4a'},
       ],
       multimedia: '/multimedia/aniwaniwa.webm',
       mediaName: 'Tohora - Whale',
