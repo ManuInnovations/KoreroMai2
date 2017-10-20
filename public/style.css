@@ -401,8 +401,13 @@ video::-webkit-media-controls-panel {
 }
 
 .about-box h2 {
-  color: var(--purple);
+  color: #fff;
   font-size: 1.5em;
+}
+
+.about-box h3 {
+  color: #fff;
+  font-size: 1.3em;
 }
 
 .about-heading {
@@ -428,6 +433,10 @@ video::-webkit-media-controls-panel {
 }
 .contact a {
   text-decoration: none;
+}
+
+.email {
+  color: #fff;
 }
 
 /** PRIVACY ********************************************/
