@@ -23,8 +23,8 @@ module.exports = {
       lowerSound: '/sounds/lowerSounds/e.wav',
       wordImage: [
         {id:1, image:'images/words/eo.svg', sound: 'sounds/eo.m4a', description: 'eo'},
-        {id:2, image:'images/words/ekara.svg', sound: 'sounds/ekara.m4a', description: 'ekara'},
-        {id:3, image:'images/words/placeholder.png', sound: 'sounds/kete.m4a', description: 'kete'},
+        {id:2, image:'images/words/peke.svg', sound: 'sounds/peke.m4a', description: 'peke'},
+        {id:3, image:'images/words/kete.svg', sound: 'sounds/kete.m4a', description: 'kete'},
       ],
       multimedia: '/multimedia/ekara.mp4',
       mediaName: 'Ekara - Eagle',
@@ -233,11 +233,11 @@ module.exports = {
       lowerSound: '/sounds/lowerSounds/e.wav',
       wordImage: [
         {id:1, image:'images/words/placeholder.png', sound:  '/sounds/heki.m4a', description: 'hēki'},
-        {id:2, image:'images/words/placeholder.png', sound:  '/sounds/wheke.m4a'},
+        {id:2, image:'images/words/ekara.svg', sound:  '/sounds/ekara.m4a'},
         {id:3, image:'images/words/placeholder.png', sound: 'sounds/whenua.m4a'},
       ],
-      multimedia: '/multimedia/aniwaniwa.webm',
-      mediaName: 'The whanau rhyme',
+      multimedia: '/multimedia/ekara.m4a',
+      mediaName: 'Eagle - ēkara',
     },
     {
       id: 18,
