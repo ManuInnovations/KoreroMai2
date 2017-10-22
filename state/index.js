@@ -262,7 +262,7 @@ module.exports = {
       wordImage: [
         {id:1, image:'images/words/netiporo.svg', sound:  '/sounds/netiporo.m4a', description: 'neti pōro'},
         {id:2, image:'images/words/totiti.svg', sound:  '/sounds/totiti.m4a', description:  'tōtiti'},
-        {id:3, image:'images/words/placeholder.png', sound: 'sounds/whenua.m4a'},
+        {id:3, image:'images/words/tohi.svg', sound: 'sounds/tohi.m4a', description: 'tōhi'},
       ],
       multimedia: '/multimedia/aniwaniwa.webm',
       mediaName: 'The whanau rhyme',
@@ -274,9 +274,9 @@ module.exports = {
       capitalSound: '/sounds/capitalSounds/UU.mp3',
       lowerSound: '/sounds/lowerSounds/u.wav',
       wordImage: [
-        {id:1, image:'images/words/placeholder.png', sound:  '/sounds/whatu.m4a'},
-        {id:2, image:'images/words/placeholder.png', sound:  '/sounds/wheke.m4a'},
-        {id:3, image:'images/words/placeholder.png', sound: 'sounds/whenua.m4a'},
+        {id:1, image:'images/words/turu.svg', sound:  '/sounds/turu.m4a', description: 'tūrū'},
+        {id:2, image:'images/words/hapu.svg', sound:  '/sounds/hapu.m4a', description: 'hapū'},
+        {id:3, image:'images/words/purerehua.svg', sound: 'sounds/purerehua.m4a', description: 'pūrerehua'},
       ],
       multimedia: '/multimedia/aniwaniwa.webm',
       mediaName: 'The whanau rhyme',
