@@ -218,7 +218,7 @@ module.exports = {
       capitalSound: '/sounds/capitalSounds/AA.mp3',
       lowerSound: '/sounds/lowerSounds/a.wav',
       wordImage: [
-        {id:1, image:'images/words/placeholder.png', sound:  '/sounds/aporo.m4a', description: 'āporo'},
+        {id:1, image:'images/words/aporo.svg', sound:  '/sounds/aporo.m4a', description: 'āporo'},
         {id:2, image:'images/words/placeholder.png', sound:  '/sounds/aniwaniwa.m4a', description: 'āniwaniwa'},
         {id:3, image:'images/words/placeholder.png', sound: 'sounds/arani.m4a', description: 'ārani'},
       ],
