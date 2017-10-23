@@ -135,7 +135,7 @@ module.exports = {
       lowerSound: '/sounds/lowerSounds/p.wav',
       wordImage: [
         {id:1, image:'images/words/poi.svg', sound:  '/sounds/poi.m4a', description: 'poi'},
-        {id:2, image:'images/words/pungawerewere.svg', sound:  '/sounds/pungawerewere.m4a', description: 'pungawerewere'},
+        {id:2, image:'images/words/pungawerewere.svg', sound:  '/sounds/pungawerewere.m4a', description: 'pūngāwerewere'},
         {id:3, image:'images/words/paraoa.svg', sound: 'sounds/paraoa.m4a', description: 'paraoa'},
       ],
       multimedia: '/multimedia/aniwaniwa.webm',
@@ -206,7 +206,7 @@ module.exports = {
       wordImage: [
         {id:1, image:'images/words/whatu.svg', sound:  '/sounds/whatu.m4a', description: 'whatu'},
         {id:2, image:'images/words/wheke.svg', sound:  '/sounds/wheke.m4a', description: 'wheke'},
-        {id:3, image:'images/words/whare.svg', sound: 'sounds/whare.m4a', description: 'whenua'},
+        {id:3, image:'images/words/whare.svg', sound: 'sounds/whare.m4a', description: 'whare'},
       ],
       multimedia: '/multimedia/wheke.mp4',
       mediaName: 'Wheke - Octopus',
