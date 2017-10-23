@@ -260,8 +260,8 @@ module.exports = {
       capitalSound: '/sounds/capitalSounds/OO.mp3',
       lowerSound: '/sounds/lowerSounds/o.wav',
       wordImage: [
-        {id:1, image:'images/words/netiporo.svg', sound:  '/sounds/netiporo.m4a', description: 'netipōro'},
-        {id:2, image:'images/words/totiti.svg', sound:  '/sounds/totiti.m4a', description:  'tōtiti'},
+        {id:1, image:'images/words/totiti.svg', sound:  '/sounds/totiti.m4a', description:  'tōtiti'},
+        {id:2, image:'images/words/netiporo.svg', sound:  '/sounds/netiporo.m4a', description: 'netipōro'},
         {id:3, image:'images/words/tohi.svg', sound: 'sounds/tohi.m4a', description: 'tōhi'},
       ],
       multimedia: '/multimedia/netiporo.mp4',
