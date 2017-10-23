@@ -359,6 +359,18 @@ video::-webkit-media-controls-panel {
   margin: 0 1em 2em;
 }
 
+.split-words {
+  text-align: center;
+}
+
+.wordDescription {
+  position: absolute;
+  color: #fff;
+  z-index: 1000;
+  font-size: 2em;
+  visibility: hidden;
+}
+
 #wordImage {
   width: 80%;
   margin: 0 15px 0 0;
@@ -366,6 +378,11 @@ video::-webkit-media-controls-panel {
 
 #wordImage:hover {
   cursor: pointer;
+}
+
+.split-words:hover .wordDescription {
+  visibility: visible;
+  opacity: 1;
 }
 
 #media-play {
