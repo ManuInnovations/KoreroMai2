@@ -43,6 +43,7 @@ class Privacy extends React.Component {
             <h3>Updates to our information practices</h3>
             <p className='article'>We reserve the right to change this policy. By continuing to use the Website, you agree to be bound by the amended policy. You should check from time to time to see if the policy has changed.</p>
           </div>
+          <img src='../../images/words/tohora.svg' alt='tohora - whale' className='privacy-tohora'/>
         </div>
         <Footer />
       </div>

@@ -41,7 +41,7 @@ class About extends React.Component {
             </div>
             <div className='purpose'>
               <h3>How this came about</h3>
-              <p>Janie has two tamariki who
+              <p>Janie has two tamāhine who
               attend bilingual classes at Koraunui
               Primary School in Lower Hutt. One day
               their teacher shared her wish for an
@@ -50,14 +50,15 @@ class About extends React.Component {
               idea for Kōrero Mai.</p>
               <p>Koraunui Primary School has been a
               huge help in the development of this
-              app, as well as providing voices and
+              app, by providing voices and
               video footage. Ngā mihi nui ki a
               koutou!</p>
+              <p>Thank you to Georgia and Aaliya for recording letters and words. Kia ora kōrua!</p>
             </div>
             <div className='contact'>
-              <p>Get in touch,
-              Email: <b>hello@manu.net.nz</b></p>
-              <p>To contact Katie, Email: <b>kdellerdesign@gmail.com</b></p>
+              <p>Please let us know if this resource helped you or your tamariki and how we could make it better.</p>
+              <p className='email'>hello@manu.net.nz</p>
+              <p>To contact Katie Deller:</p> <p className='email'>kdellerdesign@gmail.com</p>
               <p>To find out more about
               Manu: <a href='https://www.manu.net.nz'><b>www.manu.net.nz</b></a></p>
             </div>
