@@ -152,7 +152,7 @@ module.exports = {
         {id:2, image:'images/words/ringa.svg', sound:  '/sounds/ringa.m4a', description: 'ringa'},
         {id:3, image:'images/words/rangi.svg', sound: 'sounds/rangi.m4a', description: 'rangi'},
       ],
-      multimedia: '/multimedia/aniwaniwa.webm',
+      multimedia: '/multimedia/ringa.mp4',
       mediaName: 'Ringa - Hand',
     },
     {
