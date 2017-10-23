@@ -176,12 +176,12 @@ module.exports = {
       capitalSound: '/sounds/capitalSounds/U.mp3',
       lowerSound: '/sounds/lowerSounds/u.wav',
       wordImage: [
-        {id:1, image:'images/words/ua.svg', sound:  '/sounds/ua.m4a', description: 'ua'},
-        {id:2, image:'images/words/upoko.svg', sound:  '/sounds/upoko.m4a', description: 'upoko'},
+        {id:1, image:'images/words/upoko.svg', sound:  '/sounds/upoko.m4a', description: 'upoko'},
+        {id:2, image:'images/words/ua.svg', sound:  '/sounds/ua.m4a', description: 'ua'},
         {id:3, image:'images/words/ururoa.svg', sound: 'sounds/ururoa.m4a', description: 'ururoa'},
       ],
-      multimedia: '/multimedia/aniwaniwa.webm',
-      mediaName: 'Rain rain go away',
+      multimedia: '/multimedia/ua.mp4',
+      mediaName: 'Ua - Rain',
     },
     {
       id: 14,

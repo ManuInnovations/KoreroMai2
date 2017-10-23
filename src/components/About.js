@@ -31,7 +31,7 @@ class About extends React.Component {
               <div className='profile'>
                 <img src='images/meghan.png' alt='Meghan Hughes' />
                 <p><b>Meghan Hughes - developer</b></p>
-                <p><i>Ngāti Pākehā</i></p>
+                <p><i>Pākehā</i></p>
               </div>
               <div className='profile'>
                 <img src='images/katie.png' alt='Katie Deller' />
