@@ -64,7 +64,7 @@ class About extends React.Component {
             </div>
           </div>
           <div>Some graphics in this site provided by: <a target="_blank" href="https://www.vecteezy.com">Vecteezy</a></div>
-        </div>
+        </div><br/>
         <Footer />
       </div>
     )

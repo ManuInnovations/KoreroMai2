@@ -26,8 +26,8 @@ module.exports = {
         {id:2, image:'images/words/peke.svg', sound: 'sounds/peke.m4a', description: 'peke'},
         {id:3, image:'images/words/kete.svg', sound: 'sounds/kete.m4a', description: 'kete'},
       ],
-      multimedia: '/multimedia/ekara.mp4',
-      mediaName: 'Ekara - Eagle',
+      multimedia: '/multimedia/aniwaniwa.webm',
+      mediaName: 'Peke - Jump',
     },
     {
       id: 3,
@@ -40,7 +40,7 @@ module.exports = {
         {id:2, image:'images/words/hoiho.svg', sound: 'sounds/hoiho.m4a', description: 'hoiho'},
         {id:3, image:'images/words/harikoa.svg', sound: 'sounds/harikoa.m4a', description: 'harikoa'},
       ],
-      multimedia: '/multimedia/aniwaniwa.webm',
+      multimedia: '/multimedia/hoiho.mp4',
       mediaName: 'Hoiho - Horse',
     },
     {
@@ -82,8 +82,8 @@ module.exports = {
         {id:2, image:'images/words/manu.svg', sound:  '/sounds/manu.m4a', description: 'manu'},
         {id:3, image:'images/words/makawe.svg', sound: 'sounds/makawe.m4a', description: 'makawe'},
       ],
-      multimedia: '/multimedia/aniwaniwa.webm',
-      mediaName: 'Manu - Birds',
+      multimedia: '/multimedia/manu.mp4',
+      mediaName: 'Manu - Bird',
     },
     {
       id: 7,
@@ -110,8 +110,8 @@ module.exports = {
         {id:2, image:'images/words/ngata.svg', sound:  '/sounds/ngata.m4a', description: 'ngata'},
         {id:3, image:'images/words/ngutu.svg', sound: 'sounds/ngutu.m4a', description: 'ngutu'},
       ],
-      multimedia: '/multimedia/aniwaniwa.webm',
-      mediaName: 'Ngata movie',
+      multimedia: '/multimedia/ngata.mp4',
+      mediaName: 'Ngata - Snail',
     },
     {
       id: 9,
