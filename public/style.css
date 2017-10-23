@@ -356,7 +356,7 @@ video::-webkit-media-controls-panel {
   justify-content: center;
   align-items: center;
   padding-top: 1em;
-  margin: 0 1em 2em;
+  margin: 0 1em 4em;
 }
 
 .split-words {
