@@ -356,7 +356,19 @@ video::-webkit-media-controls-panel {
   justify-content: center;
   align-items: center;
   padding-top: 1em;
-  margin: 0 1em 2em;
+  margin: 0 1em 4em;
+}
+
+.split-words {
+  text-align: center;
+}
+
+.wordDescription {
+  position: absolute;
+  color: #fff;
+  z-index: 1000;
+  font-size: 2em;
+  visibility: hidden;
 }
 
 #wordImage {
@@ -366,6 +378,11 @@ video::-webkit-media-controls-panel {
 
 #wordImage:hover {
   cursor: pointer;
+}
+
+.split-words:hover .wordDescription {
+  visibility: visible;
+  opacity: 1;
 }
 
 #media-play {
@@ -396,7 +413,6 @@ video::-webkit-media-controls-panel {
   margin: auto;
   font-size: 0.7em;
   text-align: left;
-  min-height: calc(100vh - 64px);
 }
 
 .about-box h2 {
@@ -529,6 +545,9 @@ video::-webkit-media-controls-panel {
   .content-tv {
     width: 10%;
   }
+  hr {
+    width: 20%;
+  }
 }
 @media (min-width: 900px) {
   .button-container {
@@ -541,13 +560,16 @@ video::-webkit-media-controls-panel {
   .content-tv {
     width: 13%;
   }
+  hr {
+    width: 10%;
+  }
 }
 
 /*ABOUT*/
 @media (min-width: 600px) {
   .about-box {
     font-size: 1em;
-    min-height: calc(100vh - 65px);
+    min-height: calc(100vh - 85px);
   }
   .about-content {
     column-count: 2;
@@ -574,7 +596,7 @@ video::-webkit-media-controls-panel {
 }
 @media (min-width: 800px) {
   .profile-images {
-    margin-bottom: 12em;
+    margin-bottom: 4em;
   }
   .profile {
     min-height: 85px;
@@ -582,7 +604,7 @@ video::-webkit-media-controls-panel {
 }
 @media (min-width: 1000px) {
   .profile-images {
-    margin-bottom: 16em;
+    margin-bottom: 10em;
   }
   .profile {
     min-height: 100px;

@@ -12,10 +12,10 @@ class Footer extends React.Component {
       <div className='footer'>
           <footer>
             <Link to='/about' id='about'>
-              &nbsp; About Us
+              &nbsp; ABOUT US
             </Link>
             <Link to='/privacy' id='privacy'>
-              &nbsp; Privacy Policy
+              &nbsp; PRIVACY POLICY
             </Link>
           </footer>
       </div>
