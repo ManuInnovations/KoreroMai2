@@ -37,11 +37,11 @@ module.exports = {
       lowerSound: '/sounds/lowerSounds/h.wav',
       wordImage: [
         {id:1, image:'images/words/harakeke.svg', sound: 'sounds/harakeke.m4a', description: 'harakeke'},
-        {id:2, image:'images/words/hoiho.svg', sound: 'sounds/hoiho.m4a', description: 'hoiho'},
+        {id:2, image:'images/words/hoiho.svg', sound: 'sounds/hoiho.m4a', description: 'hōiho'},
         {id:3, image:'images/words/harikoa.svg', sound: 'sounds/harikoa.m4a', description: 'harikoa'},
       ],
       multimedia: '/multimedia/hoiho.mp4',
-      mediaName: 'Hoiho - Horse',
+      mediaName: 'Hōiho - Horse',
     },
     {
       id: 4,
