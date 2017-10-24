@@ -54,16 +54,18 @@ class About extends React.Component {
               video footage. Ngā mihi nui ki a
               koutou!</p>
               <p>Thank you to Georgia and Aaliya for recording letters and words. Kia ora kōrua!</p>
+              <p>Please let us know if this resource helped you or your tamariki and how we could make it better.</p>
             </div>
             <div className='contact'>
-              <p>Please let us know if this resource helped you or your tamariki and how we could make it better.</p>
+
               <p className='email'>hello@manu.net.nz</p>
               <p>To contact Katie Deller:</p> <p className='email'>kdellerdesign@gmail.com</p>
               <p>To find out more about
               Manu: <a href='https://www.manu.net.nz'><b>www.manu.net.nz</b></a></p>
             </div>
+            <div>Some graphics in this site provided by <a target='_blank' href='https://www.vecteezy.com'>Vecteezy.</a> Capital letter sounds sourced from the <a href='http://www.tetaurawhiri.govt.nz/learn-te-reo-maori/whakahuatanga-pronunciation/'>Māori Language Commission website.</a></div>
           </div>
-          <div>Some graphics in this site provided by: <a target="_blank" href="https://www.vecteezy.com">Vecteezy</a></div>
+
         </div><br/>
         <Footer />
       </div>
