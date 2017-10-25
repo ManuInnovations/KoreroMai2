@@ -604,7 +604,7 @@ video::-webkit-media-controls-panel {
 }
 @media (min-width: 1000px) {
   .profile-images {
-    margin-bottom: 10em;
+    margin-bottom: 8em;
   }
   .profile {
     min-height: 100px;
