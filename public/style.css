@@ -285,32 +285,27 @@ video::-webkit-media-controls-panel {
 
 .letter-box {
   flex: 1;
-  width: 100%;
-  padding-top: 4em;
-  min-height: calc(100vh - 131px);
+  padding-top: 1.7em;
+  min-height: calc(100vh - 105px);
   background-color: var(--blueBkgd);
 }
 
 #listen-icon {
   position: absolute;
   left: 50%;
-  width: 60px;
+  width: 50px;
 }
 
 #click-icon {
   position: absolute;
   left: 30%;
-  width: 60px;
-}
-
-.letters {
-  padding-top: .5em;
+  width: 50px;
 }
 
 .letter-button {
   font-size: 5em;
   font-weight: 600;
-  padding-top: 1.3em;
+  padding-top: 1em;
   padding-right: 30px;
   background:none;
   border:none;
@@ -347,8 +342,8 @@ video::-webkit-media-controls-panel {
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
-  padding-top: 1em;
-  margin: 0 1em 4em;
+  padding-top: 2em;
+  margin: 0 1em 3em;
 }
 
 .split-words {
@@ -379,7 +374,6 @@ video::-webkit-media-controls-panel {
 
 #media-play {
   width: 50px;
-  padding-top: 2em;
 }
 
 #media-play:hover {
