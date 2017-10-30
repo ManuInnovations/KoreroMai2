@@ -205,14 +205,14 @@ html body {
 
 .button-container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-gap: 10px;
-  padding: 0 1em;
+  padding: 0 1.5em;
 }
 
 .contents-btn {
   padding: 10px;
-  font-size: 1.8em;
+  font-size: 1.3em;
   color: #fff;
   border: none;
   border-radius: 40%;
