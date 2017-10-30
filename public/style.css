@@ -60,14 +60,14 @@ html body {
 .header-name {
   color: white;
   float: left;
-  margin: .9em;
+  margin: .5em;
   margin-left: 1em;
 }
 
 #header-index {
   width: 25px;
   margin-right: 20px;
-  margin-top: .5em;
+  margin-top: .4em;
   float: right;
 }
 
@@ -75,7 +75,7 @@ html body {
   width: 25px;
   margin-right: 1.5em;
   float: right;
-  margin-top: .4em;
+  margin-top: .3em;
 
 }
 
@@ -187,13 +187,13 @@ html body {
   flex: 1;
   margin: auto;
   width: 100%;
-  min-height: calc(100vh - 65px);
+  min-height: calc(100vh - 70px);
   background-color: var(--greenBkgd);
 }
 
 .content-box h2 {
   color: #fff;
-  font-size: 1.5em;
+  font-size: 1.2em;
   margin-top: 1em;
 }
 
@@ -205,14 +205,15 @@ html body {
 
 .button-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  padding: 0 1em;
 }
 
 .contents-btn {
   padding: 10px;
   font-size: 1.8em;
   color: #fff;
-  margin: 6px;
   border: none;
   border-radius: 40%;
   min-width: 60px;
