@@ -286,7 +286,7 @@ video::-webkit-media-controls-panel {
 .letter-box {
   flex: 1;
   padding-top: 1.7em;
-  min-height: calc(100vh - 105px);
+  min-height: calc(100vh - 100px);
   background-color: var(--blueBkgd);
 }
 
