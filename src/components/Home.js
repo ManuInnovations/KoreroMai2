@@ -17,7 +17,9 @@ class Home extends React.Component {
       <div className='container'>
         <div className='home-box'>
           <h1>Kōrero Mai</h1>
-          <img src='./images/words/tohora.svg' width='200px' />
+          <img src='./images/girl.svg' alt='girl' className='kidImage' />
+          <img src='./images/boy.svg' alt='boy' className='kidImage' />
+
           <h2>Nau mai, Haere mai <br />Welcome</h2>
           <h3>Kia Ora! <br/> Let's learn Te Reo Māori</h3>
           <Link to='/letters'>
