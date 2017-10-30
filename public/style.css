@@ -403,12 +403,14 @@ video::-webkit-media-controls-panel {
 
 .about-box h2 {
   color: #fff;
-  font-size: 1.5em;
+  font-size: 1.2em;
+  margin-top: 1em;
 }
 
 .about-box h3 {
   color: #fff;
-  font-size: 1.3em;
+  font-size: 1em;
+  margin-bottom: 1em;
 }
 
 .about-heading {
@@ -455,27 +457,39 @@ video::-webkit-media-controls-panel {
   flex: 1;
   width: 80%;
   margin: auto;
-  font-size: 0.6em;
   text-align: left;
   min-height: calc(100vh - 70px);
 }
 
 .privacy-box h2 {
   color: #fff;
-  font-size: 1.5em;
+  font-size: 1.2em;
+  margin-top: 1em;
+}
+
+.privacy-box h3 {
+  color: #fff;
+  font-size: 1em;
+  margin-bottom: 1em;
 }
 
 .privacy-heading {
   text-align: center;
 }
 
+.opening {
+  font-size: .8em;
+  text-align: justify;
+}
+
 .article {
-  margin-left: 2em;
+  font-size: .6em;
+  text-align: justify;
 }
 
 .privacy-tohora {
   width: 50%;
-  margin-top: 3em;
+  margin-left: 20%;
 }
 
 /** MEDIA QUERIES ***************************************/
