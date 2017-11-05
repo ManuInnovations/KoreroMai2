@@ -219,7 +219,7 @@ module.exports = {
       capital: 'Ā',
       lowercase: 'ā',
       capitalSound: '/sounds/capitalSounds/AA.mp3',
-      lowerSound: '/sounds/lowerSounds/a.wav',
+      lowerSound: '/sounds/lowerSounds/aa.m4a',
       wordImage: [
         {id:1, image:'images/words/aporo.svg', sound:  '/sounds/aporo.m4a', description: 'āporo'},
         {id:2, image:'images/words/aniwaniwa.svg', sound:  '/sounds/aniwaniwa.m4a', description: 'āniwaniwa'},
@@ -233,7 +233,7 @@ module.exports = {
       capital: 'Ē',
       lowercase: 'ē',
       capitalSound: '/sounds/capitalSounds/EE.mp3',
-      lowerSound: '/sounds/lowerSounds/e.wav',
+      lowerSound: '/sounds/lowerSounds/ee.m4a',
       wordImage: [
         {id:1, image:'images/words/weta.svg', sound:  '/sounds/weta.m4a', description: 'wētā'},
         {id:2, image:'images/words/ekara.svg', sound:  '/sounds/ekara.m4a', description: 'ēkara'},
@@ -247,7 +247,7 @@ module.exports = {
       capital: 'Ī',
       lowercase: 'ī',
       capitalSound: '/sounds/capitalSounds/II.mp3',
-      lowerSound: '/sounds/lowerSounds/i.wav',
+      lowerSound: '/sounds/lowerSounds/ii.m4a',
       wordImage: [
         {id:1, image:'images/words/tihi.svg', sound:  '/sounds/tihi.m4a', description: 'tīhi'},
         {id:2, image:'images/words/kaki.svg', sound:  '/sounds/kaki.m4a', description: 'kakī'},
@@ -261,7 +261,7 @@ module.exports = {
       capital: 'Ō',
       lowercase: 'ō',
       capitalSound: '/sounds/capitalSounds/OO.mp3',
-      lowerSound: '/sounds/lowerSounds/o.wav',
+      lowerSound: '/sounds/lowerSounds/oo.m4a',
       wordImage: [
         {id:1, image:'images/words/totiti.svg', sound:  '/sounds/totiti.m4a', description:  'tōtiti'},
         {id:2, image:'images/words/netiporo.svg', sound:  '/sounds/netiporo.m4a', description: 'netipōro'},
@@ -275,7 +275,7 @@ module.exports = {
       capital: 'Ū',
       lowercase: 'ū',
       capitalSound: '/sounds/capitalSounds/UU.mp3',
-      lowerSound: '/sounds/lowerSounds/u.wav',
+      lowerSound: '/sounds/lowerSounds/uu.m4a',
       wordImage: [
         {id:1, image:'images/words/turu.svg', sound:  '/sounds/turu.m4a', description: 'tūrū'},
         {id:2, image:'images/words/purerehua.svg', sound: 'sounds/purerehua.m4a', description: 'pūrerehua'},
