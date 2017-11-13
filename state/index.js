@@ -280,7 +280,7 @@ module.exports = {
         {id:2, image:'images/words/purerehua.svg', sound: 'sounds/purerehua.m4a', description: 'pūrerehua'},
         {id:3, image:'images/words/hapu.svg', sound:  '/sounds/hapu.m4a', description: 'hapū'},
       ],
-      multimedia: '/multimedia/aniwaniwa.mp4',
+      multimedia: '/multimedia/purerehua.mp4',
       mediaName: 'Pūrerehua - Butterfly',
     },
   ],
