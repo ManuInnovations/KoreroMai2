@@ -1,5 +1,4 @@
 module.exports = {
-
   letters: [
     {
       id: 1,
@@ -26,7 +25,7 @@ module.exports = {
         {id:2, image:'images/words/peke.svg', sound: 'sounds/peke.m4a', description: 'peke'},
         {id:3, image:'images/words/kete.svg', sound: 'sounds/kete.m4a', description: 'kete'},
       ],
-      multimedia: '/multimedia/aniwaniwa.webm',
+      multimedia: '/multimedia/aniwaniwa.mp4',
       mediaName: 'Peke - Jump',
     },
     {
@@ -40,7 +39,7 @@ module.exports = {
         {id:2, image:'images/words/ihu.svg', sound: 'sounds/ihu.m4a', description: 'ihu'},
         {id:3, image:'images/words/irirangi.svg', sound:  'sounds/irirangi.m4a', description: 'irirangi'},
       ],
-      multimedia: '/multimedia/aniwaniwa.webm',
+      multimedia: '/multimedia/aniwaniwa.mp4',
       mediaName: 'Ihu waiata',
     },
     {
@@ -54,7 +53,7 @@ module.exports = {
         {id:2, image:'images/words/ora.svg', sound:  '/sounds/ora.m4a', description: 'ora'},
         {id:3, image:'images/words/oru.svg', sound: 'sounds/oru.m4a', description: 'oru'},
       ],
-      multimedia: '/multimedia/aniwaniwa.webm',
+      multimedia: '/multimedia/aniwaniwa.mp4',
       mediaName: 'Ora - health',
     },
     {
@@ -97,8 +96,8 @@ module.exports = {
         {id:2, image:'images/words/kakariki.svg', sound:  '/sounds/kakariki.m4a', description: 'kākāriki'},
         {id:3, image:'images/words/koura.svg', sound: 'sounds/koura.m4a', description: 'koura'},
       ],
-      multimedia: '/multimedia/aniwaniwa.webm',
-      mediaName: 'colours waiata',
+      multimedia: '/multimedia/kakariki.mp4',
+      mediaName: 'Kākāriki - Green',
     },
     {
       id: 8,
@@ -125,7 +124,7 @@ module.exports = {
         {id:2, image:'images/words/noke.svg', sound:  '/sounds/noke.m4a', description: 'noke'},
         {id:3, image:'images/words/nikau.svg', sound: 'sounds/nikau.m4a', description: 'nikau'},
       ],
-      multimedia: '/multimedia/aniwaniwa.webm',
+      multimedia: '/multimedia/aniwaniwa.mp4',
       mediaName: 'Noke - worm',
     },
     {
@@ -154,8 +153,8 @@ module.exports = {
         {id:2, image:'images/words/pungawerewere.svg', sound:  '/sounds/pungawerewere.m4a', description: 'pūngāwerewere'},
         {id:3, image:'images/words/paraoa.svg', sound: 'sounds/paraoa.m4a', description: 'paraoa'},
       ],
-      multimedia: '/multimedia/aniwaniwa.webm',
-      mediaName: 'Pungawerewere - spider',
+      multimedia: '/multimedia/aniwaniwa.mp4',
+      mediaName: 'Pungāwerewere - Spider',
     },
     {
       id: 12,
@@ -182,8 +181,8 @@ module.exports = {
         {id:2, image:'images/words/tohora.svg', sound:  '/sounds/tohora.m4a', description: 'tohorā'},
         {id:3, image:'images/words/tuatara.svg', sound: 'sounds/tuatara.m4a', description: 'tuatara'},
       ],
-      multimedia: '/multimedia/aniwaniwa.webm',
-      mediaName: 'Tohora - Whale',
+      multimedia: '/multimedia/tohora.mp4',
+      mediaName: 'Tohorā - Whale',
     },
 
     {
@@ -197,7 +196,7 @@ module.exports = {
         {id:2, image:'images/words/waka.svg', sound:  '/sounds/waka.m4a', description: 'waka'},
         {id:3, image:'images/words/wai.svg', sound: 'sounds/wai.m4a', description: 'wai'},
       ],
-      multimedia: '/multimedia/aniwaniwa.webm',
+      multimedia: '/multimedia/aniwaniwa.mp4',
       mediaName: 'The Weta Animation',
     },
     {
@@ -225,7 +224,7 @@ module.exports = {
         {id:2, image:'images/words/aniwaniwa.svg', sound:  '/sounds/aniwaniwa.m4a', description: 'āniwaniwa'},
         {id:3, image:'images/words/arani.svg', sound: 'sounds/arani.m4a', description: 'ārani'},
       ],
-      multimedia: '/multimedia/aniwaniwa.webm',
+      multimedia: '/multimedia/aniwaniwa.mp4',
       mediaName: 'The whanau rhyme',
     },
     {
@@ -253,7 +252,7 @@ module.exports = {
         {id:2, image:'images/words/kaki.svg', sound:  '/sounds/kaki.m4a', description: 'kakī'},
         {id:3, image:'images/words/miti.svg', sound: 'sounds/miti.m4a', description: 'mīti'},
       ],
-      multimedia: '/multimedia/aniwaniwa.webm',
+      multimedia: '/multimedia/aniwaniwa.mp4',
       mediaName: 'The whanau rhyme',
     },
     {
@@ -281,7 +280,7 @@ module.exports = {
         {id:2, image:'images/words/purerehua.svg', sound: 'sounds/purerehua.m4a', description: 'pūrerehua'},
         {id:3, image:'images/words/hapu.svg', sound:  '/sounds/hapu.m4a', description: 'hapū'},
       ],
-      multimedia: '/multimedia/purerehua.mp4',
+      multimedia: '/multimedia/aniwaniwa.mp4',
       mediaName: 'Pūrerehua - Butterfly',
     },
   ],

@@ -76,9 +76,7 @@ html body {
   margin-right: 1.5em;
   float: right;
   margin-top: .3em;
-
 }
-
 
 /** FOOTER **************************************/
 
@@ -133,6 +131,8 @@ html body {
 .home-box h1{
   padding: 1em 0 0;
   color: var(--blue);
+  font-weight: bolder;
+  font-style: italic;
 }
 
 .home-box h2{
@@ -161,6 +161,7 @@ html body {
 
 .play {
   letter-spacing: 2px;
+  margin-top: 1.5em;
 }
 
 .kidImage {
@@ -174,7 +175,7 @@ html body {
   flex: 1;
   margin: auto;
   width: 100%;
-  min-height: calc(100vh - 70px);
+  min-height: calc(100vh - 65px);
   background-color: var(--greenBkgd);
 }
 
