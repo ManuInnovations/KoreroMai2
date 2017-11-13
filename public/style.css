@@ -631,14 +631,21 @@ video::-webkit-media-controls-panel {
     font-size: 1.5em;
   }
   .privacy-box h2 {
-    font-size: 2.5em;
+    font-size: 1.5em;
+  }
+  .privacy-box h3 {
+    font-size: .8em;
+  }
+  .privacy-tohora {
+    width: 30%;
+    margin-left: 30%;
   }
 }
 
 /*DISPLAY LETTER*/
 @media (min-width: 400px) {
   .letter-box {
-    min-height: calc(100vh - 130px);
+    min-height: calc(100vh - 105px);
   }
   .letters {
     padding-top: 2em;
@@ -706,7 +713,7 @@ video::-webkit-media-controls-panel {
 /*MEDIA LIBRARY*/
 @media (min-width: 400px) {
   .medialibrary-box {
-    min-height: calc(100vh - 135px);
+    min-height: calc(100vh - 123px);
     padding-left: 2em;
   }
   .medialibrary-box h2 {
