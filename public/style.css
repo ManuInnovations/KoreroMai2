@@ -60,14 +60,14 @@ html body {
 .header-name {
   color: white;
   float: left;
-  margin: .5em;
+  margin: .7em;
   margin-left: 1em;
 }
 
 #header-index {
   width: 25px;
   margin-right: 20px;
-  margin-top: .4em;
+  margin-top: .5em;
   float: right;
 }
 
@@ -75,10 +75,8 @@ html body {
   width: 25px;
   margin-right: 1.5em;
   float: right;
-  margin-top: .3em;
-
+  margin-top: .4em;
 }
-
 
 /** FOOTER **************************************/
 
@@ -133,6 +131,8 @@ html body {
 .home-box h1{
   padding: 1em 0 0;
   color: var(--blue);
+  font-weight: bolder;
+  font-style: italic;
 }
 
 .home-box h2{
@@ -161,6 +161,7 @@ html body {
 
 .play {
   letter-spacing: 2px;
+  margin-top: 1.5em;
 }
 
 .kidImage {
@@ -174,14 +175,14 @@ html body {
   flex: 1;
   margin: auto;
   width: 100%;
-  min-height: calc(100vh - 70px);
+  min-height: calc(100vh - 65px);
   background-color: var(--greenBkgd);
 }
 
 .content-box h2 {
   color: #fff;
   font-size: 1.2em;
-  margin-top: 1em;
+  margin-top: 2em;
 }
 
 .content-box h3 {
@@ -219,7 +220,7 @@ hr {
 }
 
 .medialibrary-box {
-  min-height: calc(100vh - 90px);
+  min-height: calc(100vh - 85px);
 }
 
 .medialibrary-images {
@@ -285,8 +286,8 @@ video::-webkit-media-controls-panel {
 
 .letter-box {
   flex: 1;
-  padding-top: 1.7em;
-  min-height: calc(100vh - 100px);
+  padding-top: 2.5em;
+  min-height: calc(100vh - 105px);
   background-color: var(--blueBkgd);
 }
 
@@ -498,7 +499,7 @@ video::-webkit-media-controls-panel {
 /*HOME*/
 @media (min-width: 500px) {
   .home-box h1{
-    font-size: 1.4em;
+    font-size: 1.8em;
   }
   .home-box h2{
     font-size: 1.2em;
@@ -513,17 +514,20 @@ video::-webkit-media-controls-panel {
 }
 @media (min-width: 700px) {
   .home-box {
-    padding-top: 4em;
+    padding-top: 3em;
   }
   .home-box h2{
     padding: 1.5em 0 .5em;
   }
   .home-box h3 {
-    padding: 0 0 2em;
+    padding: 0 0 0em;
   }
   .play {
     font-size: 2em;
     padding: .5em;
+  }
+  .kidImage {
+    width: 10%;
   }
 }
 
@@ -627,14 +631,21 @@ video::-webkit-media-controls-panel {
     font-size: 1.5em;
   }
   .privacy-box h2 {
-    font-size: 2.5em;
+    font-size: 1.5em;
+  }
+  .privacy-box h3 {
+    font-size: .8em;
+  }
+  .privacy-tohora {
+    width: 30%;
+    margin-left: 30%;
   }
 }
 
 /*DISPLAY LETTER*/
 @media (min-width: 400px) {
   .letter-box {
-    min-height: calc(100vh - 130px);
+    min-height: calc(100vh - 105px);
   }
   .letters {
     padding-top: 2em;
@@ -702,7 +713,7 @@ video::-webkit-media-controls-panel {
 /*MEDIA LIBRARY*/
 @media (min-width: 400px) {
   .medialibrary-box {
-    min-height: calc(100vh - 135px);
+    min-height: calc(100vh - 123px);
     padding-left: 2em;
   }
   .medialibrary-box h2 {

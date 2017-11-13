@@ -17,7 +17,7 @@ class About extends React.Component {
         <div className='about-box'>
           <h2 className='about-heading'>About Us</h2>
           <div className='about-content'>
-            <p className='about-text'>Kia Ora! Kōrero Mai was made with aroha by the team at Manu Innovations, and with the assistance of the talented UX designer, Katie Deller.</p>
+            <p className='about-text'>Kia Ora! Kōrero Mai was made with aroha by the team at Manu Innovations, and with the assistance of the talented designer, Katie Deller.</p>
             <div className='profile-images'>
               <div className='profile'>
                 <img src='images/janie.png' alt='Janie Tito' />
@@ -53,7 +53,7 @@ class About extends React.Component {
               app, by providing voices and
               video footage. Ngā mihi nui ki a
               koutou!</p>
-              <p>Thank you to Georgia and Aaliya for recording letters and words. Kia ora kōrua!</p>
+            <p>Thank you to Georgia and Aaliya for recording letters, words and songs. Kia ora kōrua!</p>
               <p>Please let us know if this resource helped you or your tamariki and how we could make it better.</p>
             </div>
             <div className='contact'>
