@@ -39,8 +39,8 @@ module.exports = {
         {id:2, image:'images/words/ihu.svg', sound: 'sounds/ihu.m4a', description: 'ihu'},
         {id:3, image:'images/words/irirangi.svg', sound:  'sounds/irirangi.m4a', description: 'irirangi'},
       ],
-      multimedia: '/multimedia/aniwaniwa.mp4',
-      mediaName: 'Ihu waiata',
+      multimedia: '/multimedia/upoko.mp4',
+      mediaName: 'Ihu - nose',
     },
     {
       id: 4,
