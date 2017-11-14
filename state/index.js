@@ -192,12 +192,12 @@ module.exports = {
       capitalSound: '/sounds/capitalSounds/W.mp3',
       lowerSound: '/sounds/lowerSounds/w.wav',
       wordImage: [
-        {id:1, image:'images/words/waewae.svg', sound:  '/sounds/waewae.m4a', description: 'waewae'},
-        {id:2, image:'images/words/waka.svg', sound:  '/sounds/waka.m4a', description: 'waka'},
+        {id:1, image:'images/words/waka.svg', sound:  '/sounds/waka.m4a', description: 'waka'},
+        {id:2, image:'images/words/waewae.svg', sound:  '/sounds/waewae.m4a', description: 'waewae'},
         {id:3, image:'images/words/wai.svg', sound: 'sounds/wai.m4a', description: 'wai'},
       ],
-      multimedia: '/multimedia/aniwaniwa.mp4',
-      mediaName: 'The Weta Animation',
+      multimedia: '/multimedia/waewae.mp4',
+      mediaName: 'Waewae - Legs',
     },
     {
       id: 15,
