@@ -50,11 +50,11 @@ module.exports = {
       lowerSound: '/sounds/lowerSounds/o.wav',
       wordImage: [
         {id:1, image:'images/words/one.svg', sound:  '/sounds/one.m4a', description: 'one'},
-        {id:2, image:'images/words/ora.svg', sound:  '/sounds/ora.m4a', description: 'ora'},
+        {id:2, image:'images/words/ora.svg', sound:  '/sounds/ora.m4a', description: 'oma'},
         {id:3, image:'images/words/oru.svg', sound: 'sounds/oru.m4a', description: 'oru'},
       ],
       multimedia: '/multimedia/aniwaniwa.mp4',
-      mediaName: 'Ora - health',
+      mediaName: 'Oma - Run',
     },
     {
       id: 5,
