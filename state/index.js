@@ -25,7 +25,7 @@ module.exports = {
         {id:2, image:'images/words/peke.svg', sound: 'sounds/peke.m4a', description: 'peke'},
         {id:3, image:'images/words/kete.svg', sound: 'sounds/kete.m4a', description: 'kete'},
       ],
-      multimedia: '/multimedia/eke.mp4',
+      multimedia: '/multimedia/eke.webm',
       mediaName: 'Peke - Jump',
     },
     {
