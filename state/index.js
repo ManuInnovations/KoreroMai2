@@ -11,7 +11,7 @@ module.exports = {
         {id:2, image:'images/words/anuhe.svg', sound: 'sounds/anuhe.m4a', description: 'anuhe'},
         {id:3, image:'images/words/aroha.svg', sound: 'sounds/aroha.m4a', description: 'aroha'},
       ],
-      multimedia: '/multimedia/anuhe.mp4',
+      multimedia: '/multimedia/anuhe.webm',
       mediaName: 'Anuhe - Caterpillar',
     },
     {
