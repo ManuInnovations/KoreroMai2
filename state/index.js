@@ -110,7 +110,7 @@ module.exports = {
         {id:2, image:'images/words/manu.svg', sound:  '/sounds/manu.m4a', description: 'manu'},
         {id:3, image:'images/words/makawe.svg', sound: 'sounds/makawe.m4a', description: 'makawe'},
       ],
-      multimedia: '/multimedia/manu.mp4',
+      multimedia: '/multimedia/manu.webm',
       mediaName: 'Manu - Bird',
     },
     {
