@@ -138,7 +138,7 @@ module.exports = {
         {id:2, image:'images/words/ngata.svg', sound:  '/sounds/ngata.m4a', description: 'ngata'},
         {id:3, image:'images/words/ngutu.svg', sound: 'sounds/ngutu.m4a', description: 'ngutu'},
       ],
-      multimedia: '/multimedia/ngata.mp4',
+      multimedia: '/multimedia/ngata.webm',
       mediaName: 'Ngata - Snail',
     },
 
@@ -280,7 +280,7 @@ module.exports = {
         {id:2, image:'images/words/purerehua.svg', sound: 'sounds/purerehua.m4a', description: 'pūrerehua'},
         {id:3, image:'images/words/hapu.svg', sound:  '/sounds/hapu.m4a', description: 'hapū'},
       ],
-      multimedia: '/multimedia/purerehua.mp4',
+      multimedia: '/multimedia/purerehua.webm',
       mediaName: 'Pūrerehua - Butterfly',
     },
   ],
