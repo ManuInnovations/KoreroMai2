@@ -304,9 +304,9 @@ video::-webkit-media-controls-panel {
 }
 
 .letter-button {
-  font-size: 5em;
+  font-size: 4em;
   font-weight: 600;
-  padding-top: 1em;
+  padding-top: 1.5em;
   padding-right: 30px;
   background:none;
   border:none;
