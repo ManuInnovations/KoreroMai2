@@ -96,7 +96,7 @@ module.exports = {
         {id:2, image:'images/words/kakariki.svg', sound:  '/sounds/kakariki.m4a', description: 'kākāriki'},
         {id:3, image:'images/words/koura.svg', sound: 'sounds/koura.m4a', description: 'koura'},
       ],
-      multimedia: '/multimedia/kakariki.mp4',
+      multimedia: '/multimedia/kakariki.webm',
       mediaName: 'Kākāriki - Green',
     },
     {
