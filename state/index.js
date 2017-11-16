@@ -196,7 +196,7 @@ module.exports = {
         {id:2, image:'images/words/waewae.svg', sound:  '/sounds/waewae.m4a', description: 'waewae'},
         {id:3, image:'images/words/wai.svg', sound: 'sounds/wai.m4a', description: 'wai'},
       ],
-      multimedia: '/multimedia/waewae.mp4',
+      multimedia: '/multimedia/waewae.webm',
       mediaName: 'Waewae - Legs',
     },
     {
