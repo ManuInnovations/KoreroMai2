@@ -153,8 +153,8 @@ module.exports = {
         {id:2, image:'images/words/pungawerewere.svg', sound:  '/sounds/pungawerewere.m4a', description: 'pūngāwerewere'},
         {id:3, image:'images/words/paraoa.svg', sound: 'sounds/paraoa.m4a', description: 'paraoa'},
       ],
-      multimedia: '/multimedia/aniwaniwa.webm',
-      mediaName: 'Pungāwerewere - Spider',
+      multimedia: '/multimedia/poi.webm',
+      mediaName: 'Poi - poi',
     },
     {
       id: 12,
