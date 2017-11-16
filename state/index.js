@@ -67,7 +67,7 @@ module.exports = {
         {id:2, image:'images/words/ua.svg', sound:  '/sounds/ua.m4a', description: 'ua'},
         {id:3, image:'images/words/ururoa.svg', sound: 'sounds/ururoa.m4a', description: 'ururoa'},
       ],
-      multimedia: '/multimedia/ua.mp4',
+      multimedia: '/multimedia/ua.webm',
       mediaName: 'Ua - Rain',
     },
     {
