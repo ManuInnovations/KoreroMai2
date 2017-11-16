@@ -210,7 +210,7 @@ module.exports = {
         {id:2, image:'images/words/wheke.svg', sound:  '/sounds/wheke.m4a', description: 'wheke'},
         {id:3, image:'images/words/whare.svg', sound: 'sounds/whare.m4a', description: 'whare'},
       ],
-      multimedia: '/multimedia/wheke.mp4',
+      multimedia: '/multimedia/wheke.webm',
       mediaName: 'Wheke - Octopus',
     },
     {
