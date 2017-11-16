@@ -291,6 +291,11 @@ video::-webkit-media-controls-panel {
   background-color: var(--blueBkgd);
 }
 
+.letters p {
+  margin: 0;
+  padding: 0 0 5px;
+}
+
 #listen-icon {
   position: absolute;
   left: 50%;
@@ -321,6 +326,7 @@ video::-webkit-media-controls-panel {
 #next-letter {
   position: absolute;
   left: 85%;
+  top: 13%;
   width: 40px;
 }
 
@@ -331,6 +337,7 @@ video::-webkit-media-controls-panel {
 #previous-letter {
   position: absolute;
   right: 85%;
+  top: 13%;
   width: 40px;
 }
 
@@ -651,7 +658,7 @@ video::-webkit-media-controls-panel {
     padding-top: 2em;
   }
   .letter-button {
-    margin-top: 0em;
+    padding-top: 1em;
   }
   #listen-icon {
     left: 55%;
