@@ -149,8 +149,8 @@ module.exports = {
       capitalSound: '/sounds/capitalSounds/P.mp3',
       lowerSound: '/sounds/lowerSounds/p.wav',
       wordImage: [
-        {id:1, image:'images/words/poi.svg', sound:  '/sounds/poi.m4a', description: 'poi'},
-        {id:2, image:'images/words/pungawerewere.svg', sound:  '/sounds/pungawerewere.m4a', description: 'pūngāwerewere'},
+        {id:1, image:'images/words/pungawerewere.svg', sound:  '/sounds/pungawerewere.m4a', description: 'pūngāwerewere'},
+        {id:2, image:'images/words/poi.svg', sound:  '/sounds/poi.m4a', description: 'poi'},
         {id:3, image:'images/words/paraoa.svg', sound: 'sounds/paraoa.m4a', description: 'paraoa'},
       ],
       multimedia: '/multimedia/poi.webm',
