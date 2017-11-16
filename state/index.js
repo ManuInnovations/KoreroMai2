@@ -181,7 +181,7 @@ module.exports = {
         {id:2, image:'images/words/tohora.svg', sound:  '/sounds/tohora.m4a', description: 'tohorā'},
         {id:3, image:'images/words/tuatara.svg', sound: 'sounds/tuatara.m4a', description: 'tuatara'},
       ],
-      multimedia: '/multimedia/tohora.mp4',
+      multimedia: '/multimedia/tohora.webm',
       mediaName: 'Tohorā - Whale',
     },
 
