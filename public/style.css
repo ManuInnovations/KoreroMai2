@@ -227,7 +227,7 @@ hr {
 .medialibrary-images {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 5px;
+  grid-gap: 0px;
 }
 
 .media-image img {
