@@ -11,7 +11,11 @@ module.exports = {
         {id:2, image:'images/words/anuhe.svg', sound: 'sounds/anuhe.m4a', description: 'anuhe'},
         {id:3, image:'images/words/aroha.svg', sound: 'sounds/aroha.m4a', description: 'aroha'},
       ],
-      multimedia: '/multimedia/anuhe.webm',
+      multimedia: [
+        '/multimedia/anuhe.webm',
+        '/multimedia/anuhe.mp4',
+        '/multimedia/anuhe.ogv',
+      ],
       mediaName: 'Anuhe - Caterpillar',
     },
     {
@@ -25,7 +29,11 @@ module.exports = {
         {id:2, image:'images/words/peke.svg', sound: 'sounds/peke.m4a', description: 'peke'},
         {id:3, image:'images/words/kete.svg', sound: 'sounds/kete.m4a', description: 'kete'},
       ],
-      multimedia: '/multimedia/eke.webm',
+      multimedia: [
+        '/multimedia/eke.webm',
+        '/multimedia/eke.mp4',
+        '/multimedia/eke.ogv',
+      ],
       mediaName: 'Peke - Jump',
     },
     {
@@ -39,7 +47,11 @@ module.exports = {
         {id:2, image:'images/words/ihu.svg', sound: 'sounds/ihu.m4a', description: 'ihu'},
         {id:3, image:'images/words/irirangi.svg', sound:  'sounds/irirangi.m4a', description: 'irirangi'},
       ],
-      multimedia: '/multimedia/upoko.webm',
+      multimedia: [
+        '/multimedia/upoko.webm',
+        '/multimedia/upoko.mp4',
+        '/multimedia/upoko.ogv',
+      ],
       mediaName: 'Ihu - nose',
     },
     {
@@ -53,7 +65,11 @@ module.exports = {
         {id:2, image:'images/words/ora.svg', sound:  '/sounds/ora.m4a', description: 'oma'},
         {id:3, image:'images/words/oru.svg', sound: 'sounds/oru.m4a', description: 'oru'},
       ],
-      multimedia: '/multimedia/aniwaniwa.webm',
+      multimedia: [
+        '/multimedia/aniwaniwa.webm',
+        '/multimedia/aniwaniwa.mp4',
+        '/multimedia/aniwaniwa.ogv'
+      ],
       mediaName: 'Oma - Run',
     },
     {
@@ -67,7 +83,11 @@ module.exports = {
         {id:2, image:'images/words/ua.svg', sound:  '/sounds/ua.m4a', description: 'ua'},
         {id:3, image:'images/words/ururoa.svg', sound: 'sounds/ururoa.m4a', description: 'ururoa'},
       ],
-      multimedia: '/multimedia/ua.webm',
+      multimedia: [
+        '/multimedia/ua.webm',
+        '/multimedia/ua.mp4',
+        '/multimedia/ua.ogv',
+      ],
       mediaName: 'Ua - Rain',
     },
     {
@@ -81,7 +101,11 @@ module.exports = {
         {id:2, image:'images/words/hoiho.svg', sound: 'sounds/hoiho.m4a', description: 'hōiho'},
         {id:3, image:'images/words/harikoa.svg', sound: 'sounds/harikoa.m4a', description: 'harikoa'},
       ],
-      multimedia: '/multimedia/hoiho.webm',
+      multimedia: [
+        '/multimedia/hoiho.webm',
+        '/multimedia/hoiho.mp4',
+        '/multimedia/hoiho.ogv'
+      ],
       mediaName: 'Hōiho - Horse',
     },
 
@@ -96,7 +120,11 @@ module.exports = {
         {id:2, image:'images/words/kakariki.svg', sound:  '/sounds/kakariki.m4a', description: 'kākāriki'},
         {id:3, image:'images/words/koura.svg', sound: 'sounds/koura.m4a', description: 'koura'},
       ],
-      multimedia: '/multimedia/kakariki.webm',
+      multimedia: [
+        '/multimedia/kakariki.webm',
+        '/multimedia/kakariki.mp4',
+        '/multimedia/kakariki.ogv'
+      ],
       mediaName: 'Kākāriki - Green',
     },
     {
@@ -110,7 +138,11 @@ module.exports = {
         {id:2, image:'images/words/manu.svg', sound:  '/sounds/manu.m4a', description: 'manu'},
         {id:3, image:'images/words/makawe.svg', sound: 'sounds/makawe.m4a', description: 'makawe'},
       ],
-      multimedia: '/multimedia/manu.webm',
+      multimedia: [
+        '/multimedia/manu.webm',
+        '/multimedia/manu.mp4',
+        '/multimedia/manu.ogv'
+      ],
       mediaName: 'Manu - Bird',
     },
     {
@@ -124,7 +156,10 @@ module.exports = {
         {id:2, image:'images/words/noke.svg', sound:  '/sounds/noke.m4a', description: 'noke'},
         {id:3, image:'images/words/nikau.svg', sound: 'sounds/nikau.m4a', description: 'nikau'},
       ],
-      multimedia: '/multimedia/aniwaniwa.webm',
+      multimedia: [ '/multimedia/aniwaniwa.webm',
+      '/multimedia/aniwaniwa.mp4',
+      '/multimedia/aniwaniwa.ogv'
+      ],
       mediaName: 'Noke - worm',
     },
     {
@@ -138,7 +173,11 @@ module.exports = {
         {id:2, image:'images/words/ngata.svg', sound:  '/sounds/ngata.m4a', description: 'ngata'},
         {id:3, image:'images/words/ngutu.svg', sound: 'sounds/ngutu.m4a', description: 'ngutu'},
       ],
-      multimedia: '/multimedia/ngata.webm',
+      multimedia: [
+        '/multimedia/ngata.webm',
+        '/multimedia/ngata.mp4',
+        '/multimedia/ngata.ogv'
+      ],
       mediaName: 'Ngata - Snail',
     },
 
@@ -153,7 +192,11 @@ module.exports = {
         {id:2, image:'images/words/poi.svg', sound:  '/sounds/poi.m4a', description: 'poi'},
         {id:3, image:'images/words/paraoa.svg', sound: 'sounds/paraoa.m4a', description: 'paraoa'},
       ],
-      multimedia: '/multimedia/poi.webm',
+      multimedia: [
+        '/multimedia/poi.webm',
+        '/multimedia/poi.mp4',
+        '/multimedia/poi.ogv'
+      ],
       mediaName: 'Poi - poi',
     },
     {
@@ -167,7 +210,11 @@ module.exports = {
         {id:2, image:'images/words/ringa.svg', sound:  '/sounds/ringa.m4a', description: 'ringa'},
         {id:3, image:'images/words/rangi.svg', sound: 'sounds/rangi.m4a', description: 'rangi'},
       ],
-      multimedia: '/multimedia/ringa.webm',
+      multimedia: [
+        '/multimedia/ringa.webm',
+        '/multimedia/ringa.mp4',
+        '/multimedia/ringa.ogv',
+      ],
       mediaName: 'Ringa - Hand',
     },
     {
@@ -181,7 +228,11 @@ module.exports = {
         {id:2, image:'images/words/tohora.svg', sound:  '/sounds/tohora.m4a', description: 'tohorā'},
         {id:3, image:'images/words/tuatara.svg', sound: 'sounds/tuatara.m4a', description: 'tuatara'},
       ],
-      multimedia: '/multimedia/tohora.webm',
+      multimedia: [
+        '/multimedia/tohora.webm',
+        '/multimedia/tohora.mp4',
+        '/multimedia/tohora.ogv'
+      ],
       mediaName: 'Tohorā - Whale',
     },
 
@@ -196,7 +247,11 @@ module.exports = {
         {id:2, image:'images/words/waewae.svg', sound:  '/sounds/waewae.m4a', description: 'waewae'},
         {id:3, image:'images/words/wai.svg', sound: 'sounds/wai.m4a', description: 'wai'},
       ],
-      multimedia: '/multimedia/waewae.webm',
+      multimedia: [
+        '/multimedia/waewae.webm',
+        '/multimedia/waewae.mp4',
+        '/multimedia/waewae.ogv'
+      ],
       mediaName: 'Waewae - Legs',
     },
     {
@@ -210,7 +265,11 @@ module.exports = {
         {id:2, image:'images/words/wheke.svg', sound:  '/sounds/wheke.m4a', description: 'wheke'},
         {id:3, image:'images/words/whare.svg', sound: 'sounds/whare.m4a', description: 'whare'},
       ],
-      multimedia: '/multimedia/wheke.webm',
+      multimedia: [
+        '/multimedia/wheke.webm',
+        '/multimedia/wheke.mp4',
+        '/multimedia/wheke.ogv'
+      ],
       mediaName: 'Wheke - Octopus',
     },
     {
@@ -224,7 +283,10 @@ module.exports = {
         {id:2, image:'images/words/aniwaniwa.svg', sound:  '/sounds/aniwaniwa.m4a', description: 'āniwaniwa'},
         {id:3, image:'images/words/arani.svg', sound: 'sounds/arani.m4a', description: 'ārani'},
       ],
-      multimedia: '/multimedia/aniwaniwa.webm',
+      multimedia: [ '/multimedia/aniwaniwa.webm',
+      '/multimedia/aniwaniwa.mp4',
+      '/multimedia/aniwaniwa.ogv'
+    ],
       mediaName: 'The whanau rhyme',
     },
     {
@@ -238,7 +300,11 @@ module.exports = {
         {id:2, image:'images/words/ekara.svg', sound:  '/sounds/ekara.m4a', description: 'ēkara'},
         {id:3, image:'images/words/pekana.svg', sound: 'sounds/pekana.m4a', description: 'pēkana'},
       ],
-      multimedia: '/multimedia/ekara.webm',
+      multimedia: [
+        '/multimedia/ekara.webm',
+        '/multimedia/ekara.mp4',
+        '/multimedia/ekara.ogv'
+      ],
       mediaName: 'Eagle - ēkara',
     },
     {
@@ -252,7 +318,11 @@ module.exports = {
         {id:2, image:'images/words/kaki.svg', sound:  '/sounds/kaki.m4a', description: 'kakī'},
         {id:3, image:'images/words/miti.svg', sound: 'sounds/miti.m4a', description: 'mīti'},
       ],
-      multimedia: '/multimedia/aniwaniwa.webm',
+      multimedia: [
+        '/multimedia/aniwaniwa.webm',
+        '/multimedia/aniwaniwa.mp4',
+        '/multimedia/aniwaniwa.ogv'
+      ],
       mediaName: 'The whanau rhyme',
     },
     {
@@ -266,7 +336,11 @@ module.exports = {
         {id:2, image:'images/words/netiporo.svg', sound:  '/sounds/netiporo.m4a', description: 'netipōro'},
         {id:3, image:'images/words/tohi.svg', sound: 'sounds/tohi.m4a', description: 'tōhi'},
       ],
-      multimedia: '/multimedia/netiporo.webm',
+      multimedia: [
+        '/multimedia/netiporo.webm',
+        '/multimedia/netiporo.mp4',
+        '/multimedia/netiporo.ogv'
+      ],
       mediaName: 'Netipōro - Netball',
     },
     {
@@ -280,7 +354,11 @@ module.exports = {
         {id:2, image:'images/words/purerehua.svg', sound: 'sounds/purerehua.m4a', description: 'pūrerehua'},
         {id:3, image:'images/words/hapu.svg', sound:  '/sounds/hapu.m4a', description: 'hapū'},
       ],
-      multimedia: '/multimedia/purerehua.webm',
+      multimedia: [
+        '/multimedia/purerehua.webm',
+        '/multimedia/purerehua.mp4',
+        '/multimedia/purerehua.ogv',
+      ],
       mediaName: 'Pūrerehua - Butterfly',
     },
   ],
