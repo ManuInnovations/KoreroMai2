@@ -299,14 +299,14 @@ video::-webkit-media-controls-panel {
 
 #listen-icon {
   position: absolute;
-  left: 50%;
-  width: 50px;
+  left: 60%;
+  width: 30px;
 }
 
 #click-icon {
   position: absolute;
   left: 30%;
-  width: 50px;
+  width: 30px;
 }
 
 .letter-button {
