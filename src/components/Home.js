@@ -21,7 +21,7 @@ class Home extends React.Component {
           <img src='./images/boy.svg' alt='boy' className='kidImage' />
 
           <h2>Nau mai, Haere mai <br />Welcome</h2>
-          <h3>Kia Ora! <br/> Let's learn Te Reo Māori</h3>
+          <h3>Kia Ora! Hi!<br/> Let's learn Te Reo Māori</h3>
           <Link to='/letters'>
             <button
               className='play'>

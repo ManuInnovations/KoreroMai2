@@ -143,9 +143,12 @@ class Displayletter extends React.Component {
       return (
         <div className='split-words' key={index}>
           <audio
+            src={word.sound}
+            preload='auto'
+            type='audio/mpeg'
             key={word.id}
             ref={(x) => { this.playWords[word.id] = x; }}>
-            <source src={word.sound} preload='auto'/>
+          />
           </audio>
           <img id='wordImage' src={word.image} onClick={this.playSound.bind(this, word.id)} key={index} />
           <p className='wordDescription'>{word.description}</p>
