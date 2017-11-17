@@ -189,13 +189,14 @@ html body {
   color: #fff;
   font-size: 1em;
   margin-bottom: 1em;
+  padding: 0 .5em 0;
 }
 
 .button-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-gap: 10px;
-  padding: 0 1.5em;
+  padding: 0 .5em;
 }
 
 .contents-btn {
