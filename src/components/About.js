@@ -42,26 +42,22 @@ class About extends React.Component {
             <div className='purpose'>
               <h3>How this came about</h3>
               <p>Janie has two tamāhine who
-              attend bilingual classes at Koraunui
-              Primary School in Lower Hutt. One day
-              their teacher shared her wish for an
-              app to help her students learn te reo
-              Māori phonics - and this sparked the
-              idea for Kōrero Mai.</p>
-              <p>Koraunui Primary School has been a
-              huge help in the development of this
-              app, by providing voices and
-              video footage. Ngā mihi nui ki a
-              koutou!</p>
-            <p>Thank you to Georgia and Aaliya for recording letters, words and songs. Kia ora kōrua!</p>
+                attend bilingual classes at Koraunui
+                Primary School in Lower Hutt. One day
+                their teacher shared her wish for an
+                app to help her students learn te reo
+                Māori phonics - and this sparked the
+                idea for Kōrero Mai.</p>
+              <p>A big shout out to the kaiako and tauira of Koraunui Primary School who sang some of the beautiful waiata. Ngā mihi nui ki a
+                koutou!</p>
+              <p>Thank you to Georgia and Aaliya for recording letters, words and songs. Kia ora kōrua!</p>
               <p>Please let us know if this resource helped you or your tamariki and how we could make it better.</p>
             </div>
             <div className='contact'>
-
               <p className='email'>hello@manu.net.nz</p>
               <p>To contact Katie Deller:</p> <p className='email'>kdellerdesign@gmail.com</p>
               <p>To find out more about
-              Manu: <a href='https://www.manu.net.nz'><b>www.manu.net.nz</b></a></p>
+                Manu: <a href='https://www.manu.net.nz'><b>www.manu.net.nz</b></a></p>
             </div>
             <div>Some graphics in this site provided by <a target='_blank' href='https://www.vecteezy.com'>Vecteezy.</a> Capital letter sounds sourced from the <a href='http://www.tetaurawhiri.govt.nz/learn-te-reo-maori/whakahuatanga-pronunciation/'>Māori Language Commission website.</a></div>
           </div>
