@@ -21,8 +21,10 @@ class Mediashow extends React.Component {
         <div className='video-box'>
           <h2>Mātaki mai</h2>
           <div className='video'>
-            <video controls>
-              <source src={letter.multimedia} type='video/webm' />
+            <video controls='true'>
+              <source src={letter.multimedia[0]} type='video/webm' />
+              <source src={letter.multimedia[1]} type='video/mp4' />
+              <source src={letter.multimedia[2]} type='video/ogg' />
               <track kind='captions' src='' srcLang='en' />
               Your browser does not support HTML5 video.
             </video>
