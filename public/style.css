@@ -49,6 +49,31 @@ html body {
   text-align: center;
 }
 
+/** KEYFRAMES ************************************/
+
+@-webkit-keyframes shake {
+ from {
+    -webkit-transform: rotate(10deg);
+ }
+ to {
+   -webkit-transform-origin:center center;
+   -webkit-transform: rotate(-10deg);
+ }
+}
+
+@-webkit-keyframes grow {
+  from {
+    -ms-transform: scale(2,2);
+    -webkit-transform: scale(2,2);
+    transform: scale(2,2);
+  }
+  to {
+    -ms-transform: scale(0,0);
+    -webkit-transform: scale(0,0);
+    transform: scale(0,0);
+  }
+}
+
 /** HEADER *************************************/
 
 .header {
@@ -162,6 +187,8 @@ html body {
 .play {
   letter-spacing: 2px;
   margin-top: 1.5em;
+  -webkit-animation: shake 0.1s ease-in-out 3s infinite alternate;
+  animation: shake 0.1s ease-in-out 3s infinite alternate;
 }
 
 .kidImage {
@@ -207,6 +234,8 @@ html body {
   border-radius: 40%;
   min-width: 60px;
   background-color: var(--orange);
+  -webkit-animation: shake 0.1s ease-in-out 3s 8 alternate;
+  animation: shake 0.1s ease-in-out 3s 8 alternate;
 }
 
 hr {
@@ -232,6 +261,8 @@ hr {
 
 .media-image img {
   width: 37%;
+  -webkit-animation: shake 0.1s ease-in-out 3s 8 alternate;
+  animation: shake 0.1s ease-in-out 3s 8 alternate;
 }
 
 .medialibrary-box h2 {
@@ -318,6 +349,8 @@ video::-webkit-media-controls-panel {
   border:none;
   color: white;
   outline: none;
+  -webkit-animation: shake 0.1s ease-in-out 3s 6 alternate;
+  animation: shake 0.1s ease-in-out 3s 6 alternate;
 }
 
 .letter-button:hover {
@@ -371,6 +404,8 @@ video::-webkit-media-controls-panel {
 #wordImage {
   width: 80%;
   margin: 0 15px 0 0;
+  -webkit-animation: shake 0.1s ease-in-out 5s 6 alternate;
+  animation: shake 0.1s ease-in-out 5s 6 alternate;
 }
 
 #wordImage:hover {
@@ -384,6 +419,8 @@ video::-webkit-media-controls-panel {
 
 #media-play {
   width: 50px;
+  -webkit-animation: grow 0.4s ease-in-out 7s 1 alternate;
+  animation: grow 0.4s ease-in-out 7s 1 alternate;
 }
 
 #media-play:hover {
