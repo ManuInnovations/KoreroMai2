@@ -12,7 +12,7 @@ To run the app in development use Node and in the terminal: npm run dev
 
 To see the app in action:  localhost:3000
 
-or go to Heroku hosted web app: https://warm-temple-46605.herokuapp.com/#/#
+or go to Heroku hosted web app: https://koreromai.herokuapp.com/#/#
 
 # Using the App
 The app is a simple library of the Māori alphabet, with some related multimedia files.
