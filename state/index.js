@@ -30,9 +30,9 @@ module.exports = {
         {id:3, image:'images/words/kete.svg', sound: 'sounds/kete.mp3', description: 'kete'},
       ],
       multimedia: [
-        '/multimedia/eke.webm',
-        '/multimedia/eke.mp4',
-        '/multimedia/eke.ogv',
+        '/multimedia/peke.webm',
+        '/multimedia/peke.mp4',
+        '/multimedia/peke.ogv',
       ],
       mediaName: 'Peke - Jump',
     },
@@ -62,13 +62,13 @@ module.exports = {
       lowerSound: '/sounds/lowerSounds/o.mp3',
       wordImage: [
         {id:1, image:'images/words/one.svg', sound:  '/sounds/one.mp3', description: 'one'},
-        {id:2, image:'images/words/ora.svg', sound:  '/sounds/ora.mp3', description: 'oma'},
+        {id:2, image:'images/words/ora.svg', sound:  '/sounds/oma.mp3', description: 'oma'},
         {id:3, image:'images/words/oru.svg', sound: 'sounds/oru.mp3', description: 'oru'},
       ],
       multimedia: [
-        '/multimedia/aniwaniwa.webm',
-        '/multimedia/aniwaniwa.mp4',
-        '/multimedia/aniwaniwa.ogv'
+        '/multimedia/oma.webm',
+        '/multimedia/oma.mp4',
+        '/multimedia/oma.ogv'
       ],
       mediaName: 'Oma - Run',
     },
@@ -152,15 +152,15 @@ module.exports = {
       capitalSound: '/sounds/capitalSounds/N.mp3',
       lowerSound: '/sounds/lowerSounds/n.mp3',
       wordImage: [
-        {id:1, image:'images/words/niho.svg', sound:  '/sounds/niho.mp3', description: 'niho'},
-        {id:2, image:'images/words/noke.svg', sound:  '/sounds/noke.mp3', description: 'noke'},
+        {id:1, image:'images/words/noke.svg', sound:  '/sounds/noke.mp3', description: 'noke'},
+        {id:2, image:'images/words/niho.svg', sound:  '/sounds/niho.mp3', description: 'niho'},
         {id:3, image:'images/words/nikau.svg', sound: 'sounds/nikau.mp3', description: 'nikau'},
       ],
-      multimedia: [ '/multimedia/aniwaniwa.webm',
-      '/multimedia/aniwaniwa.mp4',
-      '/multimedia/aniwaniwa.ogv'
+      multimedia: [ '/multimedia/niho.webm',
+      '/multimedia/niho.mp4',
+      '/multimedia/niho.ogv'
       ],
-      mediaName: 'Noke - worm',
+      mediaName: 'Niho - teeth',
     },
     {
       id: 10,
@@ -279,15 +279,16 @@ module.exports = {
       capitalSound: '/sounds/capitalSounds/AA.mp3',
       lowerSound: '/sounds/lowerSounds/aa.mp3',
       wordImage: [
-        {id:1, image:'images/words/aporo.svg', sound:  '/sounds/aporo.mp3', description: 'āporo'},
-        {id:2, image:'images/words/aniwaniwa.svg', sound:  '/sounds/aniwaniwa.mp3', description: 'āniwaniwa'},
+          {id:1, image:'images/words/aniwaniwa.svg', sound:  '/sounds/aniwaniwa.mp3', description: 'āniwaniwa'},
+        {id:2, image:'images/words/aporo.svg', sound:  '/sounds/aporo.mp3', description: 'āporo'},
+
         {id:3, image:'images/words/arani.svg', sound: 'sounds/arani.mp3', description: 'ārani'},
       ],
-      multimedia: [ '/multimedia/aniwaniwa.webm',
-      '/multimedia/aniwaniwa.mp4',
-      '/multimedia/aniwaniwa.ogv'
+      multimedia: [ '/multimedia/aporo.webm',
+      '/multimedia/aporo.mp4',
+      '/multimedia/aporo.ogv'
     ],
-      mediaName: 'The whanau rhyme',
+      mediaName: 'Āporo - apple',
     },
     {
       id: 17,
@@ -305,7 +306,7 @@ module.exports = {
         '/multimedia/ekara.mp4',
         '/multimedia/ekara.ogv'
       ],
-      mediaName: 'Eagle - ēkara',
+      mediaName: 'Ēkara - eagle',
     },
     {
       id: 18,
@@ -319,11 +320,11 @@ module.exports = {
         {id:3, image:'images/words/miti.svg', sound: 'sounds/miti.mp3', description: 'mīti'},
       ],
       multimedia: [
-        '/multimedia/aniwaniwa.webm',
-        '/multimedia/aniwaniwa.mp4',
-        '/multimedia/aniwaniwa.ogv'
+        '/multimedia/kaki.webm',
+        '/multimedia/kaki.mp4',
+        '/multimedia/kaki.ogv'
       ],
-      mediaName: 'The whanau rhyme',
+      mediaName: 'Kakī - neck',
     },
     {
       id: 19,
