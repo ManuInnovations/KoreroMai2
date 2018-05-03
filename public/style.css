@@ -580,7 +580,10 @@ video::-webkit-media-controls-panel {
 }
 @media (min-width: 1000px) {
   .home-box {
-    padding-top: 3em;
+    padding-top: 2em;
+  }
+  .kidImage {
+    margin: 0em;
   }
 }
 
