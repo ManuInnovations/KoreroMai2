@@ -583,7 +583,10 @@ video::-webkit-media-controls-panel {
     padding-top: 2em;
   }
   .kidImage {
-    margin: 0em;
+    margin-top: 1em;
+  }
+  .play {
+    margin-top: 0em;
   }
 }
 
