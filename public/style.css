@@ -581,6 +581,7 @@ video::-webkit-media-controls-panel {
 @media (min-width: 1000px) {
   .home-box {
     padding-top: 2em;
+    max-height: 100vh;
   }
   .kidImage {
     margin-top: 1em;
