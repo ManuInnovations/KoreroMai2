@@ -16,7 +16,7 @@ class Home extends React.Component {
     return (
       <div className='container'>
         <div className='home-box'>
-          <h1>Kōrero Mai</h1>
+          <img src='./images/logo.svg' alt='logo' className='logoImage' /><br />
           <img src='./images/girl.svg' alt='girl' className='kidImage' />
           <img src='./images/boy.svg' alt='boy' className='kidImage' />
 
