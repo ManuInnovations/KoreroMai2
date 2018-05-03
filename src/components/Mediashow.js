@@ -1,36 +1,41 @@
-const debug = require('debug')('components:Mediashow')
-import React from 'react'
-import { connect } from 'react-redux'
-import { Link, browserHistory } from 'react-router'
-import request from 'superagent'
-import Footer from './Footer.js'
-import Header from './Header.js'
+const debug = require("debug")("components:Mediashow")
 
+import React from "react"
+import { connect } from "react-redux"
+import { Link, browserHistory } from "react-router"
+import request from "superagent"
+import Footer from "./Footer.js"
+import Header from "./Header.js"
 
 class Mediashow extends React.Component {
   handleClick(e) {
     e.preventDefault()
-    this.props.router.push('/')
+    this.props.router.push("/")
   }
   render() {
     debug(this.props)
     const { dispatch, letter } = this.props
     return (
-      <div className='container'>
+      <div className="container">
         <Header />
-        <div className='video-box'>
+        <div className="video-box">
           <h2>Mātaki mai</h2>
-          <div className='video'>
-            <video controls='true'>
-              <source src={letter.multimedia[0]} type='video/webm' />
-              <source src={letter.multimedia[1]} type='video/mp4' />
-              <source src={letter.multimedia[2]} type='video/ogg' />
-              <track kind='captions' src='' srcLang='en' />
+          <div className="video">
+            <video controls="true">
+              <source src={letter.multimedia[0]} type="video/webm" />
+              <source src={letter.multimedia[1]} type="video/mp4" />
+              <source src={letter.multimedia[2]} type="video/ogg" />
+              <track kind="captions" src="" srcLang="en" />
               Your browser does not support HTML5 video.
             </video>
           </div>
           <div>
-            <img  src='../../images/previous.png' alt='back button' onClick={browserHistory.goBack} className='mediabackbutton' />
+            <img
+              src="../../images/previous.png"
+              alt="back button"
+              onClick={browserHistory.goBack}
+              className="mediabackbutton"
+            />
           </div>
         </div>
         <Footer />
