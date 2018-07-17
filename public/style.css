@@ -298,13 +298,15 @@ video {
   width: 90%;
 }
 
-video::-webkit-media-controls-enclosure {
+/* video::-webkit-media-controls-enclosure {
   overflow: hidden;
-}
+} */
 
 video::-webkit-media-controls-panel {
-  width: calc(100% + 60px);
-  height: 2em;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
 }
 
 .mediabackbutton {
