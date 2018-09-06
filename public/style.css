@@ -40,7 +40,7 @@ html body {
 .container {
   margin: 0;
   padding: 0;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   background-color: #d3d3d3;
   width: 100%;
   display: flex;
@@ -399,14 +399,16 @@ video::-webkit-media-controls-panel {
   visibility: hidden;
 }
 
-#wordImage {
-  width: 80%;
+.wordImage {
   margin: 0 15px 0 0;
   -webkit-animation: shake 0.1s ease-in-out 5s 6 alternate;
   animation: shake 0.1s ease-in-out 5s 6 alternate;
 }
+.wordImage img {
+  width: 80%;
+}
 
-#wordImage:hover {
+.wordImage:hover {
   cursor: pointer;
 }
 
@@ -435,7 +437,7 @@ video::-webkit-media-controls-panel {
   flex-direction: column;
   height: auto;
   text-align: center;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .about-box {
@@ -492,7 +494,7 @@ video::-webkit-media-controls-panel {
 .privacy-container {
   margin: 0;
   padding: 0;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   background-color: var(--redBkgd);
   display: flex;
   flex-direction: column;
