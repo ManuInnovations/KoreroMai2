@@ -13,6 +13,8 @@ module.exports = {
   },
   plugins: ["react"],
   rules: {
+    "no-confusing-arrow": "off",
+    "no-nested-ternary": "off",
     "react/prop-types": "off",
     "react/jsx-filename-extension": "off",
     "linebreak-style": ["error", "unix"],
