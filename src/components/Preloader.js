@@ -30,6 +30,9 @@ class Preloader extends Component {
   componentDidMount() {
     this.load(this.props)
   }
+  componentDidUpdate() {
+    this.load(this.props)
+  }
 
   load({ images, audios }) {
     Promise.all([
