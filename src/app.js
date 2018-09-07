@@ -1,16 +1,15 @@
-const debug = require('debug')('components:App')
-import React from 'react'
-import { connect } from 'react-redux'
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
+import React from "react"
+import { connect } from "react-redux"
+import MuiThemeProvider from "material-ui/styles/MuiThemeProvider"
+
+const debug = require("debug")("components:App")
 
 const App = (props) => {
   debug({ props })
   return (
     <MuiThemeProvider>
-      <div className='container'>
-        <div className='content'>
-          {props.children}
-        </div>
+      <div className="container">
+        <div className="content">{props.children}</div>
       </div>
     </MuiThemeProvider>
   )
