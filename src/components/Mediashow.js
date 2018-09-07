@@ -1,11 +1,12 @@
-const debug = require("debug")("components:Mediashow")
-
 import React from "react"
 import { connect } from "react-redux"
-import { Link, browserHistory } from "react-router"
-import request from "superagent"
+import { browserHistory } from "react-router"
+import { Player } from "video-react"
 import Footer from "./Footer.js"
 import Header from "./Header.js"
+import "../../node_modules/video-react/dist/video-react.css" // import css
+
+const debug = require("debug")("components:Mediashow")
 
 class Mediashow extends React.Component {
   handleClick(e) {
@@ -14,20 +15,14 @@ class Mediashow extends React.Component {
   }
   render() {
     debug(this.props)
-    const { dispatch, letter } = this.props
+    const { letter } = this.props
     return (
       <div className="container">
         <Header />
         <div className="video-box">
           <h2>Mātaki mai</h2>
           <div className="video">
-            <video controls="true">
-              <source src={letter.multimedia[0]} type="video/webm" />
-              <source src={letter.multimedia[1]} type="video/mp4" />
-              <source src={letter.multimedia[2]} type="video/ogg" />
-              <track kind="captions" src="" srcLang="en" />
-              Your browser does not support HTML5 video.
-            </video>
+            <Player playsInline src={letter.multimedia[1]} type="video/mp4" />
           </div>
           <div>
             <img
