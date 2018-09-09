@@ -25,7 +25,7 @@ module.exports = {
       capitalSound: '/sounds/capitalSounds/E.mp3',
       lowerSound: '/sounds/lowerSounds/e.mp3',
       wordImage: [
-          {id:1, image:'images/words/eo.svg', sound: 'sounds/eo.mp3', description: 'eo'},
+        {id:1, image:'images/words/eo.svg', sound: 'sounds/eo.mp3', description: 'eo'},
         {id:2, image:'images/words/peke.svg', sound: 'sounds/peke.mp3', description: 'peke'},
         {id:3, image:'images/words/kete.svg', sound: 'sounds/kete.mp3', description: 'kete'},
       ],

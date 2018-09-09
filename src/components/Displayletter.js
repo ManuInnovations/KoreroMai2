@@ -48,6 +48,10 @@ class DisplayLetter extends React.Component {
     this.getLetterIndex = this.getLetterIndex.bind(this)
   }
 
+  handleClick(e) {
+    e.preventDefault()
+  }
+
   getLetterIndex() {
     const { letters, letter } = this.props
     return letters.findIndex(item => item.id === letter.id)

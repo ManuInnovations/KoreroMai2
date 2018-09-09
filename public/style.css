@@ -511,7 +511,7 @@ hr {
 .letter-box {
   flex: 1;
   padding-top: 2.5em;
-  min-height: calc(100vh - 144px);
+  min-height: calc(100vh - 145px);
   background-color: var(--blueBkgd);
 }
 
@@ -535,7 +535,7 @@ hr {
 .letter-button {
   font-size: 4em;
   font-weight: 600;
-  padding-top: 1.3em;
+  padding-top: 0.7em;
   padding-right: 30px;
   background: none;
   border: none;
@@ -576,8 +576,8 @@ hr {
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
-  padding-top: 2em;
-  margin: 0 1em 3em;
+  padding-top: 1em;
+  margin: 0 1em 0.7em;
 }
 
 .split-words {
@@ -625,7 +625,7 @@ hr {
 
 @media (min-width: 800px) {
   .letter-box {
-    min-height: calc(100vh - 136px);
+    min-height: calc(100vh - 137px);
   }
   .split-words {
     margin: 10px;
@@ -659,7 +659,7 @@ hr {
     left: 43%;
   }
   .letter-box {
-    min-height: calc(100vh - 145px);
+    min-height: calc(100vh - 157px);
   }
 }
 
