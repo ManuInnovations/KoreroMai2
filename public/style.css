@@ -198,7 +198,7 @@ html body {
   margin: auto;
   min-height: 100vh;
   background-color: var(--orange);
-  padding-top: 4em;
+  padding-top: 2em;
 }
 
 .home-box h2 {
@@ -227,7 +227,7 @@ html body {
 
 .play {
   letter-spacing: 2px;
-  margin-top: 1.5em;
+  margin-top: 0.6em;
   -webkit-animation: shake 0.1s ease-in-out 3s infinite alternate;
   animation: shake 0.1s ease-in-out 3s infinite alternate;
 }
@@ -237,7 +237,7 @@ html body {
 }
 
 .kidImage {
-  width: 25%;
+  width: 20%;
   margin: 0.5em;
 }
 

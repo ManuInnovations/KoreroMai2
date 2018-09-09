@@ -26,7 +26,7 @@ class About extends React.Component {
                   <b>Janie Tito - developer</b>
                 </p>
                 <p>
-                  <i>Ngā Puhi me Ngāti Whātua</i>
+                  <i>Ngāpuhi, Ngāti Whātua</i>
                 </p>
               </div>
               <div className="profile">
