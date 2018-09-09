@@ -39,9 +39,9 @@ class Contentspage extends React.Component {
             ))}
           </div>
           <br />
-          <img src="./images/words/hoiho.svg" alt="horse" className="hmImage" />
-          <img src="./images/words/manu.svg" alt="bird" className="hmImage" />
-          <img src="./images/words/ngata.svg" alt="snail" className="hmImage" />
+          <img src="./images/words/hoiho.svg" alt="horse" className="contentImage" />
+          <img src="./images/words/manu.svg" alt="bird" className="contentImage" />
+          <img src="./images/words/ngata.svg" alt="snail" className="contentImage" />
         </div>
         <Footer />
       </div>

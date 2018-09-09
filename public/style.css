@@ -311,7 +311,7 @@ html body {
 .content-box h2 {
   color: #fff;
   font-size: 1.2em;
-  margin-top: 2em;
+  margin-top: 1em;
 }
 
 .content-box h3 {
@@ -325,7 +325,7 @@ html body {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 10px;
-  padding: 0 0.5em 2em;
+  padding: 0 0.5em 0em;
   max-width: 960px;
   margin: auto;
 }
@@ -345,6 +345,11 @@ html body {
 hr {
   width: 30%;
   margin-bottom: 1em;
+}
+
+.contentImage {
+  width: 15%;
+  margin: 0 20px;
 }
 
 /*CONTENTS MEDIA QUERIES*/
@@ -368,6 +373,9 @@ hr {
   }
   hr {
     width: 20%;
+  }
+  .contentImage {
+    max-width: 80px;
   }
 }
 @media (min-width: 900px) {
