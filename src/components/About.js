@@ -88,6 +88,14 @@ class About extends React.Component {
               </p>
             </div>
             <div>
+              <h3>Acknowledgements</h3>
+              <p>
+                Thanks to{" "}
+                <a href="https://github.com/Thram" target="_blank" rel="noopener noreferrer">
+                  Sebastian Ibanez
+                </a>{" "}
+                for dev support and helping get us across the finish line.
+              </p>
               Some graphics in this site provided by{" "}
               <a target="_blank" href="https://www.vecteezy.com" rel="noopener noreferrer">
                 Vecteezy.

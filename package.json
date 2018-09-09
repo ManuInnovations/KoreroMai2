@@ -6,7 +6,7 @@
     "start": "node ./bin/www",
     "dev": "nodemon ./bin/www",
     "test": "ava tests/**/*.js --serial --verbose",
-    "build": "webpack --config webpack.production.config.js --progress -p",
+    "build": "webpack --config webpack.config.js --progress -p",
     "postinstall": "webpack -p"
   },
   "babel": {

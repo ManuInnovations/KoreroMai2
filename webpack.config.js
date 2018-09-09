@@ -15,7 +15,7 @@ module.exports = {
 
   devServer: {
     contentBase: PATHS.output,
-    inline: true
+    inline: true,
   },
 
   module: {
