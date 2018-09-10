@@ -1,12 +1,11 @@
 import React from "react"
 
-const ButtonLink = ({ onPress, children, ...props }) => (
+const ButtonLink = ({ onClick, children, ...props }) => (
   <a
     role="button"
     tabIndex="0"
     style={{ display: "inline-block" }}
-    onTouchStart={onPress}
-    onMouseDown={onPress}
+    onMouseDown={onClick}
     {...props}
   >
     {children}

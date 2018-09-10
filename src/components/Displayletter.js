@@ -27,7 +27,7 @@ const Words = ({ items = [] }) => (
         {items.map(word => (
           <div className="split-words" key={word.id}>
             {images[word.image] ? (
-              <ButtonLink className="wordImage" onPress={play(audios[word.sound])}>
+              <ButtonLink className="wordImage" onClick={play(audios[word.sound])}>
                 <img src={images[word.image]} alt={word.description} />
               </ButtonLink>
             ) : (
@@ -48,14 +48,11 @@ class DisplayLetter extends React.Component {
     this.getLetterIndex = this.getLetterIndex.bind(this)
   }
 
-  handleClick(e) {
-    e.preventDefault()
-  }
-
   getLetterIndex() {
     const { letters, letter } = this.props
     return letters.findIndex(item => item.id === letter.id)
   }
+
   go(direction) {
     const { renderLetter, letters } = this.props
     const index = this.getLetterIndex()
@@ -87,19 +84,19 @@ class DisplayLetter extends React.Component {
           {({ images, audios }) => (
             <div className="letter-box">
               <div className="letters">
-                <ButtonLink onPress={this.go("previous")}>
+                <ButtonLink onClick={this.go("previous")}>
                   <img id="previous-letter" src={images[IMAGES.previous]} alt="back button" />
                 </ButtonLink>
                 <p>Click on the letters and pictures</p>
                 <img src={images[IMAGES.click]} alt="click" width="30px" id="click-icon" />
                 <img src={images[IMAGES.listen]} alt="listen" width="30px" id="listen-icon" />
-                <ButtonLink className="letter-button" onPress={play(audios[letter.capitalSound])}>
+                <ButtonLink className="letter-button" onClick={play(audios[letter.capitalSound])}>
                   {letter.capital}
                 </ButtonLink>
-                <ButtonLink className="letter-button" onPress={play(audios[letter.lowerSound])}>
+                <ButtonLink className="letter-button" onClick={play(audios[letter.lowerSound])}>
                   {letter.lowercase}
                 </ButtonLink>
-                <ButtonLink onPress={this.go("next")}>
+                <ButtonLink onClick={this.go("next")}>
                   <img id="next-letter" src={images[IMAGES.next]} alt="next button" />
                 </ButtonLink>
               </div>
