@@ -114,7 +114,7 @@ html body {
 }
 @media (min-width: 1000px) {
   .header {
-    height: 100px;
+    height: auto;
   }
   #header-index {
     width: 40px;
