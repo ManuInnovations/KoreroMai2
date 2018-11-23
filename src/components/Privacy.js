@@ -38,7 +38,7 @@ class Privacy extends React.Component {
             <p className='article'>It is our policy to send only emails you elect to receive in a sign-up process. In addition, we may send out promotional material to you promoting new or amended material on our site where we
             think that may be relevant to you. It is our policy to immediately remove any person from any mailing list upon the person’s request.</p>
             <h3>Access and removal of Information</h3>
-            <p className='article'>You have the right to seek access the personal information held about you and to advise us of any inaccuracy. There are some exceptions to this right set out in the Privacy Act. If you make an
+            <p className='article'>You have the right to seek access to the personal information held about you and to advise us of any inaccuracy. There are some exceptions to this right set out in the Privacy Act. If you make an
             access request, we will ask you to verify your identity and specify what information you require.</p>
             <h3>Updates to our information practices</h3>
             <p className='article'>We reserve the right to change this policy. By continuing to use the Website, you agree to be bound by the amended policy. You should check from time to time to see if the policy has changed.</p>
